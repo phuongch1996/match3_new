@@ -1,0 +1,35 @@
+_Defeat Screen.png
+size:494,2081
+filter:Linear,Linear
+pma:true
+Mizrak_L
+bounds:234,2,229,300
+offsets:0,0,230,300
+Mizrak_R
+bounds:2,2,230,300
+Sheild Right
+bounds:2,633,332,369
+offsets:8,0,340,369
+rotate:90
+Shield Left
+bounds:2,304,327,365
+offsets:0,1,340,369
+rotate:90
+Shields Front
+bounds:2,1611,468,489
+offsets:0,0,472,492
+rotate:90
+Skull_L
+bounds:373,837,128,116
+rotate:90
+Skull_R
+bounds:373,707,128,116
+rotate:90
+Sword_L
+bounds:2,967,318,490
+offsets:0,10,329,504
+rotate:90
+Sword_R
+bounds:2,1287,322,489
+offsets:6,8,329,504
+rotate:90

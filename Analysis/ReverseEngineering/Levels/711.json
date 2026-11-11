@@ -1,0 +1,3358 @@
+{
+ "source_name": "711",
+ "source_sha256": "815a8ff0088c640fcb1c08b4b6df1853f1bf7de8e828f79c9b3814f38f1b22f7",
+ "source_export": "Unity/TextAssets/85/3169_711",
+ "schema": "recovered-schema.json",
+ "level": {
+  "Name": "0711v02_D",
+  "Move": 28,
+  "Grid": {
+   "Items": [
+    43,
+    43,
+    43,
+    0,
+    43,
+    43,
+    43,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    90,
+    46,
+    46,
+    46,
+    0,
+    46,
+    46,
+    46,
+    0,
+    30
+   ],
+   "Cells": [
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 1,
+     "IsPredefined": true,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 1,
+     "IsPredefined": true,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 1,
+     "IsPredefined": true,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 1,
+     "IsPredefined": true,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 1,
+     "IsPredefined": true,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 1,
+     "IsPredefined": true,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 0,
+     "IsPredefined": false,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": false,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    },
+    {
+     "FillType": 1,
+     "IsPredefined": true,
+     "BoardId": 0,
+     "Ice": 0,
+     "HasJelly": true,
+     "Ivy": 0,
+     "Curtain": 0,
+     "Chain": 0,
+     "Sand": 0,
+     "Border": 0,
+     "Puzzle": 0
+    }
+   ],
+   "Width": 9,
+   "Height": 11,
+   "Boards": [
+    {
+     "Id": 0,
+     "BottomLeft": {
+      "X": 0,
+      "Y": 0
+     },
+     "Width": 9,
+     "Height": 11,
+     "Goals": [
+      {
+       "Goal": 16,
+       "Count": 6,
+       "IsFromSettings": false
+      },
+      {
+       "Goal": 10,
+       "Count": 66,
+       "IsFromSettings": false
+      },
+      {
+       "Goal": 28,
+       "Count": 44,
+       "IsFromSettings": true
+      }
+     ],
+     "ItemCounts": [
+      {
+       "Type": 16,
+       "Count": 6
+      },
+      {
+       "Type": 28,
+       "Count": 54
+      },
+      {
+       "Type": 10,
+       "Count": 11
+      }
+     ]
+    }
+   ]
+  },
+  "Predefined": [
+   {
+    "X": 0,
+    "Y": 12,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 13,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 14,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 15,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 16,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 17,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 18,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 19,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 20,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 21,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 22,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 23,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 24,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 25,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 26,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 27,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 28,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 29,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 30,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 31,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 32,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 33,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 34,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 35,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 36,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 37,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 38,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 39,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 40,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 41,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 42,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 43,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 44,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 45,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 46,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 47,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 48,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 49,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 50,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 51,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 52,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 53,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 54,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 55,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 56,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 57,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 58,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 59,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 60,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 0,
+    "Y": 61,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 12,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 13,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 14,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 15,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 16,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 17,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 18,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 19,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 20,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 21,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 22,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 23,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 24,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 25,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 26,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 27,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 28,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 29,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 30,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 31,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 32,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 33,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 34,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 35,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 36,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 37,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 38,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 39,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 40,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 41,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 42,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 43,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 44,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 45,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 46,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 47,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 48,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 49,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 50,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 51,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 52,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 53,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 54,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 55,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 56,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 57,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 58,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 59,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 60,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 1,
+    "Y": 61,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 12,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 13,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 14,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 15,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 16,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 17,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 18,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 19,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 20,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 21,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 22,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 23,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 24,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 25,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 26,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 27,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 28,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 29,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 30,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 31,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 32,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 33,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 34,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 35,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 36,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 37,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 38,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 39,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 40,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 41,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 42,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 43,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 44,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 45,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 46,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 47,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 48,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 49,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 50,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 51,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 52,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 53,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 54,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 55,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 56,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 57,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 58,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 59,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 60,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 2,
+    "Y": 61,
+    "Ids": [
+     90
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 12,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 13,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 14,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 15,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 16,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 17,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 18,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 19,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 20,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 21,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 22,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 23,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 24,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 25,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 26,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 27,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 28,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 29,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 30,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 31,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 32,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 33,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 34,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 35,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 36,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 37,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 38,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 39,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 40,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 41,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 42,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 43,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 44,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 45,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 46,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 47,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 48,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 49,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 4,
+    "Y": 50,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 12,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 13,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 14,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 15,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 16,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 17,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 18,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 19,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 20,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 21,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 22,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 23,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 24,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 25,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 26,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 27,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 28,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 29,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 30,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 31,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 32,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 33,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 34,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 35,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 36,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 37,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 38,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 39,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 40,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 41,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 42,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 43,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 44,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 45,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 46,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 47,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 48,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 49,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 5,
+    "Y": 50,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 12,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 13,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 14,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 15,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 16,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 17,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 18,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 19,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 20,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 21,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 22,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 23,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 24,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 25,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 26,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 27,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 28,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 29,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 30,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 31,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 32,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 33,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 34,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 35,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 36,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 37,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 38,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 39,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 40,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 41,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 42,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 43,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 44,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 45,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 46,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 47,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 48,
+    "Ids": [
+     6
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 49,
+    "Ids": [
+     7
+    ]
+   },
+   {
+    "X": 6,
+    "Y": 50,
+    "Ids": [
+     8
+    ]
+   },
+   {
+    "X": 8,
+    "Y": 12,
+    "Ids": [
+     90
+    ]
+   }
+  ],
+  "Sets": [
+   {
+    "Name": "Set1",
+    "Elements": [
+     {
+      "Id": 2
+     },
+     {
+      "Id": 1
+     },
+     {
+      "Id": 3
+     }
+    ],
+    "CreateRatio": 1,
+    "TargetFills": []
+   }
+  ],
+  "Colors": [
+   2,
+   1,
+   3
+  ],
+  "Walls": [],
+  "Attack": null,
+  "Background": 0,
+  "Targets": [],
+  "Curtains": [],
+  "FillingItemLimits": [],
+  "Paths": [],
+  "LightbulbColorOrder": [],
+  "Tablets": [],
+  "Puzzles": [],
+  "MagicGlobeConfig": null
+ }
+}

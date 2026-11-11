@@ -1,0 +1,74 @@
+{
+  "updated": "2026-11-11T16:47:30.0973044+07:00",
+  "phase": "special-placement-combo-checked",
+  "package": "C:/Users/Admin/Downloads/com.dreamgames.royalkingdom_20584-20584_2arch_1feat_4d80b75aad360e3124b1abd39e0fd839_apkmirror.com.apkm",
+  "packageSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66",
+  "inventoryRows": 1220,
+  "apks": [
+    {
+      "name": "base.apk",
+      "length": 17366604,
+      "sha256": "9789a700866ea4e4d4f7048cccd4b8e4025a3a6743f8eeeaa4c3060376184668"
+    },
+    {
+      "name": "split_config.arm64_v8a.apk",
+      "length": 32139227,
+      "sha256": "d63997000647ce62e191b6ba8dfaccbe4e5890ff491254377f052bc250a567ba"
+    },
+    {
+      "name": "split_UnityDataAssetPack.apk",
+      "length": 167424914,
+      "sha256": "21f27f928c21c6a077d589b8825ef691165d3d8dcb3ff0704180ceaa861761d9"
+    }
+  ],
+  "rawRoot": "C:\\Users\\Admin\\Documents\\ChatGPT\\Phuong\\RoyalMatchOffline\\Analysis\\ReverseEngineering\\Raw",
+  "accountQuotaPercent": null,
+  "quotaNote": "Not observable through available tools",
+  "next": "Port Column and MetalColumn static layers, preserving native direction and fake-item behavior",
+  "evidenceFiles": [
+    "metadata-evidence.json",
+    "metadata-native-evidence.json",
+    "Metadata/game-api.json",
+    "Native/focused-disassembly.json",
+    "Unity/asset-inventory.json",
+    "Levels/recovered-schema.json",
+    "Levels/index.json",
+    "verification.json",
+    "Levels/tile-converters.json",
+    "Levels/tile-goal-summary.json",
+    "Unity/GameplayAudio/manifest.json",
+    "PHASE_2_REPORT.txt",
+    "PHASE_3_REPORT.txt",
+    "BOX_AND_REFILL_EVIDENCE.txt",
+    "Native/fall-rng-disassembly.json",
+    "Native/refill-support-disassembly.json",
+    "Native/spinner-combo-disassembly.json",
+    "Native/special-payload-disassembly.json",
+    "Native/fall-rng-recovery.json",
+    "Native/rng-host-reference.json",
+    "PHASE_5_REPORT.txt",
+    "OBSTACLE_COVERAGE_REPORT.txt",
+    "PHASE_6_WALL_REPORT.txt",
+    "PHASE_7_WALL_COMPLETE.txt",
+    "Native/wall-helper-disassembly.json",
+    "PHASE_8_WALL_GROUP.txt",
+    "Native/special-placement-disassembly.json",
+    "PHASE_9_SPECIAL_PLACEMENT_COMBO.txt"
+  ],
+  "decodedNumericLevels": 2300,
+  "decodedPlayableLevels": 9,
+  "exportedGameplaySprites": 82,
+  "prototypeRecoveredTextures": 10,
+  "recoveredAudioClips": 34,
+  "prototypeRecoveredAudio": 12,
+  "recoveredTileIdCount": 184,
+  "tileOrderingEvidence": "LevelParser.GetCell @ 0x20cf144: index=x+width*y",
+  "originalRuntimeLevels": [
+    1
+  ],
+  "originalLevel1Fidelity": "Source 9x9 layout / 30 moves / 54 boxes / predefined queues verified; native fall order, 8-neighbor directions and seeded RNG algorithm recovered statically, but exact session seed, cross-fall reservations and full mechanics incomplete",
+  "prototypeBoxSprite": true,
+  "latestReport": "PHASE_9_SPECIAL_PLACEMENT_COMBO.txt",
+  "ruleAssertions": 22342,
+  "dataAssertions": 14524
+}

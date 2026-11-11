@@ -1,0 +1,55 @@
+PHÂN TÍCH APKM — KẾT QUẢ GIAI ĐOẠN 1
+
+Nguồn: com.dreamgames.royalkingdom_20584-20584_2arch_1feat_4d80b75aad360e3124b1abd39e0fd839_apkmirror.com.apkm
+SHA256: 65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66
+Phạm vi: phân tích tĩnh, không chạy mã Android hay gửi dữ liệu lên máy chủ game.
+
+ĐÃ KHÔI PHỤC
+- 1.220 hàng inventory trong APKM và ba APK đã chọn; payload gốc có hash.
+- Gói UnityFS khai báo Unity 2022.3.39f1.
+- Metadata IL2CPP v31: 78 assembly, 15.654 type, 111.819 method.
+- Liên kết native ARM64: 103.701 method có địa chỉ code, 8.118 slot no-body, không có slot unknown trong bảng đã thu thập. Đây là liên kết cấu trúc, không phải chứng minh hành vi runtime.
+- Assembly-CSharp.dll có 7.201 type. Đã lập game-api.json, 161 type/1.428 method tập trung gameplay và 526 chuỗi liên quan.
+- 397 enum đọc từ field default metadata. Số nguyên v31 dùng encoding nén/zigzag; parser đầu đọc int32 cố định đã được sửa, chỉ dùng enums.json hiện tại.
+- 86 container Unity đọc thành công, 124.303 object; 2.443 TextAsset được trích nguyên byte và kiểm tra SHA256.
+- 2.300 màn đánh số liên tục 1..2300 và 9 màn playable giải mã FlatBuffers; tổng 200.521 ô. File JSON có nguồn/hash, không phải màn tự sinh.
+- 50 bảng schema phục hồi bằng chữ ký metadata và hằng số field-slot trong mã ARM64 Add*; đối chiếu accessor vtable-slot. Không có trường schema unresolved trong lượt này.
+- FPoint là bảng gồm X/Y kiểu short, không phải inline struct; parser đã sửa và kiểm tra tọa độ bảng con nằm trong grid.
+- 76 sprite gameplay xuất PNG, gồm item màu, rocket, dynamite, electroball, spinner và các phần hoạt ảnh. Các sprite tham chiếu atlas trong base/data.unity3d: phải nạp cả base + datapack + resources.resource vào cùng UnityPy Environment.
+- 10 hình item gốc đã được đưa vào Assets/Resources/RecoveredArt với provenance.json.
+- Native/focused-disassembly.* chứa 1.380 hàm ARM64 chọn lọc, có liên kết tên callee khi khả dụng. Đây là disassembly bằng Capstone, không phải C# gốc.
+
+KẾT QUẢ KIỂM TRA
+- verify-recovery.py: 14.355 kiểm tra dữ liệu đạt, hash TextAsset/PNG đạt, toàn bộ grid array khớp kích thước, board origin/kích thước nằm trong grid.
+- Prototype: 21.590 assertions, 4.500 hành động, 6.614 cascade đạt sau khi nạp hình gốc.
+- Runtime: nạp đủ 10/10 texture, render home/gameplay, thực hiện tám nước hợp lệ, bàn ổn định.
+- Chưa chơi lại màn gốc trong prototype: engine hiện cố định 8x8, bàn gốc thường 9x7, 9x9, 9x11 và có nhiều chướng ngại vật.
+
+ĐẦU MỐI GỐC ĐÃ QUAN SÁT
+- MatchManager::FindThreeMatchesAndPropellersForCell @ 0x2184790
+- MatchManager::CreateMatchesFromThrees @ 0x2184b0c
+- MatchManager::FindAndProcessExtensionCandidates @ 0x2185ae0
+- MatchManager::CreateSpecialItemData @ 0x2186f08
+- SpinnerRocketCombo::Prepare @ 0x23cb864; Explode @ 0x23cbb20
+- DynamiteSpinnerCombo::Prepare @ 0x23cb3d8; Explode @ 0x23cb694
+- ElectroBallSpinnerCombo::Prepare @ 0x23cb0d0; Explode @ 0x23cb338
+- SpinnerRocketStrategy::NextExploder @ 0x220b970 dùng trường hướng rocket và chọn hai loại Exploder khác nhau; constructor đọc trường hướng từ rocket gốc.
+- DynamiteSpinnerCombo::Explode gọi constructor SpinnerDynamiteStrategy; SpinnerRocketCombo::Explode gọi constructor SpinnerRocketStrategy.
+- SpinnerSpinnerCombo có CreateExtraSpinners và các strategy bổ sung; prototype hiện chưa mô phỏng đầy đủ tổ hợp chong chóng-chong chóng.
+
+GIỚI HẠN CÒN LẠI
+- REA native decompiler provider_unavailable: chưa cấu hình Ghidra/IDA/Kuna; Hopper không hỗ trợ Windows. Ghidra lane đang cung cấp trên Windows không nhận ELF ARM64. Không thay đổi cấu hình MCP để né giới hạn; đã dùng Capstone/pyelftools cục bộ đọc byte thay thế và ghi rõ nguồn.
+- Phạm vi hàm trong bản disassembly dùng địa chỉ method tiếp theo, tối đa 64KiB; chưa chứng minh body hoàn chỉnh. Không được trình bày bản dịch suy luận thành mã gốc.
+- Hầu hết MonoBehaviour custom trong player data bị strip type tree; một lượt thử chỉ đọc đầy đủ được số ít class. Cần phục hồi layout/serialization trước khi xuất prefab/ScriptableObject đầy đủ.
+- Chưa phục hồi bảng ánh xạ tile ID -> ItemSettings đầy đủ. Không được nhầm ItemType enum với tile ID trong FTiledGrid.Items. Ví dụ màn 1 có tile ID 21 và goal type 6 (Box), còn ItemType.Box là 7.
+- Chưa khôi phục toàn bộ âm thanh/animation/prefab, chưa có máy chủ game.
+
+BƯỚC TIẾP THEO ƯU TIÊN
+1. Phân tích ItemModelCreator::GetSettingsForTileId và khởi tạo ItemSettings để ánh xạ tile ID chính xác.
+2. Xác minh thứ tự tuyến tính của Grid.Items/Cells (row/column, Y hướng lên) bằng converter/LevelParser gốc; không đoán từ hình preview.
+3. Chuyển engine từ N=8 thành width/height theo level, cell rỗng và blocker; triển khai Box và goals trước để chơi màn 1 thực.
+4. Đọc native MatchManager và Spinner strategies để đối chiếu luật tự dựng, nhất là square extension, target priority, tổ hợp chong chóng-chong chóng, phạm vi bom và số hit.
+5. Export audio và dữ liệu animation có provenance; phục hồi MonoBehaviour serialization có kiểm chứng.
+
+HẠN MỨC
+Không có công cụ đọc % usage tài khoản. Checkpoint được lưu theo giai đoạn, không tuyên bố đã đến mốc 5%. Khi người dùng báo còn 5%, cập nhật checkpoint, hoàn tất ghi file và dừng theo yêu cầu.

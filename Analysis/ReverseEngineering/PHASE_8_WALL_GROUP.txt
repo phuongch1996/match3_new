@@ -1,0 +1,9 @@
+PHÂN TÍCH GAMEPLAY — WALL GROUP HOÀN TẤT
+- WallA/B/C được nạp thành Wall 5 lớp.
+- Các Wall liền kề theo 4 hướng được gom thành group riêng bằng BFS, tương ứng WallGroupId/leader của native.
+- Khi một mảnh trong group hết lớp, cả group bị phá.
+- Wall vẫn chặn match, swap và rơi; sát thương gần match chỉ tính một lần mỗi lượt.
+- UI hiển thị số lớp và màu group.
+- Native evidence: WallItemHelper.GetGroupLength/GetLeaderId/IsLeader/DestroyWallGroup và WallItemModel.TryExplode.
+- Build: 70.643.566 bytes; 22.340 assertions; original smoke đã đạt ở bản trước.
+- Hạn chế còn lại: native GetWallPath có đường xoá đặc biệt theo hình học; bản dựng dùng nhóm liên thông 4 hướng.

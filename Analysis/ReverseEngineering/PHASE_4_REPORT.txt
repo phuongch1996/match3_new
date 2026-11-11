@@ -1,0 +1,23 @@
+PHÂN TÍCH APKM — GIAI ĐOẠN 4
+
+ĐÃ XÁC MINH TỪ NATIVE ARM64 (đọc tĩnh, không chạy mã APK)
+- FallManager.ManualUpdate gọi theo thứ tự: ClearTargetItems -> CalculateStraightFalls -> CalculateCrossFalls -> CallFallUpdates -> AddTopBoardRemainingItemsToQueue.
+- GetNextNeighborType=1, trái=0, phải=2; iterator dọc=4, ngang=5.
+- CellPoint.GetNeighborPoint dùng hai bảng read-only tại 0xaf0700/0xaf0760. Tám hướng đã giải mã: (-1,+1),(0,+1),(+1,+1),(+1,0),(+1,-1),(0,-1),(-1,-1),(-1,0).
+- LevelRandomManager.ResetSeed lấy UnityEngine.Random.Range(0, 20.000.000), sau đó tạo System.Random(seed). Seed cụ thể của lượt chơi không xuất hiện trong dữ liệu level.
+- System.Random native là bộ sinh subtractive 56 phần tử; mô hình Python khớp 742 mẫu với System.Random host.
+- GetRandomFillItem/GetRandomItem chọn theo tổng createRatio và có nhánh tránh lặp hai vật phẩm đặc biệt liên tiếp; LowMatchContainer bổ sung điều chỉnh khi có chuỗi màu thấp.
+- SpinnerRocketCombo tạo SpinnerRocketStrategy với hướng của rocket; NextExploder gửi exploder đầu tiên qua type 0xc, exploder tiếp theo qua 0xd. SpinnerDynamiteStrategy dùng loại nổ riêng.
+- ElectroBallSpinnerStrategy.Start tìm màu MatchItem phổ biến nhất đủ điều kiện, rồi thay các đá thường màu đó; không lấy màu lưu trên spinner làm màu đích.
+
+THAY ĐỔI BẢN DỰNG
+- MatchBoard.Combine đã đổi combo chong chóng + rainbow sang chọn màu thường phổ biến nhất; chỉ ô thường được đổi thành chong chóng, special có sẵn không bị ghi đè.
+- BuildGame bổ sung kiểm thử màu lưu trên spinner khác màu đa số và kiểm thử hai thứ tự đổi chỗ.
+- Build thành công: 22.340 assertions, 4.500 hành động hợp lệ, 6.393 cascade steps.
+- Runtime combo-smoke đạt: bốn đối tác (rocket ngang, rocket dọc, bom, rainbow), 4 flight capture, mỗi combo 1 lượt, mục tiêu băng bị phá, bàn ổn định.
+
+GIỚI HẠN CÒN LẠI
+- Chưa có seed/runtime trace của một ván APK gốc nên chưa thể tái hiện đúng chuỗi refill của một phiên.
+- Chưa port đầy đủ FindCrossItem/FindTargetItemFromCrossCell, reservation stack, nhiều board và LowMatchContainer tuning vào MatchBoard.
+- Chưa chứng minh thắng level 1 nguyên bản trong 30 lượt; chưa mở rộng runtime sang level 2..10.
+- Phần trăm usage tài khoản không được công cụ cung cấp; STATUS giữ accountQuotaPercent=null.

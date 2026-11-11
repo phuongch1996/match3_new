@@ -1,0 +1,986 @@
+[
+  {
+    "name": "Items-MatchItem-shadow_pink",
+    "path_id": 4870,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/4870_Items-MatchItem-shadow_pink.png",
+    "size": [
+      137,
+      137
+    ],
+    "sha256": "7cc7ecf61e0ae2fe89f736435e1006f680d8450997be46e4ec9fcd5007efd199"
+  },
+  {
+    "name": "Items-Rocket-vertical_rocket_bottom_part_shadow",
+    "path_id": 4877,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/4877_Items-Rocket-vertical_rocket_bottom_part_shadow.png",
+    "size": [
+      118,
+      131
+    ],
+    "sha256": "11aa64738e9b58c4aab184fe7a5d3b69cb229aeed07efca89d924d67b9aa2a59"
+  },
+  {
+    "name": "Items-Rocket-Vertical-ust-dis-02",
+    "path_id": 4889,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/4889_Items-Rocket-Vertical-ust-dis-02.png",
+    "size": [
+      77,
+      14
+    ],
+    "sha256": "95d2b024938775e72d6e698b434e0b8e18b2bc6ab27b822971697cb96404ee16"
+  },
+  {
+    "name": "Items-Rocket-horizontal_rocket_right_part",
+    "path_id": 4906,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/4906_Items-Rocket-horizontal_rocket_right_part.png",
+    "size": [
+      124,
+      111
+    ],
+    "sha256": "d4f9349d3cf635a1da9b2a26e90731f20aed897f4aef23936841cc7d42cf4ff4"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_head_line_top",
+    "path_id": 4911,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/4911_Items-Rocket-Vertical-rocket_vertical_head_line_top.png",
+    "size": [
+      110,
+      24
+    ],
+    "sha256": "41102ba9e486a28cf4aed40e2db2fca4b1f491a62c97b7c5effb863eca6f65e5"
+  },
+  {
+    "name": "Items-Rocket-vertical_rocket_shadow",
+    "path_id": 4938,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/4938_Items-Rocket-vertical_rocket_shadow.png",
+    "size": [
+      118,
+      150
+    ],
+    "sha256": "7d785b4d41b705640df9813a5999ffa34a5271b2514cddaf282cfa05ab9b5483"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_mid_left_line",
+    "path_id": 4947,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/4947_Items-Rocket-Vertical-rocket_vertical_mid_left_line.png",
+    "size": [
+      20,
+      43
+    ],
+    "sha256": "fcbb28b9a7644388b1e9462d2047f8450c1fc3929ea44a72a203f3e933fc47e3"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-head_right",
+    "path_id": 5041,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5041_Items-Rocket-Horizontal-head_right.png",
+    "size": [
+      41,
+      111
+    ],
+    "sha256": "2ed7a3a8cd48136fdfcb4c103bd7fe45033bd348015820e39f55ff312db3c915"
+  },
+  {
+    "name": "Items-BoxItem-patch2",
+    "path_id": 5108,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5108_Items-BoxItem-patch2.png",
+    "size": [
+      130,
+      131
+    ],
+    "sha256": "c1d78b4cecafbebb44c934eb40074359c1909c8ae8e71800098b08a6a7256ea4"
+  },
+  {
+    "name": "Items-Rocket-Vertical-ust-2dis-03",
+    "path_id": 5132,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5132_Items-Rocket-Vertical-ust-2dis-03.png",
+    "size": [
+      103,
+      19
+    ],
+    "sha256": "300fd8cbe2c9b5f8428be30793651afa16ee4ce94d1b00ccfc9af24fbb362bfe"
+  },
+  {
+    "name": "Items-MatchItem-shadow_yellow",
+    "path_id": 5133,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5133_Items-MatchItem-shadow_yellow.png",
+    "size": [
+      150,
+      148
+    ],
+    "sha256": "453a942d06421b8dec32fa14be256875ff593d602079a8bec9d8f0df8ebbc993"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-gold_left",
+    "path_id": 5154,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5154_Items-Rocket-Horizontal-gold_left.png",
+    "size": [
+      28,
+      113
+    ],
+    "sha256": "efece703a70124525c38fb054b9d8e0977dcb891aff7d6c980a02c4128cf5429"
+  },
+  {
+    "name": "Items-Rocket-horizontal_rocket",
+    "path_id": 5158,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5158_Items-Rocket-horizontal_rocket.png",
+    "size": [
+      143,
+      111
+    ],
+    "sha256": "af1874a82122424fdc9f0f6e0ec4c29a5e9558bebc3fad29bb7746eb2ca689b9"
+  },
+  {
+    "name": "Items-MatchItem-green_white_blur",
+    "path_id": 5162,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5162_Items-MatchItem-green_white_blur.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "e7951e6b68b1b920a94c4a6e629065d4e9bc5af1795749ec2ebf9b0eb03f8a72"
+  },
+  {
+    "name": "Items-BoxItem-box",
+    "path_id": 5172,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5172_Items-BoxItem-box.png",
+    "size": [
+      152,
+      152
+    ],
+    "sha256": "36ee15e47e5b1b44d923234c37e9aff3dc3d1c16ab00c99c645858d04b8c65bf"
+  },
+  {
+    "name": "Items-MatchItem-red",
+    "path_id": 5190,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5190_Items-MatchItem-red.png",
+    "size": [
+      143,
+      134
+    ],
+    "sha256": "0edecb46453f14b89c54da79081d13af01bd82bd96282c73adc62950190d6b2a"
+  },
+  {
+    "name": "Items-MatchItem-pink",
+    "path_id": 5241,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5241_Items-MatchItem-pink.png",
+    "size": [
+      125,
+      126
+    ],
+    "sha256": "7876489329679e7d7e670c4d332b756ec743d536f7c100600bc5c021ff99a5c9"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-red_shadow_right",
+    "path_id": 5270,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5270_Items-Rocket-Horizontal-red_shadow_right.png",
+    "size": [
+      9,
+      87
+    ],
+    "sha256": "83af190175bfdc6c7f8eb651c3e2694f61e9f5ce1c76282dbdf9ee0918953da2"
+  },
+  {
+    "name": "Items-Dynamite-dynamite_shadow",
+    "path_id": 5282,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5282_Items-Dynamite-dynamite_shadow.png",
+    "size": [
+      154,
+      156
+    ],
+    "sha256": "180f08c8eefc92d63bebd482d9635cf792b269c1c4956dd2d883b4e9ba783b62"
+  },
+  {
+    "name": "Items-ElectroBall-electroball_shadow",
+    "path_id": 5318,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5318_Items-ElectroBall-electroball_shadow.png",
+    "size": [
+      158,
+      155
+    ],
+    "sha256": "88229f2b7f55f610f0ace222f2bdf6d3d9186f6c086b13c7fe4d4a36c88dbd21"
+  },
+  {
+    "name": "Items-Rocket-Vertical-v-0",
+    "path_id": 5335,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5335_Items-Rocket-Vertical-v-0.png",
+    "size": [
+      128,
+      144
+    ],
+    "sha256": "c33b45f29b72e48d6f705c9127c1614ccd456aa26b94492632e584af9f5203d5"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_head_line_bottom",
+    "path_id": 5349,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5349_Items-Rocket-Vertical-rocket_vertical_head_line_bottom.png",
+    "size": [
+      110,
+      30
+    ],
+    "sha256": "b963ae9909ad8354e9ee6b45a8fea8178e896e395d4dc3864e6e87798fbdcb7f"
+  },
+  {
+    "name": "Items-Rocket-Vertical-v-2",
+    "path_id": 5354,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5354_Items-Rocket-Vertical-v-2.png",
+    "size": [
+      128,
+      144
+    ],
+    "sha256": "bfa911302dbdda6b2da1d9bc0e8c9179dda5ef3c25d2160b9d28c1b5b369dc1a"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_mid_shadow",
+    "path_id": 5368,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5368_Items-Rocket-Vertical-rocket_vertical_mid_shadow.png",
+    "size": [
+      86,
+      16
+    ],
+    "sha256": "a04e4a811b9c23878833232f16f784532fd1b42bb3f2b93cbe5851d6f73566c2"
+  },
+  {
+    "name": "Items-MatchItem-green",
+    "path_id": 5382,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5382_Items-MatchItem-green.png",
+    "size": [
+      142,
+      142
+    ],
+    "sha256": "29896a6c39a5b0c14afeb9581763a4c218830266317fd41cf628c220ac4b9170"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_mid_right_line",
+    "path_id": 5383,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5383_Items-Rocket-Vertical-rocket_vertical_mid_right_line.png",
+    "size": [
+      19,
+      43
+    ],
+    "sha256": "f5259f3add4ec68b5e010e00382881d40793254b245487b39632031631e82296"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-spiral_left-1",
+    "path_id": 5390,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5390_Items-Rocket-Horizontal-spiral_left-1.png",
+    "size": [
+      10,
+      45
+    ],
+    "sha256": "14c9ef9a6824c75c888dab8c5ceecb3a408b480683a601d4c8b12560b1cc0b97"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-spiral_left-3",
+    "path_id": 5397,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5397_Items-Rocket-Horizontal-spiral_left-3.png",
+    "size": [
+      16,
+      103
+    ],
+    "sha256": "e667ff78c2ffd554a2d1780c0de499c4dc69927ee3d250452a6dde0d065e8437"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_head_top",
+    "path_id": 5407,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5407_Items-Rocket-Vertical-rocket_vertical_head_top.png",
+    "size": [
+      109,
+      43
+    ],
+    "sha256": "0386ce0939033ec15dc6216fb46c375cbbc720f2f6a5b05151f693959531eeb2"
+  },
+  {
+    "name": "Items-MatchItem-shadow_green",
+    "path_id": 5431,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5431_Items-MatchItem-shadow_green.png",
+    "size": [
+      149,
+      148
+    ],
+    "sha256": "f7db508fcce54fd4babbac4324a49a3e520c6fb6a8738b3cff123752964506f8"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-4",
+    "path_id": 5443,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5443_Items-Rocket-Horizontal-4.png",
+    "size": [
+      146,
+      127
+    ],
+    "sha256": "9b8f80d11402864169d387a7acc00523b6d82671f46f555b78eddab8c91ef235"
+  },
+  {
+    "name": "Items-BoxItem-shadow_patch1",
+    "path_id": 5471,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5471_Items-BoxItem-shadow_patch1.png",
+    "size": [
+      141,
+      141
+    ],
+    "sha256": "c258aaf7ec685ebf0d58405c3bf3f8551cd78fe091880914c51cdca1631e90cb"
+  },
+  {
+    "name": "Items-MatchItem-shadow_blue",
+    "path_id": 5494,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5494_Items-MatchItem-shadow_blue.png",
+    "size": [
+      138,
+      147
+    ],
+    "sha256": "881aba18a0f9e3c93af4d943248bb87b68a06f3bfc31ca07711975c85b61f413"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-spiral_right-3",
+    "path_id": 5512,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5512_Items-Rocket-Horizontal-spiral_right-3.png",
+    "size": [
+      15,
+      103
+    ],
+    "sha256": "ac5af69094b2075e7a0ae5f31d0d78eba3a3e96af99eb7a8c51e2c7da81645cd"
+  },
+  {
+    "name": "Items-Dynamite-dynamite",
+    "path_id": 5566,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5566_Items-Dynamite-dynamite.png",
+    "size": [
+      142,
+      143
+    ],
+    "sha256": "8f67f08a55871f3d4a172a509f801c1998c5576e449311182696c66348a6d35e"
+  },
+  {
+    "name": "Items-MatchItem-blue_white_blur",
+    "path_id": 5569,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5569_Items-MatchItem-blue_white_blur.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "6a605e3c0207d72d4e201cb8490baed4de3240772802099e6d5b0e1a2f1d89a4"
+  },
+  {
+    "name": "Items-Rocket-vertical_rocket_top_part_shadow",
+    "path_id": 5599,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5599_Items-Rocket-vertical_rocket_top_part_shadow.png",
+    "size": [
+      118,
+      132
+    ],
+    "sha256": "7cd7b3864080ce9e268cd0e0cc7a250a638f8ed1fbdb6da3f381ba391256bdaf"
+  },
+  {
+    "name": "Items-Rocket-Vertical-v-4",
+    "path_id": 5612,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5612_Items-Rocket-Vertical-v-4.png",
+    "size": [
+      128,
+      144
+    ],
+    "sha256": "e5c48811a60da46da0b210cb4ab68010e0a2de63fa5aa7d3120a52721838e1aa"
+  },
+  {
+    "name": "Items-Rocket-vertical_rocket_top_part",
+    "path_id": 5645,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5645_Items-Rocket-vertical_rocket_top_part.png",
+    "size": [
+      110,
+      124
+    ],
+    "sha256": "cf612ada6f5f034afb7c0a495cc84d67eb9b6865de41bf46f8cf848566797b65"
+  },
+  {
+    "name": "SpecialItems-spinner",
+    "path_id": 5652,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/5652_SpecialItems-spinner.png",
+    "size": [
+      156,
+      131
+    ],
+    "sha256": "d50f3c17b9c707f7a33983fa46dd89f1b74778cbf256a9169e89db9695795cc4"
+  },
+  {
+    "name": "spinner_250px",
+    "path_id": 6043,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/6043_spinner_250px.png",
+    "size": [
+      250,
+      214
+    ],
+    "sha256": "21982796a58619b466639789c7a60ec6e1937a1e5a44b07ad32427336b15b9d7"
+  },
+  {
+    "name": "spinner",
+    "path_id": 6573,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/6573_spinner.png",
+    "size": [
+      149,
+      128
+    ],
+    "sha256": "3ef30b7afa11886883310c8736c213471ac99f3275113ed46d1331ad503e4e45"
+  },
+  {
+    "name": "spinner_shadow_250px",
+    "path_id": 7698,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/7698_spinner_shadow_250px.png",
+    "size": [
+      69,
+      60
+    ],
+    "sha256": "c8303386e680d0651e0ad76d208ed7bcf8455534b6aa2fab2ab6c58490abf61f"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-2",
+    "path_id": 8151,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8151_Items-Rocket-Horizontal-2.png",
+    "size": [
+      147,
+      127
+    ],
+    "sha256": "285f9415e8c6240c94a795e37d12278c0c54ddb3ff13fecccc252e45c862abae"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-spiral_left-2",
+    "path_id": 8164,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8164_Items-Rocket-Horizontal-spiral_left-2.png",
+    "size": [
+      16,
+      78
+    ],
+    "sha256": "dcb37f87e43a92a92e7b07c7ba324551e190303be078497474f0fe402a3cc347"
+  },
+  {
+    "name": "Items-MatchItem-red_no_shadow",
+    "path_id": 8180,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8180_Items-MatchItem-red_no_shadow.png",
+    "size": [
+      137,
+      128
+    ],
+    "sha256": "537cd41e83359fa97ade0aacc73881d9fd60f77e0e77bc367aef675b747992c3"
+  },
+  {
+    "name": "Items-MatchItem-blue",
+    "path_id": 8243,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8243_Items-MatchItem-blue.png",
+    "size": [
+      141,
+      141
+    ],
+    "sha256": "e2d093c531c85515af30742d1ff791750fdc0ad2fc03754623c3066279f3a1e0"
+  },
+  {
+    "name": "Items-BoxItem-shadow_patch2",
+    "path_id": 8249,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8249_Items-BoxItem-shadow_patch2.png",
+    "size": [
+      147,
+      148
+    ],
+    "sha256": "726feb53e3b647441e574c3eb40301e30f1a5b40f2a5285d7cd11861fc9322f4"
+  },
+  {
+    "name": "Items-MatchItem-blue_no_shadow",
+    "path_id": 8253,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8253_Items-MatchItem-blue_no_shadow.png",
+    "size": [
+      123,
+      133
+    ],
+    "sha256": "13fc2923e1f3323c4d196e8187272ec6c23fd975a79bae1aa9bc8748ee10f750"
+  },
+  {
+    "name": "Items-Rocket-horizontal_rocket_shadow",
+    "path_id": 8274,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8274_Items-Rocket-horizontal_rocket_shadow.png",
+    "size": [
+      151,
+      119
+    ],
+    "sha256": "3abebecd432579deef6a56e55e366d050028e4d4226713c61e3c1217be6fb8c3"
+  },
+  {
+    "name": "Items-Rocket-horizontal_rocket_left_part",
+    "path_id": 8287,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8287_Items-Rocket-horizontal_rocket_left_part.png",
+    "size": [
+      126,
+      115
+    ],
+    "sha256": "15368b91f76bc84b7fff7b7d12c76a0b769ee01a8a4d98c1875eacaa1f8213f0"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-red_line_bottom",
+    "path_id": 8302,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8302_Items-Rocket-Horizontal-red_line_bottom.png",
+    "size": [
+      35,
+      35
+    ],
+    "sha256": "93cb64750c951067ee6834fc1bf755947a6e646106ec58ed2814bab39363f5e5"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-red_shadow_left",
+    "path_id": 8337,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8337_Items-Rocket-Horizontal-red_shadow_left.png",
+    "size": [
+      8,
+      87
+    ],
+    "sha256": "a5b6dadee6d2684157a66126bf782e7470c0a8d6316f7c9a01715c9ae087b429"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-red_line_top",
+    "path_id": 8338,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8338_Items-Rocket-Horizontal-red_line_top.png",
+    "size": [
+      35,
+      34
+    ],
+    "sha256": "6026c71e8589c78522794a3f6eade92ef329a5d2dae3b59549d877b54b9bcfb1"
+  },
+  {
+    "name": "spinner",
+    "path_id": 8346,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8346_spinner.png",
+    "size": [
+      102,
+      102
+    ],
+    "sha256": "1ccb18912e85fcddf69d76f70c7915a53a49511b34367de553606bc7ff371eb3"
+  },
+  {
+    "name": "Items-MatchItem-pink_white_blur",
+    "path_id": 8354,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8354_Items-MatchItem-pink_white_blur.png",
+    "size": [
+      119,
+      120
+    ],
+    "sha256": "e0c523d3fb66a8486ae388082a3b1a70dbb1404cc94fe552ad1c60b7afb18a82"
+  },
+  {
+    "name": "Items-Rocket-vertical_rocket",
+    "path_id": 8401,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8401_Items-Rocket-vertical_rocket.png",
+    "size": [
+      110,
+      142
+    ],
+    "sha256": "d35d8dba820b1eac25544a813e61a2f9836d6064710671d7a5fad31ee12f1be2"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-spiral_right-2",
+    "path_id": 8410,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8410_Items-Rocket-Horizontal-spiral_right-2.png",
+    "size": [
+      17,
+      78
+    ],
+    "sha256": "87787c987825c5f40bd2fbe5230a0a9474d12ee5ab031d0d7ac52b1d82af6458"
+  },
+  {
+    "name": "Items-Spinner-spinner_full_shadow",
+    "path_id": 8471,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8471_Items-Spinner-spinner_full_shadow.png",
+    "size": [
+      152,
+      137
+    ],
+    "sha256": "fd44f4ab73dfa7d7c2e1c1cdd171ea9ccb05bd8a4289947886ef938587564b3d"
+  },
+  {
+    "name": "Items-Rocket-Vertical-alt-dis-02",
+    "path_id": 8509,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8509_Items-Rocket-Vertical-alt-dis-02.png",
+    "size": [
+      76,
+      16
+    ],
+    "sha256": "f0282e087e2b21d431e721b9590404ffa24a7f667d347998b4e432e3af76e3c8"
+  },
+  {
+    "name": "Items-Rocket-vertical_rocket_bottom_part",
+    "path_id": 8555,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8555_Items-Rocket-vertical_rocket_bottom_part.png",
+    "size": [
+      110,
+      123
+    ],
+    "sha256": "6d7f64c9d2f36ec6377d319cd222a50b3aa0d2d9800a48839b8f33d242956060"
+  },
+  {
+    "name": "Items-Rocket-Vertical-ust-dis-01",
+    "path_id": 8599,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8599_Items-Rocket-Vertical-ust-dis-01.png",
+    "size": [
+      43,
+      8
+    ],
+    "sha256": "c2ab15e492c28c00b645698708c90c4e3f5151bd7aae703c45f670a626907c7c"
+  },
+  {
+    "name": "Items-BoxItem-patch1",
+    "path_id": 8648,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8648_Items-BoxItem-patch1.png",
+    "size": [
+      131,
+      131
+    ],
+    "sha256": "eeb9a92c027bd654704f041e59987d296f208745917deb093528714c2538cebc"
+  },
+  {
+    "name": "Items-MatchItem-red_white_blur",
+    "path_id": 8719,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8719_Items-MatchItem-red_white_blur.png",
+    "size": [
+      120,
+      113
+    ],
+    "sha256": "1e2c6f5087093d094dc67f0ecf21118ecac682be1ab47cca4131e6fe6f769fa8"
+  },
+  {
+    "name": "Items-Rocket-Vertical-alt-dis-03",
+    "path_id": 8726,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8726_Items-Rocket-Vertical-alt-dis-03.png",
+    "size": [
+      101,
+      16
+    ],
+    "sha256": "e58679847cab4eb00232ca0bc1bf3b9ea091683030735b81401840843beb335d"
+  },
+  {
+    "name": "Items-MatchItem-green_no_shadow",
+    "path_id": 8740,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8740_Items-MatchItem-green_no_shadow.png",
+    "size": [
+      137,
+      135
+    ],
+    "sha256": "e50ab190774eeadb97426fa621a743efa947538577aea3e20d20eac1c9715527"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_mid_solid",
+    "path_id": 8756,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8756_Items-Rocket-Vertical-rocket_vertical_mid_solid.png",
+    "size": [
+      87,
+      43
+    ],
+    "sha256": "8f944d128271c6139e05ce3da96bae182e79363b451abbacfdf9563ad2c14f91"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-red_base",
+    "path_id": 8761,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8761_Items-Rocket-Horizontal-red_base.png",
+    "size": [
+      35,
+      87
+    ],
+    "sha256": "54c3961b7c3da038c7eed672faaadedac69d5511802a479b565652d9e6386285"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-0",
+    "path_id": 8778,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8778_Items-Rocket-Horizontal-0.png",
+    "size": [
+      145,
+      127
+    ],
+    "sha256": "be38979e6f214585ed8a49c8f657be2198ed99a11e54080a63c70f0c49747131"
+  },
+  {
+    "name": "Items-BoxItem-shadow",
+    "path_id": 8815,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8815_Items-BoxItem-shadow.png",
+    "size": [
+      165,
+      165
+    ],
+    "sha256": "d8f130bfb93086654d483f9e80538651f4da03d33776ddf991510990401d2410"
+  },
+  {
+    "name": "Items-MatchItem-yellow_white_blur",
+    "path_id": 8820,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8820_Items-MatchItem-yellow_white_blur.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "3aa6e5c9d8cd62d1fac5e4c53a67ed8db39cf448b6287a7d2a2c4b56d9dffc48"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-head_left",
+    "path_id": 8843,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8843_Items-Rocket-Horizontal-head_left.png",
+    "size": [
+      42,
+      111
+    ],
+    "sha256": "4961d7b1eaaedbc08995cd06070b9f44e6129bc851f65fde5f6cdc17b41dd169"
+  },
+  {
+    "name": "Items-MatchItem-yellow",
+    "path_id": 8869,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8869_Items-MatchItem-yellow.png",
+    "size": [
+      146,
+      145
+    ],
+    "sha256": "cd8260588a6fa33ea01a3a7f1be5917e69194c7a5d3e4e14406457466c380e7d"
+  },
+  {
+    "name": "Items-Rocket-horizontal_rocket_left_part_shadow",
+    "path_id": 8882,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8882_Items-Rocket-horizontal_rocket_left_part_shadow.png",
+    "size": [
+      132,
+      119
+    ],
+    "sha256": "d0a81fe8bee8dcefcfc9e74f00ad56dc4ca192e07db9ebdba21cd3389d030d21"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-spiral_right-1",
+    "path_id": 8883,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8883_Items-Rocket-Horizontal-spiral_right-1.png",
+    "size": [
+      10,
+      45
+    ],
+    "sha256": "34b0fe700e063cb98cbaf5bf9cc930842c5af2bf5709da1bdd7109e23b3c042c"
+  },
+  {
+    "name": "Items-Rocket-Vertical-alt-dis-01",
+    "path_id": 8908,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8908_Items-Rocket-Vertical-alt-dis-01.png",
+    "size": [
+      42,
+      9
+    ],
+    "sha256": "1682906a39fc0f4f7c81c52d41f5b8f7691aaedca0336096642e4c08428b73de"
+  },
+  {
+    "name": "Items-Rocket-Vertical-rocket_vertical_head_bottom",
+    "path_id": 8935,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8935_Items-Rocket-Vertical-rocket_vertical_head_bottom.png",
+    "size": [
+      109,
+      48
+    ],
+    "sha256": "50d803172bb7774a75aed9035e4a8a6db12009f6ce381e068841f9348466ff2b"
+  },
+  {
+    "name": "Items-MatchItem-yellow_no_shadow",
+    "path_id": 8968,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8968_Items-MatchItem-yellow_no_shadow.png",
+    "size": [
+      141,
+      134
+    ],
+    "sha256": "7bf10464816c0135422e72eca098f97946037de23fd6f8990bbbac7bca3b08d2"
+  },
+  {
+    "name": "Items-Rocket-Horizontal-gold_right",
+    "path_id": 8987,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/8987_Items-Rocket-Horizontal-gold_right.png",
+    "size": [
+      28,
+      113
+    ],
+    "sha256": "d31fe7d8ec5630c2001177e80f6cc74901bb3d1ea75b475ee69a866722fb23f8"
+  },
+  {
+    "name": "Items-Rocket-horizontal_rocket_right_part_shadow",
+    "path_id": 9013,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/9013_Items-Rocket-horizontal_rocket_right_part_shadow.png",
+    "size": [
+      132,
+      119
+    ],
+    "sha256": "c1c4a6675736777c194dc7b2c05512ef41778f24a2a7dde65a1abfc67490dac9"
+  },
+  {
+    "name": "Items-ElectroBall-electroball",
+    "path_id": 9031,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/9031_Items-ElectroBall-electroball.png",
+    "size": [
+      142,
+      142
+    ],
+    "sha256": "d5b7cc9ebab390390458404defff9dd60527beeb5a847ce6c8a7db443abec4e4"
+  },
+  {
+    "name": "Items-MatchItem-shadow_red",
+    "path_id": 9059,
+    "source_file": "resources.assets",
+    "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "export": "Unity/GameplayArt/9059_Items-MatchItem-shadow_red.png",
+    "size": [
+      149,
+      143
+    ],
+    "sha256": "7839cfa06d2a90d311a6cdff129c4b51c06e25d71b02ac7e1bff34d15bd58100"
+  }
+]

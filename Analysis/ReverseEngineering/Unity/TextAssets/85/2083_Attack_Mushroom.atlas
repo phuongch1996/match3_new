@@ -1,0 +1,21 @@
+Attack_Mushroom.png
+size:201,278
+filter:Linear,Linear
+pma:true
+Mushroom shadow
+bounds:2,122,154,120
+rotate:90
+Mushroom_down
+bounds:124,193,75,83
+Mushroom_down_shadow
+bounds:124,127,74,64
+Mushroom_up
+bounds:58,36,127,84
+Soil_bgr
+bounds:30,21,99,26
+rotate:90
+Soil_front
+bounds:2,13,107,26
+rotate:90
+Soil_front_shadow
+bounds:58,2,83,32

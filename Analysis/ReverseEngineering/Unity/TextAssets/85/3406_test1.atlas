@@ -1,0 +1,27 @@
+test1.png
+size:254,120
+filter:Linear,Linear
+Layer 1
+bounds:2,4,114,126
+rotate:90
+Layer 10
+bounds:191,2,60,31
+Layer 2
+bounds:130,73,45,52
+offsets:0,1,45,53
+rotate:90
+Layer 3
+bounds:130,25,46,48
+offsets:0,2,46,50
+rotate:90
+Layer 4
+bounds:184,71,48,47
+Layer 5
+bounds:180,35,62,34
+Layer 7
+bounds:130,3,59,20
+Layer 8
+bounds:234,99,15,19
+Layer 9
+bounds:234,82,15,18
+rotate:90

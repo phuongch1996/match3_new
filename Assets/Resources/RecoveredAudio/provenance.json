@@ -1,0 +1,110 @@
+[
+  {
+    "resource": "match_explode_1",
+    "originalPathId": 4505,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "4959f625151a7e683d38694d9228d58bcff5c7b085d64e25abbaf2e7f6056aff",
+    "duration": 0.20065759637188207,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "match_explode_2",
+    "originalPathId": 4643,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "499841a5b806667107997da250c8fc1d06837904a03c6ace4970d15b1c5cb753",
+    "duration": 0.1516780045351474,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "match_explode_3",
+    "originalPathId": 4246,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "6c39aaf9253866c2259c68de0b04769d2dd3bf80f3bc6b44367f2d41ad7bca96",
+    "duration": 0.2763265306122449,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "match_explode_4",
+    "originalPathId": 4263,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "509ddf60cdecf61e462d91686bfeb5b90dac29f2e8c1367cd47a7cc524271d64",
+    "duration": 0.2140362811791383,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "match_explode_5",
+    "originalPathId": 4202,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "1187b1d3a7b9023425d8bc13e0121ba54820779a1325a7dcf33365569c164720",
+    "duration": 0.21065759637188208,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "match_explode_6",
+    "originalPathId": 4193,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "83c90679074a3a5211c46b26338aec0c4abff65cf9dc5cf5813bdb7ec77d995f",
+    "duration": 0.21866213151927438,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "spinner_take_off",
+    "originalPathId": 4213,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "89b7259e7b358f836398b143335277176a2cca4e83a67ddf7e8934822e0fce12",
+    "duration": 0.8880045351473923,
+    "frequency": 44100,
+    "channels": 1
+  },
+  {
+    "resource": "spinner_hit",
+    "originalPathId": 4186,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "4293030ceadb0dcdfb1421fed5fd45d43a83e6825692cf578181d2d309cf118a",
+    "duration": 0.5790022675736961,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "rocket_explode",
+    "originalPathId": 4297,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "4ff6217350acc5e2aa7bf8127e0c6d01a3b2cc8a68785ae9c1b6a93610e1beb8",
+    "duration": 1.3619954648526078,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "dynamite_explode",
+    "originalPathId": 4675,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "a7ecb5663ecd6012d83cf9139cc1d881444d53c1a364bf6b949be481bef77ea2",
+    "duration": 1.5333333333333334,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "electro_ball_explode",
+    "originalPathId": 4239,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "fcb50a94129c264d2785305d4672cc68646065268f5ba1c582285b06ecf96cd7",
+    "duration": 1.1933333333333334,
+    "frequency": 44100,
+    "channels": 2
+  },
+  {
+    "resource": "swipe_whoosh",
+    "originalPathId": 4704,
+    "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+    "sha256": "f0bd78c491af912557bfd82bb360a2ddd4432c5d680b32c620982486cec91426",
+    "duration": 0.18868480725623582,
+    "frequency": 44100,
+    "channels": 1
+  }
+]

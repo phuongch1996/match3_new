@@ -1,0 +1,22 @@
+PHÂN TÍCH GAMEPLAY — PORT WALL ĐẦU TIÊN
+
+ĐÃ ĐỐI CHIẾU NATIVE
+- WallItemModel.CanExplodeWithNearMatch trả true.
+- IsFallable và IsSwappable đều trả false.
+- TryExplode trừ một layer; khi còn layer thì chỉ Damage, khi hết layer thì DestroyWallGroup.
+- Wall có WallGroupId/IndexAmongGroup, nên các mảnh Wall liên kết có thể bị xoá theo nhóm.
+
+ĐÃ ĐƯA VÀO MATCHBOARD
+- Thêm ma trận Walls và bộ đếm WallsCleared.
+- Ô có Wall không tham gia match màu, không thể swap và chặn collapse dọc.
+- Match trực tiếp hoặc sát cạnh tạo hitWalls; mỗi ô giảm một layer một lần trong lượt clear.
+- SetWall(Cell,layers) tạo vật cản nhiều lớp để dùng cho các adapter level sau.
+
+KIỂM TRA
+- Unity build thành công: BUILD SUCCESS, 70.642.542 bytes.
+- Bộ kiểm tra luật hiện có: 22.340 assertions, 4.500 hành động hợp lệ, 6.393 cascade steps.
+
+GIỚI HẠN
+- Chưa port WallGroupId và quy tắc xoá đồng nhóm.
+- Chưa có sprite Wall trong runtime UI.
+- Các biến thể WallA/WallB/WallC hiện mới gộp thành Wall nhiều lớp.

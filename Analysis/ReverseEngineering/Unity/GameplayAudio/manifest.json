@@ -1,0 +1,682 @@
+[
+ {
+  "name": "electro_ball_new_ray_2",
+  "path_id": 4164,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4164_electro_ball_new_ray_2.wav",
+    "bytes": 156452,
+    "sha256": "f368167c6c8fa2fcf9ddee1c7356c5d90b6e318edfb39e1aaf5a335dd851d785",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 39102,
+    "seconds": 0.8866666666666667
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.8866666555404663
+ },
+ {
+  "name": "electro_ball_new_turn",
+  "path_id": 4166,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4166_electro_ball_new_turn.wav",
+    "bytes": 485968,
+    "sha256": "b1313cfed82a95bbcc60f12545c20c2728100f901e37b97445edced08ab86f00",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 121481,
+    "seconds": 2.754671201814059
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 2.754671096801758
+ },
+ {
+  "name": "dynamite_creation",
+  "path_id": 4180,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4180_dynamite_creation.wav",
+    "bytes": 140900,
+    "sha256": "e50d0b1dc4ad646655bfbcfc2195f10e2b8d20cbfa4bc285e33f83faf46de185",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 35214,
+    "seconds": 0.7985034013605442
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.7985033988952637
+ },
+ {
+  "name": "spinner_hit",
+  "path_id": 4186,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4186_spinner_hit.wav",
+    "bytes": 102180,
+    "sha256": "4293030ceadb0dcdfb1421fed5fd45d43a83e6825692cf578181d2d309cf118a",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 25534,
+    "seconds": 0.5790022675736961
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.5790022611618042
+ },
+ {
+  "name": "match_explode_6",
+  "path_id": 4193,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4193_match_explode_6.wav",
+    "bytes": 38616,
+    "sha256": "83c90679074a3a5211c46b26338aec0c4abff65cf9dc5cf5813bdb7ec77d995f",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 9643,
+    "seconds": 0.21866213151927438
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.21866212785243988
+ },
+ {
+  "name": "match_explode_5",
+  "path_id": 4202,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4202_match_explode_5.wav",
+    "bytes": 37204,
+    "sha256": "1187b1d3a7b9023425d8bc13e0121ba54820779a1325a7dcf33365569c164720",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 9290,
+    "seconds": 0.21065759637188208
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.21065759658813477
+ },
+ {
+  "name": "spinner_take_off",
+  "path_id": 4213,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4213_spinner_take_off.wav",
+    "bytes": 78366,
+    "sha256": "89b7259e7b358f836398b143335277176a2cca4e83a67ddf7e8934822e0fce12",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 39161,
+    "seconds": 0.8880045351473923
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 0.8880045413970947
+ },
+ {
+  "name": "spinner_creation",
+  "path_id": 4235,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4235_spinner_creation.wav",
+    "bytes": 133404,
+    "sha256": "f78d9391bd67eb8f8ddae9bfd9f6a96bd0956c936e159fb9adf13a7cd7b0406b",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 33340,
+    "seconds": 0.7560090702947846
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.756009042263031
+ },
+ {
+  "name": "electro_ball_explode",
+  "path_id": 4239,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4239_electro_ball_explode.wav",
+    "bytes": 210548,
+    "sha256": "fcb50a94129c264d2785305d4672cc68646065268f5ba1c582285b06ecf96cd7",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 52626,
+    "seconds": 1.1933333333333334
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 1.193333387374878
+ },
+ {
+  "name": "match_explode_3",
+  "path_id": 4246,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4246_match_explode_3.wav",
+    "bytes": 48788,
+    "sha256": "6c39aaf9253866c2259c68de0b04769d2dd3bf80f3bc6b44367f2d41ad7bca96",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 12186,
+    "seconds": 0.2763265306122449
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.2763265371322632
+ },
+ {
+  "name": "match_explode_4",
+  "path_id": 4263,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4263_match_explode_4.wav",
+    "bytes": 37800,
+    "sha256": "509ddf60cdecf61e462d91686bfeb5b90dac29f2e8c1367cd47a7cc524271d64",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 9439,
+    "seconds": 0.2140362811791383
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.21403628587722778
+ },
+ {
+  "name": "box_layer_break_1",
+  "path_id": 4278,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4278_box_layer_break_1.wav",
+    "bytes": 53928,
+    "sha256": "96a7cc81f7896ad880899190716942f412850cc1ddb279821f9e0e7b73d535a9",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 26942,
+    "seconds": 0.6109297052154194
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 0.6109297275543213
+ },
+ {
+  "name": "rocket_creation",
+  "path_id": 4284,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4284_rocket_creation.wav",
+    "bytes": 62222,
+    "sha256": "7d1367a523c9aaac1e9dd9bd9981a419ee713c9da001cf9fbb40faaf8b64d2bf",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 31089,
+    "seconds": 0.7049659863945579
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 0.7049660086631775
+ },
+ {
+  "name": "rocket_explode",
+  "path_id": 4297,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4297_rocket_explode.wav",
+    "bytes": 240300,
+    "sha256": "4ff6217350acc5e2aa7bf8127e0c6d01a3b2cc8a68785ae9c1b6a93610e1beb8",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 60064,
+    "seconds": 1.3619954648526078
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 1.3619954586029053
+ },
+ {
+  "name": "electro_ball_ray_1",
+  "path_id": 4309,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4309_electro_ball_ray_1.wav",
+    "bytes": 136460,
+    "sha256": "112d0b6b23904df2634c188641fab4a23d58b1fdedbb6712e506e47b24dd5c10",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 34104,
+    "seconds": 0.7733333333333333
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.7733333110809326
+ },
+ {
+  "name": "electro_ball_turn",
+  "path_id": 4321,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4321_electro_ball_turn.wav",
+    "bytes": 485968,
+    "sha256": "069081e9f7af1645656d0e190ea0faa96b1282881b1d85fbf8bcdbaf299994ff",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 121481,
+    "seconds": 2.754671201814059
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 2.754671096801758
+ },
+ {
+  "name": "electro_ball_ray_3",
+  "path_id": 4339,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4339_electro_ball_ray_3.wav",
+    "bytes": 150100,
+    "sha256": "d2f089b6d656525d1aa7711cc6e7599187654393b0bd2e45e475be72a63e5334",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 37514,
+    "seconds": 0.8506575963718821
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.85065758228302
+ },
+ {
+  "name": "electro_ball_new_ray_1",
+  "path_id": 4353,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4353_electro_ball_new_ray_1.wav",
+    "bytes": 163744,
+    "sha256": "d14ef361edddf132583b60bc819ddca0bf24041a1c48f905cc0b554881b5696c",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 40925,
+    "seconds": 0.9280045351473923
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.9280045628547668
+ },
+ {
+  "name": "box_break_2",
+  "path_id": 4368,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4368_box_break_2.wav",
+    "bytes": 47284,
+    "sha256": "ef42cb371dd0be91a31ba2f5875c3342716d1527897376b3d2f848a81daa1d09",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 23620,
+    "seconds": 0.5356009070294785
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 0.5356009006500244
+ },
+ {
+  "name": "box_layer_break_2",
+  "path_id": 4437,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4437_box_layer_break_2.wav",
+    "bytes": 67848,
+    "sha256": "30d0b69276b47be0fdf49dea400e2335da566768d6822f70c4108e46d5c55b38",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 33902,
+    "seconds": 0.7687528344671202
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 0.7687528133392334
+ },
+ {
+  "name": "box_layer_break_3",
+  "path_id": 4474,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4474_box_layer_break_3.wav",
+    "bytes": 95064,
+    "sha256": "66ad74f13ed0b339ed94e36a37f85b3b696f486e3490d0ad802d8ab453095a4d",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 23755,
+    "seconds": 0.5386621315192743
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.5386621356010437
+ },
+ {
+  "name": "electro_ball_electro_ball_combo",
+  "path_id": 4495,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4495_electro_ball_electro_ball_combo.wav",
+    "bytes": 691180,
+    "sha256": "f55e3034392204b5f55c6e926de1ad7d10b6346832adb0ff237f2a4c9ae03192",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 172784,
+    "seconds": 3.9180045351473924
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 3.9180045127868652
+ },
+ {
+  "name": "match_explode_1",
+  "path_id": 4505,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4505_match_explode_1.wav",
+    "bytes": 35440,
+    "sha256": "4959f625151a7e683d38694d9228d58bcff5c7b085d64e25abbaf2e7f6056aff",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 8849,
+    "seconds": 0.20065759637188207
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.20065759122371674
+ },
+ {
+  "name": "spinner_fly",
+  "path_id": 4527,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4527_spinner_fly.wav",
+    "bytes": 134534,
+    "sha256": "179a91cb28996efff939723a4584940c360e8d424279e35911e4f3a16bcad9eb",
+    "channels": 1,
+    "frequency": 48000,
+    "frames": 67245,
+    "seconds": 1.4009375
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 48000,
+  "original_length": 1.400937557220459
+ },
+ {
+  "name": "electro_ball_ray_2",
+  "path_id": 4531,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4531_electro_ball_ray_2.wav",
+    "bytes": 123760,
+    "sha256": "c35a147e891d2a8c5d689ee2fccecd867a8519a367d6ff5dee232f75dbc2c648",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 30929,
+    "seconds": 0.7013378684807257
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.7013378739356995
+ },
+ {
+  "name": "rocket_dynamite_combo",
+  "path_id": 4536,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4536_rocket_dynamite_combo.wav",
+    "bytes": 329324,
+    "sha256": "8962c1170535533399f4a7a90260b1981c951c93860a3e5ef5afa5d828461390",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 82320,
+    "seconds": 1.8666666666666667
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 1.8666666746139526
+ },
+ {
+  "name": "dynamite_dynamite_combo",
+  "path_id": 4537,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4537_dynamite_dynamite_combo.wav",
+    "bytes": 611092,
+    "sha256": "230e4b554138424ba919823ad49b69467f6b63cafab638d4181613a981b1ac61",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 152762,
+    "seconds": 3.4639909297052154
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 3.4639909267425537
+ },
+ {
+  "name": "spinner_dynamite_combo",
+  "path_id": 4558,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4558_spinner_dynamite_combo.wav",
+    "bytes": 101698,
+    "sha256": "23bdba95850ac9236b57775612868aba709c54ae069550302099e15cf83e2b28",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 50827,
+    "seconds": 1.1525396825396825
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 1.1525397300720215
+ },
+ {
+  "name": "box_break_1",
+  "path_id": 4559,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4559_box_break_1.wav",
+    "bytes": 79768,
+    "sha256": "97ee745e080866aa12b7fd7b8fd823e82cff73624caebb3c7b3b3453e5b73773",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 39862,
+    "seconds": 0.9039002267573696
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 0.9039002060890198
+ },
+ {
+  "name": "electro_ball_creation",
+  "path_id": 4578,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4578_electro_ball_creation.wav",
+    "bytes": 259468,
+    "sha256": "99aa2196738fd064ce35e6560995fdc002c06e7f08cf2d2f2d93854bdef5b34a",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 64856,
+    "seconds": 1.470657596371882
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 1.4706575870513916
+ },
+ {
+  "name": "match_explode_2",
+  "path_id": 4643,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4643_match_explode_2.wav",
+    "bytes": 26800,
+    "sha256": "499841a5b806667107997da250c8fc1d06837904a03c6ace4970d15b1c5cb753",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 6689,
+    "seconds": 0.1516780045351474
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 0.15167801082134247
+ },
+ {
+  "name": "electro_ball_new_ray_3",
+  "path_id": 4670,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4670_electro_ball_new_ray_3.wav",
+    "bytes": 189616,
+    "sha256": "3e8b2e70a81277401d6eaa67a93af61c56690883f1f4993661190fb8e50ba7fb",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 47393,
+    "seconds": 1.074671201814059
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 1.0746711492538452
+ },
+ {
+  "name": "dynamite_explode",
+  "path_id": 4675,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4675_dynamite_explode.wav",
+    "bytes": 270524,
+    "sha256": "a7ecb5663ecd6012d83cf9139cc1d881444d53c1a364bf6b949be481bef77ea2",
+    "channels": 2,
+    "frequency": 44100,
+    "frames": 67620,
+    "seconds": 1.5333333333333334
+   }
+  ],
+  "original_channels": 2,
+  "original_frequency": 44100,
+  "original_length": 1.5333333015441895
+ },
+ {
+  "name": "swipe_whoosh",
+  "path_id": 4704,
+  "source_file": "resources.assets",
+  "source_bundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "exports": [
+   {
+    "path": "Unity/GameplayAudio/4704_swipe_whoosh.wav",
+    "bytes": 16686,
+    "sha256": "f0bd78c491af912557bfd82bb360a2ddd4432c5d680b32c620982486cec91426",
+    "channels": 1,
+    "frequency": 44100,
+    "frames": 8321,
+    "seconds": 0.18868480725623582
+   }
+  ],
+  "original_channels": 1,
+  "original_frequency": 44100,
+  "original_length": 0.18868480622768402
+ }
+]

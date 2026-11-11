@@ -1,0 +1,25 @@
+NATIVE EVIDENCE USED FOR ORIGINAL LEVEL 1 ADAPTER
+Source ELF SHA256: 51ccc794cd074482129ea68c9be3ba44a6b3012144ccc073576c9cf260198279
+Full instruction bytes and metadata-linked identities: Native/focused-disassembly.json
+
+BOX
+- BoxItemModel.CanExplodeWithNearMatch @ 0x22b6988: mov w0,#1; ret.
+- BoxItemModel.IsFallable @ 0x22b6990: mov w0,wzr; ret.
+- BoxItemModel.IsSwappable @ 0x22b6998: mov w0,wzr; ret.
+- BoxItemModel.TryExplode @ 0x22b69a0 reads [this+0x70], subtracts 1 and stores back; if zero it calls BoxItemView.Explode, otherwise tails to BoxItemView.Damage. A single TryExplode call removes one layer.
+- MatchManager.DestroyTouchingItems @ 0x21872d0 creates one Exploder then visits cells and CellNeighbors.TouchingNeighborTypes, calling CellModel.ExplodeCurrentItemByNearMatch. CellNeighbors..cctor @ 0x22d6608 creates the touching-neighbor array with length 4 (and the all-neighbor array with length 8). The model uses orthogonal neighbors and deduplicates a box within a single match event; exact repeated-hit suppression and all neighbor-array bytes can be investigated further.
+
+REFILL QUEUE
+- ItemModelCreator.AddPredefined @ 0x23b6430 iterates FTiledLevel.Predefined by stored index, then each entry's Ids by stored index. It creates an item for each ID and passes the CellPoint X component to PredefinedItemContainer.AddPredefinedItem.
+- PredefinedItemContainer.AddPredefinedItem @ 0x23b6bb0 indexes its queue array by column and calls ItemModelQueue.Enqueue.
+- PredefinedItemContainer.GetPredefinedItem @ 0x23b9268 indexes the same column queue and tails to ItemModelQueue.Dequeue.
+- ItemModelCreator.CreateItemForFillingCellAt @ 0x23b9004 consults the predefined queue for predefined filling cells, then falls back to GetRandomFillItem / GetRandomColor when absent/exhausted.
+- Original level 1 has 9 predefined filling cells in its top row and 99 stored predefined entries: 11 per column. The adapter preserves stored order without sorting by Y.
+
+COLORED MATCH ELIGIBILITY
+- GetSettingsForTileId @ 0x23b7850 calls ItemExtensions.ToMatchType @ 0x228c2d0. That helper returns the ID only for tile IDs 1..5, otherwise MatchType.None (0). Special tiles 10,20,30,40,50 have no ordinary match color.
+- SpecialItemModel additionally exposes ReplacedMatchType, a separate concept. The prototype retains its replaced color internally for combination/effect choices but now excludes Power>0 cells from ordinary pattern matches.
+- MatchManager.IsValidToPatternSearch @ 0x218454c checks compatible current item class, static/overlay match eligibility and same match type. This is not yet a complete reconstructed match algorithm.
+
+CAUTION ON FIDELITY
+The implemented adapter is verified against source geometry/moves/goals and these limited rules. It is not proof of full original behavior: diagonal falling, original RNG/bias, source shuffle, original target-selection priorities, timers, all static/overlay mechanics and complete animation state are not yet recovered.

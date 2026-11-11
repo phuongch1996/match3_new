@@ -1,0 +1,33 @@
+PHÂN TÍCH APKM — GIAI ĐOẠN 2 / BẢN TIẾP TỤC MỚI NHẤT
+
+ĐÃ XÁC MINH THÊM
+- Tìm thấy enum TiledId nguyên bản gồm 184 mã trong Metadata/enums.json. Toàn bộ tile ID của 2.309 file màn đều có tên, không có ID chưa biết.
+- Chỉ số tuyến tính là x + width*y. Bằng chứng trực tiếp: LevelParser.GetCell @ 0x20cf144 dùng madd w19, w0, w19, w21; w0=GetWidth(), w19=y, w21=x. GetIndexFromPoint @ 0x20cf0c4 dùng madd w0, w3, w2, w1, với tham số x,y,width.
+- Đã tạo Levels/tile-converters.json từ bảy hàm lookup ARM64 thuần: AsItemType, AsLayerCount, AsCellType, GetColorForTiledId, ItemExtensions.ToMatchType và hai overload ToGoalType. Dùng bộ thông dịch tĩnh có whitelist lệnh, chỉ đọc bảng hằng số ELF; không chạy app hoặc lời gọi native. File có trace địa chỉ lệnh, byte đọc và SHA256 binary cho từng mapping.
+- Box1/2/3 là tile 21/22/23, ItemType.Box=7, layer 1/2/3, GoalType.Box=6. Spinner=10; rocket dọc=20, ngang=30; dynamite=40; electroball=50. Không nhầm tile ID với ItemType hay GoalType.
+- Levels/tile-goal-summary.json thống kê mục tiêu và số lượng tile mỗi màn. Levels/Previews có 10 PNG xem trước, dùng hình gốc. Màn 1: 9x9, 30 lượt, 54 Box1; ba hàng đá ở trên và sáu hàng hộp ở dưới.
+- Xuất thêm 6 sprite hộp: tổng manifest hiện tại 82 PNG gameplay, tất cả đọc được và có SHA256.
+- Xuất 34 âm thanh gameplay sang WAV; kiểm tra channels, sample rate và duration so với metadata AudioClip. Bản thử nghiệm đã nạp 12 âm thanh gốc: 6 match-explode, swipe, spinner take-off/hit, rocket, dynamite, electroball.
+- Phạm vi Native/focused-disassembly.* hiện là 1.557 method, có thêm LevelParser, ItemModelCreator, ItemSettings, TiledToTypeConverter và ItemExtensions.
+
+KIỂM TRA MỚI NHẤT
+- verify-recovery.py: 14.519 kiểm tra đạt; 2.443 TextAsset, 2.309 màn, 200.521 ô, 82 sprite, 34 audio, 184 mã tile có tên.
+- Unity build-recovered-audio.log: build thành công; luật gameplay vẫn đạt 21.590 assertions / 4.500 hành động / 6.614 cascade.
+- Verification/RecoveredAudio/runtime-check.txt: PASS, art=10/10, audio=12/12, render home/gameplay, tám nước hợp lệ, bàn ổn định. Log không có exception.
+
+CHƯA HOÀN TẤT
+- Prototype vẫn dùng bàn tự sinh 8x8, chưa chơi màn gốc. Không được coi ảnh preview là gameplay được phục dựng.
+- AsStaticItemType/AsOverlayItemType còn có khởi tạo runtime và cache; chưa được mô hình hóa bằng bộ thông dịch lookup thuần. Các tile item_type=None có thể là static/overlay/set/spawner, không được xóa chúng như ô trống.
+- Y hiển thị bottom-up nhất quán với board.BottomLeft và refill Predefined nằm trên height; công thức index đã chứng minh bằng mã máy. Khi nối world-coordinate/view, xác minh thêm CellPoint/CellModel transform.
+- Radius/hit-count/timing combo, target selection, square extension và double-spinner vẫn cần đối chiếu sâu với native gốc. Luật prototype có phần đã tự viết từ các yêu cầu trước.
+- Prefab/MonoBehaviour serialization còn bị strip type tree; chưa được xuất thành Unity project gốc.
+
+BƯỚC TIẾP THEO CỤ THỂ
+1. Dùng Levels/tile-converters.json, Metadata/enums.json và Levels/1.json để viết adapter cho màn 1: board 9x9, tile màu 1..4, 54 hộp một lớp, mục tiêu 54 hộp, 30 lượt; refill theo Predefined/Sets. Không cắt về 8x8.
+2. Tổng quát hóa MatchBoard sang Width/Height, mask ô không có cell và hộp/blocker đứng yên. Thêm sát thương hộp khi ghép cạnh hoặc bị special trúng; đối chiếu BoxItemModel native trước khi chốt hit rules.
+3. Giữ nguyên các kiểm tra 2x2/combo đã có; thêm fixture có kích thước khác nhau, ô rỗng và chướng ngại vật.
+4. Sau đó mới mở rộng màn 2..10, phát hiện và chặn rõ các tile chưa hỗ trợ thay vì âm thầm thay bằng đá thường.
+5. Có thể nghiên cứu tiếp bản ghép native hoặc prefab trong khi giữ bản chơi hiện tại hoạt động.
+
+HẠN MỨC VÀ TIẾP TỤC
+Không thể đọc phần trăm usage tài khoản từ công cụ. File này và RESUME_APK_ANALYSIS.txt là checkpoint sau giai đoạn, không có khẳng định đã tới 5%. Khi có tín hiệu từ người dùng còn 5%, chốt trạng thái và ngừng công việc mới. Sau khi được tiếp tục, đọc hai báo cáo, STATUS.json và verification.json; không cần giải nén lại toàn bộ.

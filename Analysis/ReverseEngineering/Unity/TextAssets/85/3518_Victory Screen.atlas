@@ -1,0 +1,34 @@
+Victory Screen.png
+size:614,1957
+filter:Linear,Linear
+pma:true
+Back
+bounds:446,1374,140,581
+Banner Front
+bounds:2,1197,422,368
+Banner Left
+bounds:2,55,313,281
+rotate:90
+Banner_Front_G
+bounds:2,1567,442,388
+Banner_Left_Back
+bounds:426,1158,59,105
+rotate:90
+Banner_Left_G
+bounds:2,370,333,301
+rotate:90
+Banner_Right
+bounds:285,2,313,281
+Banner_Right_Back
+bounds:533,1112,59,105
+Banner_right_G
+bounds:305,285,333,301
+rotate:90
+fleur_de_lis
+bounds:426,1219,153,170
+offsets:1,1,154,171
+rotate:90
+horn_L
+bounds:2,705,304,490
+horn_R
+bounds:308,620,304,490

@@ -1,0 +1,1 @@
+PASS: homeRepaint=True, gameplayRepaint=True, recoveredArt=10/10, recoveredAudio=12/12, legal actions=8, score=4220, moves=22, stable=True

@@ -1,0 +1,119 @@
+{
+  "evidence_id": "ev_5fd82040f440326810372043f8c3476a641a4c0485c150fa79d62223bfe58734",
+  "binary_sha256": "51ccc794cd074482129ea68c9be3ba44a6b3012144ccc073576c9cf260198279",
+  "basis": "Read-only ARM64 disassembly and ELF tables; reconstructed Python compared with host .NET only",
+  "neighbor_tables": [
+    {
+      "address": "0xaf0700",
+      "axis": "x",
+      "bytes": "ffffffff0000000001000000010000000100000000000000ffffffffffffffff",
+      "values": [
+        -1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "address": "0xaf0760",
+      "axis": "y",
+      "bytes": "01000000010000000100000000000000ffffffffffffffffffffffff00000000",
+      "values": [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        -1,
+        0
+      ]
+    }
+  ],
+  "neighbors": [
+    {
+      "type": 0,
+      "dx": -1,
+      "dy": 1
+    },
+    {
+      "type": 1,
+      "dx": 0,
+      "dy": 1
+    },
+    {
+      "type": 2,
+      "dx": 1,
+      "dy": 1
+    },
+    {
+      "type": 3,
+      "dx": 1,
+      "dy": 0
+    },
+    {
+      "type": 4,
+      "dx": 1,
+      "dy": -1
+    },
+    {
+      "type": 5,
+      "dx": 0,
+      "dy": -1
+    },
+    {
+      "type": 6,
+      "dx": -1,
+      "dy": -1
+    },
+    {
+      "type": 7,
+      "dx": -1,
+      "dy": 0
+    }
+  ],
+  "sample_factor": {
+    "address": "0xaa9038",
+    "bytes": "000020000000003e",
+    "value": 4.656612875245797e-10
+  },
+  "initial_indices": {
+    "address": "0xaa93c8",
+    "bytes": "0000000015000000",
+    "values": [
+      0,
+      21
+    ]
+  },
+  "seed_reset": {
+    "method": "0x236bfbc",
+    "unity_range_min": 0,
+    "unity_range_max_exclusive": 20000000,
+    "constructor": "System.Random(int) @ 0x37ce680",
+    "captured_seed": null
+  },
+  "update_order": [
+    "ClearTargetItems",
+    "CalculateStraightFalls",
+    "CalculateCrossFalls",
+    "CallFallUpdates",
+    "AddTopBoardRemainingItemsToQueue"
+  ],
+  "host_compatibility": {
+    "runtime": "10.0.14",
+    "seeds": 7,
+    "samples_checked": 742,
+    "passed": true
+  },
+  "limitations": [
+    "No Android target execution or captured seed/state.",
+    "Next ranges wider than Int32.MaxValue are deliberately unsupported.",
+    "Host sequence agreement does not prove original session replay.",
+    "Cross-fall reservations, freezes, multi-board cases and target arbitration are not yet ported.",
+    "Refill selection includes LevelSet status/weights and optional LowMatchContainer tuning; uniform colors are not equivalent."
+  ]
+}

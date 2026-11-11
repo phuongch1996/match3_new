@@ -1,0 +1,16 @@
+tutorial_hand.png
+size:312,588
+filter:Linear,Linear
+pma:true
+hand
+bounds:2,295,182,291
+shadow
+bounds:2,2,180,291
+offsets:0,0,182,291
+swipe_drop
+bounds:186,212,374,95
+offsets:1,2,376,98
+rotate:90
+tap_ring
+bounds:184,84,126,126
+offsets:12,12,150,150

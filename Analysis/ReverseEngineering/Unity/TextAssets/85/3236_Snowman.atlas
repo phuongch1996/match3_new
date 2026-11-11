@@ -1,0 +1,184 @@
+Snowman.png
+size:2454,209
+filter:Linear,Linear
+pma:true
+002
+bounds:1665,2,76,84
+004
+bounds:1919,117,81,90
+004x
+bounds:2102,34,70,84
+006
+bounds:2071,120,70,87
+007
+bounds:2029,29,71,87
+008
+bounds:2174,43,77,79
+009
+bounds:1840,113,94,77
+rotate:90
+010
+bounds:2253,51,59,75
+Arm left
+bounds:1137,2,57,102
+rotate:90
+Arm right
+bounds:1781,105,57,102
+Arm shadow left
+bounds:1708,90,71,117
+Arm shadow rght
+bounds:1636,88,70,119
+Bomer_2_L
+bounds:2209,4,37,46
+offsets:1,13,59,59
+rotate:90
+Bomer_2_R
+bounds:493,5,39,47
+offsets:20,12,59,59
+rotate:90
+Bomer_left
+bounds:394,3,41,48
+offsets:0,12,63,61
+rotate:90
+Bomer_right
+bounds:444,3,41,47
+offsets:22,13,63,61
+rotate:90
+Cat_1
+bounds:296,26,181,96
+rotate:90
+Cat_shadow
+bounds:749,57,150,100
+offsets:0,8,150,108
+rotate:90
+Hand_ Right_01
+bounds:2324,137,65,70
+offsets:0,0,65,71
+Hand_Left_01
+bounds:2386,65,64,70
+offsets:2,0,66,71
+Head_shadow
+bounds:995,60,147,118
+rotate:90
+OO1
+bounds:2197,128,72,79
+Poseref arm_left
+bounds:1067,3,55,68
+rotate:90
+Poseref arm_right
+bounds:2314,2,54,68
+rotate:90
+Poseref hand_left
+bounds:2271,132,51,75
+Poseref_hand_right
+bounds:722,2,50,75
+rotate:90
+Right_eye
+bounds:296,3,23,21
+Shadow
+bounds:1240,73,220,134
+offsets:12,8,245,153
+Shadow_right
+bounds:881,3,83,52
+offsets:30,0,113,76
+arm 2 left
+bounds:1960,26,67,89
+offsets:0,2,67,91
+arm 2 right
+bounds:2002,118,67,89
+offsets:0,1,67,90
+arm_2_shadow
+bounds:626,53,154,37
+rotate:90
+body
+bounds:2,18,189,181
+rotate:90
+body shadow copy
+bounds:185,18,189,109
+offsets:0,51,189,160
+rotate:90
+body shadow left
+bounds:515,48,109,159
+offsets:5,2,114,161
+body shadow right
+bounds:394,46,119,161
+body_shadow left 2
+bounds:665,54,82,153
+offsets:0,0,123,176
+body_shadow right 2
+bounds:912,58,81,149
+offsets:41,0,122,176
+bomb
+bounds:1462,76,119,131
+carrot
+bounds:2257,13,36,35
+offsets:0,2,36,37
+rotate:90
+carrot shadow
+bounds:2174,2,39,33
+offsets:0,0,39,34
+rotate:90
+eldiven kurk
+bounds:2384,2,52,54
+eye
+bounds:542,3,86,43
+offsets:2,3,92,49
+eye closed
+bounds:630,5,90,46
+offsets:0,3,92,49
+hand 2 left
+bounds:1433,3,60,68
+offsets:0,0,60,70
+hand 2 right
+bounds:1306,2,60,69
+offsets:0,0,60,70
+hand bombasız left
+bounds:1368,3,63,68
+offsets:0,0,64,68
+hand bombasız right
+bounds:1241,2,63,69
+offsets:1,0,64,69
+head
+bounds:1115,61,146,123
+offsets:3,36,152,164
+rotate:90
+kol
+bounds:799,2,53,80
+rotate:90
+left_arm_2
+bounds:966,2,54,99
+rotate:90
+left_eye
+bounds:321,3,21,20
+rotate:90
+leg left
+bounds:1495,2,72,83
+rotate:90
+leg left shadow
+bounds:1743,2,75,86
+offsets:3,3,81,92
+leg right
+bounds:1580,2,72,83
+rotate:90
+leg right shadow
+bounds:1876,19,82,92
+right_arm_2
+bounds:1820,4,54,99
+scarf_ left
+bounds:2391,142,61,65
+offsets:0,0,125,74
+scarf_ right
+bounds:2314,58,72,70
+offsets:19,0,91,70
+rotate:90
+scarf_01
+bounds:851,57,150,59
+rotate:90
+scarf_shadow
+bounds:1583,87,120,51
+offsets:24,0,150,63
+rotate:90
+shadow_left
+bounds:2143,124,83,52
+offsets:0,0,116,76
+rotate:90

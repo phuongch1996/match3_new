@@ -1,0 +1,13 @@
+PHÂN TÍCH TIẾP — ĐIỀU KIỆN RƠI CHÉO NATIVE
+
+- FindTargetItemOrFillingCell trước hết kiểm tra ô đích có target item hoặc bị chặn rơi; nếu không, thử ô kế tiếp theo hướng dọc.
+- Khi không có đường thẳng, hàm duyệt CellNeighbors theo hướng 0..7, bỏ qua ô đông lạnh, ô không bình thường và ô trống không phù hợp.
+- IsFallPossibleFromCellToCell trả false nếu ô nguồn bị chặn; nếu có item hiện tại thì gọi CanFallCross trên item; nếu ô không có item hiện tại thì cho phép mặc định.
+- FindTargetItemFromCrossCell yêu cầu item nguồn có thể rơi chéo, ô đích có item hiện tại, item đích cho phép fall cross, không bị đông lạnh, và target cell của item không bị giữ bởi target khác.
+- FindCrossItem ưu tiên cột trái/phải theo hướng iterator, dùng CellTargetHandler để tránh hai nguồn cùng chiếm một ô. Đây là lý do không thể thay bằng một lần dịch chéo đơn giản.
+- ShouldFindCross trả true tĩnh; rơi chéo là nhánh mặc định của FallManager.
+
+KẾT LUẬN ĐỂ TIẾP TỤC
+- Giữ Collapse dọc hiện tại làm bước đầu.
+- Bước port tiếp theo cần reservation map cho ô đích và kiểm tra item blocker trước khi nhận nguồn chéo.
+- Chưa sửa thuật toán rơi chéo trong bản dựng ở lượt này vì các điều kiện CanFallCross/target handler còn là virtual dispatch chưa giải mã hoàn chỉnh.

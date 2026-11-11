@@ -1,0 +1,2106 @@
+[
+ {
+  "index": 45,
+  "value": "\n                SELECT\n                    (SELECT Count(Key) FROM LocalKeyValue WHERE Key in ('PictureId','GenericData') and Synced = 0) BasicData, \n                    (SELECT Count(Key) FROM LocalKeyValue WHERE Key in ('Level','FullLivesTime','UnlimitedLivesEndTime','Coins','Potions','InGameInventory','PreLevelInventory','UnlimitedRocketEndTime','UnlimitedDynamiteEndTime','UnlimitedElectroBallEndTime','LastDestroyedTime','LastFixedTime','LastShieldEarnTime','LifeInbox', 'ShieldCount', 'CumulativeExperience') and Synced = 0) GameData, \n                    (SELECT Count(Key) FROM LocalKeyValue WHERE Key in ('KingdomProgress', 'TaskCompletionProgress', 'TaskClaimProgress') and Synced = 0) KingdomData, \n                    (SELECT Count(Key) FROM LocalKeyValue WHERE Key in ('ArenaUserConfigVersion', 'ArenaUserGroupId', 'ArenaUserCups', 'ArenaRound', 'ArenaUserLastSeenCups') and Synced = 0) ArenaData"
+ },
+ {
+  "index": 220,
+  "value": " [Non-matching signature algorithms in CRL]"
+ },
+ {
+  "index": 266,
+  "value": " doesn't match the element size of T ( "
+ },
+ {
+  "index": 267,
+  "value": " doesn't match the expected version number "
+ },
+ {
+  "index": 698,
+  "value": "(\\d+)v(\\d+)_([D]).bytes"
+ },
+ {
+  "index": 699,
+  "value": "(\\d+)v(\\d+)_([a-zA-Z]+).bytes"
+ },
+ {
+  "index": 805,
+  "value": ", minLevel "
+ },
+ {
+  "index": 957,
+  "value": ".bytes"
+ },
+ {
+  "index": 966,
+  "value": ".json"
+ },
+ {
+  "index": 1471,
+  "value": "===== Level loaded ====="
+ },
+ {
+  "index": 1472,
+  "value": "===== Level restarted ====="
+ },
+ {
+  "index": 1473,
+  "value": "===== Level started ====="
+ },
+ {
+  "index": 1727,
+  "value": "Ambiguous match found."
+ },
+ {
+  "index": 1808,
+  "value": "AppDomain data '{0}' contains an invalid value or object for specifying a default matching timeout for System.Text.RegularExpressions.Regex."
+ },
+ {
+  "index": 1815,
+  "value": "AppendCommandsToUpdateProgress > LevelEndWinState: {0}, ShouldSendProgress: {1}, EventState: {2}"
+ },
+ {
+  "index": 1816,
+  "value": "AppendCommandsToUpdateProgress > LevelEndWinState: {0}, ShouldSendProgressForCurrentEvent: {1}, ShouldSendProgressForNewEvent: {2}, EventState: {3}"
+ },
+ {
+  "index": 1893,
+  "value": "Arena levels are empty"
+ },
+ {
+  "index": 1919,
+  "value": "ArenaLevel"
+ },
+ {
+  "index": 1920,
+  "value": "ArenaLevelButton"
+ },
+ {
+  "index": 1926,
+  "value": "ArenaServerConfigLevels"
+ },
+ {
+  "index": 1932,
+  "value": "ArenaServerRequiredLevel"
+ },
+ {
+  "index": 1937,
+  "value": "ArenaUserConfigLevels"
+ },
+ {
+  "index": 1945,
+  "value": "ArenaUserRequiredLevel"
+ },
+ {
+  "index": 1963,
+  "value": "Argument types do not match"
+ },
+ {
+  "index": 2075,
+  "value": "At least one possible match is secured by changing {0} with {1}"
+ },
+ {
+  "index": 2097,
+  "value": "AttackLevelFailDialog"
+ },
+ {
+  "index": 2098,
+  "value": "AttackLevelFireworkTowerTutorialText"
+ },
+ {
+  "index": 2099,
+  "value": "AttackLevelGuardianTutorialText"
+ },
+ {
+  "index": 2100,
+  "value": "AttackLevelMagicWallTutorialText"
+ },
+ {
+  "index": 2101,
+  "value": "AttackLevelMetalTowerTutorialText"
+ },
+ {
+  "index": 2102,
+  "value": "AttackLevelMoleTutorialText"
+ },
+ {
+  "index": 2103,
+  "value": "AttackLevelWaterTowerTutorialText"
+ },
+ {
+  "index": 2108,
+  "value": "AttackPrelevelDialog"
+ },
+ {
+  "index": 2109,
+  "value": "AttackPrelevelRewardTooltipText"
+ },
+ {
+  "index": 2183,
+  "value": "Available cell count with match item = {0}"
+ },
+ {
+  "index": 2184,
+  "value": "Available cell count with match item = {0} with checkers pattern"
+ },
+ {
+  "index": 2893,
+  "value": "Base Layer.NThousandLevelRewardsHideAnimation"
+ },
+ {
+  "index": 2894,
+  "value": "Base Layer.NThousandLevelRewardsShowAnimation"
+ },
+ {
+  "index": 3073,
+  "value": "Battery Level: {0}, Have Crashed In Game: {1}, Has Made No Moves: {2}"
+ },
+ {
+  "index": 3147,
+  "value": "BlitzSuperElectroBallConfig"
+ },
+ {
+  "index": 3148,
+  "value": "BlitzSuperElectroBallConfig = {0}"
+ },
+ {
+  "index": 3150,
+  "value": "Block length does not match with its complement."
+ },
+ {
+  "index": 3164,
+  "value": "BomberPlaneDynamitePrefab"
+ },
+ {
+  "index": 3205,
+  "value": "BoundingBoxFollower tried to match a non-boundingbox attachment. It will treat it as null."
+ },
+ {
+  "index": 3207,
+  "value": "BoundingBoxFollowerGraphic tried to match a non-boundingbox attachment. It will treat it as null."
+ },
+ {
+  "index": 3235,
+  "value": "Build ScenarioInfoHttpCommand | Reason: {0}, Level: {1}, ArenaRound: {2}, FirstEventWin: {3}"
+ },
+ {
+  "index": 3444,
+  "value": "Can't find required objects for locked state in SuperElectroBallDialog!"
+ },
+ {
+  "index": 3486,
+  "value": "Can't show tutorial {0} because booster {1} is LOCKED! User Level: {2}"
+ },
+ {
+  "index": 3572,
+  "value": "Cannot find a matching quote character for the character '{0}'."
+ },
+ {
+  "index": 3599,
+  "value": "Cannot invoke LevelReset: "
+ },
+ {
+  "index": 3600,
+  "value": "Cannot invoke LevelStart: "
+ },
+ {
+  "index": 3625,
+  "value": "Cannot parse flatbuffer message "
+ },
+ {
+  "index": 3733,
+  "value": "CardCollection level independent data has overriden, "
+ },
+ {
+  "index": 3773,
+  "value": "CardCollectionReachLevel41Text"
+ },
+ {
+  "index": 3884,
+  "value": "ChangeNameNoMatchTemporaryText"
+ },
+ {
+  "index": 3934,
+  "value": "Checksum doesn't match, level is being deleted: {0}"
+ },
+ {
+  "index": 4002,
+  "value": "Clearing load file. Pause:{0}, Quit:{1} Battery Level: {2}"
+ },
+ {
+  "index": 4024,
+  "value": "Clock | Electro-Electro: {0}, Dynamite-Dynamite: {1}, Electro: {2} , Steam Bomb: {3}"
+ },
+ {
+  "index": 4069,
+  "value": "Color change failed! Highest match types count: {0}. Second highest match types count: {1}"
+ },
+ {
+  "index": 4100,
+  "value": "CompleteEvent{0}AllLevelsCompleted"
+ },
+ {
+  "index": 4103,
+  "value": "CompleteHomeLoadingLevelEnd called"
+ },
+ {
+  "index": 4159,
+  "value": "Constructor does not match target type"
+ },
+ {
+  "index": 4229,
+  "value": "Corrupt .resources file.  The specified type doesn't match the available data in the stream."
+ },
+ {
+  "index": 4268,
+  "value": "Could not find matching atlas page in the texture array."
+ },
+ {
+  "index": 4303,
+  "value": "Couldn't find any item from set, returning random match item. Total:{0}"
+ },
+ {
+  "index": 4355,
+  "value": "CreateTeamRequiredLevel"
+ },
+ {
+  "index": 4364,
+  "value": "Creating Super Electro Ball pools at level start due to rescue!"
+ },
+ {
+  "index": 4467,
+  "value": "CurrentWeeklyLevelWin"
+ },
+ {
+  "index": 4489,
+  "value": "CutsceneSectionUnlockLevelX"
+ },
+ {
+  "index": 4571,
+  "value": "Dark Level Victory Screen"
+ },
+ {
+  "index": 4577,
+  "value": "DarkKingdomLevelButtonText"
+ },
+ {
+  "index": 4578,
+  "value": "DarkKingdomLevelPreLevelText"
+ },
+ {
+  "index": 4582,
+  "value": "DarkLevelButton"
+ },
+ {
+  "index": 4583,
+  "value": "DarkLevelKingsFavorAssets"
+ },
+ {
+  "index": 4631,
+  "value": "Declaring type of field info doesn't match generic type."
+ },
+ {
+  "index": 4632,
+  "value": "Declaring type of method info doesn't match generic type."
+ },
+ {
+  "index": 4694,
+  "value": "Destination and Source copy counts must match."
+ },
+ {
+  "index": 4839,
+  "value": "DistrictUnlockLevelText"
+ },
+ {
+  "index": 4920,
+  "value": "DungeonEscapeCompetitionSceneMoreLevelText"
+ },
+ {
+  "index": 4921,
+  "value": "DungeonEscapeCompetitionSceneMoreLevelsText"
+ },
+ {
+  "index": 4992,
+  "value": "Dynamite"
+ },
+ {
+  "index": 4993,
+  "value": "Dynamite "
+ },
+ {
+  "index": 4994,
+  "value": "DynamiteDynamiteTip"
+ },
+ {
+  "index": 4995,
+  "value": "DynamiteMagicPotPrefab"
+ },
+ {
+  "index": 4996,
+  "value": "DynamiteUnlimitedTemporaryText"
+ },
+ {
+  "index": 4997,
+  "value": "Dynamite_L_Tip"
+ },
+ {
+  "index": 4998,
+  "value": "Dynamite_T_Tip"
+ },
+ {
+  "index": 5035,
+  "value": "ERROR: Cannot Match both Vertical & Horizontal."
+ },
+ {
+  "index": 5082,
+  "value": "ElectroBall"
+ },
+ {
+  "index": 5083,
+  "value": "ElectroBallMagicPotPrefab"
+ },
+ {
+  "index": 5084,
+  "value": "ElectroBallUnlimitedTemporaryText"
+ },
+ {
+  "index": 5087,
+  "value": "ElectroballTip"
+ },
+ {
+  "index": 5136,
+  "value": "End Profiling Level"
+ },
+ {
+  "index": 5139,
+  "value": "End tag mismatch: expected {0} but found {1}"
+ },
+ {
+  "index": 5195,
+  "value": "Enter response received at '{0}' for user received server event before entering level. Progress: {1}"
+ },
+ {
+  "index": 5292,
+  "value": "Error while creating attack tutorial for level {0}: {1}"
+ },
+ {
+  "index": 5293,
+  "value": "Error while creating item introduction tutorial for level {0}: {1}"
+ },
+ {
+  "index": 5336,
+  "value": "EventCommonInfoLevelMultipliers"
+ },
+ {
+  "index": 5539,
+  "value": "Fail Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 5644,
+  "value": "Field type of field info doesn't match generic type."
+ },
+ {
+  "index": 5648,
+  "value": "FieldInfo does not match the target Type."
+ },
+ {
+  "index": 5668,
+  "value": "Fill User - Level:{0} Kingdom:{1} District:{2} Tasks:{3}"
+ },
+ {
+  "index": 5714,
+  "value": "Firebase.Database.FirebaseDatabase, Firebase.Database"
+ },
+ {
+  "index": 5724,
+  "value": "Firework Rocket in steady flight downwards away from board"
+ },
+ {
+  "index": 5737,
+  "value": "FlatBuffers: file identifier must be length"
+ },
+ {
+  "index": 5738,
+  "value": "FlatBuffers: object serialization must not be nested."
+ },
+ {
+  "index": 5739,
+  "value": "Flatbuffers: calling EndTable without a StartTable"
+ },
+ {
+  "index": 5740,
+  "value": "Flatbuffers: invalid numfields"
+ },
+ {
+  "index": 5741,
+  "value": "Flatbuffers: invalid voffset"
+ },
+ {
+  "index": 5813,
+  "value": "ForestLevelButton"
+ },
+ {
+  "index": 5953,
+  "value": "GUILayout state invalid. Verify that all layout begin/end calls match."
+ },
+ {
+  "index": 5954,
+  "value": "GUILayout: Mismatched LayoutGroup."
+ },
+ {
+  "index": 5967,
+  "value": "Game killed in game scene. Won't restore level, failing dungeon escape!"
+ },
+ {
+  "index": 5968,
+  "value": "Game killed in game scene. Won't restore level, losing Flying Contest streak!"
+ },
+ {
+  "index": 6284,
+  "value": "HardLevelButton"
+ },
+ {
+  "index": 6285,
+  "value": "HardLevelButtonText"
+ },
+ {
+  "index": 6286,
+  "value": "Has collect operation for more than 5s: {0}, winning instead of waiting! Has Collect Animation: {1}, Has Level Win Blocker Animation: {2}"
+ },
+ {
+  "index": 6288,
+  "value": "Has playable {0} level but it is not downloaded!"
+ },
+ {
+  "index": 6361,
+  "value": "HideSpinnerWithConnectionProblem"
+ },
+ {
+  "index": 6365,
+  "value": "HighestWeeklyLevelWin"
+ },
+ {
+  "index": 6528,
+  "value": "Ice Level Victory Screen"
+ },
+ {
+  "index": 6541,
+  "value": "IceLevelButton"
+ },
+ {
+  "index": 6558,
+  "value": "If-Match"
+ },
+ {
+  "index": 6560,
+  "value": "If-None-Match"
+ },
+ {
+  "index": 6602,
+  "value": "Incorrect mapping for richards journey level"
+ },
+ {
+  "index": 6625,
+  "value": "Indexing parameters of getter and setter must match."
+ },
+ {
+  "index": 6628,
+  "value": "Indices length does not match the array rank."
+ },
+ {
+  "index": 6639,
+  "value": "Init level values: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 6693,
+  "value": "Insufficient sample size for metrics analysis of level"
+ },
+ {
+  "index": 6709,
+  "value": "Internal Error - Mismatched Enter/Exit. Please report a bug at https://github.com/jacobdufault/fullserializer/issues with the serialization data."
+ },
+ {
+  "index": 6881,
+  "value": "Invalid value for mipLevel ({0})"
+ },
+ {
+  "index": 6939,
+  "value": "IsDarkKingdomLevelVideoStartedOnce"
+ },
+ {
+  "index": 6996,
+  "value": "IsKingdomLevelVideoStartedOnce"
+ },
+ {
+  "index": 7005,
+  "value": "IsLeagueLevel:{0} - "
+ },
+ {
+  "index": 7023,
+  "value": "IsNThousandLevelCompleted"
+ },
+ {
+  "index": 7063,
+  "value": "IsTutorialLevelSeen:{0} - "
+ },
+ {
+  "index": 7095,
+  "value": "IslandRacePrelevelPanel"
+ },
+ {
+  "index": 7096,
+  "value": "IslandRacePrelevelPlayerPositionConfigs"
+ },
+ {
+  "index": 7097,
+  "value": "IslandRacePrelevelStartTextAlt"
+ },
+ {
+  "index": 7189,
+  "value": "Jungle Level Victory Screen"
+ },
+ {
+  "index": 7201,
+  "value": "JungleLevelButton"
+ },
+ {
+  "index": 7350,
+  "value": "Kingdom {0} handler will be created after scene change since min required level for download is now satisfied."
+ },
+ {
+  "index": 7383,
+  "value": "KingdomLevelButtonText"
+ },
+ {
+  "index": 7384,
+  "value": "KingdomLevelCommanderTutorialText"
+ },
+ {
+  "index": 7385,
+  "value": "KingdomLevelCrateTutorialText"
+ },
+ {
+  "index": 7386,
+  "value": "KingdomLevelCrystalTutorialText"
+ },
+ {
+  "index": 7387,
+  "value": "KingdomLevelGiantMoleTutorialText"
+ },
+ {
+  "index": 7388,
+  "value": "KingdomLevelGiantSeedTutorialText"
+ },
+ {
+  "index": 7389,
+  "value": "KingdomLevelGolemBossTutorialText"
+ },
+ {
+  "index": 7390,
+  "value": "KingdomLevelIceBlockTutorialText"
+ },
+ {
+  "index": 7391,
+  "value": "KingdomLevelIntroTextDarkKing"
+ },
+ {
+  "index": 7392,
+  "value": "KingdomLevelIntroTutorialText"
+ },
+ {
+  "index": 7393,
+  "value": "KingdomLevelLightningTowerTutorialText"
+ },
+ {
+  "index": 7394,
+  "value": "KingdomLevelMaceTutorialText"
+ },
+ {
+  "index": 7395,
+  "value": "KingdomLevelMagnetTutorialText2"
+ },
+ {
+  "index": 7396,
+  "value": "KingdomLevelOctopusTutorialText"
+ },
+ {
+  "index": 7397,
+  "value": "KingdomLevelPharaohTutorialText1"
+ },
+ {
+  "index": 7398,
+  "value": "KingdomLevelPreLevelText"
+ },
+ {
+  "index": 7399,
+  "value": "KingdomLevelScarecrowTutorialText"
+ },
+ {
+  "index": 7400,
+  "value": "KingdomLevelSerpentTutorialText"
+ },
+ {
+  "index": 7401,
+  "value": "KingdomLevelSnowmanTutorialText"
+ },
+ {
+  "index": 7402,
+  "value": "KingdomLevelTortoiseTutorialText"
+ },
+ {
+  "index": 7651,
+  "value": "LastTriedLevel"
+ },
+ {
+  "index": 7699,
+  "value": "Length mismatch."
+ },
+ {
+  "index": 7707,
+  "value": "Level"
+ },
+ {
+  "index": 7708,
+  "value": "Level Skin Bundle Unloaded | "
+ },
+ {
+  "index": 7709,
+  "value": "Level Skin Change | from: {0} - to: {1}"
+ },
+ {
+  "index": 7710,
+  "value": "Level is saved in total {0} ms | Creation: {1} ms | Serialization: {2} ms"
+ },
+ {
+  "index": 7711,
+  "value": "Level loader is created in {0} ms"
+ },
+ {
+  "index": 7712,
+  "value": "Level {0} Profiling =>"
+ },
+ {
+  "index": 7713,
+  "value": "Level:"
+ },
+ {
+  "index": 7714,
+  "value": "Level: {0} - ArenaCups: {1} - "
+ },
+ {
+  "index": 7715,
+  "value": "Level: {0} -> {1}"
+ },
+ {
+  "index": 7716,
+  "value": "LevelBackground"
+ },
+ {
+  "index": 7717,
+  "value": "LevelButton"
+ },
+ {
+  "index": 7718,
+  "value": "LevelEnd"
+ },
+ {
+  "index": 7719,
+  "value": "LevelEnd Flow Started - Step: {0}"
+ },
+ {
+  "index": 7720,
+  "value": "LevelEnd: "
+ },
+ {
+  "index": 7721,
+  "value": "LevelEnd: {0}"
+ },
+ {
+  "index": 7722,
+  "value": "LevelEndReward"
+ },
+ {
+  "index": 7723,
+  "value": "LevelFail"
+ },
+ {
+  "index": 7724,
+  "value": "LevelFailContinueText"
+ },
+ {
+  "index": 7725,
+  "value": "LevelFailDialog"
+ },
+ {
+  "index": 7726,
+  "value": "LevelId:{0} - "
+ },
+ {
+  "index": 7727,
+  "value": "LevelItemPool"
+ },
+ {
+  "index": 7728,
+  "value": "LevelPresetHistory"
+ },
+ {
+  "index": 7729,
+  "value": "LevelRecover"
+ },
+ {
+  "index": 7730,
+  "value": "LevelRecoverKill"
+ },
+ {
+  "index": 7731,
+  "value": "LevelSaveData.bytes"
+ },
+ {
+  "index": 7732,
+  "value": "LevelSaveWriterThread"
+ },
+ {
+  "index": 7733,
+  "value": "LevelScoreHistory"
+ },
+ {
+  "index": 7734,
+  "value": "LevelStart"
+ },
+ {
+  "index": 7735,
+  "value": "LevelTryCount"
+ },
+ {
+  "index": 7736,
+  "value": "LevelWinBot HomeContext is not active while in HomeLoop!"
+ },
+ {
+  "index": 7737,
+  "value": "LevelWinBot PrelevelDialog is null after level button click!"
+ },
+ {
+  "index": 7738,
+  "value": "LevelWinDialogKing"
+ },
+ {
+  "index": 7739,
+  "value": "LevelWinDialogWizard"
+ },
+ {
+  "index": 7740,
+  "value": "LevelWinRewardsCoin"
+ },
+ {
+  "index": 7741,
+  "value": "LevelWinRewardsCup"
+ },
+ {
+  "index": 7742,
+  "value": "LevelWinRewardsPotion"
+ },
+ {
+  "index": 7743,
+  "value": "LevelX"
+ },
+ {
+  "index": 7744,
+  "value": "LevelsComingSoonArenaButton"
+ },
+ {
+  "index": 7745,
+  "value": "Level{0}Win"
+ },
+ {
+  "index": 7757,
+  "value": "LifeHack cancelled because level is not increased"
+ },
+ {
+  "index": 7766,
+  "value": "LifeRefill-Prelevel"
+ },
+ {
+  "index": 7803,
+  "value": "Load Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 7808,
+  "value": "Load local SuperElectroBallConfig = "
+ },
+ {
+  "index": 7843,
+  "value": "Loading level without animation"
+ },
+ {
+  "index": 7875,
+  "value": "LockedPreLevelMagicPotsText"
+ },
+ {
+  "index": 7915,
+  "value": "Lowmatch Disabled"
+ },
+ {
+  "index": 7916,
+  "value": "Lowmatch Enabled: [{0},{1},{2}]"
+ },
+ {
+  "index": 7991,
+  "value": "MagicPotPrelevelBottomPanel"
+ },
+ {
+  "index": 7992,
+  "value": "MagicPotPrelevelPanelTooltip"
+ },
+ {
+  "index": 8051,
+  "value": "Match Info: "
+ },
+ {
+  "index": 8052,
+  "value": "MatchUsersLastFetchTime"
+ },
+ {
+  "index": 8053,
+  "value": "MatchedUserIdsTag"
+ },
+ {
+  "index": 8071,
+  "value": "Max level published platform is updated to value: {0}"
+ },
+ {
+  "index": 8073,
+  "value": "Max publish level is updated to value: {0}"
+ },
+ {
+  "index": 8079,
+  "value": "MaxLevelPublishedPlatforms"
+ },
+ {
+  "index": 8080,
+  "value": "MaxLevelWin"
+ },
+ {
+  "index": 8083,
+  "value": "MaxPublishedLevel"
+ },
+ {
+  "index": 8239,
+  "value": "MoreLevelsComingArenaDialog"
+ },
+ {
+  "index": 8240,
+  "value": "MoreLevelsComingDialog"
+ },
+ {
+  "index": 8266,
+  "value": "MultiplierArenaLevelButton"
+ },
+ {
+  "index": 8269,
+  "value": "MultiplierLevelButton"
+ },
+ {
+  "index": 8329,
+  "value": "NThousandLevelRewardsPanel"
+ },
+ {
+  "index": 8409,
+  "value": "NewKingdomUnlockLevelText"
+ },
+ {
+  "index": 8410,
+  "value": "NewLevelsComingSoonText"
+ },
+ {
+  "index": 8411,
+  "value": "NewLevelsInfoText"
+ },
+ {
+  "index": 8412,
+  "value": "NewLevelsTitle"
+ },
+ {
+  "index": 8433,
+  "value": "No Possible Move Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 8515,
+  "value": "None of the discovered or specified addresses match the socket address family."
+ },
+ {
+  "index": 8609,
+  "value": "Number of parameters specified does not match the expected number."
+ },
+ {
+  "index": 8632,
+  "value": "ORDER BY ArenaCups DESC, Level DESC, LevelUpdateTime ASC"
+ },
+ {
+  "index": 8647,
+  "value": "Object does not match target type."
+ },
+ {
+  "index": 8677,
+  "value": "Object reference at index #{0} does not match target type ({1} != {2}). Defaulting to null."
+ },
+ {
+  "index": 8939,
+  "value": "Parameter count mismatch."
+ },
+ {
+  "index": 8940,
+  "value": "Parameter count of method info doesn't match generic argument count."
+ },
+ {
+  "index": 8945,
+  "value": "Parameter type of method info doesn't match generic argument."
+ },
+ {
+  "index": 9002,
+  "value": "Pause Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 9172,
+  "value": "Play level start animation"
+ },
+ {
+  "index": 9268,
+  "value": "PowerRushPrelevelListView"
+ },
+ {
+  "index": 9269,
+  "value": "PowerRushPrelevelPanel"
+ },
+ {
+  "index": 9276,
+  "value": "PreLevelBoosterUnlockedText"
+ },
+ {
+  "index": 9277,
+  "value": "PreLevelInventory"
+ },
+ {
+  "index": 9278,
+  "value": "PreLevelPlayButton"
+ },
+ {
+  "index": 9291,
+  "value": "Prefab not found for richards journey level!"
+ },
+ {
+  "index": 9293,
+  "value": "PrelevelBoosterButtonFreeBadge"
+ },
+ {
+  "index": 9294,
+  "value": "PrelevelBoosterUnlockTooltip"
+ },
+ {
+  "index": 9295,
+  "value": "PrelevelBottomCalled"
+ },
+ {
+  "index": 9296,
+  "value": "PrelevelDialog"
+ },
+ {
+  "index": 9297,
+  "value": "PrelevelMultiplierTagCurveAnimation"
+ },
+ {
+  "index": 9298,
+  "value": "PrelevelMultiplierTooltip"
+ },
+ {
+  "index": 9369,
+  "value": "Private/public key mismatch"
+ },
+ {
+  "index": 9413,
+  "value": "Property type must match the value type of getter"
+ },
+ {
+  "index": 9414,
+  "value": "Property type must match the value type of setter"
+ },
+ {
+  "index": 9415,
+  "value": "PropertyBag type container type mismatch."
+ },
+ {
+  "index": 9516,
+  "value": "Quit Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 9526,
+  "value": "REGEX_DEFAULT_MATCH_TIMEOUT"
+ },
+ {
+  "index": 9566,
+  "value": "Re-enabling touch for special item throw in level "
+ },
+ {
+  "index": 9625,
+  "value": "Refunding {0} magic pot after clearing level save file!"
+ },
+ {
+  "index": 9626,
+  "value": "Refunding {0} super electro ball after clearing level save file!"
+ },
+ {
+  "index": 9627,
+  "value": "Refusing to use legacy-mode LM/NTLM authentication unless explicitly enabled using DefaultAuthLevel."
+ },
+ {
+  "index": 9648,
+  "value": "Reject Refresh League Level Client/Server: {0} / {1}"
+ },
+ {
+  "index": 9649,
+  "value": "Reject Refresh Level Client/Server: {0} / {1}"
+ },
+ {
+  "index": 9666,
+  "value": "Remote Level is fetched from cdn: {0}"
+ },
+ {
+  "index": 9668,
+  "value": "Remote downloaded levels will be removed: {0}"
+ },
+ {
+  "index": 9673,
+  "value": "RemoteDownloadedLevelNames"
+ },
+ {
+  "index": 9674,
+  "value": "RemoteLevel {0} will be used."
+ },
+ {
+  "index": 9675,
+  "value": "RemoteLevelConfigETag"
+ },
+ {
+  "index": 9676,
+  "value": "RemoteLevels"
+ },
+ {
+  "index": 9774,
+  "value": "RequiredLevelText"
+ },
+ {
+  "index": 9803,
+  "value": "Restart Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 9822,
+  "value": "Return type of method info doesn't match generic type."
+ },
+ {
+  "index": 9861,
+  "value": "RichardsJourneyDisabledLevels"
+ },
+ {
+  "index": 9866,
+  "value": "RichardsJourneyLevelButton"
+ },
+ {
+  "index": 9869,
+  "value": "RichardsJourneyPrelevelDialog"
+ },
+ {
+  "index": 9880,
+  "value": "Rocket"
+ },
+ {
+  "index": 9881,
+  "value": "RocketMagicPotPrefab"
+ },
+ {
+  "index": 9882,
+  "value": "RocketTip"
+ },
+ {
+  "index": 9883,
+  "value": "RocketUnlimitedTemporaryText"
+ },
+ {
+  "index": 9893,
+  "value": "Root/Level"
+ },
+ {
+  "index": 9974,
+  "value": "SELECT * FROM PlayerData WHERE Type = ? ORDER BY ArenaCups DESC, Level DESC, ABS(? - UserId) ASC"
+ },
+ {
+  "index": 9975,
+  "value": "SELECT * FROM PlayerData WHERE Type = ? and UserId > 0 ORDER BY ArenaCups DESC, Level DESC, LevelUpdateTime ASC"
+ },
+ {
+  "index": 9977,
+  "value": "SELECT * FROM PlayerData WHERE Type = {0} AND Level > 0 AND "
+ },
+ {
+  "index": 9978,
+  "value": "SELECT * FROM PlayerData WHERE Type = {0} AND UserId = {1} AND Level > 0 AND "
+ },
+ {
+  "index": 9986,
+  "value": "SELECT * FROM TeamData WHERE Type = {0} and TeamId > 0 ORDER BY {1} DESC, Star DESC, LastLevelUpdateDate ASC"
+ },
+ {
+  "index": 9995,
+  "value": "SELECT Level FROM PlayerData WHERE UserId = {0} AND Type = {1}"
+ },
+ {
+  "index": 10058,
+  "value": "Sand Level Victory Screen"
+ },
+ {
+  "index": 10070,
+  "value": "SandLevelButton"
+ },
+ {
+  "index": 10078,
+  "value": "SaveLevelPresetHistory:"
+ },
+ {
+  "index": 10079,
+  "value": "SaveLevelScoreHistory:"
+ },
+ {
+  "index": 10094,
+  "value": "ScenarioReceivedLevelOrRound"
+ },
+ {
+  "index": 10095,
+  "value": "ScenarioReceivedLevelOrRound: {0}"
+ },
+ {
+  "index": 10213,
+  "value": "Sequence contains more than one matching element"
+ },
+ {
+  "index": 10215,
+  "value": "Sequence contains no matching element"
+ },
+ {
+  "index": 10256,
+  "value": "ServerLevel: {0} "
+ },
+ {
+  "index": 10564,
+  "value": "Specified initialization vector (IV) does not match the block size for this algorithm."
+ },
+ {
+  "index": 10589,
+  "value": "Spinner + Rocket couldn't find target score more than zero. Trying non positive scores."
+ },
+ {
+  "index": 10590,
+  "value": "Spinner + Rocket couldn't find target."
+ },
+ {
+  "index": 10591,
+  "value": "Spinner couldn't find any valid item to explode."
+ },
+ {
+  "index": 10592,
+  "value": "SpinnerMagicPotPrefab"
+ },
+ {
+  "index": 10593,
+  "value": "SpinnerTip"
+ },
+ {
+  "index": 10655,
+  "value": "Start Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 10677,
+  "value": "StartLevel:{0} - "
+ },
+ {
+  "index": 10800,
+  "value": "Super Electro Ball at level start: {0}, ready to play: {1}"
+ },
+ {
+  "index": 10806,
+  "value": "SuperElectroBallClaimPanel"
+ },
+ {
+  "index": 10807,
+  "value": "SuperElectroBallCollectAnimation"
+ },
+ {
+  "index": 10808,
+  "value": "SuperElectroBallDialog"
+ },
+ {
+  "index": 10809,
+  "value": "SuperElectroBallExtraWarning"
+ },
+ {
+  "index": 10810,
+  "value": "SuperElectroBallExtraWarning is null!"
+ },
+ {
+  "index": 10811,
+  "value": "SuperElectroBallIconBundledView"
+ },
+ {
+  "index": 10812,
+  "value": "SuperElectroBallInfoDialog"
+ },
+ {
+  "index": 10813,
+  "value": "SuperElectroBallInfoDialog can't be loaded."
+ },
+ {
+  "index": 10814,
+  "value": "SuperElectroBallItemRay"
+ },
+ {
+  "index": 10815,
+  "value": "SuperElectroBallItemView"
+ },
+ {
+  "index": 10816,
+  "value": "SuperElectroBallPrelevelIcon"
+ },
+ {
+  "index": 10817,
+  "value": "SuperElectroBallPrelevelTooltip"
+ },
+ {
+  "index": 10818,
+  "value": "SuperElectroBallReplacementTutorialText"
+ },
+ {
+  "index": 10819,
+  "value": "SuperElectroBallTitleVfx"
+ },
+ {
+  "index": 10820,
+  "value": "SuperElectroBallUseParticles"
+ },
+ {
+  "index": 10827,
+  "value": "SuperHardLevelButton"
+ },
+ {
+  "index": 11144,
+  "value": "TeamInsufficientLevelTemporaryText"
+ },
+ {
+  "index": 11160,
+  "value": "TeamLevel21RejectText"
+ },
+ {
+  "index": 11167,
+  "value": "TeamMinLevelRejectText"
+ },
+ {
+  "index": 11199,
+  "value": "TempLevelKill"
+ },
+ {
+  "index": 11220,
+  "value": "Test failed for levelOrRound: {0}, isArenaLevel: {1}, group: {2}. "
+ },
+ {
+  "index": 11301,
+  "value": "The RegEx engine has timed out while trying to match a pattern to an input string. This can occur for many reasons, including very large inputs or excessive backtracking caused by nested quantifiers, back-references and other factors."
+ },
+ {
+  "index": 11316,
+  "value": "The UTC Offset of the local dateTime parameter does not match the offset argument."
+ },
+ {
+  "index": 11346,
+  "value": "The concurrencyLevel argument must be positive."
+ },
+ {
+  "index": 11353,
+  "value": "The declaring type of the property info doesn't match the generic type."
+ },
+ {
+  "index": 11431,
+  "value": "The operands for operator '{0}' do not match the parameters of method '{1}'."
+ },
+ {
+  "index": 11446,
+  "value": "The predicate did not match any elements."
+ },
+ {
+  "index": 11457,
+  "value": "The property type of the property info doesn't match the generic type."
+ },
+ {
+  "index": 11458,
+  "value": "The provided argument value for '{0}.{1}' does not match the parameter type.\nProvided: {2}\nExpected: {3}"
+ },
+ {
+  "index": 11459,
+  "value": "The provided value for '{0}.{1}' does not match the field type.\nProvided: {2}\nExpected: {3}"
+ },
+ {
+  "index": 11460,
+  "value": "The provided value for '{0}.{1}' does not match the property type.\nProvided: {2}\nExpected: {3}"
+ },
+ {
+  "index": 11475,
+  "value": "The requested channel '{0}' does not match the return type {1}."
+ },
+ {
+  "index": 11487,
+  "value": "The return type of overload method for operator '{0}' does not match the parameter type of conversion method '{1}'."
+ },
+ {
+  "index": 11494,
+  "value": "The serialized Count information doesn't match the number of items."
+ },
+ {
+  "index": 11547,
+  "value": "The target object does not match the target type.\nProvided: {0}\nExpected: {1}"
+ },
+ {
+  "index": 11565,
+  "value": "The type of the value object did not match the specified RegistryValueKind or the object could not be properly converted."
+ },
+ {
+  "index": 11618,
+  "value": "There is no randomized match item."
+ },
+ {
+  "index": 11742,
+  "value": "Token doesn't match a user."
+ },
+ {
+  "index": 11743,
+  "value": "Token-Name mismatch."
+ },
+ {
+  "index": 11768,
+  "value": "TotalLevelWin"
+ },
+ {
+  "index": 11973,
+  "value": "Type does not match this tree view controller's data type ({0})."
+ },
+ {
+  "index": 11990,
+  "value": "Type {0} NameID {1} InstanceID {2} BufferPointer {3} MipLevel {4} CubeFace {5} DepthSlice {6}"
+ },
+ {
+  "index": 12156,
+  "value": "Unable to find key name that matches '{0}'"
+ },
+ {
+  "index": 12206,
+  "value": "Unexpected number of contestants for IslandRacePrelevelPlayerPositionConfigs: {0}"
+ },
+ {
+  "index": 12308,
+  "value": "UnlimitedDynamiteEndTime"
+ },
+ {
+  "index": 12309,
+  "value": "UnlimitedElectroBallEndTime"
+ },
+ {
+  "index": 12312,
+  "value": "UnlimitedRocketEndTime"
+ },
+ {
+  "index": 12322,
+  "value": "UnlocksAtLevelXText"
+ },
+ {
+  "index": 12324,
+  "value": "Unmatched ']'"
+ },
+ {
+  "index": 12325,
+  "value": "Unmatched ']' while parsing generic argument assembly name"
+ },
+ {
+  "index": 12329,
+  "value": "Unpause Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 12358,
+  "value": "Update PlayerData Set ArenaCups = CASE WHEN Type in (1, 2, 3, 4) THEN ArenaCups + {0} END, LevelUpdateTime = {1} WHERE ArenaCups >= 0 AND UserId = {2} AND Type in (1, 2, 3, 4)"
+ },
+ {
+  "index": 12361,
+  "value": "Update PlayerData Set Level = CASE WHEN Type in (1, 2, 3, 4) THEN Level + 1 END, LevelUpdateTime = {0} WHERE Level >= 0 AND UserId = {1} AND Type in (1, 2, 3, 4)"
+ },
+ {
+  "index": 12362,
+  "value": "Update PlayerData Set Level = CASE {0}END, LevelUpdateTime = {1} WHERE Level >= 0 AND UserId = {2} AND Type in ({3})"
+ },
+ {
+  "index": 12375,
+  "value": "Update TeamData Set Score = CASE {0}END, LastLevelUpdateDate = {1} WHERE Score >= 0 AND TeamId = {2} AND Type in ({3})"
+ },
+ {
+  "index": 12376,
+  "value": "Update TeamData Set Score = Score + {0}, LastLevelUpdateDate = {1} WHERE TeamId = {2} AND Type in (1, 2)"
+ },
+ {
+  "index": 12470,
+  "value": "Updating swap match group from pattern {0} to {1}"
+ },
+ {
+  "index": 12531,
+  "value": "User level: {0}, "
+ },
+ {
+  "index": 12532,
+  "value": "User level: {0}, deleting all vignette videos"
+ },
+ {
+  "index": 12534,
+  "value": "User potion is {0} undesirably after last level win of Kingdom {1}. Setting user potion to {2} to be accurate."
+ },
+ {
+  "index": 12535,
+  "value": "User potion is {0} undesirably after max level win: Level {1}. Setting user potion to {2} to be accurate."
+ },
+ {
+  "index": 12635,
+  "value": "Valid swap couldn't explode match group."
+ },
+ {
+  "index": 12638,
+  "value": "Value '{0}' does not match '{1}'"
+ },
+ {
+  "index": 12799,
+  "value": "Waited {0} seconds to download Kingdom {1} for visit. Hiding spinner."
+ },
+ {
+  "index": 12802,
+  "value": "Waiting for level start animation"
+ },
+ {
+  "index": 12810,
+  "value": "Warning! Mock dialog responses will NOT match production dialogs"
+ },
+ {
+  "index": 12833,
+  "value": "WeeklyContestPrelevelItemsPoolId"
+ },
+ {
+  "index": 12834,
+  "value": "WeeklyContestPrelevelPanel"
+ },
+ {
+  "index": 12866,
+  "value": "Win Level: {0} - {1} - {2} - isOnline: {3} - isAdmin: {4}"
+ },
+ {
+  "index": 12944,
+  "value": "XP Level"
+ },
+ {
+  "index": 12971,
+  "value": "YogaNode instance mismatch"
+ },
+ {
+  "index": 13278,
+  "value": "_BlitMipLevel"
+ },
+ {
+  "index": 13318,
+  "value": "_CustomMipmapLevel"
+ },
+ {
+  "index": 13707,
+  "value": "_bundle_config.json"
+ },
+ {
+  "index": 13793,
+  "value": "af_level"
+ },
+ {
+  "index": 13794,
+  "value": "af_level_achieved"
+ },
+ {
+  "index": 13878,
+  "value": "application/vnd.kafka.json.v2+json"
+ },
+ {
+  "index": 14023,
+  "value": "battery_level"
+ },
+ {
+  "index": 14210,
+  "value": "card_collection_common_bundle_config.json"
+ },
+ {
+  "index": 14285,
+  "value": "claim_dynamite"
+ },
+ {
+  "index": 14286,
+  "value": "claim_electroball"
+ },
+ {
+  "index": 14291,
+  "value": "claim_rocket"
+ },
+ {
+  "index": 14394,
+  "value": "concurrencyLevel"
+ },
+ {
+  "index": 14550,
+  "value": "cube_blast_tutorial_level_{0}"
+ },
+ {
+  "index": 14588,
+  "value": "custom sprite vertex data size must match sprite asset's vertex data size {0} {1}"
+ },
+ {
+  "index": 14617,
+  "value": "dark_level"
+ },
+ {
+  "index": 14627,
+  "value": "darkkingdomlevel_gallery"
+ },
+ {
+  "index": 14628,
+  "value": "darkkingdomlevel_v2"
+ },
+ {
+  "index": 14810,
+  "value": "dynamite"
+ },
+ {
+  "index": 14811,
+  "value": "dynamite_on_board"
+ },
+ {
+  "index": 14814,
+  "value": "e.data: \n"
+ },
+ {
+  "index": 14896,
+  "value": "electroball"
+ },
+ {
+  "index": 15185,
+  "value": "forest_level"
+ },
+ {
+  "index": 15241,
+  "value": "gameplay/dark_level/background_v2"
+ },
+ {
+  "index": 15242,
+  "value": "gameplay/dark_level/item"
+ },
+ {
+  "index": 15243,
+  "value": "gameplay/dark_level/landscape"
+ },
+ {
+  "index": 15244,
+  "value": "gameplay/dark_level/music_v2"
+ },
+ {
+  "index": 15245,
+  "value": "gameplay/dark_level/ui_v2"
+ },
+ {
+  "index": 15247,
+  "value": "gameplay/forest_level/ui"
+ },
+ {
+  "index": 15248,
+  "value": "gameplay/hard_level/background_v2"
+ },
+ {
+  "index": 15249,
+  "value": "gameplay/hard_level/landscape"
+ },
+ {
+  "index": 15250,
+  "value": "gameplay/hard_level/music_v2"
+ },
+ {
+  "index": 15251,
+  "value": "gameplay/hard_level/ui_v2"
+ },
+ {
+  "index": 15252,
+  "value": "gameplay/ice_level/hard_background"
+ },
+ {
+  "index": 15253,
+  "value": "gameplay/ice_level/hard_music"
+ },
+ {
+  "index": 15254,
+  "value": "gameplay/ice_level/kingdom_background"
+ },
+ {
+  "index": 15255,
+  "value": "gameplay/ice_level/kingdom_extra"
+ },
+ {
+  "index": 15256,
+  "value": "gameplay/ice_level/kingdom_item"
+ },
+ {
+  "index": 15257,
+  "value": "gameplay/ice_level/kingdom_music"
+ },
+ {
+  "index": 15258,
+  "value": "gameplay/ice_level/kingdom_ui"
+ },
+ {
+  "index": 15259,
+  "value": "gameplay/ice_level/landscape"
+ },
+ {
+  "index": 15260,
+  "value": "gameplay/ice_level/normal_background"
+ },
+ {
+  "index": 15261,
+  "value": "gameplay/ice_level/normal_music"
+ },
+ {
+  "index": 15262,
+  "value": "gameplay/ice_level/superhard_background"
+ },
+ {
+  "index": 15263,
+  "value": "gameplay/ice_level/superhard_music"
+ },
+ {
+  "index": 15264,
+  "value": "gameplay/jungle_level/hard_background"
+ },
+ {
+  "index": 15265,
+  "value": "gameplay/jungle_level/hard_music"
+ },
+ {
+  "index": 15266,
+  "value": "gameplay/jungle_level/kingdom_background"
+ },
+ {
+  "index": 15267,
+  "value": "gameplay/jungle_level/kingdom_music"
+ },
+ {
+  "index": 15268,
+  "value": "gameplay/jungle_level/kingdom_ui"
+ },
+ {
+  "index": 15269,
+  "value": "gameplay/jungle_level/landscape"
+ },
+ {
+  "index": 15270,
+  "value": "gameplay/jungle_level/normal_background"
+ },
+ {
+  "index": 15271,
+  "value": "gameplay/jungle_level/normal_music"
+ },
+ {
+  "index": 15272,
+  "value": "gameplay/jungle_level/superhard_background"
+ },
+ {
+  "index": 15273,
+  "value": "gameplay/jungle_level/superhard_music"
+ },
+ {
+  "index": 15275,
+  "value": "gameplay/music_attack_level_1"
+ },
+ {
+  "index": 15277,
+  "value": "gameplay/sand_level/hard_background"
+ },
+ {
+  "index": 15278,
+  "value": "gameplay/sand_level/hard_music"
+ },
+ {
+  "index": 15279,
+  "value": "gameplay/sand_level/kingdom_background"
+ },
+ {
+  "index": 15280,
+  "value": "gameplay/sand_level/kingdom_extra"
+ },
+ {
+  "index": 15281,
+  "value": "gameplay/sand_level/kingdom_item"
+ },
+ {
+  "index": 15282,
+  "value": "gameplay/sand_level/kingdom_music"
+ },
+ {
+  "index": 15283,
+  "value": "gameplay/sand_level/kingdom_ui"
+ },
+ {
+  "index": 15284,
+  "value": "gameplay/sand_level/landscape"
+ },
+ {
+  "index": 15285,
+  "value": "gameplay/sand_level/normal_background"
+ },
+ {
+  "index": 15286,
+  "value": "gameplay/sand_level/normal_music"
+ },
+ {
+  "index": 15287,
+  "value": "gameplay/sand_level/superhard_background"
+ },
+ {
+  "index": 15288,
+  "value": "gameplay/sand_level/superhard_music"
+ },
+ {
+  "index": 15297,
+  "value": "gameplay/super_hard_level/background_v2"
+ },
+ {
+  "index": 15298,
+  "value": "gameplay/super_hard_level/landscape"
+ },
+ {
+  "index": 15299,
+  "value": "gameplay/super_hard_level/music_v2"
+ },
+ {
+  "index": 15300,
+  "value": "gameplay/super_hard_level/ui_v2"
+ },
+ {
+  "index": 15301,
+  "value": "gameplay/thousand_level/ui"
+ },
+ {
+  "index": 15349,
+  "value": "getMusicVolumeLevel"
+ },
+ {
+  "index": 15395,
+  "value": "grand_tournament_prelevel_helmet_icon"
+ },
+ {
+  "index": 15440,
+  "value": "hack_level"
+ },
+ {
+  "index": 15459,
+  "value": "hard_level"
+ },
+ {
+  "index": 15574,
+  "value": "https://contents.prod.rylkngdm.com/v2/dynamic-content-config/dynamic-content-config.json"
+ },
+ {
+  "index": 15588,
+  "value": "https://remote-levels.prod.rylkngdm.com/v2/flatbuffer/"
+ },
+ {
+  "index": 15589,
+  "value": "https://remote-levels.prod.rylkngdm.com/v2/versions/"
+ },
+ {
+  "index": 15647,
+  "value": "ice_level"
+ },
+ {
+  "index": 15648,
+  "value": "ice_music_attack_level_1"
+ },
+ {
+  "index": 15649,
+  "value": "ice_music_attack_level_2"
+ },
+ {
+  "index": 15652,
+  "value": "ice_music_hard_level_1"
+ },
+ {
+  "index": 15653,
+  "value": "ice_music_super_hard_level_1"
+ },
+ {
+  "index": 15812,
+  "value": "isAttackLevel"
+ },
+ {
+  "index": 15944,
+  "value": "jungle_level"
+ },
+ {
+  "index": 15945,
+  "value": "jungle_music_attack_level_1"
+ },
+ {
+  "index": 15946,
+  "value": "jungle_music_attack_level_2"
+ },
+ {
+  "index": 15949,
+  "value": "jungle_music_hard_level_1"
+ },
+ {
+  "index": 15950,
+  "value": "jungle_music_super_hard_level_1"
+ },
+ {
+  "index": 15997,
+  "value": "kingdomlevel_gallery"
+ },
+ {
+  "index": 15998,
+  "value": "kingdomlevel_v3"
+ },
+ {
+  "index": 16038,
+  "value": "k{0}_bundle_config.json"
+ },
+ {
+  "index": 16105,
+  "value": "level"
+ },
+ {
+  "index": 16106,
+  "value": "levelButtonMultiplierTag"
+ },
+ {
+  "index": 16107,
+  "value": "level_"
+ },
+ {
+  "index": 16108,
+  "value": "level_count"
+ },
+ {
+  "index": 16109,
+  "value": "level_end_coin_new_user"
+ },
+ {
+  "index": 16110,
+  "value": "level_end_coin_old_user"
+ },
+ {
+  "index": 16111,
+  "value": "level_file_name"
+ },
+ {
+  "index": 16112,
+  "value": "level_id"
+ },
+ {
+  "index": 16113,
+  "value": "level_name"
+ },
+ {
+  "index": 16114,
+  "value": "level_start_count"
+ },
+ {
+  "index": 16115,
+  "value": "level_start_count_low_power"
+ },
+ {
+  "index": 16116,
+  "value": "level_start_time"
+ },
+ {
+  "index": 16117,
+  "value": "level_state"
+ },
+ {
+  "index": 16118,
+  "value": "level_try_count"
+ },
+ {
+  "index": 16119,
+  "value": "level_type"
+ },
+ {
+  "index": 16237,
+  "value": "liveops/island_race/prelevel"
+ },
+ {
+  "index": 16256,
+  "value": "liveops/offer/kings_favor_dark_level"
+ },
+ {
+  "index": 16270,
+  "value": "liveops/other/cutscene/landscape_level_flags"
+ },
+ {
+  "index": 16316,
+  "value": "liveops/power_rush/prelevel"
+ },
+ {
+  "index": 16361,
+  "value": "liveops/weekly_contest/prelevel"
+ },
+ {
+  "index": 16447,
+  "value": "match"
+ },
+ {
+  "index": 16448,
+  "value": "matchTimeout"
+ },
+ {
+  "index": 16449,
+  "value": "match_bitmask"
+ },
+ {
+  "index": 16450,
+  "value": "match_items"
+ },
+ {
+  "index": 16451,
+  "value": "match_type"
+ },
+ {
+  "index": 16452,
+  "value": "matchmaking_source"
+ },
+ {
+  "index": 16476,
+  "value": "max_level"
+ },
+ {
+  "index": 16619,
+  "value": "music_attack_level_2"
+ },
+ {
+  "index": 16620,
+  "value": "music_dark_level_1"
+ },
+ {
+  "index": 16621,
+  "value": "music_dark_level_2"
+ },
+ {
+  "index": 16623,
+  "value": "music_hard_level_1"
+ },
+ {
+  "index": 16624,
+  "value": "music_super_hard_level_1"
+ },
+ {
+  "index": 16799,
+  "value": "old_user_level"
+ },
+ {
+  "index": 17013,
+  "value": "playable/ui/level_button"
+ },
+ {
+  "index": 17014,
+  "value": "playable/ui/prelevel"
+ },
+ {
+  "index": 17050,
+  "value": "prelevel"
+ },
+ {
+  "index": 17051,
+  "value": "prelevel_dynamite_selected"
+ },
+ {
+  "index": 17052,
+  "value": "prelevel_electroball_selected"
+ },
+ {
+  "index": 17053,
+  "value": "prelevel_rocket_selected"
+ },
+ {
+  "index": 17221,
+  "value": "required_level"
+ },
+ {
+  "index": 17274,
+  "value": "rocket"
+ },
+ {
+  "index": 17275,
+  "value": "rocket_on_board"
+ },
+ {
+  "index": 17327,
+  "value": "sand_level"
+ },
+ {
+  "index": 17328,
+  "value": "sand_music_attack_level_1"
+ },
+ {
+  "index": 17329,
+  "value": "sand_music_attack_level_2"
+ },
+ {
+  "index": 17332,
+  "value": "sand_music_hard_level_1"
+ },
+ {
+  "index": 17333,
+  "value": "sand_music_super_hard_level_1"
+ },
+ {
+  "index": 17645,
+  "value": "spinner_on_board"
+ },
+ {
+  "index": 17759,
+  "value": "super_electroball_active"
+ },
+ {
+  "index": 17760,
+  "value": "super_hard_level"
+ },
+ {
+  "index": 17829,
+  "value": "s{0}_bundle_config.json"
+ },
+ {
+  "index": 17864,
+  "value": "team_adventure_prelevel_compass_icon"
+ },
+ {
+  "index": 17865,
+  "value": "team_adventure_prelevel_compass_icon_shadow"
+ },
+ {
+  "index": 17903,
+  "value": "test_level"
+ },
+ {
+  "index": 18211,
+  "value": "userInfo.json"
+ },
+ {
+  "index": 18589,
+  "value": "{0} level bundle is not downloaded!"
+ }
+]

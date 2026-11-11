@@ -1,0 +1,90 @@
+[
+ {
+  "resource": "match_red",
+  "sourceName": "Items-MatchItem-red.png",
+  "sha256": "0edecb46453f14b89c54da79081d13af01bd82bd96282c73adc62950190d6b2a",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "spinner",
+  "sourceName": "SpecialItems-spinner.png",
+  "sha256": "d50f3c17b9c707f7a33983fa46dd89f1b74778cbf256a9169e89db9695795cc4",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "rocket_vertical",
+  "sourceName": "Items-Rocket-vertical_rocket.png",
+  "sha256": "d35d8dba820b1eac25544a813e61a2f9836d6064710671d7a5fad31ee12f1be2",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "match_yellow",
+  "sourceName": "Items-MatchItem-yellow.png",
+  "sha256": "cd8260588a6fa33ea01a3a7f1be5917e69194c7a5d3e4e14406457466c380e7d",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "rocket_horizontal",
+  "sourceName": "Items-Rocket-horizontal_rocket.png",
+  "sha256": "af1874a82122424fdc9f0f6e0ec4c29a5e9558bebc3fad29bb7746eb2ca689b9",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "electroball",
+  "sourceName": "Items-ElectroBall-electroball.png",
+  "sha256": "d5b7cc9ebab390390458404defff9dd60527beeb5a847ce6c8a7db443abec4e4",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "dynamite",
+  "sourceName": "Items-Dynamite-dynamite.png",
+  "sha256": "8f67f08a55871f3d4a172a509f801c1998c5576e449311182696c66348a6d35e",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "match_blue",
+  "sourceName": "Items-MatchItem-blue.png",
+  "sha256": "e2d093c531c85515af30742d1ff791750fdc0ad2fc03754623c3066279f3a1e0",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "match_pink",
+  "sourceName": "Items-MatchItem-pink.png",
+  "sha256": "7876489329679e7d7e670c4d332b756ec743d536f7c100600bc5c021ff99a5c9",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "match_green",
+  "sourceName": "Items-MatchItem-green.png",
+  "sha256": "29896a6c39a5b0c14afeb9581763a4c218830266317fd41cf628c220ac4b9170",
+  "sourceBundle": "APKM/split_UnityDataAssetPack.apk/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "APKM/base.apk/assets/bin/Data/data.unity3d",
+  "apkmSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66"
+ },
+ {
+  "resource": "box",
+  "sourceName": "Items-BoxItem-box",
+  "pathId": 5172,
+  "sha256": "36ee15e47e5b1b44d923234c37e9aff3dc3d1c16ab00c99c645858d04b8c65bf",
+  "sourceBundle": "Raw/data/assets/bin/Data/datapack.unity3d",
+  "dependencyBundle": "Raw/base/assets/bin/Data/data.unity3d"
+ }
+]

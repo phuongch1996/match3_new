@@ -1,0 +1,2 @@
+PASS: 21568 assertions, 4500 legal actions, 6393 cascade steps.
+Checks: propeller + horizontal/vertical rocket/bomb/rainbow, both swap orders and all directions, corner targets, remote footprints, preserved special chains, unique flights, repeat expansion, squares, stable starts, hints, ice, gravity and refill.

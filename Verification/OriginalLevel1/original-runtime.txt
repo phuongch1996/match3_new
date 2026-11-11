@@ -1,0 +1,1 @@
+PASS: original 9x9 / 30 moves / 54 boxes loaded; actions=12, boxesCleared=6, boxesLeft=48, moves=18, stable=True, won=False, boxArt=True

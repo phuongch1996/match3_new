@@ -1,0 +1,25 @@
+PHASE 9 - SPECIAL PLACEMENT AND SPECIAL COMBOS
+Date: 2026-11-11
+
+Placement
+- Native MatchGroup contains an explicit specialItemCreationCell field and GetSpecialItemCell returns it when set.
+- CrownGame.SwapMove passes the drop cell (B) to FindMatches after the swap.
+- MatchBoard now centralizes this rule in SelectSpecialCreationCell: if B belongs to the matched group and is a normal jewel, the new special is created at B. The fallback is used only when there is no valid preferred cell.
+- Existing square tests cover extra same-color tiles outside the 2x2 and the A -> B drop case.
+
+Two-special matrix recovered from ComboType and native strategy evidence
+- ElectroBall + ElectroBall: full-board clear.
+- ElectroBall + Rocket/Bomb/Propeller: choose the most common eligible color; ordinary jewels become that partner special and existing specials are preserved.
+- Bomb + Bomb: 7x7 footprint (DynamiteDynamiteCombo).
+- Bomb + Rocket: three rows plus three columns (DynamiteRocketCombo).
+- Rocket + Rocket: crossing row and column (RocketRocketCombo).
+- Propeller + Rocket/Bomb: launch the carried payload to a remote target from the drop cell (SpinnerRocketCombo/DynamiteSpinnerCombo).
+- Propeller + Propeller: launch three distinct remote propellers from the drop cell (SpinnerSpinnerCombo). The APK metadata exposes three spinner slots (`from`, `to`, `extra`); this was added to the prototype.
+
+Verification
+- Unity build completed successfully.
+- Build checks: PASS: 22342 assertions, 4500 legal actions, 6393 cascade steps.
+- New checks cover drop-cell placement, propeller + propeller three-target behavior, unique targets, and idempotent expansion.
+
+Limits
+- The APK's target ordering uses native runtime state and RNG. The prototype keeps the recovered priority (ice, then other colors, then any eligible cell) but resolves ties deterministically for reproducible tests.

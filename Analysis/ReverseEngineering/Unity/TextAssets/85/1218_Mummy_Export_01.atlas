@@ -1,0 +1,62 @@
+Mummy_Export_01.png
+size:457,206
+filter:Linear,Linear
+pma:true
+Eye_lide
+bounds:362,102,92,48
+offsets:3,3,99,56
+Eye_white
+bounds:362,152,93,52
+offsets:3,3,99,56
+Head
+bounds:158,106,109,98
+L-leg_alt copy
+bounds:333,65,42,12
+rotate:90
+R-leg_alt
+bounds:333,65,42,12
+rotate:90
+Leg_left
+bounds:269,63,44,62
+rotate:90
+Leg_right
+bounds:347,53,47,62
+offsets:0,0,53,62
+rotate:90
+arm_left
+bounds:297,4,44,57
+offsets:5,23,54,80
+arm_right
+bounds:343,8,43,57
+offsets:6,19,60,76
+rotate:90
+body copy 2
+bounds:269,109,91,95
+body copy 3
+bounds:151,3,82,50
+eye_left
+bounds:402,5,17,18
+rotate:90
+eye_right
+bounds:422,34,16,17
+hand_left
+bounds:101,2,61,48
+rotate:90
+hand_part
+bounds:402,24,18,27
+hand_right
+bounds:235,5,60,48
+offsets:0,0,60,50
+kurdela_down
+bounds:158,55,103,49
+kurdela_up
+bounds:2,2,97,61
+offsets:6,0,103,61
+shadow left
+bounds:428,54,46,15
+rotate:90
+shadow right
+bounds:411,53,47,15
+rotate:90
+shadow_bgr
+bounds:2,65,154,139

@@ -1,0 +1,2091 @@
+{
+ "evidence": "native Add* slot constants and metadata signatures",
+ "native_sha256": "51ccc794cd074482129ea68c9be3ba44a6b3012144ccc073576c9cf260198279",
+ "tables": {
+  "FAttackBuilding": [
+   {
+    "name": "Point",
+    "slot": 0,
+    "add_method": 21064,
+    "add_address": "0x20d1f60",
+    "default": 0,
+    "kind": "table",
+    "target": "FPoint",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Health",
+    "slot": 1,
+    "add_method": 21065,
+    "add_address": "0x20d1f40",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Name",
+    "slot": 2,
+    "add_method": 21066,
+    "add_address": "0x20d1f20",
+    "default": 0,
+    "kind": "string",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Info",
+    "slot": 3,
+    "add_method": 21067,
+    "add_address": "0x20d1f00",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   }
+  ],
+  "FAttackCellGridSaveData": [
+   {
+    "name": "Grid",
+    "slot": 0,
+    "add_method": 21082,
+    "add_address": "0x20d24ac",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FAttackCellSaveData",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Width",
+    "slot": 1,
+    "add_method": 21088,
+    "add_address": "0x20d248c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Height",
+    "slot": 2,
+    "add_method": 21089,
+    "add_address": "0x20d246c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FAttackCellSaveData": [
+   {
+    "name": "CurrentItem",
+    "slot": 0,
+    "add_method": 21101,
+    "add_address": "0x20d2af0",
+    "default": 0,
+    "kind": "table",
+    "target": "FAttackItemSaveData",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FAttackData": [
+   {
+    "name": "IsRoad",
+    "slot": 0,
+    "add_method": 21115,
+    "add_address": "0x20d2e14",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Waves",
+    "slot": 1,
+    "add_method": 21116,
+    "add_address": "0x20d2df4",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FAttackWave",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FAttackItemSaveData": [
+   {
+    "name": "Name",
+    "slot": 0,
+    "add_method": 21137,
+    "add_address": "0x20d34d0",
+    "default": 0,
+    "kind": "string",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "TiledId",
+    "slot": 1,
+    "add_method": 21138,
+    "add_address": "0x20d34f0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Data",
+    "slot": 2,
+    "add_method": 21139,
+    "add_address": "0x20d34b0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "long",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FAttackPlayerSaveData": [
+   {
+    "name": "UserId",
+    "slot": 0,
+    "add_method": 21155,
+    "add_address": "0x20d3930",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "long",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "ShieldCount",
+    "slot": 1,
+    "add_method": 21156,
+    "add_address": "0x20d39b0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "CastleLayer",
+    "slot": 2,
+    "add_method": 21157,
+    "add_address": "0x20d3990",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "ClockTowerLayer",
+    "slot": 3,
+    "add_method": 21158,
+    "add_address": "0x20d3970",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "WizardTowerLayer",
+    "slot": 4,
+    "add_method": 21159,
+    "add_address": "0x20d3950",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 12
+   }
+  ],
+  "FAttackWave": [
+   {
+    "name": "Id",
+    "slot": 0,
+    "add_method": 21187,
+    "add_address": "0x20d4114",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Width",
+    "slot": 1,
+    "add_method": 21188,
+    "add_address": "0x20d40f4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Height",
+    "slot": 2,
+    "add_method": 21189,
+    "add_address": "0x20d40d4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Items",
+    "slot": 3,
+    "add_method": 21190,
+    "add_address": "0x20d40b4",
+    "default": 0,
+    "kind": "vector_scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "Cells",
+    "slot": 4,
+    "add_method": 21196,
+    "add_address": "0x20d4094",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FTiledAttackCell",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "Counts",
+    "slot": 5,
+    "add_method": 21202,
+    "add_address": "0x20d4074",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FItemCount",
+    "getter_vtable_slot": 14
+   },
+   {
+    "name": "Buildings",
+    "slot": 6,
+    "add_method": 21208,
+    "add_address": "0x20d4054",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FAttackBuilding",
+    "getter_vtable_slot": 16
+   },
+   {
+    "name": "Goals",
+    "slot": 7,
+    "add_method": 21214,
+    "add_address": "0x20d4034",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FGoalData",
+    "getter_vtable_slot": 18
+   },
+   {
+    "name": "Paths",
+    "slot": 8,
+    "add_method": 21220,
+    "add_address": "0x20d4014",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FPathData",
+    "getter_vtable_slot": 20
+   }
+  ],
+  "FAttackWavesSaveData": [
+   {
+    "name": "CurrentWave",
+    "slot": 0,
+    "add_method": 21240,
+    "add_address": "0x20d56f4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Waves",
+    "slot": 1,
+    "add_method": 21241,
+    "add_address": "0x20d56d4",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FAttackCellGridSaveData",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "StaticSpawnId",
+    "slot": 2,
+    "add_method": 21247,
+    "add_address": "0x20d56b4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FBeforeAfterSaveData": [
+   {
+    "name": "Before",
+    "slot": 0,
+    "add_method": 21261,
+    "add_address": "0x20d5d98",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "After",
+    "slot": 1,
+    "add_method": 21262,
+    "add_address": "0x20d5d78",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "ShouldConsume",
+    "slot": 2,
+    "add_method": 21263,
+    "add_address": "0x20d5db8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FBlitzLevelSaveData": [
+   {
+    "name": "Type",
+    "slot": 0,
+    "add_method": 21277,
+    "add_address": "0x20d6204",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Multiplier",
+    "slot": 1,
+    "add_method": 21278,
+    "add_address": "0x20d61e4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "EventData",
+    "slot": 2,
+    "add_method": 21279,
+    "add_address": "0x20d61c4",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FBoard": [
+   {
+    "name": "Id",
+    "slot": 0,
+    "add_method": 21298,
+    "add_address": "0x20d6a4c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "BottomLeft",
+    "slot": 1,
+    "add_method": 21299,
+    "add_address": "0x20d69ec",
+    "default": 0,
+    "kind": "table",
+    "target": "FPoint",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Width",
+    "slot": 2,
+    "add_method": 21300,
+    "add_address": "0x20d6a2c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Height",
+    "slot": 3,
+    "add_method": 21301,
+    "add_address": "0x20d6a0c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "Goals",
+    "slot": 4,
+    "add_method": 21302,
+    "add_address": "0x20d69cc",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FGoalData",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "ItemCounts",
+    "slot": 5,
+    "add_method": 21308,
+    "add_address": "0x20d69ac",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FItemCount",
+    "getter_vtable_slot": 14
+   }
+  ],
+  "FCellGridSaveData": [
+   {
+    "name": "Grid",
+    "slot": 0,
+    "add_method": 21328,
+    "add_address": "0x20d756c",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FCellSaveData",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Width",
+    "slot": 1,
+    "add_method": 21334,
+    "add_address": "0x20d754c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Height",
+    "slot": 2,
+    "add_method": 21335,
+    "add_address": "0x20d752c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FCellGroupData": [
+   {
+    "name": "Cells",
+    "slot": 0,
+    "add_method": 21348,
+    "add_address": "0x20d7bfc",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FPoint",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FCellSaveData": [
+   {
+    "name": "CurrentItem",
+    "slot": 0,
+    "add_method": 21368,
+    "add_address": "0x20d83cc",
+    "default": 0,
+    "kind": "table",
+    "target": "FItemSaveData",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "StaticItems",
+    "slot": 1,
+    "add_method": 21369,
+    "add_address": "0x20d83ac",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FStaticItemSaveData",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "IsRemoved",
+    "slot": 2,
+    "add_method": 21375,
+    "add_address": "0x20d83ec",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FCollectedStaticItemData": [
+   {
+    "name": "SetId",
+    "slot": 0,
+    "add_method": 21392,
+    "add_address": "0x20d8d30",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "ColorId",
+    "slot": 1,
+    "add_method": 21393,
+    "add_address": "0x20d8d10",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Order",
+    "slot": 2,
+    "add_method": 21394,
+    "add_address": "0x20d8cf0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Target",
+    "slot": 3,
+    "add_method": 21395,
+    "add_address": "0x20d8cd0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "MaxPoint",
+    "slot": 4,
+    "add_method": 21396,
+    "add_address": "0x20d8cb0",
+    "default": 0,
+    "kind": "table",
+    "target": "FPoint",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "MinPoint",
+    "slot": 5,
+    "add_method": 21397,
+    "add_address": "0x20d8c90",
+    "default": 0,
+    "kind": "table",
+    "target": "FPoint",
+    "getter_vtable_slot": 14
+   }
+  ],
+  "FEventLevelSaveData": [
+   {
+    "name": "BeforeAfter",
+    "slot": 0,
+    "add_method": 21410,
+    "add_address": "0x20d91ec",
+    "default": 0,
+    "kind": "table",
+    "target": "FBeforeAfterSaveData",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "EventId",
+    "slot": 1,
+    "add_method": 21411,
+    "add_address": "0x20d91cc",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FFillingItemLimit": [
+   {
+    "name": "GoalType",
+    "slot": 0,
+    "add_method": 21425,
+    "add_address": "0x20d95f8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Min",
+    "slot": 1,
+    "add_method": 21426,
+    "add_address": "0x20d95d8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Max",
+    "slot": 2,
+    "add_method": 21427,
+    "add_address": "0x20d95b8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FFlyingContestLevelSaveData": [
+   {
+    "name": "Streak",
+    "slot": 0,
+    "add_method": 21440,
+    "add_address": "0x20d99c4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "EventData",
+    "slot": 1,
+    "add_method": 21441,
+    "add_address": "0x20d99a4",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FGoalData": [
+   {
+    "name": "Goal",
+    "slot": 0,
+    "add_method": 21455,
+    "add_address": "0x20d9d74",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Count",
+    "slot": 1,
+    "add_method": 21456,
+    "add_address": "0x20d9d54",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "IsFromSettings",
+    "slot": 2,
+    "add_method": 21457,
+    "add_address": "0x20d9d94",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FGoalSaveData": [
+   {
+    "name": "GoalType",
+    "slot": 0,
+    "add_method": 21470,
+    "add_address": "0x20da0ec",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "LeftCount",
+    "slot": 1,
+    "add_method": 21471,
+    "add_address": "0x20da0cc",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FIntIntPair": [
+   {
+    "name": "Key",
+    "slot": 0,
+    "add_method": 21484,
+    "add_address": "0x20da420",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Value",
+    "slot": 1,
+    "add_method": 21485,
+    "add_address": "0x20da400",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FItemCount": [
+   {
+    "name": "Type",
+    "slot": 0,
+    "add_method": 21498,
+    "add_address": "0x20da714",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Count",
+    "slot": 1,
+    "add_method": 21499,
+    "add_address": "0x20da6f4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FItemModelCreatorSaveData": [
+   {
+    "name": "CreatedSetItemCountExceptMatchItem",
+    "slot": 0,
+    "add_method": 21515,
+    "add_address": "0x20dacf8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "GeneratedItems",
+    "slot": 1,
+    "add_method": 21521,
+    "add_address": "0x20dacd8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "PredefinedItemsSaveData",
+    "slot": 2,
+    "add_method": 21527,
+    "add_address": "0x20dacb8",
+    "default": 0,
+    "kind": "table",
+    "target": "FPredefinedItemsSaveData",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FItemModelQueueSaveData": [
+   {
+    "name": "Items",
+    "slot": 0,
+    "add_method": 21540,
+    "add_address": "0x20db668",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FItemSaveData",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FItemSaveData": [
+   {
+    "name": "TiledId",
+    "slot": 0,
+    "add_method": 21559,
+    "add_address": "0x20dbd54",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Data",
+    "slot": 1,
+    "add_method": 21560,
+    "add_address": "0x20dbd34",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "OverlayItem",
+    "slot": 2,
+    "add_method": 21561,
+    "add_address": "0x20dbd14",
+    "default": 0,
+    "kind": "table",
+    "target": "FOverlayItemSaveData",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FLastPlayedLevelSaveData": [
+   {
+    "name": "PreviousWinStreak",
+    "slot": 0,
+    "add_method": 21597,
+    "add_address": "0x20dd4f0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "EgoPurchaseCount",
+    "slot": 1,
+    "add_method": 21598,
+    "add_address": "0x20dd4d0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "LevelStartTime",
+    "slot": 2,
+    "add_method": 21599,
+    "add_address": "0x20dd230",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "long",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "TimeSpent",
+    "slot": 3,
+    "add_method": 21600,
+    "add_address": "0x20dd210",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "long",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "NoPossibleMoveShuffleCount",
+    "slot": 4,
+    "add_method": 21601,
+    "add_address": "0x20dd4b0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "NoPossibleMoveColoredShuffleCount",
+    "slot": 5,
+    "add_method": 21602,
+    "add_address": "0x20dd490",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 14
+   },
+   {
+    "name": "MatchItemCounts",
+    "slot": 6,
+    "add_method": 21603,
+    "add_address": "0x20dd470",
+    "default": 0,
+    "kind": "table",
+    "target": "FMatchItemCountsSaveData",
+    "getter_vtable_slot": 16
+   },
+   {
+    "name": "SpecialItemCounts",
+    "slot": 7,
+    "add_method": 21604,
+    "add_address": "0x20dd450",
+    "default": 0,
+    "kind": "table",
+    "target": "FSpecialItemCountsSaveData",
+    "getter_vtable_slot": 18
+   },
+   {
+    "name": "LevelRestartData",
+    "slot": 8,
+    "add_method": 21605,
+    "add_address": "0x20dd430",
+    "default": 0,
+    "kind": "table",
+    "target": "FLevelRestartSaveData",
+    "getter_vtable_slot": 20
+   },
+   {
+    "name": "ObstacleCounts",
+    "slot": 9,
+    "add_method": 21606,
+    "add_address": "0x20dd410",
+    "default": 0,
+    "kind": "table",
+    "target": "FObstacleCountsSaveData",
+    "getter_vtable_slot": 22
+   },
+   {
+    "name": "KingdomPassData",
+    "slot": 10,
+    "add_method": 21607,
+    "add_address": "0x20dd3f0",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 24
+   },
+   {
+    "name": "MagicPot",
+    "slot": 11,
+    "add_method": 21608,
+    "add_address": "0x20dd3d0",
+    "default": 0,
+    "kind": "table",
+    "target": "FBeforeAfterSaveData",
+    "getter_vtable_slot": 26
+   },
+   {
+    "name": "AttackedPlayerData",
+    "slot": 12,
+    "add_method": 21609,
+    "add_address": "0x20dd3b0",
+    "default": 0,
+    "kind": "table",
+    "target": "FAttackPlayerSaveData",
+    "getter_vtable_slot": 28
+   },
+   {
+    "name": "GrandTournamentData",
+    "slot": 13,
+    "add_method": 21610,
+    "add_address": "0x20dd390",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 30
+   },
+   {
+    "name": "BlitzLevelSaveData",
+    "slot": 14,
+    "add_method": 21611,
+    "add_address": "0x20dd370",
+    "default": 0,
+    "kind": "table",
+    "target": "FBlitzLevelSaveData",
+    "getter_vtable_slot": 32
+   },
+   {
+    "name": "TeamAdventureData",
+    "slot": 15,
+    "add_method": 21612,
+    "add_address": "0x20dd350",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 34
+   },
+   {
+    "name": "PearlsOfAtlantis",
+    "slot": 16,
+    "add_method": 21613,
+    "add_address": "0x20dd330",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 36
+   },
+   {
+    "name": "TeamClashData",
+    "slot": 17,
+    "add_method": 21614,
+    "add_address": "0x20dd310",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 38
+   },
+   {
+    "name": "PowerRushData",
+    "slot": 18,
+    "add_method": 21615,
+    "add_address": "0x20dd2f0",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 40
+   },
+   {
+    "name": "SuperElectroBall",
+    "slot": 19,
+    "add_method": 21616,
+    "add_address": "0x20dd2d0",
+    "default": 0,
+    "kind": "table",
+    "target": "FBeforeAfterSaveData",
+    "getter_vtable_slot": 42
+   },
+   {
+    "name": "HadSeb",
+    "slot": 20,
+    "add_method": 21617,
+    "add_address": "0x20dd510",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 44
+   },
+   {
+    "name": "CubeBlast",
+    "slot": 21,
+    "add_method": 21618,
+    "add_address": "0x20dd2b0",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 46
+   },
+   {
+    "name": "FlyingContestData",
+    "slot": 22,
+    "add_method": 21619,
+    "add_address": "0x20dd290",
+    "default": 0,
+    "kind": "table",
+    "target": "FFlyingContestLevelSaveData",
+    "getter_vtable_slot": 48
+   },
+   {
+    "name": "IslandRaceData",
+    "slot": 23,
+    "add_method": 21620,
+    "add_address": "0x20dd270",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 50
+   },
+   {
+    "name": "WeeklyContestData",
+    "slot": 24,
+    "add_method": 21621,
+    "add_address": "0x20dd250",
+    "default": 0,
+    "kind": "table",
+    "target": "FWeeklyContestLevelSaveData",
+    "getter_vtable_slot": 52
+   }
+  ],
+  "FLevelRestartSaveData": [
+   {
+    "name": "InGameBoosterPurchaseAmounts",
+    "slot": 0,
+    "add_method": 21640,
+    "add_address": "0x20de10c",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "BoosterUseAmounts",
+    "slot": 1,
+    "add_method": 21646,
+    "add_address": "0x20de0ec",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "InGameBoosterTotalPrice",
+    "slot": 2,
+    "add_method": 21652,
+    "add_address": "0x20de0cc",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "HadUnlimitedRocket",
+    "slot": 3,
+    "add_method": 21653,
+    "add_address": "0x20de16c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "HadUnlimitedTnt",
+    "slot": 4,
+    "add_method": 21654,
+    "add_address": "0x20de14c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "HadUnlimitedLightball",
+    "slot": 5,
+    "add_method": 21655,
+    "add_address": "0x20de12c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 14
+   }
+  ],
+  "FLevelSaveData": [
+   {
+    "name": "Checksum",
+    "slot": 0,
+    "add_method": 21682,
+    "add_address": "0x20df3b0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "long",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "LevelName",
+    "slot": 1,
+    "add_method": 21683,
+    "add_address": "0x20df510",
+    "default": 0,
+    "kind": "string",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "CellGrid",
+    "slot": 2,
+    "add_method": 21684,
+    "add_address": "0x20df4f0",
+    "default": 0,
+    "kind": "table",
+    "target": "FCellGridSaveData",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Moves",
+    "slot": 3,
+    "add_method": 21685,
+    "add_address": "0x20df4d0",
+    "default": 0,
+    "kind": "table",
+    "target": "FMoveSaveData",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "Goals",
+    "slot": 4,
+    "add_method": 21686,
+    "add_address": "0x20df4b0",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FGoalSaveData",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "AttackWaves",
+    "slot": 5,
+    "add_method": 21692,
+    "add_address": "0x20df490",
+    "default": 0,
+    "kind": "table",
+    "target": "FAttackWavesSaveData",
+    "getter_vtable_slot": 14
+   },
+   {
+    "name": "ItemModelCreatorSaveData",
+    "slot": 6,
+    "add_method": 21693,
+    "add_address": "0x20df470",
+    "default": 0,
+    "kind": "table",
+    "target": "FItemModelCreatorSaveData",
+    "getter_vtable_slot": 16
+   },
+   {
+    "name": "EgoStep",
+    "slot": 7,
+    "add_method": 21694,
+    "add_address": "0x20df450",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 18
+   },
+   {
+    "name": "LastPlayedLevelSaveData",
+    "slot": 8,
+    "add_method": 21695,
+    "add_address": "0x20df430",
+    "default": 0,
+    "kind": "table",
+    "target": "FLastPlayedLevelSaveData",
+    "getter_vtable_slot": 20
+   },
+   {
+    "name": "PrelevelBoosterSelectionSaveData",
+    "slot": 9,
+    "add_method": 21696,
+    "add_address": "0x20df410",
+    "default": 0,
+    "kind": "table",
+    "target": "FPrelevelBoosterSelectionSaveData",
+    "getter_vtable_slot": 22
+   },
+   {
+    "name": "IsAdmin",
+    "slot": 10,
+    "add_method": 21697,
+    "add_address": "0x20df530",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 24
+   },
+   {
+    "name": "LevelNo",
+    "slot": 11,
+    "add_method": 21698,
+    "add_address": "0x20df3f0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 26
+   },
+   {
+    "name": "LevelSkin",
+    "slot": 12,
+    "add_method": 21699,
+    "add_address": "0x20df3d0",
+    "default": 0,
+    "kind": "table",
+    "target": "FLevelSkinSaveData",
+    "getter_vtable_slot": 28
+   }
+  ],
+  "FLevelSkinSaveData": [
+   {
+    "name": "DifficultySkin",
+    "slot": 0,
+    "add_method": 21712,
+    "add_address": "0x20dfdd4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "KingdomSkin",
+    "slot": 1,
+    "add_method": 21713,
+    "add_address": "0x20dfdb4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FMagicGlobeConfig": [
+   {
+    "name": "ElectroballRatio",
+    "slot": 0,
+    "add_method": 21729,
+    "add_address": "0x20e0274",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "DynamiteRatio",
+    "slot": 1,
+    "add_method": 21730,
+    "add_address": "0x20e0254",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "RocketHorizontalRatio",
+    "slot": 2,
+    "add_method": 21731,
+    "add_address": "0x20e0234",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "RocketVerticalRatio",
+    "slot": 3,
+    "add_method": 21732,
+    "add_address": "0x20e0214",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "SpinnerRatio",
+    "slot": 4,
+    "add_method": 21733,
+    "add_address": "0x20e01f4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 12
+   }
+  ],
+  "FMatchItemCountsSaveData": [
+   {
+    "name": "ExplodeCounts",
+    "slot": 0,
+    "add_method": 21748,
+    "add_address": "0x20e0634",
+    "default": 0,
+    "kind": "vector_scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FMoveSaveData": [
+   {
+    "name": "LeftMoves",
+    "slot": 0,
+    "add_method": 21766,
+    "add_address": "0x20e0b90",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "MadeMoves",
+    "slot": 1,
+    "add_method": 21767,
+    "add_address": "0x20e0b70",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FObstacleCountsSaveData": [
+   {
+    "name": "ItemsInLevel",
+    "slot": 0,
+    "add_method": 21780,
+    "add_address": "0x20e0ed0",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FOverlayItemSaveData": [
+   {
+    "name": "TiledId",
+    "slot": 0,
+    "add_method": 21798,
+    "add_address": "0x20e148c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Data",
+    "slot": 1,
+    "add_method": 21799,
+    "add_address": "0x20e146c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FPathCellData": [
+   {
+    "name": "Point",
+    "slot": 0,
+    "add_method": 21812,
+    "add_address": "0x20e1834",
+    "default": 0,
+    "kind": "table",
+    "target": "FPoint",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Direction",
+    "slot": 1,
+    "add_method": 21813,
+    "add_address": "0x20e1814",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FPathData": [
+   {
+    "name": "Item",
+    "slot": 0,
+    "add_method": 21828,
+    "add_address": "0x20e1ce4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Cells",
+    "slot": 1,
+    "add_method": 21829,
+    "add_address": "0x20e1cc4",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FPathCellData",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Loop",
+    "slot": 2,
+    "add_method": 21835,
+    "add_address": "0x20e1d04",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FPoint": [
+   {
+    "name": "X",
+    "slot": 0,
+    "add_method": 21848,
+    "add_address": "0x20e2308",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Y",
+    "slot": 1,
+    "add_method": 21849,
+    "add_address": "0x20e22e8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FPredefinedItemsSaveData": [
+   {
+    "name": "Queues",
+    "slot": 0,
+    "add_method": 21862,
+    "add_address": "0x20e2648",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FItemModelQueueSaveData",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FPrelevelBoosterSelectionSaveData": [
+   {
+    "name": "LevelRocketBoosterSource",
+    "slot": 0,
+    "add_method": 21881,
+    "add_address": "0x20e2c80",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "LevelDynamiteBoosterSource",
+    "slot": 1,
+    "add_method": 21882,
+    "add_address": "0x20e2c60",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "LevelElectroBallBoosterSource",
+    "slot": 2,
+    "add_method": 21883,
+    "add_address": "0x20e2c40",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FSpecialItemCountsSaveData": [
+   {
+    "name": "ItemCreation",
+    "slot": 0,
+    "add_method": 21902,
+    "add_address": "0x20e3344",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "ItemUse",
+    "slot": 1,
+    "add_method": 21908,
+    "add_address": "0x20e3324",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "ComboDict",
+    "slot": 2,
+    "add_method": 21914,
+    "add_address": "0x20e3304",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FIntIntPair",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "TappedElectroBallCount",
+    "slot": 3,
+    "add_method": 21920,
+    "add_address": "0x20e32e4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "SwappedItemCount",
+    "slot": 4,
+    "add_method": 21921,
+    "add_address": "0x20e32c4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 12
+   }
+  ],
+  "FStaticItemSaveData": [
+   {
+    "name": "TiledId",
+    "slot": 0,
+    "add_method": 21934,
+    "add_address": "0x20e3eec",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Data",
+    "slot": 1,
+    "add_method": 21935,
+    "add_address": "0x20e3ecc",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "short",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FStringIntPair": [
+   {
+    "name": "Key",
+    "slot": 0,
+    "add_method": 21950,
+    "add_address": "0x20e429c",
+    "default": 0,
+    "kind": "string",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Value",
+    "slot": 1,
+    "add_method": 21951,
+    "add_address": "0x20e427c",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   }
+  ],
+  "FTiledAttackCell": [
+   {
+    "name": "Properties",
+    "slot": 0,
+    "add_method": 21963,
+    "add_address": "0x20e4558",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "long",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FTiledCell": [
+   {
+    "name": "FillType",
+    "slot": 0,
+    "add_method": 21985,
+    "add_address": "0x20e4c30",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "IsPredefined",
+    "slot": 1,
+    "add_method": 21986,
+    "add_address": "0x20e4cb0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "BoardId",
+    "slot": 2,
+    "add_method": 21987,
+    "add_address": "0x20e4c90",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Ice",
+    "slot": 3,
+    "add_method": 21988,
+    "add_address": "0x20e4c10",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "HasJelly",
+    "slot": 4,
+    "add_method": 21989,
+    "add_address": "0x20e4c70",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "bool",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "Ivy",
+    "slot": 5,
+    "add_method": 21990,
+    "add_address": "0x20e4c50",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "sbyte",
+    "getter_vtable_slot": 14
+   },
+   {
+    "name": "Curtain",
+    "slot": 6,
+    "add_method": 21991,
+    "add_address": "0x20e4bf0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 16
+   },
+   {
+    "name": "Chain",
+    "slot": 7,
+    "add_method": 21992,
+    "add_address": "0x20e4bd0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 18
+   },
+   {
+    "name": "Sand",
+    "slot": 8,
+    "add_method": 21993,
+    "add_address": "0x20e4bb0",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 20
+   },
+   {
+    "name": "Border",
+    "slot": 9,
+    "add_method": 21994,
+    "add_address": "0x20e4b90",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 22
+   },
+   {
+    "name": "Puzzle",
+    "slot": 10,
+    "add_method": 21995,
+    "add_address": "0x20e4b70",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 24
+   }
+  ],
+  "FTiledGrid": [
+   {
+    "name": "Items",
+    "slot": 0,
+    "add_method": 22016,
+    "add_address": "0x20e54e8",
+    "default": 0,
+    "kind": "vector_scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Cells",
+    "slot": 1,
+    "add_method": 22022,
+    "add_address": "0x20e54c8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FTiledCell",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Width",
+    "slot": 2,
+    "add_method": 22028,
+    "add_address": "0x20e54a8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Height",
+    "slot": 3,
+    "add_method": 22029,
+    "add_address": "0x20e5488",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "Boards",
+    "slot": 4,
+    "add_method": 22030,
+    "add_address": "0x20e5468",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FBoard",
+    "getter_vtable_slot": 12
+   }
+  ],
+  "FTiledLevel": [
+   {
+    "name": "Name",
+    "slot": 0,
+    "add_method": 22080,
+    "add_address": "0x20e7208",
+    "default": 0,
+    "kind": "string",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Move",
+    "slot": 1,
+    "add_method": 22081,
+    "add_address": "0x20e71e8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Grid",
+    "slot": 2,
+    "add_method": 22082,
+    "add_address": "0x20e71c8",
+    "default": 0,
+    "kind": "table",
+    "target": "FTiledGrid",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "Predefined",
+    "slot": 3,
+    "add_method": 22083,
+    "add_address": "0x20e71a8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FTiledPredefined",
+    "getter_vtable_slot": 10
+   },
+   {
+    "name": "Sets",
+    "slot": 4,
+    "add_method": 22089,
+    "add_address": "0x20e7188",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FTiledSet",
+    "getter_vtable_slot": 12
+   },
+   {
+    "name": "Colors",
+    "slot": 5,
+    "add_method": 22095,
+    "add_address": "0x20e7168",
+    "default": 0,
+    "kind": "vector_scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 14
+   },
+   {
+    "name": "Walls",
+    "slot": 6,
+    "add_method": 22101,
+    "add_address": "0x20e7148",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FCellGroupData",
+    "getter_vtable_slot": 16
+   },
+   {
+    "name": "Attack",
+    "slot": 7,
+    "add_method": 22107,
+    "add_address": "0x20e7128",
+    "default": 0,
+    "kind": "table",
+    "target": "FAttackData",
+    "getter_vtable_slot": 18
+   },
+   {
+    "name": "Background",
+    "slot": 8,
+    "add_method": 22108,
+    "add_address": "0x20e7108",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 20
+   },
+   {
+    "name": "Targets",
+    "slot": 9,
+    "add_method": 22109,
+    "add_address": "0x20e70e8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FCellGroupData",
+    "getter_vtable_slot": 22
+   },
+   {
+    "name": "Curtains",
+    "slot": 10,
+    "add_method": 22115,
+    "add_address": "0x20e70c8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FCollectedStaticItemData",
+    "getter_vtable_slot": 24
+   },
+   {
+    "name": "FillingItemLimits",
+    "slot": 11,
+    "add_method": 22121,
+    "add_address": "0x20e70a8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FFillingItemLimit",
+    "getter_vtable_slot": 26
+   },
+   {
+    "name": "Paths",
+    "slot": 12,
+    "add_method": 22127,
+    "add_address": "0x20e7088",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FPathData",
+    "getter_vtable_slot": 28
+   },
+   {
+    "name": "LightbulbColorOrder",
+    "slot": 13,
+    "add_method": 22133,
+    "add_address": "0x20e7068",
+    "default": 0,
+    "kind": "vector_scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 30
+   },
+   {
+    "name": "Tablets",
+    "slot": 14,
+    "add_method": 22139,
+    "add_address": "0x20e7048",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FCellGroupData",
+    "getter_vtable_slot": 32
+   },
+   {
+    "name": "Puzzles",
+    "slot": 15,
+    "add_method": 22145,
+    "add_address": "0x20e7028",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FCollectedStaticItemData",
+    "getter_vtable_slot": 34
+   },
+   {
+    "name": "MagicGlobeConfig",
+    "slot": 16,
+    "add_method": 22151,
+    "add_address": "0x20e7008",
+    "default": 0,
+    "kind": "table",
+    "target": "FMagicGlobeConfig",
+    "getter_vtable_slot": 36
+   }
+  ],
+  "FTiledPredefined": [
+   {
+    "name": "X",
+    "slot": 0,
+    "add_method": 22168,
+    "add_address": "0x20e96e4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Y",
+    "slot": 1,
+    "add_method": 22169,
+    "add_address": "0x20e96c4",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "Ids",
+    "slot": 2,
+    "add_method": 22170,
+    "add_address": "0x20e96a4",
+    "default": 0,
+    "kind": "vector_scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   }
+  ],
+  "FTiledSet": [
+   {
+    "name": "Name",
+    "slot": 0,
+    "add_method": 22196,
+    "add_address": "0x20ea008",
+    "default": 0,
+    "kind": "string",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "Elements",
+    "slot": 1,
+    "add_method": 22197,
+    "add_address": "0x20e9fe8",
+    "default": 0,
+    "kind": "vector_table",
+    "target": "FTiledSetElement",
+    "getter_vtable_slot": 6
+   },
+   {
+    "name": "CreateRatio",
+    "slot": 2,
+    "add_method": 22203,
+    "add_address": "0x20e9fc8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 8
+   },
+   {
+    "name": "TargetFills",
+    "slot": 3,
+    "add_method": 22204,
+    "add_address": "0x20e9fa8",
+    "default": 0,
+    "kind": "vector_scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 10
+   }
+  ],
+  "FTiledSetElement": [
+   {
+    "name": "Id",
+    "slot": 0,
+    "add_method": 22221,
+    "add_address": "0x20ea840",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   }
+  ],
+  "FWeeklyContestLevelSaveData": [
+   {
+    "name": "ProgressType",
+    "slot": 0,
+    "add_method": 22234,
+    "add_address": "0x20eabc8",
+    "default": 0,
+    "kind": "scalar",
+    "scalar": "int",
+    "getter_vtable_slot": 4
+   },
+   {
+    "name": "EventData",
+    "slot": 1,
+    "add_method": 22235,
+    "add_address": "0x20eaba8",
+    "default": 0,
+    "kind": "table",
+    "target": "FEventLevelSaveData",
+    "getter_vtable_slot": 6
+   }
+  ]
+ },
+ "issues": []
+}

@@ -1,0 +1,24 @@
+{
+ "updated": "2026-11-11T14:10:49.161685+07:00",
+ "status": "PASS",
+ "scope": "original level 1 adapter and existing modes; not complete original behavior",
+ "files": {
+  "Assets/Scripts/MatchBoard.cs": "75bbf5f58f1bba09b743a28b9d5aca372ea2f97898aa8dbae21a028cd6d7af87",
+  "Assets/Scripts/CrownGame.cs": "137b5b139dd444817fe26b35277587f3a4f6b437e5284e0f2a20343f772b6f80",
+  "Assets/Scripts/OriginalLevelDefinition.cs": "61a6bcd329b92a2c11f6e34fb13757d98dd4e972d052312ce478623eb3cf1f26",
+  "Assets/Editor/BuildGame.cs": "d3802260561b4c28362d6c87afeca75f196bd5f86cadb0fa2cfe6841c79312ef",
+  "Assets/Resources/OriginalLevels/level_1.json": "9b4ec9d2484e1ad42a6127c2e261c4fead7b95da0037648d10d556a2afb1a849",
+  "Assets/Resources/RecoveredArt/provenance.json": "c653c9484fd9cd3c46084e2332f3c1fa4bdfacc3f6e2b4a6a9c04632fb3ca1ab",
+  "Packages/manifest.json": "efb4b75c02bcb753523a2f4c42f14229612c12eed0e02289c03a12c0fd7500bf",
+  "Build/Windows/CrownGarden_Data/Managed/Assembly-CSharp.dll": "83a8476c29c0ec9bf9a47a66e32e6eaed35022c38441c502cbf188c811939489"
+ },
+ "reports": {
+  "original-board.txt": "PASS: original 9x9 layout / 30 moves / 54 boxes preserved; 30 legal actions, 45 cascade steps, 19 boxes cleared. Native-directed box hits, fixed blockers, variable dimensions, stored refill order, unsupported tile rejection passed.\nUnverified fidelity: diagonal falling, original RNG and complete obstacle set.\n",
+  "OriginalLevel1/original-runtime.txt": "PASS: original 9x9 / 30 moves / 54 boxes loaded; actions=12, boxesCleared=6, boxesLeft=48, moves=18, stable=True, won=False, boxArt=True",
+  "ComboAfterOriginal/combo-runtime.txt": "PASS: four partner combinations rendered and resolved; one move each, ice target cleared, stable boards, flight captures=4",
+  "GeneratedAfterOriginal/runtime-check.txt": "PASS: homeRepaint=True, gameplayRepaint=True, recoveredArt=10/10, recoveredAudio=12/12, legal actions=8, score=4220, moves=22, stable=True",
+  "rules.txt": "PASS: 21568 assertions, 4500 legal actions, 6393 cascade steps.\nChecks: propeller + horizontal/vertical rocket/bomb/rainbow, both swap orders and all directions, corner targets, remote footprints, preserved special chains, unique flights, repeat expansion, squares, stable starts, hints, ice, gravity and refill.\n"
+ },
+ "manual_ui": "Window launch and keyboard close observed; Windows screenshot capture timed out, so direct mouse/drag verification was not completed",
+ "accountQuotaPercent": null
+}

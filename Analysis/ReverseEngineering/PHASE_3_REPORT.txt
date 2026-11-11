@@ -1,0 +1,60 @@
+PHÂN TÍCH APKM — GIAI ĐOẠN 3 / BẢN TIẾP TỤC MỚI NHẤT
+
+TIẾN ĐỘ THỰC TẾ
+- Đã nối dữ liệu màn 1 vào runtime, có nút ORIGINAL LEVEL 1 trên màn vườn.
+- Bộ nạp giữ nguyên bố cục 9x9, 30 lượt, mục tiêu 54 hộp, palette 4 màu và 99 entry predefined (11 mỗi cột). Đã đối chiếu toàn bộ mảng tile với JSON giải mã từ APK, không cắt về 8x8 và không thay tile chưa hỗ trợ bằng đá màu.
+- MatchBoard hiện có Width/Height, Active mask và Boxes theo lớp. Các test chế độ cũ vẫn dùng 8x8; tọa độ/render đầu vào được đổi theo kích thước bàn.
+- Hộp không rơi/đổi chỗ; ghép cạnh hoặc special đánh trúng giảm một lớp; một nhóm ghép không đánh trùng hộp nhiều lần. Hộp chặn trọng lực; không sinh đá qua hộp xuống các đoạn bị cô lập bên dưới.
+- Hàng đợi refill theo X và thứ tự stored entry/Ids được xác minh từ native AddPredefined/Enqueue/Dequeue; khi cạn queue, adapter vẫn dùng RNG prototype theo palette, không phải RNG/bias gốc.
+- Đã sửa một sai lệch cũ: special không còn dùng replaced color để tham gia match thường. Replaced color vẫn giữ cho effect/combo; đây là khái niệm khác MatchType.
+- Nạp thêm hình hộp gốc và provenance. Bản thử nghiệm dùng 11 texture nguồn (10 item + hộp) và 12 âm thanh nguồn đã nhập ở các giai đoạn trước.
+- Lệnh kiểm tra runtime không ghi tiến độ test vào hồ sơ người dùng. Thắng màn 1 nguyên bản có cờ hoàn thành riêng, không tự tăng cấp màn tự sinh.
+
+BẰNG CHỨNG NATIVE MỚI
+Đọc BOX_AND_REFILL_EVIDENCE.txt trước khi sửa các quy tắc đã đối chiếu.
+- BoxItemModel.CanExplodeWithNearMatch @ 0x22b6988 trả true.
+- BoxItemModel.IsFallable @ 0x22b6990 và IsSwappable @ 0x22b6998 trả false.
+- BoxItemModel.TryExplode @ 0x22b69a0: trừ 1 layer rồi rẽ nhánh Damage hoặc Explode khi hết layer.
+- PredefinedItemContainer.AddPredefinedItem @ 0x23b6bb0 enqueue theo cột; GetPredefinedItem @ 0x23b9268 dequeue theo cột.
+- ItemModelCreator.AddPredefined @ 0x23b6430 giữ thứ tự vector và Ids; tọa độ Y không được dùng làm chỉ số queue.
+- Native/focused-disassembly.* hiện chứa 1.674 method chọn lọc; ghi rõ các extent chỉ là bound theo method kế tiếp, không phải decompilation hoàn chỉnh.
+
+FILE MÃ VÀ TÀI NGUYÊN MỚI/ĐÃ ĐỔI
+- Assets/Scripts/OriginalLevelDefinition.cs: DTO dữ liệu level gốc, không phụ thuộc Unity cho model.
+- Assets/Scripts/MatchBoard.cs: board động, hộp, refill queues, FromOriginal và kiểm tra tile chưa hỗ trợ.
+- Assets/Scripts/CrownGame.cs: nút vào màn 1, mục tiêu hộp, layout theo board, smoke test, kiểm tra ô đổi được và không ghi save trong chế độ test.
+- Assets/Resources/OriginalLevels/level_1.json: dữ liệu runtime chuyển thẳng từ Levels/1.json, có sourceSha256.
+- Assets/Resources/RecoveredArt/box.png và provenance.json.
+- Packages/manifest.json: thêm module JSONSerialize có sẵn trong Unity, Packages/packages-lock.json được cập nhật.
+- export-original-level-adapter.py: script tái tạo adapter và ảnh hộp có kiểm tra phạm vi được hỗ trợ.
+
+KIỂM TRA ĐÃ ĐẠT
+- build-original-level1.log: BUILD SUCCESS; 21.568 assertions, 4.500 hành động 8x8, 6.393 cascade sau khi loại special khỏi match thường.
+- Verification/original-board.txt: giữ layout/moves/goals, thử 30 nước hợp lệ trên chính màn 1, 45 cascade, phá 19 hộp; các fixture board 3x3,9x9,9x11,7x12; hộp nhiều lớp, sát thương không trùng, chặn trọng lực, hàng đợi và reject tile lạ đều đạt.
+- Đây là bằng chứng xử lý nước đi và tiến triển mục tiêu, KHÔNG phải bằng chứng đã thắng màn 1 trong 30 lượt bằng bộ chơi đầu tiên.
+- Verification/OriginalLevel1/original-runtime.txt: PASS, 12 nước, phá 6/54 hộp, còn 18 lượt, bàn ổn định, ảnh hộp nạp được. Có screenshot start/after.
+- Verification/ComboAfterOriginal/combo-runtime.txt: PASS cả rocket ngang, dọc, bom, rainbow; có flight, target ice, mỗi combo trừ một lượt.
+- Verification/GeneratedAfterOriginal/runtime-check.txt: PASS bàn tự sinh, art=10/10, audio=12/12, 8 nước, bàn ổn định.
+- verify-recovery.py: 14.524 kiểm tra dữ liệu, thêm so sánh adapter/tiles/moves/goals/predefined với JSON gốc.
+
+CHƯA HOÀN TẤT / KHÔNG ĐƯỢC KẾT LUẬN TƯƠNG ĐƯƠNG HOÀN TOÀN
+- Mới có adapter cho màn 1. 2.299 màn đánh số còn lại và 9 playable chưa nối vào runtime.
+- Trọng lực hiện theo cột, không có rơi chéo hoặc nhảy qua khoảng cell rỗng theo đúng native. Các khoảng trống dưới hộp có thể khác bản gốc.
+- RNG/bias, source shuffle, chính sách target đặc biệt, timing, square extension và double-spinner vẫn cần đối chiếu sâu.
+- Mô hình special vẫn giữ replaced color cho combo/effect; cần kiểm tra chọn màu của electroball/spinner và bộ đếm mục tiêu khi special nổ để tránh giả định từ prototype.
+- Static/overlay converter có runtime init/cache chưa được phục hồi; nhiều mechanic chướng ngại vật, prefab và animation custom bị strip type tree.
+- Hộp lớp 2/3 đã có logic nhưng hình hiện dùng hộp chính + số layer, chưa ghép patch renderer gốc.
+
+BƯỚC TIẾP THEO
+1. Phân tích các lớp fall/filling/CellNeighbors/CellPoint để khôi phục rơi chéo, ưu tiên rơi và cell mask. Đối chiếu CellModel transform để chốt Y world/view.
+2. Phân tích LevelRandomManager/GetRandomColor/LowMatchContainer để thay RNG prototype; giữ nguyên queue gốc đã chứng minh.
+3. Dùng bộ test tự chơi chọn nước hợp lệ theo mục tiêu để kiểm tra có thể hoàn tất màn 1 trong 30 lượt; không sửa dữ liệu gốc hay giảm goal để làm test pass.
+4. Mở rộng dần màn 2..10 với danh sách mechanic được hỗ trợ rõ ràng, giữ nguyên tile source và báo lỗi với loại chưa có.
+5. Tiếp tục đối chiếu combo/matches với native, không coi luật prototype cũ là nguồn chân lý.
+
+ĐIỂM KHÔI PHỤC
+- Dự án chính: D:\SourceCode\RoyalMatchOffline
+- Workspace staging: C:\Users\Admin\Documents\ChatGPT\Phuong\RoyalMatchOffline
+- Backup trước giai đoạn này: C:\Users\Admin\Documents\ChatGPT\Phuong\Before-original-level1
+- Bản Windows chính sẽ được đồng bộ sau khi kiểm tra hash.
+- Hạn mức tài khoản vẫn không đọc được; không tuyên bố đã tới 5%. Giữ goal active và lưu checkpoint mỗi giai đoạn.

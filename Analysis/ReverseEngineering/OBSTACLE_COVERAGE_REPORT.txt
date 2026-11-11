@@ -1,0 +1,34 @@
+PHÂN TÍCH GAMEPLAY — PHỦ VẬT CẢN
+
+PHẠM VI
+- Đã quét tile_counts của 2.300 level số và đối chiếu với TiledId -> ItemType bằng bảng native.
+- Có 45 nhóm ItemType chướng ngại được khai báo trong enum native.
+- 40 nhóm thực sự xuất hiện trong 2.300 level đã giải mã.
+- 5 nhóm có trong enum nhưng chưa xuất hiện trong bộ level này: ArsenalMissile, DragonEgg, DragonSmallBoxHorizontal, DragonSmallBoxVertical, FireDragonEgg.
+
+40 NHÓM ĐÃ THẤY TRONG DỮ LIỆU
+Armory, Barrel, Birdhouse, Box, Cannon, ChaliceBox, Clock, Column, DragonBox,
+FlowerPot, Flowers, Gem, GiftBox, Gnome, JellyMaker, Knight, Lantern, Lightbulb,
+Lily, Log, Lyre, MagicCards, MagicGlobe, MagicOrb, Magnet, Mask, MetalColumn,
+MetalCrate, PuzzleBox, Safe, Snowman, Starfish, SteamBomb, Tablet, Target, Turtle,
+TurtleHouse, Vase, Volcano, Wall.
+
+SỐ LƯỢNG CÒN LẠI CHO BẢN DỰNG
+- Đã có: Box xử lý nhiều lớp và một phần Ice overlay.
+- Còn cần port: 39 nhóm trong số 40 nhóm đã xuất hiện; Box vẫn cần mở rộng hành vi theo từng layer/goal.
+- Chưa tính các special item tạo từ match: rocket, dynamite/bom, spinner/chong chóng, ElectroBall/rainbow; các combo chính đã có prototype nhưng cần tiếp tục đối chiếu native.
+
+NHÓM XUẤT HIỆN NHIỀU
+- Vase: 6.646 tile.
+- Lantern: 5.970.
+- Column: 6.029 tổng các biến thể.
+- Wall: 5.306 tổng WallA/B/C.
+- Log: 4.840.
+- Magnet: 4.456.
+- Box: 7.830 tổng Box1/2/3.
+- MetalCrate: 3.639; MetalColumn: 3.337.
+
+GHI CHÚ
+- Một nhóm có nhiều TiledId góc/biến thể, vì vậy số nhóm ItemType nhỏ hơn số tile name.
+- Đây là số lượng nhóm cơ chế, không phải số ô đơn lẻ; toàn bộ các biến thể góc đã được gộp theo ItemType.
+- Các nhóm trên đã được ánh xạ native ở mức enum/lookup và dữ liệu level; hành vi phá, rơi, sinh lại và mục tiêu của từng nhóm vẫn cần port riêng.

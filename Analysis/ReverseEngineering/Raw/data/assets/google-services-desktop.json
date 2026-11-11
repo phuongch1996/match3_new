@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "687128679655",
+    "project_id": "royal-kingdom-prod",
+    "storage_bucket": "royal-kingdom-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687128679655:android:23bcd3475ce038546ebe42",
+        "android_client_info": {
+          "package_name": "com.dreamgames.royalkingdom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687128679655-cjh4g0od4bf4vd46136h67eafeng34jo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsJ6vRe4wk3fX0LEltr5DPMleuwC3giKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687128679655-cjh4g0od4bf4vd46136h67eafeng34jo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "687128679655-754ng6f1d4fp2bfiie50bimsrjvpjdb9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dreamgames.royalkingdom"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

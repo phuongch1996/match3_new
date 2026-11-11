@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "assertions": 14524,
+  "verified_text_assets": 2443,
+  "decoded_levels": 2309,
+  "numeric_levels": 2300,
+  "validated_cells": 200521,
+  "verified_sprite_exports": 82,
+  "verified_audio_exports": 34,
+  "known_tile_enum_entries": 184,
+  "original_level_adapter_present": true,
+  "limitations": [
+    "Data structure validation is not full behavioral equivalence.",
+    "Native function extents in Capstone exports are bounded by next known method, not a proven complete function body.",
+    "Original-level runtime adapter is partial: complete original RNG, diagonal falling and full mechanics are not recovered.",
+    "Most custom MonoBehaviour type trees are stripped; generic fields require further reconstruction."
+  ]
+}

@@ -1,0 +1,41 @@
+ball_01.png
+size:350,529
+filter:Linear,Linear
+pma:true
+Layer 1
+bounds:2,378,148,149
+Layer 10
+bounds:250,2,35,48
+rotate:90
+Layer 11
+bounds:250,121,48,45
+Layer 12
+bounds:306,72,37,47
+Layer 13
+bounds:128,9,120,28
+Layer 2
+bounds:300,121,48,45
+Layer 3
+bounds:152,421,106,181
+rotate:90
+Layer 5
+bounds:2,10,69,183
+Layer 6
+bounds:2,195,109,181
+Layer 7
+bounds:251,229,133,91
+rotate:90
+Layer 8
+bounds:128,113,120,130
+Layer 9
+bounds:152,364,55,195
+rotate:90
+Layer x
+bounds:250,168,83,59
+g1
+bounds:113,245,136,117
+g2
+bounds:73,8,185,53
+rotate:90
+rocks
+bounds:128,39,176,72

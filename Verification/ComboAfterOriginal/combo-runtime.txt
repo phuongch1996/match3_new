@@ -1,0 +1,1 @@
+PASS: four partner combinations rendered and resolved; one move each, ice target cleared, stable boards, flight captures=4

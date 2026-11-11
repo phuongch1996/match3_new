@@ -1,0 +1,29 @@
+Bag_export_01.png
+size:775,169
+filter:Linear,Linear
+pma:true
+Bag_down
+bounds:300,2,142,77
+Bag_down_shadow
+bounds:156,10,142,21
+Bag_open
+bounds:156,33,134,127
+rotate:90
+Bag_shadow
+bounds:2,8,152,159
+Bag_up
+bounds:285,81,142,86
+Puzzle_bag
+bounds:687,3,86,66
+Puzzle_bag_in_shadow
+bounds:567,5,118,48
+Puzzle_bap_open puzzle
+bounds:573,55,112,109
+rotate:90
+Puzzle_bog_shadow
+bounds:684,71,96,75
+rotate:90
+Puzzle_box_open copy 2
+bounds:429,109,142,58
+open puzzle_shadow
+bounds:444,12,121,95

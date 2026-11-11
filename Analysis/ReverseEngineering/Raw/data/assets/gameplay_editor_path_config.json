@@ -1,0 +1,48 @@
+{
+    "assetBundleEditorPaths": [
+        {
+            "bundleName": "gameplay/steambomb/steambomb_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/SteamBombItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/knight/knight_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/KnightItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/target/target_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/TargetItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/dragonbox/dragonbox_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/DragonBoxItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/metalcrate/metalcrate_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/MetalCrateItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/flowerpot/flowerpot_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/FlowerPotItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/log/log_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/LogItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/turtlehouse/turtlehouse_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/TurtleHouseItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/jelly/jelly_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/StaticItems/JellyItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/safe/safe_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/SafeItem/Bundle"
+        },
+        {
+            "bundleName": "gameplay/curtain/curtain_big",
+            "bundlePath": "Assets/Royal/Scenes/Game/Mechanics/Items/StaticItems/CurtainItem/Bundle"
+        }
+    ]
+}
