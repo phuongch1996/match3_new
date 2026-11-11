@@ -1,0 +1,22 @@
+PHASE 10 - COLUMN / METALCOLUMN
+Date: 2026-11-11
+
+Native evidence
+- ColumnItemModel and MetalColumnItemModel both expose ColumnItemDirection with None/Left/Right/Up/Down.
+- Both models expose CanExplodeWithNearMatch, IsFallable, IsSwappable, TryExplode, ExplodeAll, FinalExplode, ExplodeLayer and GetLayer.
+- Both have a master model plus directional fake models. MetalColumn additionally exposes IsCollectable and CollectAsGoal.
+- TiledId mapping recovered from tile-converters.json: ColumnCrusher 43, ColumnLeft/Up/Down/Right 44-47; MetalColumnCrusher 105, MetalColumnLeft/Up/Down/Right 106-109. Crusher is the master and directional tiles are its fake footprint.
+
+Prototype changes
+- MatchBoard now stores Columns/MetalColumns layer arrays, group IDs and native direction values.
+- FromOriginal accepts both tile families, discovers each crusher's contiguous directional fake cells and keeps isolated fake cells static instead of treating them as falling jewels.
+- Any segment in a group is non-movable, excluded from ordinary color matches and acts as a collapse barrier.
+- A match or special explosion touching a master/fake segment damages the shared group once. The complete footprint is removed together and increments the corresponding goal counter.
+- CrownGame draws directional horizontal/vertical column pipes and metal pipes while preserving the recovered direction.
+
+Verification
+- Unity staging build passed: 22348 assertions, 4500 legal actions, 6393 cascade steps.
+- New checks cover parser footprints, shared master groups, direction preservation, swap blocking, near-match damage and complete removal for Column and MetalColumn.
+
+Limits
+- The exact native visual mesh, animation timing and any level-specific multi-layer tuning are not recovered. The current model uses the recovered tile layer count (one initial layer) and shared master/fake mechanics.

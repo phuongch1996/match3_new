@@ -88,11 +88,31 @@ public static class BuildGame
             Check(b.FindMatches().creates.Count==0,"existing specials do not create a new special without a normal spawn cell");
         }
     }
+    static void VerifyColumns()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray();
+        tiles[0]=21; // one box keeps the original-level adapter's goal contract valid
+        int master=1+7*2; tiles[master]=43; tiles[master+1]=47; tiles[master+2]=47; tiles[master+3]=47;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,77);
+        Check(board.Columns[1,2]==1 && board.Columns[4,2]==1,"column crusher builds one directional footprint");
+        Check(board.ColumnGroup[1,2]>0 && board.ColumnGroup[1,2]==board.ColumnGroup[4,2],"column fake cells share the master group");
+        Check(board.ColumnDirection[1,2]==2 && !board.IsMovable(new C(2,2)),"column preserves right direction and blocks swapping");
+        board.Color[0,1]=board.Color[0,2]=board.Color[0,3]=0;
+        var hit=board.FindMatches(new C(0,2)); board.Clear(hit,1);
+        Check(board.ColumnsCleared==1 && board.Columns.Cast<int>().All(v=>v==0),"near match destroys the complete column group");
+
+        board=Fixture(); board.SetColumn(new C(2,2),3,3,1,true);
+        Check(board.MetalColumns[2,2]==1 && board.MetalColumns[2,4]==1 && !board.IsMovable(new C(2,3)),"metal column keeps its upward static footprint");
+        hit=board.Activate(new C(1,2)); hit.adjacentDamageSources.Add(new C(1,2)); board.Clear(hit,1);
+        Check(board.MetalColumnsCleared==1 && board.MetalColumns.Cast<int>().All(v=>v==0),"near match destroys the complete metal column group");
+    }
     public static void VerifyRules()
     {
         assertions=0;
         VerifySquares();
         VerifyPropellerCombos();
+        VerifyColumns();
         VerifyOriginalBoard();
         var b=Fixture();
         Check(b.FindMatches().cells.Count==0,"stable fixture");

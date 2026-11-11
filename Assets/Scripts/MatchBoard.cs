@@ -18,8 +18,16 @@ namespace CrownGarden
         // multi-hit group member. A layer reaches zero only after its final hit.
         public readonly int[,] Walls;
         public readonly int[,] WallGroup;
+        // Column/MetalColumn are native static items made of one master and
+        // directional fake cells. Every cell in a group shares one layer value.
+        public readonly int[,] Columns;
+        public readonly int[,] ColumnGroup;
+        public readonly int[,] ColumnDirection;
+        public readonly int[,] MetalColumns;
+        public readonly int[,] MetalColumnGroup;
+        public readonly int[,] MetalColumnDirection;
         public readonly int[] Collected = new int[Colors];
-        public int IceCleared, BoxesCleared, WallsCleared, Score;
+        public int IceCleared, BoxesCleared, WallsCleared, ColumnsCleared, MetalColumnsCleared, Score;
         readonly Random random;
         int[] fillColors = {0,1,2,3,4};
         Queue<int>[] predefined;
@@ -40,6 +48,8 @@ namespace CrownGarden
             public readonly HashSet<Cell> adjacentDamageSources = new HashSet<Cell>();
             public readonly HashSet<Cell> hitBoxes = new HashSet<Cell>();
             public readonly HashSet<Cell> hitWalls = new HashSet<Cell>();
+            public readonly HashSet<int> hitColumnGroups = new HashSet<int>();
+            public readonly HashSet<int> hitMetalColumnGroups = new HashSet<int>();
             public readonly HashSet<Cell> damagedBoxes = new HashSet<Cell>();
         }
         public struct Flight
@@ -53,7 +63,10 @@ namespace CrownGarden
             if(width<3 || height<3 || width>32 || height>32) throw new ArgumentOutOfRangeException("Board dimensions must be between 3 and 32.");
             Width=width; Height=height;
             Color=new int[width,height]; Power=new int[width,height]; Ice=new bool[width,height];
-            Active=new bool[width,height]; Boxes=new int[width,height]; Walls=new int[width,height]; WallGroup=new int[width,height]; predefined=new Queue<int>[width];
+            Active=new bool[width,height]; Boxes=new int[width,height]; Walls=new int[width,height]; WallGroup=new int[width,height];
+            Columns=new int[width,height]; ColumnGroup=new int[width,height]; ColumnDirection=new int[width,height];
+            MetalColumns=new int[width,height]; MetalColumnGroup=new int[width,height]; MetalColumnDirection=new int[width,height];
+            predefined=new Queue<int>[width];
             for(int y=0;y<height;y++) for(int x=0;x<width;x++) Active[x,y]=true;
             for(int x=0;x<width;x++) predefined[x]=new Queue<int>();
             random=new Random(seed);
@@ -68,13 +81,49 @@ namespace CrownGarden
         public bool IsInside(int x,int y) { return x>=0 && y>=0 && x<Width && y<Height; }
         public bool IsCell(int x,int y) { return IsInside(x,y) && Active[x,y]; }
         // Replaced color is retained for effects/combinations, but a special is not a match tile.
-        int MatchColor(int x,int y) { return IsCell(x,y) && Boxes[x,y]==0 && Walls[x,y]==0 && Power[x,y]==0?Color[x,y]:-1; }
-        public bool IsMovable(Cell c) { return IsCell(c.x,c.y) && Boxes[c.x,c.y]==0 && Walls[c.x,c.y]==0 && Color[c.x,c.y]>=0; }
+        int MatchColor(int x,int y) { return IsCell(x,y) && Boxes[x,y]==0 && Walls[x,y]==0 && Columns[x,y]==0 && MetalColumns[x,y]==0 && Power[x,y]==0?Color[x,y]:-1; }
+        public bool IsMovable(Cell c) { return IsCell(c.x,c.y) && Boxes[c.x,c.y]==0 && Walls[c.x,c.y]==0 && Columns[c.x,c.y]==0 && MetalColumns[c.x,c.y]==0 && Color[c.x,c.y]>=0; }
         public void SetWall(Cell c,int layers=1,int groupId=0)
         {
             if(!IsCell(c.x,c.y) || layers<1) throw new ArgumentOutOfRangeException("Wall must be on an active cell with at least one layer.");
             Walls[c.x,c.y]=layers; WallGroup[c.x,c.y]=groupId; Color[c.x,c.y]=-1; Power[c.x,c.y]=0;
         }
+        // Native ColumnItemModel/MetalColumnItemModel are static, non-swappable
+        // master items with directional fake cells. Register the whole footprint
+        // under one group so a hit on any segment damages the master once.
+        public void SetColumn(Cell master,int direction,int length=1,int layers=1,bool metal=false,int groupId=0)
+        {
+            if(length<1 || layers<1 || direction<1 || direction>4) throw new ArgumentOutOfRangeException("Column direction, length and layers must be positive.");
+            int dx=direction==1?-1:direction==2?1:0, dy=direction==3?1:direction==4?-1:0;
+            var cells=new List<Cell>();
+            for(int i=0;i<length;i++)
+            {
+                int x=master.x+dx*i,y=master.y+dy*i;
+                if(!IsCell(x,y) || Boxes[x,y]>0 || Walls[x,y]>0) throw new ArgumentException("Column footprint must fit active, unobstructed cells.");
+                cells.Add(new Cell(x,y));
+            }
+            if(groupId==0) groupId=NextStaticGroup();
+            foreach(var c in cells)
+            {
+                if(metal) { MetalColumns[c.x,c.y]=layers; MetalColumnGroup[c.x,c.y]=groupId; MetalColumnDirection[c.x,c.y]=direction; }
+                else { Columns[c.x,c.y]=layers; ColumnGroup[c.x,c.y]=groupId; ColumnDirection[c.x,c.y]=direction; }
+                Color[c.x,c.y]=-1; Power[c.x,c.y]=0;
+            }
+        }
+        int nextStaticGroup=1;
+        int NextStaticGroup() { return nextStaticGroup++; }
+        static bool IsColumnTile(int tile) { return tile>=43 && tile<=47; }
+        static bool IsMetalColumnTile(int tile) { return tile>=105 && tile<=109; }
+        static int ColumnDirectionFromTile(int tile)
+        {
+            if(tile==44 || tile==106) return 1; // Left
+            if(tile==45 || tile==107) return 3; // Up
+            if(tile==46 || tile==108) return 4; // Down
+            if(tile==47 || tile==109) return 2; // Right
+            return 0;
+        }
+        static int DirectionDeltaX(int direction) { return direction==1?-1:direction==2?1:0; }
+        static int DirectionDeltaY(int direction) { return direction==3?1:direction==4?-1:0; }
         public bool CanSwap(Cell a,Cell b) { return Adjacent(a,b) && IsMovable(a) && IsMovable(b); }
         public static bool Adjacent(Cell a,Cell b) { return Math.Abs(a.x-b.x)+Math.Abs(a.y-b.y)==1; }
         public static int ColorFromTiledId(int tiledId)
@@ -88,7 +137,7 @@ namespace CrownGarden
             if(definition.colors==null || definition.colors.Length<3 || definition.colors.Distinct().Count()!=definition.colors.Length)
                 throw new ArgumentException("Original color palette is missing or invalid.");
             foreach(int tile in definition.tiles)
-                if(!(tile>=1 && tile<=5) && !(tile>=21 && tile<=23) && !(tile>=53 && tile<=55)) throw new NotSupportedException("Tile "+tile+" is not supported by this original-level adapter.");
+                if(!(tile>=1 && tile<=5) && !(tile>=21 && tile<=23) && !(tile>=43 && tile<=47) && !(tile>=53 && tile<=55) && !(tile>=105 && tile<=109)) throw new NotSupportedException("Tile "+tile+" is not supported by this original-level adapter.");
             foreach(var refill in definition.predefined ?? new OriginalRefill[0])
             {
                 if(refill.x<0 || refill.x>=definition.width || refill.ids==null) throw new ArgumentException("Invalid predefined column.");
@@ -100,16 +149,78 @@ namespace CrownGarden
             {
                 int tile=definition.tiles[x+board.Width*y],viewY=board.Height-1-y;
                 board.Power[x,viewY]=0; board.Ice[x,viewY]=false; board.Walls[x,viewY]=0; board.WallGroup[x,viewY]=0;
+                board.Columns[x,viewY]=0; board.ColumnGroup[x,viewY]=0; board.ColumnDirection[x,viewY]=0;
+                board.MetalColumns[x,viewY]=0; board.MetalColumnGroup[x,viewY]=0; board.MetalColumnDirection[x,viewY]=0;
                 if(tile>=21 && tile<=23) { board.Boxes[x,viewY]=tile-20; board.Color[x,viewY]=-1; }
                 else if(tile>=53 && tile<=55) { board.SetWall(new Cell(x,viewY),5,tile-52); }
+                else if(IsColumnTile(tile) || IsMetalColumnTile(tile)) board.Color[x,viewY]=-1;
                 else board.Color[x,viewY]=ColorFromTiledId(tile);
             }
+            board.LoadColumnsFromOriginal(definition.tiles);
             // Native AddPredefined traverses entries/Ids in stored order and queues by X.
             foreach(var refill in definition.predefined ?? new OriginalRefill[0])
                 foreach(int tile in refill.ids) board.predefined[refill.x].Enqueue(ColorFromTiledId(tile));
             board.AssignWallGroups();
             if(definition.boxGoal>board.RemainingBoxes) throw new ArgumentException("Original Box goal exceeds the supported boxes in this level.");
             return board;
+        }
+        void LoadColumnsFromOriginal(int[] rawTiles)
+        {
+            bool[,] used=new bool[Width,Height];
+            for(int rawY=0;rawY<Height;rawY++) for(int x=0;x<Width;x++)
+            {
+                int tile=rawTiles[x+Width*rawY];
+                if(tile!=43 && tile!=105) continue;
+                bool metal=tile==105;
+                int direction=0,best=0;
+                // Prefer the direction whose fake cells form the longest contiguous run.
+                for(int candidate=1;candidate<=4;candidate++)
+                {
+                    int dx=DirectionDeltaX(candidate),dy=DirectionDeltaY(candidate),count=0;
+                    for(int step=1;;step++)
+                    {
+                        int nx=x+dx*step,ny=rawY+dy*step;
+                        if(nx<0 || nx>=Width || ny<0 || ny>=Height) break;
+                        int next=rawTiles[nx+Width*ny];
+                        if(ColumnDirectionFromTile(next)!=candidate || (metal?!IsMetalColumnTile(next):!IsColumnTile(next))) break;
+                        count++;
+                    }
+                    if(count>best) { best=count; direction=candidate; }
+                }
+                if(direction==0)
+                {
+                    // A malformed or cropped source can omit the orientation run;
+                    // keep the master as a one-cell static item.
+                    direction=2;
+                }
+                var master=new Cell(x,Height-1-rawY);
+                int length=1+best;
+                int group=NextStaticGroup();
+                for(int i=0;i<length;i++)
+                {
+                    int rawX=x+DirectionDeltaX(direction)*i,rawCellY=rawY+DirectionDeltaY(direction)*i;
+                    if(rawX<0 || rawX>=Width || rawCellY<0 || rawCellY>=Height) break;
+                    int viewY=Height-1-rawCellY;
+                    if(used[rawX,viewY]) continue;
+                    used[rawX,viewY]=true;
+                    if(metal) { MetalColumns[rawX,viewY]=1; MetalColumnGroup[rawX,viewY]=group; MetalColumnDirection[rawX,viewY]=direction; }
+                    else { Columns[rawX,viewY]=1; ColumnGroup[rawX,viewY]=group; ColumnDirection[rawX,viewY]=direction; }
+                    Color[rawX,viewY]=-1; Power[rawX,viewY]=0;
+                }
+            }
+            // Preserve isolated fake cells as static one-cell remnants instead of
+            // turning unsupported source tiles into falling jewels.
+            for(int rawY=0;rawY<Height;rawY++) for(int x=0;x<Width;x++)
+            {
+                int tile=rawTiles[x+Width*rawY];
+                if(!IsColumnTile(tile) && !IsMetalColumnTile(tile)) continue;
+                int vy=Height-1-rawY;
+                if((IsMetalColumnTile(tile) && MetalColumns[x,vy]>0) || (IsColumnTile(tile) && Columns[x,vy]>0)) continue;
+                int group=NextStaticGroup(),direction=ColumnDirectionFromTile(tile); if(direction==0) direction=2;
+                if(IsMetalColumnTile(tile)) { MetalColumns[x,vy]=1; MetalColumnGroup[x,vy]=group; MetalColumnDirection[x,vy]=direction; }
+                else { Columns[x,vy]=1; ColumnGroup[x,vy]=group; ColumnDirection[x,vy]=direction; }
+                Color[x,vy]=-1; Power[x,vy]=0;
+            }
         }
         void AssignWallGroups()
         {
@@ -365,6 +476,7 @@ namespace CrownGarden
             {
                 if(Boxes[c.x,c.y]>0) m.hitBoxes.Add(c);
                 if(Walls[c.x,c.y]>0) m.hitWalls.Add(c);
+                RecordColumnHit(m,c);
             }
             foreach(var source in m.adjacentDamageSources)
                 for(int d=0;d<4;d++)
@@ -374,9 +486,16 @@ namespace CrownGarden
                     {
                         if(Boxes[x,y]>0) m.hitBoxes.Add(new Cell(x,y));
                         if(Walls[x,y]>0) m.hitWalls.Add(new Cell(x,y));
+                        RecordColumnHit(m,new Cell(x,y));
                     }
                 }
             m.cells.UnionWith(m.hitBoxes);
+        }
+        void RecordColumnHit(Match m,Cell c)
+        {
+            if(!IsCell(c.x,c.y)) return;
+            if(Columns[c.x,c.y]>0 && ColumnGroup[c.x,c.y]>0) m.hitColumnGroups.Add(ColumnGroup[c.x,c.y]);
+            if(MetalColumns[c.x,c.y]>0 && MetalColumnGroup[c.x,c.y]>0) m.hitMetalColumnGroups.Add(MetalColumnGroup[c.x,c.y]);
         }
         int MostCommonColor()
         {
@@ -406,6 +525,38 @@ namespace CrownGarden
                         WallsCleared++;
                     }
                 }
+            foreach(int group in m.hitColumnGroups)
+            {
+                bool damaged=false,cleared=false;
+                for(int y=0;y<Height;y++) for(int x=0;x<Width;x++)
+                    if(ColumnGroup[x,y]==group && Columns[x,y]>0) { Columns[x,y]--; damaged=true; }
+                if(!damaged) continue;
+                Score+=100;
+                bool any=false;
+                for(int y=0;y<Height;y++) for(int x=0;x<Width;x++) if(ColumnGroup[x,y]==group && Columns[x,y]>0) any=true;
+                if(!any)
+                {
+                    for(int y=0;y<Height;y++) for(int x=0;x<Width;x++)
+                        if(ColumnGroup[x,y]==group) { Columns[x,y]=0; ColumnGroup[x,y]=0; ColumnDirection[x,y]=0; }
+                    ColumnsCleared++; cleared=true;
+                }
+            }
+            foreach(int group in m.hitMetalColumnGroups)
+            {
+                bool damaged=false;
+                for(int y=0;y<Height;y++) for(int x=0;x<Width;x++)
+                    if(MetalColumnGroup[x,y]==group && MetalColumns[x,y]>0) { MetalColumns[x,y]--; damaged=true; }
+                if(!damaged) continue;
+                Score+=100;
+                bool any=false;
+                for(int y=0;y<Height;y++) for(int x=0;x<Width;x++) if(MetalColumnGroup[x,y]==group && MetalColumns[x,y]>0) any=true;
+                if(!any)
+                {
+                    for(int y=0;y<Height;y++) for(int x=0;x<Width;x++)
+                        if(MetalColumnGroup[x,y]==group) { MetalColumns[x,y]=0; MetalColumnGroup[x,y]=0; MetalColumnDirection[x,y]=0; }
+                    MetalColumnsCleared++;
+                }
+            }
             foreach(var c in m.cells)
             {
                 if(!IsCell(c.x,c.y) || Boxes[c.x,c.y]>0) continue;
@@ -426,9 +577,9 @@ namespace CrownGarden
                 int bottom=Height-1;
                 while(bottom>=0)
                 {
-                    if(!Active[x,bottom] || Boxes[x,bottom]>0 || Walls[x,bottom]>0) { from[x,bottom]=bottom; bottom--; continue; }
+                    if(!Active[x,bottom] || Boxes[x,bottom]>0 || Walls[x,bottom]>0 || Columns[x,bottom]>0 || MetalColumns[x,bottom]>0) { from[x,bottom]=bottom; bottom--; continue; }
                     int top=bottom;
-                    while(top>=0 && Active[x,top] && Boxes[x,top]==0 && Walls[x,top]==0) top--;
+                    while(top>=0 && Active[x,top] && Boxes[x,top]==0 && Walls[x,top]==0 && Columns[x,top]==0 && MetalColumns[x,top]==0) top--;
                     int dest=bottom;
                     for(int y=bottom;y>top;y--) if(Color[x,y]>=0)
                     {

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-11T16:47:30.0973044+07:00",
-  "phase": "special-placement-combo-checked",
+  "updated": "2026-11-11T17:33:11.4150410+07:00",
+  "phase": "column-metalcolumn-complete",
   "package": "C:/Users/Admin/Downloads/com.dreamgames.royalkingdom_20584-20584_2arch_1feat_4d80b75aad360e3124b1abd39e0fd839_apkmirror.com.apkm",
   "packageSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66",
   "inventoryRows": 1220,
@@ -24,7 +24,7 @@
   "rawRoot": "C:\\Users\\Admin\\Documents\\ChatGPT\\Phuong\\RoyalMatchOffline\\Analysis\\ReverseEngineering\\Raw",
   "accountQuotaPercent": null,
   "quotaNote": "Not observable through available tools",
-  "next": "Port Column and MetalColumn static layers, preserving native direction and fake-item behavior",
+  "next": "Port next static obstacle family from native metadata",
   "evidenceFiles": [
     "metadata-evidence.json",
     "metadata-native-evidence.json",
@@ -53,7 +53,8 @@
     "Native/wall-helper-disassembly.json",
     "PHASE_8_WALL_GROUP.txt",
     "Native/special-placement-disassembly.json",
-    "PHASE_9_SPECIAL_PLACEMENT_COMBO.txt"
+    "PHASE_9_SPECIAL_PLACEMENT_COMBO.txt",
+    "PHASE_10_COLUMN_METALCOLUMN.txt"
   ],
   "decodedNumericLevels": 2300,
   "decodedPlayableLevels": 9,
@@ -68,7 +69,7 @@
   ],
   "originalLevel1Fidelity": "Source 9x9 layout / 30 moves / 54 boxes / predefined queues verified; native fall order, 8-neighbor directions and seeded RNG algorithm recovered statically, but exact session seed, cross-fall reservations and full mechanics incomplete",
   "prototypeBoxSprite": true,
-  "latestReport": "PHASE_9_SPECIAL_PLACEMENT_COMBO.txt",
-  "ruleAssertions": 22342,
+  "latestReport": "PHASE_10_COLUMN_METALCOLUMN.txt",
+  "ruleAssertions": 22348,
   "dataAssertions": 14524
 }

@@ -429,6 +429,8 @@ namespace CrownGarden
                 var rect=new Rect(p.x+(S-size)/2,p.y+(S-size)/2,size,size);
                 if(board.Boxes[x,y]>0) DrawBox(rect,board.Boxes[x,y]);
                 else if(board.Walls[x,y]>0) DrawWall(rect,board.Walls[x,y],board.WallGroup[x,y]);
+                else if(board.Columns[x,y]>0) DrawColumn(rect,board.ColumnDirection[x,y],board.Columns[x,y],false);
+                else if(board.MetalColumns[x,y]>0) DrawColumn(rect,board.MetalColumnDirection[x,y],board.MetalColumns[x,y],true);
                 else DrawGem(rect,board.Color[x,y],board.Power[x,y]);
             }
             if(Time.time>=toastUntil) Text(new Rect(BX,114,584,31),busy?"A LITTLE MAGIC IN MOTION...":hammer?"CHOOSE A JEWEL TO BREAK":"SWAP JEWELS  •  MATCH 3 OR MORE",13,pale,TextAnchor.MiddleCenter,true);
@@ -495,6 +497,28 @@ namespace CrownGarden
             Box(new Rect(rect.x+3,rect.y+3,rect.width-6,rect.height-6),stone);
             for(int i=1;i<4;i++) Solid(new Rect(rect.x+7,rect.y+rect.height*i/4f,rect.width-14,2),new Color(.12f,.15f,.21f,.6f));
             if(layers>1) Text(rect,layers.ToString(),18,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawColumn(Rect rect,int direction,int layers,bool metal)
+        {
+            Color body=metal?new Color(.38f,.45f,.54f):new Color(.56f,.35f,.16f);
+            Color edge=metal?new Color(.70f,.80f,.88f):new Color(.88f,.62f,.25f);
+            Box(new Rect(rect.x+4,rect.y+4,rect.width-8,rect.height-8),new Color(.03f,.07f,.13f,.72f));
+            bool horizontal=direction==1 || direction==2;
+            Rect shaft=horizontal
+                ?new Rect(rect.x+2,rect.y+rect.height*.36f,rect.width-4,rect.height*.28f)
+                :new Rect(rect.x+rect.width*.36f,rect.y+2,rect.width*.28f,rect.height-4);
+            Box(shaft,body);
+            if(horizontal)
+            {
+                Solid(new Rect(shaft.x,shaft.y+2,shaft.width,2),edge);
+                Solid(new Rect(direction==1?rect.x+rect.width*.10f:rect.x+rect.width*.72f,rect.y+rect.height*.22f,rect.width*.18f,rect.height*.56f),edge);
+            }
+            else
+            {
+                Solid(new Rect(shaft.x+2,shaft.y,2,shaft.height),edge);
+                Solid(new Rect(rect.x+rect.width*.22f,direction==3?rect.y+rect.height*.10f:rect.y+rect.height*.72f,rect.width*.56f,rect.height*.18f),edge);
+            }
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
         }
         void DrawResult()
         {
