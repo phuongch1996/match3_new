@@ -1,0 +1,18 @@
+PHASE 14 - OBSTACLE LEVEL RECHECK
+Date: 2026-11-12
+
+Checked files
+- level_columns.json: Column master + 4 directional fake cells, MetalColumn master + Down fake, MetalCrate2 and Vase.
+- level_walls.json: five connected WallA cells, MetalCrate3 and two Vases.
+- level_crates.json: MetalCrate1/2/3 and two Vases.
+- level_all.json: mixed Column, MetalColumn, Wall, MetalCrate1/2/3 and two Vases.
+
+Validation
+- All four files are 9x9, 35 moves, one valid box goal and use only supported tile IDs.
+- All four files load through MatchBoard.FromOriginal in BuildGame.VerifyObstacleLevels.
+- Canonical and staging JSON files have matching SHA256 hashes.
+- Unity staging recheck passed: 22361 assertions, 4500 legal actions, 6393 cascade steps.
+
+Result
+- No level file changes were required during this recheck.
+- The garden OBSTACLE LEVEL button cycles level 1 through level 4; Retry reloads the currently selected file.

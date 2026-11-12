@@ -1,0 +1,16 @@
+PHASE 16 - OBSTACLE INITIAL MATCH FIX
+Date: 2026-11-12
+
+Issue reproduced
+- The previous self-play check verified FindMove but did not reject an existing match at load.
+- All four obstacle boards had the same initial vertical run of three color-1 tiles at visible x=0, y=0..2. This caused an automatic match before the player moved.
+
+Fix
+- Changed the raw tile at x=0,y=8 from color 1 to color 2 in level_columns, level_walls, level_crates and level_all.
+- The guaranteed opening swap at x=2,y=7 with x=2,y=8 remains intact and is not blocked by any obstacle.
+- Added a runtime assertion that MatchBoard.FindMatches() is empty immediately after loading each obstacle level.
+
+Validation
+- All four levels start with zero automatic matches.
+- All four levels still have a legal opening swap; the swap resolves a match, then clear and gravity execute.
+- Unity staging build passed: 22373 assertions, 4500 legal actions, 6393 cascade steps.

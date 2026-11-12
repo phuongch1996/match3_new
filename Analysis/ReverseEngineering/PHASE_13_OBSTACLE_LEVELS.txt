@@ -1,0 +1,20 @@
+PHASE 13 - OBSTACLE LEVELS
+Date: 2026-11-12
+
+Created playable level files
+- Assets/Resources/ObstacleLevels/level_columns.json: Column, MetalColumn, MetalCrate2 and Vase.
+- Assets/Resources/ObstacleLevels/level_walls.json: Wall group, Vase and MetalCrate3.
+- Assets/Resources/ObstacleLevels/level_crates.json: MetalCrate1/2/3 and Vases.
+- Assets/Resources/ObstacleLevels/level_all.json: mixed Column, MetalColumn, Wall, MetalCrate and Vase board.
+
+Runtime integration
+- CrownGame loads the files through Resources and reuses the original-level adapter, so tile ordering, direction parsing, group footprints, layers and gravity barriers use the same path as recovered data.
+- The garden menu now has an OBSTACLE LEVEL button. Each click cycles through the four generated levels.
+- Retry keeps the currently selected obstacle level.
+
+Verification
+- Unity staging build passed: 22361 assertions, 4500 legal actions, 6393 cascade steps.
+- Build checks load all four JSON files as 9x9 boards with a valid box goal and at least one static obstacle family.
+
+Limits
+- These are authored test levels for the currently ported obstacles, not original APK level layouts. Goals currently use the existing box-goal completion path while obstacle interactions are exercised on the board.

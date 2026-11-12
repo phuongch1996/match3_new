@@ -1,0 +1,17 @@
+PHASE 20 - LANTERN
+Date: 2026-11-12
+
+APK mapping
+- TiledId 36 is Lantern, ItemType 10, layer_count 2, goal Lantern.
+- Native animation metadata contains LanternLight and LanternBreak states.
+
+Prototype implementation
+- MatchBoard now stores Lanterns as static two-layer obstacles.
+- Lanterns are excluded from ordinary matches and swaps, block gravity, take one layer of damage from an adjacent match or special effect, and clear after the second hit.
+- CrownGame includes a lit/unlit lantern fallback with layer counter.
+- Added ObstacleLevels/level_lantern.json and included it as obstacle level 6.
+
+Validation
+- Added parser, static blocking, adjacent damage and final-layer goal-count tests.
+- Unity staging build passed: 22759 assertions, 4500 legal actions, 6759 cascade steps.
+- Exact native animation timing remains represented by the fallback visual only.

@@ -20,6 +20,7 @@ namespace CrownGarden
         Texture2D boxArt;
         Texture2D[] gems;
         Texture2D[] recoveredSpecial;
+        readonly List<Texture2D> obstacleArt=new List<Texture2D>();
         int recoveredArtCount;
         readonly Dictionary<string,AudioClip> recoveredAudio=new Dictionary<string,AudioClip>();
         Font font;
@@ -27,7 +28,9 @@ namespace CrownGarden
         AudioClip[] notes;
         int level,unlocked,stars,built,moves,combo,targetRed,targetBlue;
         int targetBoxes;
-        bool originalMode;
+        bool originalMode,obstacleMode;
+        int obstacleLevelIndex=-1;
+        static readonly string[] obstacleLevels={"level_obstacle_lab","level_shape_lab","level_columns","level_walls","level_crates","level_all","level_layers","level_lantern","level_puzzle","level_gift","level_flowers","level_chalice","level_dragon","level_birdhouse","level_gnome","level_safe","level_mask","level_turtle","level_snowman","level_steambomb","level_knight","level_turtlehouse","level_clock","level_native_remaining_lab"};
         bool verificationRun;
         OriginalLevelDefinition originalDefinition;
         int seed=3021;
@@ -69,6 +72,7 @@ namespace CrownGarden
                 if(recoveredSpecial[i]!=null) recoveredArtCount++;
             }
             boxArt=Resources.Load<Texture2D>("RecoveredArt/box");
+            obstacleArt.AddRange(Resources.LoadAll<Texture2D>("RecoveredArt/Obstacles"));
             audioSource=gameObject.AddComponent<AudioSource>();
             string[] soundNames={"match_explode_1","match_explode_2","match_explode_3","match_explode_4","match_explode_5","match_explode_6","spinner_take_off","spinner_hit","rocket_explode","dynamite_explode","electro_ball_explode","swipe_whoosh"};
             foreach(string name in soundNames)
@@ -125,7 +129,7 @@ namespace CrownGarden
         }
         void StartLevel()
         {
-            originalMode=false; targetBoxes=0;
+            originalMode=false; obstacleMode=false; targetBoxes=0;
             level=unlocked; board=new MatchBoard(seed++ + level*193,level);
             moves=level==1?26:30; targetRed=level==1?22:24+Mathf.Min(level,10); targetBlue=level==1?22:24+Mathf.Min(level,10);
             won=lost=busy=hammer=false; hammers=3; home=false; selected=null; combo=0; idleAt=Time.time;
@@ -139,7 +143,7 @@ namespace CrownGarden
                 if(source==null) throw new InvalidOperationException("Recovered level file is missing.");
                 originalDefinition=JsonUtility.FromJson<OriginalLevelDefinition>(source.text);
                 var restored=MatchBoard.FromOriginal(originalDefinition,10201);
-                board=restored; originalMode=true; level=1; targetBoxes=originalDefinition.boxGoal;
+                board=restored; originalMode=true; obstacleMode=false; level=1; targetBoxes=originalDefinition.boxGoal;
                 moves=originalDefinition.moves; targetRed=targetBlue=0;
                 won=lost=busy=hammer=false; hammers=3; home=false; selected=null; dragStart=null;
                 combo=0; idleAt=Time.time; sparks.Clear();
@@ -147,7 +151,23 @@ namespace CrownGarden
             }
             catch(Exception error) { home=true; Debug.LogException(error); Notify("Original level could not load. See the game log.",5); }
         }
-        void RetryCurrent() { if(originalMode) StartOriginal(); else StartLevel(); }
+        void StartObstacle(int index)
+        {
+            try
+            {
+                index=Mathf.Clamp(index,0,obstacleLevels.Length-1);
+                var source=Resources.Load<TextAsset>("ObstacleLevels/"+obstacleLevels[index]);
+                if(source==null) throw new InvalidOperationException("Obstacle level file is missing: "+obstacleLevels[index]);
+                originalDefinition=JsonUtility.FromJson<OriginalLevelDefinition>(source.text);
+                board=MatchBoard.FromOriginal(originalDefinition,22000+index*97);
+                originalMode=true; obstacleMode=true; obstacleLevelIndex=index; level=100+index; targetBoxes=originalDefinition.boxGoal;
+                moves=originalDefinition.moves; targetRed=targetBlue=0;
+                won=lost=busy=hammer=false; hammers=3; home=false; selected=null; dragStart=null; combo=0; idleAt=Time.time; sparks.Clear();
+                Notify("Obstacle level "+(index+1)+": break the box and test every static obstacle.",4);
+            }
+            catch(Exception error) { home=true; Debug.LogException(error); Notify("Obstacle level could not load. See the game log.",5); }
+        }
+        void RetryCurrent() { if(obstacleMode) StartObstacle(obstacleLevelIndex); else if(originalMode) StartOriginal(); else StartLevel(); }
         bool GoalsDone { get { return originalMode?targetBoxes>0 && board.BoxesCleared>=targetBoxes:board.Collected[0]>=targetRed && board.Collected[1]>=targetBlue && board.RemainingIce==0; } }
         void Sound(int n) { if(!muted) audioSource.PlayOneShot(notes[Mathf.Clamp(n,0,7)]); }
         void PlayRecovered(string name,int fallback)
@@ -337,10 +357,12 @@ namespace CrownGarden
             Text(new Rect(811,382,275,57),unlocked==1?"Collect red and blue jewels\nto earn your first stars.":"Collect jewels and clear the ice.\nA new challenge awaits.",18,pale,TextAnchor.MiddleCenter);
             if(Button(new Rect(812,469,275,65),"PLAY",new Color(.25f,.69f,.37f),27)) StartLevel();
             if(Button(new Rect(812,540,275,43),"ORIGINAL LEVEL 1",new Color(.29f,.37f,.59f),17)) StartOriginal();
-            Text(new Rect(805,591,285,35),"STARS  "+stars,23,gold,TextAnchor.MiddleCenter,true);
+            Text(new Rect(805,585,285,28),"STARS  "+stars+"  •  TEST LEVELS",16,gold,TextAnchor.MiddleCenter,true);
+            if(Button(new Rect(812,615,275,39),"OBSTACLE LEVEL  "+(Mathf.Max(0,obstacleLevelIndex)+1),new Color(.22f,.48f,.58f),15))
+            { int chosen=obstacleLevelIndex<0?0:(obstacleLevelIndex+1)%obstacleLevels.Length; StartObstacle(chosen); }
             string[] tasks={"Plant the royal trees","Add the flower beds","Restore the fountain","Garden complete"};
-            Text(new Rect(805,631,285,30),tasks[Mathf.Min(built,3)],16,pale,TextAnchor.MiddleCenter);
-            if(Button(new Rect(812,672,275,40),built>=3?"RESTORED":"RESTORE  /  1 STAR",new Color(.29f,.37f,.59f),17,stars>0 && built<3))
+            Text(new Rect(805,658,285,25),tasks[Mathf.Min(built,3)],14,pale,TextAnchor.MiddleCenter);
+            if(Button(new Rect(812,688,275,39),built>=3?"RESTORED":"RESTORE  /  1 STAR",new Color(.29f,.37f,.59f),16,stars>0 && built<3))
             { stars--; built++; Save(); Sound(6); Notify("A little more magic in your kingdom."); }
             Text(new Rect(83,757,800,32),"LOCAL SAVE     •     NO ACCOUNT     •     NO INTERNET REQUIRED",13,new Color(.61f,.74f,.84f));
             if(Button(new Rect(978,65,140,43),muted?"SOUND OFF":"SOUND ON",new Color(.13f,.24f,.39f),14)) { muted=!muted; Save(); }
@@ -428,6 +450,27 @@ namespace CrownGarden
                 if(clearing && clearMatch.cells.Contains(c)) size=S*Mathf.Max(.05f,1-anim);
                 var rect=new Rect(p.x+(S-size)/2,p.y+(S-size)/2,size,size);
                 if(board.Boxes[x,y]>0) DrawBox(rect,board.Boxes[x,y]);
+                else if(board.MetalCrates[x,y]>0) DrawMetalCrate(rect,board.MetalCrates[x,y]);
+                else if(board.Vases[x,y]>0) DrawVase(rect);
+                else if(board.FlowerPots[x,y]>0) DrawFlowerPot(rect,board.FlowerPots[x,y]);
+                else if(board.Logs[x,y]>0) DrawLog(rect,board.Logs[x,y]);
+                else if(board.Lanterns[x,y]>0) DrawLantern(rect,board.Lanterns[x,y]);
+                else if(board.PuzzleBoxes[x,y]>0) DrawPuzzleBox(rect,board.PuzzleBoxes[x,y]);
+                else if(board.GiftBoxes[x,y]>0) DrawGiftBox(rect,board.GiftBoxes[x,y]);
+                else if(board.Flowers[x,y]>0) DrawFlowers(rect,board.Flowers[x,y]);
+                else if(board.ChaliceBoxes[x,y]>0) DrawChaliceBox(rect,board.ChaliceBoxes[x,y]);
+                else if(board.DragonBoxes[x,y]>0) DrawDragonBox(rect,board.DragonBoxes[x,y]);
+                else if(board.Birdhouses[x,y]>0) DrawBirdhouse(rect,board.Birdhouses[x,y]);
+                else if(board.Gnomes[x,y]>0) DrawGnome(rect,board.Gnomes[x,y]);
+                else if(board.Safes[x,y]>0) DrawSafe(rect,board.Safes[x,y]);
+                else if(board.Masks[x,y]>0) DrawMask(rect,board.Masks[x,y]);
+                else if(board.Turtles[x,y]>0) DrawTurtle(rect,board.Turtles[x,y]);
+                else if(board.Snowmen[x,y]>0) DrawSnowman(rect,board.Snowmen[x,y]);
+                else if(board.SteamBombs[x,y]>0) DrawSteamBomb(rect,board.SteamBombs[x,y]);
+                else if(board.Knights[x,y]>0) DrawKnight(rect,board.Knights[x,y]);
+                else if(board.TurtleHouses[x,y]>0) DrawTurtleHouse(rect,board.TurtleHouses[x,y]);
+                else if(board.Clocks[x,y]>0) DrawClock(rect,board.Clocks[x,y]);
+                else if(board.NativeObstacleAt(x,y)>0) DrawNativeObstacle(rect,board.NativeObstacleKindAt(x,y),board.NativeObstacleAt(x,y),board.NativeObstacleVariant[x,y]);
                 else if(board.Walls[x,y]>0) DrawWall(rect,board.Walls[x,y],board.WallGroup[x,y]);
                 else if(board.Columns[x,y]>0) DrawColumn(rect,board.ColumnDirection[x,y],board.Columns[x,y],false);
                 else if(board.MetalColumns[x,y]>0) DrawColumn(rect,board.MetalColumnDirection[x,y],board.MetalColumns[x,y],true);
@@ -484,14 +527,291 @@ namespace CrownGarden
             if(power==3)
             { Disc(r.center.x,r.center.y,r.width*.25f,navy); Disc(r.center.x-r.width*.08f,r.center.y-r.height*.08f,r.width*.07f,pale); Solid(new Rect(r.center.x,r.y+r.height*.18f,r.width*.06f,r.height*.14f),gold); }
         }
+        Texture2D FindObstacleArt(string token)
+        {
+            for(int i=0;i<obstacleArt.Count;i++)
+                if(string.Equals(obstacleArt[i].name,token,StringComparison.OrdinalIgnoreCase)) return obstacleArt[i];
+            for(int i=0;i<obstacleArt.Count;i++)
+            {
+                int separator=obstacleArt[i].name.IndexOf('_');
+                if(separator>0 && string.Equals(obstacleArt[i].name.Substring(separator+1),token,StringComparison.OrdinalIgnoreCase)) return obstacleArt[i];
+            }
+            for(int i=0;i<obstacleArt.Count;i++)
+                if(obstacleArt[i].name.IndexOf(token,StringComparison.OrdinalIgnoreCase)>=0) return obstacleArt[i];
+            return null;
+        }
+        bool DrawRecoveredObstacle(Rect rect,string token,int layers,bool showLayers=true)
+        {
+            var art=FindObstacleArt(token);
+            if(art==null) return false;
+            GUI.DrawTexture(rect,art,ScaleMode.ScaleToFit,true);
+            if(showLayers && layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+            return true;
+        }
         void DrawBox(Rect rect,int layers)
         {
+            if(DrawRecoveredObstacle(rect,"Items-BoxItem-box",layers)) return;
             if(boxArt!=null) GUI.DrawTexture(rect,boxArt,ScaleMode.ScaleToFit,true);
             else Box(new Rect(rect.x+5,rect.y+5,rect.width-10,rect.height-10),new Color(.70f,.39f,.12f));
             if(layers>1) Text(rect,layers.ToString(),18,Color.white,TextAnchor.MiddleCenter,true);
         }
+        void DrawMetalCrate(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"metal_crate",layers)) return;
+            Box(new Rect(rect.x+4,rect.y+4,rect.width-8,rect.height-8),new Color(.28f,.36f,.44f));
+            Box(new Rect(rect.x+8,rect.y+8,rect.width-16,rect.height-16),new Color(.52f,.60f,.66f));
+            Solid(new Rect(rect.x+rect.width*.43f,rect.y+6,rect.width*.14f,rect.height-12),new Color(.27f,.34f,.40f));
+            Solid(new Rect(rect.x+6,rect.y+rect.height*.43f,rect.width-12,rect.height*.14f),new Color(.27f,.34f,.40f));
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawVase(Rect rect)
+        {
+            if(DrawRecoveredObstacle(rect,"Items-Vase-vase",1,false)) return;
+            Disc(rect.center.x,rect.y+rect.height*.34f,rect.width*.22f,new Color(.88f,.58f,.25f));
+            Box(new Rect(rect.x+rect.width*.28f,rect.y+rect.height*.30f,rect.width*.44f,rect.height*.42f),new Color(.78f,.42f,.16f));
+            Box(new Rect(rect.x+rect.width*.20f,rect.y+rect.height*.68f,rect.width*.60f,rect.height*.12f),new Color(.98f,.72f,.34f));
+        }
+        void DrawFlowerPot(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Flower_vase_01",layers)) return;
+            Color clay=new Color(.78f,.38f,.16f), rim=new Color(.98f,.63f,.25f), leaf=new Color(.25f,.65f,.26f);
+            Disc(rect.center.x-rect.width*.10f,rect.y+rect.height*.24f,rect.width*.13f,leaf);
+            Disc(rect.center.x+rect.width*.10f,rect.y+rect.height*.20f,rect.width*.13f,leaf);
+            Box(new Rect(rect.x+rect.width*.22f,rect.y+rect.height*.34f,rect.width*.56f,rect.height*.42f),clay);
+            Box(new Rect(rect.x+rect.width*.14f,rect.y+rect.height*.28f,rect.width*.72f,rect.height*.14f),rim);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawLog(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Parts-log_full",layers)) return;
+            Color bark=new Color(.42f,.22f,.10f), cut=new Color(.82f,.57f,.30f), ring=new Color(.55f,.32f,.15f);
+            Box(new Rect(rect.x+rect.width*.12f,rect.y+rect.height*.24f,rect.width*.76f,rect.height*.52f),bark);
+            Disc(rect.center.x,rect.y+rect.height*.50f,rect.width*.24f,cut);
+            Disc(rect.center.x,rect.y+rect.height*.50f,rect.width*.16f,ring);
+            Disc(rect.center.x,rect.y+rect.height*.50f,rect.width*.08f,cut);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawLantern(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,layers==1?"Items-Lantern-Lantern_On":"Items-Lantern-Lantern_Off",layers)) return;
+            Color metal=new Color(.31f,.38f,.48f), glass=layers==1?new Color(1f,.78f,.28f):new Color(.55f,.68f,.78f);
+            Box(new Rect(rect.x+rect.width*.30f,rect.y+rect.height*.18f,rect.width*.40f,rect.height*.64f),metal);
+            Box(new Rect(rect.x+rect.width*.38f,rect.y+rect.height*.30f,rect.width*.24f,rect.height*.38f),glass);
+            Solid(new Rect(rect.x+rect.width*.24f,rect.y+rect.height*.14f,rect.width*.52f,3),gold);
+            Solid(new Rect(rect.x+rect.width*.24f,rect.y+rect.height*.78f,rect.width*.52f,3),gold);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawPuzzleBox(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Puzzle_board_01",layers)) return;
+            Color wood=new Color(.48f,.25f,.12f), edge=new Color(.92f,.65f,.28f), piece=new Color(.22f,.52f,.86f);
+            Box(new Rect(rect.x+4,rect.y+4,rect.width-8,rect.height-8),wood);
+            Box(new Rect(rect.x+8,rect.y+8,rect.width-16,rect.height-16),new Color(.12f,.20f,.31f));
+            Box(new Rect(rect.x+rect.width*.44f,rect.y+rect.height*.18f,rect.width*.12f,rect.height*.64f),piece);
+            Box(new Rect(rect.x+rect.width*.18f,rect.y+rect.height*.44f,rect.width*.64f,rect.height*.12f),piece);
+            Solid(new Rect(rect.x+7,rect.y+7,rect.width-14,2),edge);
+            Solid(new Rect(rect.x+7,rect.y+rect.height-9,rect.width-14,2),edge);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawGiftBox(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"gift_box_"+Mathf.Clamp(layers,1,6),layers,false)) return;
+            Color ribbon=layers<=1?new Color(.95f,.86f,.30f):new Color(.78f,.32f,.72f);
+            Box(new Rect(rect.x+4,rect.y+6,rect.width-8,rect.height-10),new Color(.85f,.20f,.18f));
+            Box(new Rect(rect.x+rect.width*.43f,rect.y+5,rect.width*.14f,rect.height-8),ribbon);
+            Box(new Rect(rect.x+5,rect.y+rect.height*.42f,rect.width-10,rect.height*.14f),ribbon);
+            Disc(rect.center.x,rect.y+rect.height*.24f,rect.width*.13f,ribbon);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawFlowers(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Flowers_Big",layers)) return;
+            Color stem=new Color(.22f,.56f,.25f), petal=layers<=1?new Color(1f,.62f,.85f):new Color(.78f,.42f,.88f);
+            Solid(new Rect(rect.center.x-2,rect.y+rect.height*.38f,4,rect.height*.40f),stem);
+            Disc(rect.center.x-rect.width*.13f,rect.y+rect.height*.62f,rect.width*.13f,stem);
+            Disc(rect.center.x+rect.width*.13f,rect.y+rect.height*.62f,rect.width*.13f,stem);
+            Disc(rect.center.x,rect.y+rect.height*.29f,rect.width*.15f,petal);
+            Disc(rect.center.x-rect.width*.15f,rect.y+rect.height*.40f,rect.width*.13f,petal);
+            Disc(rect.center.x+rect.width*.15f,rect.y+rect.height*.40f,rect.width*.13f,petal);
+            Disc(rect.center.x,rect.y+rect.height*.42f,rect.width*.08f,gold);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawChaliceBox(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Items-ChaliceBox-box_01",layers)) return;
+            Color wood=new Color(.35f,.20f,.12f), metal=new Color(.86f,.66f,.25f), glass=new Color(.45f,.72f,.95f,.85f);
+            Box(new Rect(rect.x+5,rect.y+7,rect.width-10,rect.height-12),wood);
+            Solid(new Rect(rect.x+8,rect.y+10,rect.width-16,3),metal);
+            Solid(new Rect(rect.x+8,rect.y+rect.height-13,rect.width-16,3),metal);
+            Disc(rect.center.x,rect.y+rect.height*.48f,rect.width*.19f,glass);
+            Box(new Rect(rect.x+rect.width*.43f,rect.y+rect.height*.24f,rect.width*.14f,rect.height*.48f),metal);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawDragonBox(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Parts-dragon_door",layers)) return;
+            Color shell=new Color(.23f,.28f,.38f), gold=new Color(.92f,.61f,.24f), egg=layers>=4?new Color(.96f,.55f,.28f):new Color(.72f,.76f,.86f);
+            Box(new Rect(rect.x+4,rect.y+5,rect.width-8,rect.height-10),shell);
+            Box(new Rect(rect.x+9,rect.y+10,rect.width-18,rect.height-20),new Color(.10f,.14f,.22f));
+            Disc(rect.center.x,rect.y+rect.height*.52f,rect.width*.20f,egg);
+            Solid(new Rect(rect.x+rect.width*.20f,rect.y+rect.height*.20f,rect.width*.60f,3),gold);
+            Solid(new Rect(rect.x+rect.width*.20f,rect.y+rect.height*.78f,rect.width*.60f,3),gold);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawBirdhouse(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Items-BirdhouseItem-bird_goal",layers)) return;
+            Color wood=new Color(.55f,.30f,.14f), roof=new Color(.84f,.22f,.18f), hole=new Color(.10f,.12f,.18f);
+            Box(new Rect(rect.x+rect.width*.22f,rect.y+rect.height*.30f,rect.width*.56f,rect.height*.52f),wood);
+            Solid(new Rect(rect.x+rect.width*.16f,rect.y+rect.height*.22f,rect.width*.68f,5),roof);
+            Disc(rect.center.x,rect.y+rect.height*.52f,rect.width*.13f,hole);
+            Solid(new Rect(rect.center.x-2,rect.y+rect.height*.78f,4,rect.height*.13f),gold);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawGnome(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Gnome_big",layers)) return;
+            Color hat=layers>=3?new Color(.85f,.22f,.26f):new Color(.30f,.50f,.86f), body=new Color(.68f,.40f,.20f);
+            Disc(rect.center.x,rect.y+rect.height*.60f,rect.width*.22f,body);
+            Solid(new Rect(rect.x+rect.width*.33f,rect.y+rect.height*.25f,rect.width*.34f,rect.height*.30f),hat);
+            Disc(rect.center.x,rect.y+rect.height*.43f,rect.width*.12f,new Color(1f,.78f,.58f));
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawSafe(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Parts-safe01",layers)) return;
+            Color steel=layers==1?new Color(.60f,.67f,.74f):new Color(.34f,.42f,.52f);
+            Box(new Rect(rect.x+5,rect.y+8,rect.width-10,rect.height-14),steel);
+            Disc(rect.center.x,rect.center.y,rect.width*.16f,gold);
+            Solid(new Rect(rect.center.x-2,rect.y+rect.height*.24f,4,rect.height*.52f),navy);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawMask(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"mask-first_layer_fill",layers)) return;
+            Color sand=layers==1?new Color(.94f,.72f,.35f):new Color(.64f,.46f,.27f);
+            Disc(rect.center.x,rect.center.y,rect.width*.30f,sand);
+            Box(new Rect(rect.x+rect.width*.28f,rect.y+rect.height*.40f,rect.width*.16f,rect.height*.10f),navy);
+            Box(new Rect(rect.x+rect.width*.56f,rect.y+rect.height*.40f,rect.width*.16f,rect.height*.10f),navy);
+            Solid(new Rect(rect.x+rect.width*.36f,rect.y+rect.height*.64f,rect.width*.28f,3),new Color(.34f,.20f,.12f));
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawTurtle(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Items-TurtleItem-turtle",layers)) return;
+            Color shell=layers==1?new Color(.30f,.70f,.42f):new Color(.25f,.45f,.30f);
+            Disc(rect.center.x,rect.center.y,rect.width*.28f,shell);
+            Solid(new Rect(rect.x+rect.width*.12f,rect.center.y-2,rect.width*.76f,4),new Color(.12f,.28f,.18f));
+            Disc(rect.x+rect.width*.78f,rect.center.y,rect.width*.08f,new Color(.38f,.76f,.48f));
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawSnowman(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Snowman_big",layers)) return;
+            Color ice=layers>=5?new Color(.65f,.82f,.94f):new Color(.88f,.95f,1f);
+            Disc(rect.center.x,rect.y+rect.height*.58f,rect.width*.24f,ice);
+            Disc(rect.center.x,rect.y+rect.height*.34f,rect.width*.17f,ice);
+            Solid(new Rect(rect.x+rect.width*.33f,rect.y+rect.height*.20f,rect.width*.34f,4),new Color(.16f,.15f,.20f));
+            Disc(rect.center.x,rect.y+rect.height*.35f,rect.width*.04f,new Color(.94f,.45f,.18f));
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawSteamBomb(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Barrel_bomb",layers)) return;
+            Color metal=layers>=8?new Color(.33f,.42f,.52f):new Color(.55f,.64f,.72f);
+            Box(new Rect(rect.x+7,rect.y+9,rect.width-14,rect.height-16),metal);
+            Disc(rect.center.x,rect.center.y,rect.width*.15f,new Color(.95f,.42f,.18f));
+            Solid(new Rect(rect.x+rect.width*.22f,rect.y+rect.height*.20f,rect.width*.56f,3),gold);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawKnight(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"knight_goal",layers)) return;
+            Color armor=layers>=5?new Color(.38f,.46f,.62f):new Color(.62f,.72f,.86f);
+            Disc(rect.center.x,rect.y+rect.height*.53f,rect.width*.22f,armor);
+            Box(new Rect(rect.x+rect.width*.32f,rect.y+rect.height*.23f,rect.width*.36f,rect.height*.28f),armor);
+            Solid(new Rect(rect.x+rect.width*.22f,rect.y+rect.height*.31f,rect.width*.56f,3),gold);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawTurtleHouse(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"Parts-turtlehouse_icon_cropped",layers)) return;
+            Color wood=layers>=5?new Color(.42f,.26f,.15f):new Color(.72f,.45f,.22f), roof=new Color(.30f,.50f,.64f);
+            Box(new Rect(rect.x+5,rect.y+12,rect.width-10,rect.height-16),wood);
+            Solid(new Rect(rect.x+rect.width*.15f,rect.y+rect.height*.25f,rect.width*.70f,5),roof);
+            Box(new Rect(rect.x+rect.width*.40f,rect.y+rect.height*.53f,rect.width*.20f,rect.height*.30f),navy);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawClock(Rect rect,int layers)
+        {
+            if(DrawRecoveredObstacle(rect,"clock_icon",layers)) return;
+            Color face=layers>=8?new Color(.45f,.50f,.60f):new Color(.82f,.86f,.92f);
+            Disc(rect.center.x,rect.center.y,rect.width*.28f,face);
+            Disc(rect.center.x,rect.center.y,rect.width*.22f,new Color(.18f,.23f,.32f));
+            Solid(new Rect(rect.center.x-2,rect.y+rect.height*.28f,4,rect.height*.24f),gold);
+            Solid(new Rect(rect.center.x,rect.center.y-2,rect.width*.20f,4),gold);
+            if(layers>1) Text(rect,layers.ToString(),16,Color.white,TextAnchor.MiddleCenter,true);
+        }
+        void DrawNativeObstacle(Rect rect,int kind,int layers,int variant)
+        {
+            MatchBoard.NativeObstacleKind obstacle=(MatchBoard.NativeObstacleKind)kind;
+            string token=null;
+            switch(obstacle)
+            {
+                case MatchBoard.NativeObstacleKind.Barrel: token="Barrel"; break;
+                case MatchBoard.NativeObstacleKind.MagicOrb: token="MagicOrb_big"; break;
+                case MatchBoard.NativeObstacleKind.Starfish: token="starfish"; break;
+                case MatchBoard.NativeObstacleKind.Tablet: token=layers>=2?"tablet_column_1x4_01":"Tablet_goal_icon_01"; break;
+                case MatchBoard.NativeObstacleKind.Gem: token="Parts-dragon_gem"; break;
+            }
+            if(token!=null && DrawRecoveredObstacle(rect,token,layers,false)) return;
+            Color baseColor;
+            switch(obstacle)
+            {
+                case MatchBoard.NativeObstacleKind.Armory: baseColor=new Color(.47f,.28f,.16f); break;
+                case MatchBoard.NativeObstacleKind.Barrel: baseColor=new Color(.62f,.34f,.14f); break;
+                case MatchBoard.NativeObstacleKind.Cannon: baseColor=new Color(.28f,.34f,.43f); break;
+                case MatchBoard.NativeObstacleKind.Gem: baseColor=new Color(.35f,.85f,1f); break;
+                case MatchBoard.NativeObstacleKind.JellyMaker: baseColor=new Color(.85f,.34f,.70f); break;
+                case MatchBoard.NativeObstacleKind.Lightbulb: baseColor=new Color(1f,.82f,.24f); break;
+                case MatchBoard.NativeObstacleKind.Lily: baseColor=new Color(.35f,.72f,.38f); break;
+                case MatchBoard.NativeObstacleKind.Lyre: baseColor=new Color(.93f,.67f,.22f); break;
+                case MatchBoard.NativeObstacleKind.MagicCards: baseColor=new Color(.46f,.28f,.78f); break;
+                case MatchBoard.NativeObstacleKind.MagicGlobe: baseColor=new Color(.24f,.68f,.92f); break;
+                case MatchBoard.NativeObstacleKind.MagicOrb: baseColor=new Color(.65f,.28f,.94f); break;
+                case MatchBoard.NativeObstacleKind.Magnet: baseColor=new Color(.86f,.24f,.28f); break;
+                case MatchBoard.NativeObstacleKind.Starfish: baseColor=new Color(1f,.48f,.25f); break;
+                case MatchBoard.NativeObstacleKind.Tablet: baseColor=new Color(.27f,.57f,.76f); break;
+                case MatchBoard.NativeObstacleKind.Target: baseColor=new Color(.95f,.38f,.28f); break;
+                default: baseColor=new Color(.75f,.22f,.16f); break;
+            }
+            Box(new Rect(rect.x+4,rect.y+5,rect.width-8,rect.height-10),baseColor);
+            if(obstacle==MatchBoard.NativeObstacleKind.Cannon)
+            {
+                Disc(rect.center.x,rect.center.y,rect.width*.20f,navy);
+                Box(new Rect(rect.x+rect.width*.18f,rect.y+rect.height*.42f,rect.width*.64f,rect.height*.16f),new Color(.62f,.70f,.78f));
+            }
+            else if(obstacle==MatchBoard.NativeObstacleKind.Lightbulb || obstacle==MatchBoard.NativeObstacleKind.Gem)
+                Disc(rect.center.x,rect.center.y,rect.width*.28f,baseColor);
+            else if(obstacle==MatchBoard.NativeObstacleKind.Starfish)
+            {
+                for(int i=0;i<5;i++) { float a=i*Mathf.PI*2/5; Disc(rect.center.x+Mathf.Cos(a)*rect.width*.18f,rect.center.y+Mathf.Sin(a)*rect.height*.18f,rect.width*.13f,baseColor); }
+                Disc(rect.center.x,rect.center.y,rect.width*.10f,gold);
+            }
+            else if(obstacle==MatchBoard.NativeObstacleKind.Target)
+            {
+                Disc(rect.center.x,rect.center.y,rect.width*.30f,Color.white); Disc(rect.center.x,rect.center.y,rect.width*.20f,baseColor); Disc(rect.center.x,rect.center.y,rect.width*.09f,Color.white);
+            }
+            else
+            {
+                Solid(new Rect(rect.x+rect.width*.18f,rect.y+rect.height*.25f,rect.width*.64f,3),gold);
+                Solid(new Rect(rect.x+rect.width*.18f,rect.y+rect.height*.72f,rect.width*.64f,3),new Color(.10f,.15f,.25f,.45f));
+            }
+            if(layers>1) Text(rect,layers.ToString(),15,Color.white,TextAnchor.MiddleCenter,true);
+        }
         void DrawWall(Rect rect,int layers,int group)
         {
+            if(DrawRecoveredObstacle(rect,"WallBase-fill",layers)) return;
             int palette=((group%3)+3)%3;
             Color stone=palette==1?new Color(.42f,.47f,.56f):palette==2?new Color(.30f,.36f,.45f):new Color(.51f,.40f,.32f);
             Box(new Rect(rect.x+3,rect.y+3,rect.width-6,rect.height-6),stone);
@@ -500,6 +820,7 @@ namespace CrownGarden
         }
         void DrawColumn(Rect rect,int direction,int layers,bool metal)
         {
+            if(DrawRecoveredObstacle(rect,metal?"tablet_column_1x4_01":direction==3?"Items-Column-Column_Up":direction==4?"Items-Column-Column_Down":direction==1?"Items-Column-Column_Horizontal":"Items-Column-Column_Horizontal",layers)) return;
             Color body=metal?new Color(.38f,.45f,.54f):new Color(.56f,.35f,.16f);
             Color edge=metal?new Color(.70f,.80f,.88f):new Color(.88f,.62f,.25f);
             Box(new Rect(rect.x+4,rect.y+4,rect.width-8,rect.height-8),new Color(.03f,.07f,.13f,.72f));

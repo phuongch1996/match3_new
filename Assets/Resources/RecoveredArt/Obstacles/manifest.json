@@ -1,0 +1,3422 @@
+[
+  {
+    "name": "Parts-Safe_Particle_08",
+    "path_id": 4845,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4845_Parts-Safe_Particle_08.png",
+    "size": [
+      76,
+      87
+    ],
+    "sha256": "e53be42905029532f5784081f8135c3d24cc9cf46e97685dac306d06db6a7f1a"
+  },
+  {
+    "name": "Parts-chalice_box_particle_09",
+    "path_id": 4846,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4846_Parts-chalice_box_particle_09.png",
+    "size": [
+      108,
+      132
+    ],
+    "sha256": "7282edc382ff636986a77561b3a3984b7087568a4caaa2c5249d799e199f5a6a"
+  },
+  {
+    "name": "Items-ChaliceBox-ground_shadow_01",
+    "path_id": 4851,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4851_Items-ChaliceBox-ground_shadow_01.png",
+    "size": [
+      159,
+      37
+    ],
+    "sha256": "31298da9d6eeb89bbad6d76bf2e0a5cc46f75a15be3efdee409004bf5bf1dc44"
+  },
+  {
+    "name": "WallBase-bottom_side",
+    "path_id": 4854,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4854_WallBase-bottom_side.png",
+    "size": [
+      75,
+      85
+    ],
+    "sha256": "7165f64b768776ffbeafc97fefceb98946443d5cd306312307e443254a4fd0ce"
+  },
+  {
+    "name": "WallBase-corner",
+    "path_id": 4864,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4864_WallBase-corner.png",
+    "size": [
+      80,
+      81
+    ],
+    "sha256": "b22456a73785d88c4a0532305d5b51991b439ee22f754fbc6d5dc401f6b0db73"
+  },
+  {
+    "name": "Parts-dragon_egg_1",
+    "path_id": 4874,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4874_Parts-dragon_egg_1.png",
+    "size": [
+      75,
+      71
+    ],
+    "sha256": "d8bdb9b52be07ee2388458d5a5b75958f0327783d347fc61f2cfab99784e26b8"
+  },
+  {
+    "name": "Parts-safe01",
+    "path_id": 4883,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4883_Parts-safe01.png",
+    "size": [
+      132,
+      122
+    ],
+    "sha256": "dc931df79a9c23ff74fc494a2b9c1f85f7f909f0dfca072e270234fc2a531a08"
+  },
+  {
+    "name": "clock_arrow_icon",
+    "path_id": 4887,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4887_clock_arrow_icon.png",
+    "size": [
+      39,
+      56
+    ],
+    "sha256": "e1cc60bd1a812dbe0703e8fdbd7b3ffc8350a777c4717f13b90951ab0af841bf"
+  },
+  {
+    "name": "Items-Column-Column_Crack_Horizontal_Alt",
+    "path_id": 4888,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4888_Items-Column-Column_Crack_Horizontal_Alt.png",
+    "size": [
+      136,
+      89
+    ],
+    "sha256": "8e0367708bc45a523c6f7f7ac9dc08d20ee29019079f0ce9a3b48f450535af5e"
+  },
+  {
+    "name": "Parts-Safe_Particle_04",
+    "path_id": 4890,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4890_Parts-Safe_Particle_04.png",
+    "size": [
+      22,
+      47
+    ],
+    "sha256": "5537b061b2e7da43dedffe4ab51758eec3671b56a80f5f30d1f9f5ab527a1ec2"
+  },
+  {
+    "name": "mask-first_layer_left_top_corner",
+    "path_id": 4907,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4907_mask-first_layer_left_top_corner.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "064c6ea0981d5b811841d01c992fb1b92a86d82c50b3d29de306182c8e453734"
+  },
+  {
+    "name": "Parts-dragon_egg_2",
+    "path_id": 4930,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4930_Parts-dragon_egg_2.png",
+    "size": [
+      77,
+      73
+    ],
+    "sha256": "e2d083b969d1f3a82305d53e420c66d4381365a5b2dfdc4ff61d45a870676925"
+  },
+  {
+    "name": "Items-Column-Platform_Front_Horizontal",
+    "path_id": 4958,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4958_Items-Column-Platform_Front_Horizontal.png",
+    "size": [
+      156,
+      143
+    ],
+    "sha256": "85dff252631e913cdc16ae3475ba8ea454cf8956676f99104a8888945c9b8d52"
+  },
+  {
+    "name": "Items-Column-Column_Crack_Horizontal",
+    "path_id": 4961,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4961_Items-Column-Column_Crack_Horizontal.png",
+    "size": [
+      136,
+      93
+    ],
+    "sha256": "34309a053a903e61ef5bf3ce283f853a8ccbd2cb99cfe54389aba44c197d192a"
+  },
+  {
+    "name": "wall_edge",
+    "path_id": 4967,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4967_wall_edge.png",
+    "size": [
+      52,
+      127
+    ],
+    "sha256": "fad293a13c520a527e3eb7424c58fca9f3f36c8515d7398578e08bf78bb831d8"
+  },
+  {
+    "name": "Parts-Safe_Particle_05",
+    "path_id": 4986,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/4986_Parts-Safe_Particle_05.png",
+    "size": [
+      69,
+      77
+    ],
+    "sha256": "af0ceb43816e17f2ffc540192d8c9d28ec1bd43d2004da18e74495e0c1f731c3"
+  },
+  {
+    "name": "Parts-metal_crate1",
+    "path_id": 5010,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5010_Parts-metal_crate1.png",
+    "size": [
+      132,
+      132
+    ],
+    "sha256": "698b9faacfcfb9b4d6c8e4b4879b5126bed840cf40fa06dffe32c29328134187"
+  },
+  {
+    "name": "mask-first_layer_left_bottom_corner",
+    "path_id": 5012,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5012_mask-first_layer_left_bottom_corner.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "a236adc33fd9e3446e71379fcc5068aa99d117908e9aa4c668ff7953b544b935"
+  },
+  {
+    "name": "clock_center_icon",
+    "path_id": 5013,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5013_clock_center_icon.png",
+    "size": [
+      29,
+      30
+    ],
+    "sha256": "def674a3855d1710553e2e491170ee1bfc642a18ba795216cfa7c7575b2cbff5"
+  },
+  {
+    "name": "WallBase-bottom_inner_corner",
+    "path_id": 5016,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5016_WallBase-bottom_inner_corner.png",
+    "size": [
+      105,
+      105
+    ],
+    "sha256": "59f3c493d8d9f683f8d269aa3acfd9b247dcfc29e7e604671aafdd07f363f058"
+  },
+  {
+    "name": "Parts-safe07",
+    "path_id": 5025,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5025_Parts-safe07.png",
+    "size": [
+      77,
+      127
+    ],
+    "sha256": "f229efad5b02ce58dfd27747caeb11cc0d71814d39c8a486a91c6f4c449ac776"
+  },
+  {
+    "name": "Parts-vase09",
+    "path_id": 5045,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5045_Parts-vase09.png",
+    "size": [
+      49,
+      39
+    ],
+    "sha256": "20b82449056d6657ebd2149e0e06d54a7e8987c3bcb31999ec0a94e6de074fd3"
+  },
+  {
+    "name": "mask-first_layer_inside_corner_b",
+    "path_id": 5059,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5059_mask-first_layer_inside_corner_b.png",
+    "size": [
+      130,
+      130
+    ],
+    "sha256": "c12018ab14d52aaea3009c743c5769d6b2d2f118e7a589c1678e0de8f2d6fd50"
+  },
+  {
+    "name": "Parts-dragon_door",
+    "path_id": 5061,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5061_Parts-dragon_door.png",
+    "size": [
+      188,
+      329
+    ],
+    "sha256": "a30ded23f92e8c81994e5fb76b94a002c0f3e445e780ed4e58f983e7e1467f5d"
+  },
+  {
+    "name": "Items-Column-Platform_Front_Vertical",
+    "path_id": 5072,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5072_Items-Column-Platform_Front_Vertical.png",
+    "size": [
+      156,
+      143
+    ],
+    "sha256": "aaf356815034abaf56a4a1c63c8d8dc9df1f4827dc15d28ff6f7fdf08f5b8667"
+  },
+  {
+    "name": "mask-first_layer_left_side_b",
+    "path_id": 5078,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5078_mask-first_layer_left_side_b.png",
+    "size": [
+      75,
+      150
+    ],
+    "sha256": "9f78879d3054514d39f1db359d1d0eae216f56920ae69729807cc98022dfadb4"
+  },
+  {
+    "name": "Parts-Safe_Particle_01",
+    "path_id": 5090,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5090_Parts-Safe_Particle_01.png",
+    "size": [
+      53,
+      67
+    ],
+    "sha256": "3b66c1cb7da0eea999d1e2b33d82d17d1b3c94bec0faa9bbe06f98b90cc270a8"
+  },
+  {
+    "name": "Parts-Lantern_08",
+    "path_id": 5097,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5097_Parts-Lantern_08.png",
+    "size": [
+      26,
+      52
+    ],
+    "sha256": "0f35b00614cdeae36ecb5c66d4445bf814da55149d6b1c42819d1a3fa7a24892"
+  },
+  {
+    "name": "mask-first_layer_upcorner_side_a",
+    "path_id": 5099,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5099_mask-first_layer_upcorner_side_a.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "2f8ef733d2e9c8c5e4eacbf7ca98f13867c5397f65c1299deadfa348e860ecac"
+  },
+  {
+    "name": "Parts-vase03",
+    "path_id": 5104,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5104_Parts-vase03.png",
+    "size": [
+      82,
+      91
+    ],
+    "sha256": "88bc0e67c2f4dec661896d8f66685dc579ea6c9123a5965437dab04c8d283bfb"
+  },
+  {
+    "name": "Items-BoxItem-patch2",
+    "path_id": 5108,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5108_Items-BoxItem-patch2.png",
+    "size": [
+      130,
+      131
+    ],
+    "sha256": "c1d78b4cecafbebb44c934eb40074359c1909c8ae8e71800098b08a6a7256ea4"
+  },
+  {
+    "name": "Parts-safe09",
+    "path_id": 5110,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5110_Parts-safe09.png",
+    "size": [
+      75,
+      84
+    ],
+    "sha256": "6f292983326780abe1aa2510c318210c364f42f58fef648e6edcdc6029fd8e07"
+  },
+  {
+    "name": "Parts-Lantern_01",
+    "path_id": 5119,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5119_Parts-Lantern_01.png",
+    "size": [
+      90,
+      23
+    ],
+    "sha256": "6e9d1400b8fd5f552a996f2b9015eab6070c25af2c6124b516982aa4ac2eb19d"
+  },
+  {
+    "name": "Items-Column-Circle_1_Vertical",
+    "path_id": 5121,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5121_Items-Column-Circle_1_Vertical.png",
+    "size": [
+      113,
+      41
+    ],
+    "sha256": "c3e4d67cb3767a6c5e51e9de5101130ab23d4b6ee776dbc59000d3064b84fa3a"
+  },
+  {
+    "name": "Items-BirdhouseItem-bird_goal",
+    "path_id": 5125,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5125_Items-BirdhouseItem-bird_goal.png",
+    "size": [
+      129,
+      144
+    ],
+    "sha256": "47c471f15d1e5a6000752cb3ccdfe3386922d97d3842d6d504b968d378b10cc0"
+  },
+  {
+    "name": "Items-Lantern-Lantern_Off",
+    "path_id": 5157,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5157_Items-Lantern-Lantern_Off.png",
+    "size": [
+      137,
+      137
+    ],
+    "sha256": "5fbb3e1ad71bd811a2dced75d2bed15d91485c460fd8909d9deec4b6105a2be8"
+  },
+  {
+    "name": "Particles-snowman_hand01",
+    "path_id": 5171,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5171_Particles-snowman_hand01.png",
+    "size": [
+      65,
+      49
+    ],
+    "sha256": "90e04e496d4743f55879885a45f769f8f00789ee1748c5a127e2524b7ac46920"
+  },
+  {
+    "name": "Items-BoxItem-box",
+    "path_id": 5172,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5172_Items-BoxItem-box.png",
+    "size": [
+      152,
+      152
+    ],
+    "sha256": "36ee15e47e5b1b44d923234c37e9aff3dc3d1c16ab00c99c645858d04b8c65bf"
+  },
+  {
+    "name": "WallBase-bottom_corner",
+    "path_id": 5191,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5191_WallBase-bottom_corner.png",
+    "size": [
+      81,
+      85
+    ],
+    "sha256": "e67f1277035d92b837356af18bfed108568b010243533a8819d9fa3df869bbc7"
+  },
+  {
+    "name": "Parts-dragon_egg_5",
+    "path_id": 5200,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5200_Parts-dragon_egg_5.png",
+    "size": [
+      84,
+      67
+    ],
+    "sha256": "80b3f4071f6d23e15e08121181ed682254e3285a6ae571e8bbd3ef0e48f89737"
+  },
+  {
+    "name": "shop_clock_arrow_icon",
+    "path_id": 5206,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5206_shop_clock_arrow_icon.png",
+    "size": [
+      17,
+      25
+    ],
+    "sha256": "c3b76b635566a869a8db9d0a6f13c835f9e67c11004c41ca1215214c19a61127"
+  },
+  {
+    "name": "mask-first_layer_right_side_b",
+    "path_id": 5209,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5209_mask-first_layer_right_side_b.png",
+    "size": [
+      75,
+      150
+    ],
+    "sha256": "6f4acb0a3712dfb6481ef1a55126501480fb9047b9603e09402939299fcf1eb7"
+  },
+  {
+    "name": "shop_clock_body_icon",
+    "path_id": 5229,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5229_shop_clock_body_icon.png",
+    "size": [
+      77,
+      87
+    ],
+    "sha256": "5ca2ae8c37ba89dfbd1dd7c5ddbf07270c3c4283309856d65f55f13dedceaa5e"
+  },
+  {
+    "name": "Items-Column-Column_Crack_Vertical_Alt",
+    "path_id": 5230,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5230_Items-Column-Column_Crack_Vertical_Alt.png",
+    "size": [
+      136,
+      89
+    ],
+    "sha256": "98417b755e1f350b54d861afe43ca06e17865f16b95021dec761055dbc5c4f6a"
+  },
+  {
+    "name": "Parts-safe06",
+    "path_id": 5261,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5261_Parts-safe06.png",
+    "size": [
+      80,
+      138
+    ],
+    "sha256": "d429c930e9a5eb3d89c297bb48cead8100a355cc608429d0ce0a1f4dc8b81555"
+  },
+  {
+    "name": "Parts-dragon_egg_4",
+    "path_id": 5287,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5287_Parts-dragon_egg_4.png",
+    "size": [
+      46,
+      52
+    ],
+    "sha256": "b2ba24dd557dd60c45848267f4e1e445cb29a2cde544e31f2953ff7a930597f1"
+  },
+  {
+    "name": "metal_crate_patch_1",
+    "path_id": 5295,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5295_metal_crate_patch_1.png",
+    "size": [
+      132,
+      132
+    ],
+    "sha256": "55e44cccd8186df934b5b8a9ca57a591e1333c206171f75b7ad842dc996915f2"
+  },
+  {
+    "name": "Parts-log2",
+    "path_id": 5308,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5308_Parts-log2.png",
+    "size": [
+      111,
+      71
+    ],
+    "sha256": "32a9038ec03d9b1ab609d3b58a366799d6a78b3293bf39398c63caf6ad659df6"
+  },
+  {
+    "name": "Parts-vase01",
+    "path_id": 5310,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5310_Parts-vase01.png",
+    "size": [
+      93,
+      83
+    ],
+    "sha256": "650fac5dd69757ced9a264fafe21198baebf5c1bfdf7132fd31d23227829aeb4"
+  },
+  {
+    "name": "Particles-snowman_carrot",
+    "path_id": 5314,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5314_Particles-snowman_carrot.png",
+    "size": [
+      38,
+      31
+    ],
+    "sha256": "ddca58aa6567544197c6d28bfc346b782cb11eb6c3037ce9b0e27c876ad1554a"
+  },
+  {
+    "name": "Parts-chalice_box_particle_08",
+    "path_id": 5316,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5316_Parts-chalice_box_particle_08.png",
+    "size": [
+      42,
+      63
+    ],
+    "sha256": "04003248aea5fd615d001ddfe66af8f90dc813081ebf06c397ec5006b33d9a3b"
+  },
+  {
+    "name": "shop_clock_body_center_icon",
+    "path_id": 5321,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5321_shop_clock_body_center_icon.png",
+    "size": [
+      16,
+      16
+    ],
+    "sha256": "2f1bed997f32a03210060fbb5cc08b48fc0bb05d623f26777038124edb131207"
+  },
+  {
+    "name": "Parts-chalice_box_particle_03",
+    "path_id": 5325,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5325_Parts-chalice_box_particle_03.png",
+    "size": [
+      145,
+      144
+    ],
+    "sha256": "7f4fd3379526e46da1c261655a309e1951a8ad6bca5f21641ff0b5bfd32ec2ea"
+  },
+  {
+    "name": "Parts-chalice_box_particle_05",
+    "path_id": 5327,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5327_Parts-chalice_box_particle_05.png",
+    "size": [
+      128,
+      110
+    ],
+    "sha256": "3aaef0855dfdbb8c815a2b9ff1920a260065f8a323c7b7d627ad618b895d3941"
+  },
+  {
+    "name": "Items-Lantern-Lantern_On",
+    "path_id": 5340,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5340_Items-Lantern-Lantern_On.png",
+    "size": [
+      155,
+      142
+    ],
+    "sha256": "cda485bed5b6ce005cdcc2add5cdbd2b44a4ccff2e00ce80eb69a8952f3a6bd0"
+  },
+  {
+    "name": "Items-ChaliceBox-goal_icon_shadow",
+    "path_id": 5342,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5342_Items-ChaliceBox-goal_icon_shadow.png",
+    "size": [
+      79,
+      11
+    ],
+    "sha256": "867f5b149d1e433f577a78fa05c176f84f1976f2ecf8860e9ca26501ebabd248"
+  },
+  {
+    "name": "Parts-Lantern_05",
+    "path_id": 5364,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5364_Parts-Lantern_05.png",
+    "size": [
+      39,
+      24
+    ],
+    "sha256": "1ccdb46ca9e9cb4891b9ff1450ac4ea9f99f3386f3581f3ae23285cdcf52d2d4"
+  },
+  {
+    "name": "Items-Column-Circle_1_Horizontal",
+    "path_id": 5374,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5374_Items-Column-Circle_1_Horizontal.png",
+    "size": [
+      112,
+      41
+    ],
+    "sha256": "9d645389796bdd134c6fd0b7b92d5eacd94cfc7afa3d610eba52dcb9bd885a98"
+  },
+  {
+    "name": "Parts-snowman_crown",
+    "path_id": 5379,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5379_Parts-snowman_crown.png",
+    "size": [
+      111,
+      60
+    ],
+    "sha256": "f383b23ff068422d3a65f2c5b67982964f4aeb5e92116eadf6f533d2f5f0843d"
+  },
+  {
+    "name": "Items-Column-Circle_2_Horizontal",
+    "path_id": 5388,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5388_Items-Column-Circle_2_Horizontal.png",
+    "size": [
+      83,
+      31
+    ],
+    "sha256": "35cc539f1effa6f784e708e136651ea90bf6f88aaa48b35d4a9b7598630af0d6"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_02",
+    "path_id": 5394,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5394_Items-ChaliceBox-chalice_02.png",
+    "size": [
+      79,
+      92
+    ],
+    "sha256": "4790e1898cb25d667e6dc2ecb5e88e34ab8415b8ea72a44873f69caef49bff74"
+  },
+  {
+    "name": "Items-ChaliceBox-goal_icon",
+    "path_id": 5411,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5411_Items-ChaliceBox-goal_icon.png",
+    "size": [
+      80,
+      92
+    ],
+    "sha256": "fd750496a6b6ca9f3d3ca07b91b7b87779e875ed277b54f79ad4b3894cbb8cbe"
+  },
+  {
+    "name": "Parts-dragon_egg_3",
+    "path_id": 5427,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5427_Parts-dragon_egg_3.png",
+    "size": [
+      102,
+      62
+    ],
+    "sha256": "f49ce04455a46fd199da4734e27b7d1c7ce126bb8f8d1ef2ea48dbd65aec2266"
+  },
+  {
+    "name": "Parts-turtlehouse_icon_cropped",
+    "path_id": 5433,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5433_Parts-turtlehouse_icon_cropped.png",
+    "size": [
+      92,
+      91
+    ],
+    "sha256": "8b272bc21c6d812d7ea0eb216c17146698207d2b68d93e70362f731d8e602c8f"
+  },
+  {
+    "name": "Particles-knight_jaw",
+    "path_id": 5445,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5445_Particles-knight_jaw.png",
+    "size": [
+      91,
+      72
+    ],
+    "sha256": "f8da8aae5dc51c45655948f5034d8442c6126805277997541dee242a55cecb8d"
+  },
+  {
+    "name": "clock_icon",
+    "path_id": 5448,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5448_clock_icon.png",
+    "size": [
+      170,
+      191
+    ],
+    "sha256": "137aa2aab0a3d384d8f00a0f7accf96ba2ac37f1d249fd5be403e9b1c51919db"
+  },
+  {
+    "name": "Particles-knight_pad",
+    "path_id": 5449,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5449_Particles-knight_pad.png",
+    "size": [
+      64,
+      42
+    ],
+    "sha256": "320232eee93bdd5977cc143351f374eb78f6d9f35e63dadd7e10b445e4c9b34c"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_03",
+    "path_id": 5458,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5458_Items-ChaliceBox-chalice_03.png",
+    "size": [
+      79,
+      91
+    ],
+    "sha256": "bd1e3d70b001be5bb98def581f61fa7980cf8d37f1edec80b3846d7ebd505f00"
+  },
+  {
+    "name": "WallBase-top_side",
+    "path_id": 5466,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5466_WallBase-top_side.png",
+    "size": [
+      75,
+      81
+    ],
+    "sha256": "455d30ee3fd708548e424c693ea4b9491b4d12899b382e37f92d796892e557d5"
+  },
+  {
+    "name": "Items-BoxItem-shadow_patch1",
+    "path_id": 5471,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5471_Items-BoxItem-shadow_patch1.png",
+    "size": [
+      141,
+      141
+    ],
+    "sha256": "c258aaf7ec685ebf0d58405c3bf3f8551cd78fe091880914c51cdca1631e90cb"
+  },
+  {
+    "name": "Items-StatueItem-gnome_shadow",
+    "path_id": 5473,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5473_Items-StatueItem-gnome_shadow.png",
+    "size": [
+      140,
+      46
+    ],
+    "sha256": "32094c28724b2e1bf852513f220c745911c303fa8b72a500f81af1658b612939"
+  },
+  {
+    "name": "Parts-safe03",
+    "path_id": 5500,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5500_Parts-safe03.png",
+    "size": [
+      105,
+      124
+    ],
+    "sha256": "31e938f4cefc29e3575fa5797bb35a7a944850db403dab971dffc0a010a9a19e"
+  },
+  {
+    "name": "Items-ChaliceBox-box_01",
+    "path_id": 5501,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5501_Items-ChaliceBox-box_01.png",
+    "size": [
+      151,
+      302
+    ],
+    "sha256": "5d8e19dd4ec77245743ed1e573cd3b49c9a4cbd42724e14960cb1e647cfab794"
+  },
+  {
+    "name": "Parts-Safe_Particle_A04",
+    "path_id": 5506,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5506_Parts-Safe_Particle_A04.png",
+    "size": [
+      154,
+      83
+    ],
+    "sha256": "95adcb05cb342163af5714d87abdc17fbfaee87597a0620f03853b3045134972"
+  },
+  {
+    "name": "Items-ChaliceBox-shelf_01",
+    "path_id": 5513,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5513_Items-ChaliceBox-shelf_01.png",
+    "size": [
+      127,
+      40
+    ],
+    "sha256": "45e2c23b8cfcded1951b2553b3bd19cfadb36fe9c12c5461167f912be265f4c0"
+  },
+  {
+    "name": "Items-ChaliceBox-full_shadow",
+    "path_id": 5529,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5529_Items-ChaliceBox-full_shadow.png",
+    "size": [
+      141,
+      169
+    ],
+    "sha256": "65b7df528b3875ec20171dcbdca9c6e6313707f8fa3a19b6e2d077611b773682"
+  },
+  {
+    "name": "metal_crate_shadow",
+    "path_id": 5540,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5540_metal_crate_shadow.png",
+    "size": [
+      160,
+      160
+    ],
+    "sha256": "06952be9cdb5b35dcc04f11c11776de96ec03efc4b80344f835c9dd3d0a52f9b"
+  },
+  {
+    "name": "Parts-safe01a",
+    "path_id": 5542,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5542_Parts-safe01a.png",
+    "size": [
+      132,
+      122
+    ],
+    "sha256": "1f3d16698e46e8867a11206b923b2fc8e429bede326777581847b2cbd7617245"
+  },
+  {
+    "name": "Items-ChaliceBox-shelf_shadow_01",
+    "path_id": 5546,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5546_Items-ChaliceBox-shelf_shadow_01.png",
+    "size": [
+      132,
+      146
+    ],
+    "sha256": "1ec1bf3b418ea8ab680d9d8b5b6c4228f01eabac5a785df8842070fb71dde6a9"
+  },
+  {
+    "name": "Particles-knight_hair_02",
+    "path_id": 5570,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5570_Particles-knight_hair_02.png",
+    "size": [
+      81,
+      88
+    ],
+    "sha256": "d31eb4d8c19f657f3736a809d387879dc86b1894a42d3824169b9a2203ce79c1"
+  },
+  {
+    "name": "mask-first_layer_right_bottom_corner",
+    "path_id": 5582,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5582_mask-first_layer_right_bottom_corner.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "59ad1ecbcc891c2027767d3ef8b697ce18570db0ba5b5b86efb305fed6d8165d"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_02_shadow",
+    "path_id": 5604,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5604_Items-ChaliceBox-chalice_02_shadow.png",
+    "size": [
+      79,
+      91
+    ],
+    "sha256": "499d1ed1c4ea1e57bcd2390626ce2bfd93eb822d25822cc242b768bd8abf2759"
+  },
+  {
+    "name": "Items-Vase-vase",
+    "path_id": 5632,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5632_Items-Vase-vase.png",
+    "size": [
+      130,
+      137
+    ],
+    "sha256": "3d38552a16b4d6d7e5c79583e4b90032252fabc67d2e85bfa34d4e195e11119b"
+  },
+  {
+    "name": "Items-Column-column_goal",
+    "path_id": 5635,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5635_Items-Column-column_goal.png",
+    "size": [
+      131,
+      144
+    ],
+    "sha256": "fda65aac3529365628d82dcc8b23f90c6ea02de93ce4b2cc049ec54453d9f594"
+  },
+  {
+    "name": "mask-first_layer_upcorner_side_b",
+    "path_id": 5649,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5649_mask-first_layer_upcorner_side_b.png",
+    "size": [
+      150,
+      75
+    ],
+    "sha256": "2eb46c2c9de1765f0033995abf3c160f108f5cbe85049c98b9f6a5c53bf56212"
+  },
+  {
+    "name": "Puzzle_goal_icon",
+    "path_id": 5669,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5669_Puzzle_goal_icon.png",
+    "size": [
+      168,
+      168
+    ],
+    "sha256": "5649964053b4f5471b26c7a96a0210895ceb947832dcee726a0525dc40c61df7"
+  },
+  {
+    "name": "MagicOrb_big",
+    "path_id": 5693,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5693_MagicOrb_big.png",
+    "size": [
+      500,
+      495
+    ],
+    "sha256": "ba004abaab52f92213c611bb35dad7c71b3251aa1b64a40e3556b72172325095"
+  },
+  {
+    "name": "Flower_gold_01",
+    "path_id": 5738,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5738_Flower_gold_01.png",
+    "size": [
+      93,
+      51
+    ],
+    "sha256": "2d8b5c8717e17dc12bbf334f19dcc1b2c537adc9ab45da52941a56579dac6321"
+  },
+  {
+    "name": "gift_box_4",
+    "path_id": 5759,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5759_gift_box_4.png",
+    "size": [
+      180,
+      180
+    ],
+    "sha256": "bcfb829c042f29e1aeddc2d538b0b4fe2802e09d9c04566c0f2dee9519245d83"
+  },
+  {
+    "name": "Barrel_crown",
+    "path_id": 5824,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5824_Barrel_crown.png",
+    "size": [
+      63,
+      52
+    ],
+    "sha256": "16e2d2f75610873cf4bf434fb57cc37cb5d983b15f9ba8e5235443a0ed3d653a"
+  },
+  {
+    "name": "Snowman_big",
+    "path_id": 5837,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5837_Snowman_big.png",
+    "size": [
+      516,
+      520
+    ],
+    "sha256": "d2fbd7e78d3cf6e097cbccb23231a0801f47bf364c8356a7485ed94d0611e59b"
+  },
+  {
+    "name": "starfish_01_1.0007",
+    "path_id": 5874,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5874_starfish_01_1.0007.png",
+    "size": [
+      82,
+      169
+    ],
+    "sha256": "ed8edc4dac37e16ce78c76f801d06a5a808d6be7b6ec1eb464068f035716b450"
+  },
+  {
+    "name": "gift_box_5",
+    "path_id": 5886,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5886_gift_box_5.png",
+    "size": [
+      180,
+      180
+    ],
+    "sha256": "f8056ceb485a37b8a6812e0a9b2bd14a393c9bd3876d982fe2d34549ddf122cc"
+  },
+  {
+    "name": "Barrel_Patch_01",
+    "path_id": 5889,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5889_Barrel_Patch_01.png",
+    "size": [
+      163,
+      109
+    ],
+    "sha256": "d82267a562f8d9eede3c9f4b3944cae96f93aaadea0621228dc3b212710d6ec4"
+  },
+  {
+    "name": "Puzzle_board_01",
+    "path_id": 5893,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5893_Puzzle_board_01.png",
+    "size": [
+      114,
+      116
+    ],
+    "sha256": "66d53b9ee2b792b75f4a658ec44bc7bb211e5f791a89392f42c786dd8426ca3e"
+  },
+  {
+    "name": "Barrel_crown_shadow",
+    "path_id": 5923,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5923_Barrel_crown_shadow.png",
+    "size": [
+      77,
+      68
+    ],
+    "sha256": "199274c983777b6cd5b6f4947c2ae6c4f7cf443d4f1d48d0d7da1c7f157aaa07"
+  },
+  {
+    "name": "tablet_submarine_01",
+    "path_id": 5942,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5942_tablet_submarine_01.png",
+    "size": [
+      544,
+      239
+    ],
+    "sha256": "fe1809aac26c2226e561e92fae1553067e24fad297e3515c5437c45da3a90a09"
+  },
+  {
+    "name": "Flowers_pot_shadow_01",
+    "path_id": 5990,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5990_Flowers_pot_shadow_01.png",
+    "size": [
+      70,
+      39
+    ],
+    "sha256": "58a638c931d093e1a1a3bbc38ac43124c236153d6971d34edd3cb0ccf7ebc603"
+  },
+  {
+    "name": "Flowers_pot_shadow_03",
+    "path_id": 6008,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6008_Flowers_pot_shadow_03.png",
+    "size": [
+      72,
+      75
+    ],
+    "sha256": "cda143e9830cd7c2bf6c843d279d0da285f4a8d9ed0924b1ead2262230079bf5"
+  },
+  {
+    "name": "tablet_column_1x4_01",
+    "path_id": 6029,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6029_tablet_column_1x4_01.png",
+    "size": [
+      101,
+      484
+    ],
+    "sha256": "a8c641e4b92cb61854ee8acebab592a44ac1201213b593207432118916dc7af5"
+  },
+  {
+    "name": "tablet_seahorse_01",
+    "path_id": 6068,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6068_tablet_seahorse_01.png",
+    "size": [
+      105,
+      191
+    ],
+    "sha256": "bb967c00ba84fac202b63136bad7f837e0f942f583c72881b1cd0fec463e5fb0"
+  },
+  {
+    "name": "Barrel",
+    "path_id": 6095,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6095_Barrel.png",
+    "size": [
+      178,
+      148
+    ],
+    "sha256": "662bf9fc147c3028a17eea81d36abbae7a7e2ef8ad09b1f15a179e3b27afde7c"
+  },
+  {
+    "name": "Tablet_goal_icon_01",
+    "path_id": 6117,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6117_Tablet_goal_icon_01.png",
+    "size": [
+      138,
+      138
+    ],
+    "sha256": "c77a974d6d89951c7828b756986094957f8bf5171d300f08f4be9a2012877fcb"
+  },
+  {
+    "name": "Puzzle_board_red_01",
+    "path_id": 6124,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6124_Puzzle_board_red_01.png",
+    "size": [
+      43,
+      81
+    ],
+    "sha256": "0e4ba6b073a4b19e49883d719f59071cd88f1fd59a9bf9344a3d71fc53971eb4"
+  },
+  {
+    "name": "tablet_light_house_01",
+    "path_id": 6126,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6126_tablet_light_house_01.png",
+    "size": [
+      190,
+      385
+    ],
+    "sha256": "86de97c36553cd45954e682cc7c0a72576e9349a9a4f840fd73693272ee3b027"
+  },
+  {
+    "name": "particle_clock_container_02",
+    "path_id": 6151,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6151_particle_clock_container_02.png",
+    "size": [
+      74,
+      164
+    ],
+    "sha256": "05df4bea2cf3260c8404cbf718da3e3c4773e7b6fc2e3297eb14551229132e1a"
+  },
+  {
+    "name": "Flower_vase_03",
+    "path_id": 6176,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6176_Flower_vase_03.png",
+    "size": [
+      56,
+      66
+    ],
+    "sha256": "b5d86449762efc072327ccd6667bacf6b32e68743bbf6f8e0610a3abb6e7a45e"
+  },
+  {
+    "name": "add_snow_flake",
+    "path_id": 6189,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6189_add_snow_flake.png",
+    "size": [
+      200,
+      200
+    ],
+    "sha256": "78d2545083f2a1fb6b4500ab59de20d4fa570d10abd7ac62794d7edc6d2f60da"
+  },
+  {
+    "name": "tablet_whale_01",
+    "path_id": 6205,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6205_tablet_whale_01.png",
+    "size": [
+      637,
+      243
+    ],
+    "sha256": "f8ab8edf6b24b0b451ffa3f81b4f0520dd1bb6c3b215ac2bd544a3aa0216a57e"
+  },
+  {
+    "name": "starfish_01_1.0008",
+    "path_id": 6207,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6207_starfish_01_1.0008.png",
+    "size": [
+      80,
+      170
+    ],
+    "sha256": "5edeb45f096b1b9d05572bb72be38e8e5211b65be65b35fae9aeecd7627e717b"
+  },
+  {
+    "name": "starfish_01_1.0013",
+    "path_id": 6214,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6214_starfish_01_1.0013.png",
+    "size": [
+      167,
+      167
+    ],
+    "sha256": "6324118c613e30757760589d6f1466743c2f560a1d055cbd1918ebde2900267c"
+  },
+  {
+    "name": "starfish_01_1.0011",
+    "path_id": 6215,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6215_starfish_01_1.0011.png",
+    "size": [
+      138,
+      170
+    ],
+    "sha256": "72fccdc0129d818d4ceca0a014d4e2e1284d3a943a61b6ad1756ad8a7b9e5b00"
+  },
+  {
+    "name": "Barrel_Stage_05_Front",
+    "path_id": 6221,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6221_Barrel_Stage_05_Front.png",
+    "size": [
+      136,
+      130
+    ],
+    "sha256": "d1dfc8e5517e301abb30f507064bf8edf1798a106d3f43817d047716474c5a41"
+  },
+  {
+    "name": "starfish_01_1.0005",
+    "path_id": 6293,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6293_starfish_01_1.0005.png",
+    "size": [
+      130,
+      168
+    ],
+    "sha256": "ec840bc520e919b610463a4ab37732ac2b90e184384be02e8081f6f4ca3086f0"
+  },
+  {
+    "name": "gift_box_6",
+    "path_id": 6296,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6296_gift_box_6.png",
+    "size": [
+      180,
+      180
+    ],
+    "sha256": "9aa23ac9f39171d9ea2386924be6f723d61533d330da50b9b6f5c7b4220d8d7b"
+  },
+  {
+    "name": "starfish_01_1.0002",
+    "path_id": 6328,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6328_starfish_01_1.0002.png",
+    "size": [
+      169,
+      164
+    ],
+    "sha256": "dcec28f8a5b22b6dff9b91218f97dde4b23c6af1d379b6f8b541b4c6a672bb8b"
+  },
+  {
+    "name": "Barrel_shadow",
+    "path_id": 6332,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6332_Barrel_shadow.png",
+    "size": [
+      139,
+      147
+    ],
+    "sha256": "cdaa25aa2d857b0683bcb902596a55c1bfd1c901ba67c849570f26e9ea77e5be"
+  },
+  {
+    "name": "flowers_vase_lastState_6_pp",
+    "path_id": 6335,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6335_flowers_vase_lastState_6_pp.png",
+    "size": [
+      36,
+      28
+    ],
+    "sha256": "e7980c410e76f854a8e95d2a00b24dab4df6aeb73ab84d1f39a5928f91725fe3"
+  },
+  {
+    "name": "tablet_ship_01",
+    "path_id": 6360,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6360_tablet_ship_01.png",
+    "size": [
+      657,
+      333
+    ],
+    "sha256": "ef60b7c1dacae33e5c4515c02cdc5a60489d9010fa6294ec5d14e9a3ef1c93bf"
+  },
+  {
+    "name": "starfish_01_1.0004",
+    "path_id": 6379,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6379_starfish_01_1.0004.png",
+    "size": [
+      159,
+      168
+    ],
+    "sha256": "52409095f5f04f42af8a2d0f3ad7da938645e149ffddd2862d545b4a957fbeb7"
+  },
+  {
+    "name": "starfish_01_1.0003",
+    "path_id": 6393,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6393_starfish_01_1.0003.png",
+    "size": [
+      160,
+      166
+    ],
+    "sha256": "7827a5175b6d56126f8e8343dea4db9c194e786bbef953b6d2613fd8f659b4f6"
+  },
+  {
+    "name": "particle_clock_orb_02",
+    "path_id": 6406,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6406_particle_clock_orb_02.png",
+    "size": [
+      36,
+      50
+    ],
+    "sha256": "2340da04466bafda0b1fd86b60d4626dbd967c904aaa547e249d048034389ff7"
+  },
+  {
+    "name": "Tablet_mid_02",
+    "path_id": 6416,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6416_Tablet_mid_02.png",
+    "size": [
+      33,
+      75
+    ],
+    "sha256": "41a319f7f6f2afc1aa432dc421bd86b8b472ec967f089028910291d98f0008ca"
+  },
+  {
+    "name": "starfish_shadow",
+    "path_id": 6440,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6440_starfish_shadow.png",
+    "size": [
+      91,
+      86
+    ],
+    "sha256": "db707ec8729568a8a16ba37898d18c49210238948f9b254fb80c3ede6fd18911"
+  },
+  {
+    "name": "Flower_vase_04",
+    "path_id": 6443,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6443_Flower_vase_04.png",
+    "size": [
+      53,
+      50
+    ],
+    "sha256": "a177ec678bf362880e08122e05abfe2d1cc32eaba4daf35538cc13d5aac3ce98"
+  },
+  {
+    "name": "Barrel_bomb_stage_06_shadow",
+    "path_id": 6457,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6457_Barrel_bomb_stage_06_shadow.png",
+    "size": [
+      125,
+      149
+    ],
+    "sha256": "bf1d268f1be88ca24092d65c84f6b7f3df709d32366ceba9d7418c7e40705194"
+  },
+  {
+    "name": "tablet_seahorse_back_01",
+    "path_id": 6486,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6486_tablet_seahorse_back_01.png",
+    "size": [
+      58,
+      287
+    ],
+    "sha256": "b18a0d6416ea7b082dc612cd68496c118890e0a45b18d4c9136c65b2bda536c0"
+  },
+  {
+    "name": "gnome_no_hat",
+    "path_id": 6487,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6487_gnome_no_hat.png",
+    "size": [
+      117,
+      93
+    ],
+    "sha256": "7b494563f7a1479a1d5f9dbd8864a4ff78b8e5f41895d5ce814d0fb6c98ea57a"
+  },
+  {
+    "name": "Puzzle_board_04",
+    "path_id": 6532,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6532_Puzzle_board_04.png",
+    "size": [
+      104,
+      115
+    ],
+    "sha256": "21c396bc80f59bf9c95c6ad8e08b115880049d003b207c5dd6093669d0b10ad2"
+  },
+  {
+    "name": "tablet_trident_01",
+    "path_id": 6540,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6540_tablet_trident_01.png",
+    "size": [
+      197,
+      474
+    ],
+    "sha256": "b9d861919e0293f4d5be95d1251432096179dfad97ce6f9384ec825ca4284c66"
+  },
+  {
+    "name": "particle_clock_roof_02",
+    "path_id": 6545,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6545_particle_clock_roof_02.png",
+    "size": [
+      173,
+      108
+    ],
+    "sha256": "aa9641c070f26158f7971204b758aa93121b87ee06a92767f6f29ea118eb04a7"
+  },
+  {
+    "name": "particle_clock_roof_01",
+    "path_id": 6602,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6602_particle_clock_roof_01.png",
+    "size": [
+      227,
+      78
+    ],
+    "sha256": "4a57bd41b7e2c13b815a99c374d9eff6a53d9dda67f46b6960277d8ac3e3498f"
+  },
+  {
+    "name": "Puzzle_Icon",
+    "path_id": 6617,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6617_Puzzle_Icon.png",
+    "size": [
+      84,
+      64
+    ],
+    "sha256": "fe09cc7028e393de2cd4521a136de3fb3510e8153dd7a4a73660f58f0d846329"
+  },
+  {
+    "name": "Barrel_bomb_shadow",
+    "path_id": 6649,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6649_Barrel_bomb_shadow.png",
+    "size": [
+      105,
+      116
+    ],
+    "sha256": "ed353fea3f4d62fefff1debc6cb2e49a5111ae9f4655870632a73010543950f5"
+  },
+  {
+    "name": "Tablet_Down_02",
+    "path_id": 6654,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6654_Tablet_Down_02.png",
+    "size": [
+      75,
+      31
+    ],
+    "sha256": "1bac0e0d4e036fa02580cd929fa478d459f5bb5f821de3682d16955dfcc298ab"
+  },
+  {
+    "name": "Puzzle_board_03",
+    "path_id": 6678,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6678_Puzzle_board_03.png",
+    "size": [
+      73,
+      76
+    ],
+    "sha256": "390cb7ef513b52550da12f22d3b41f9d382974f79a796518da1a5aedc67b39be"
+  },
+  {
+    "name": "particle_clock_beard_02",
+    "path_id": 6694,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6694_particle_clock_beard_02.png",
+    "size": [
+      67,
+      62
+    ],
+    "sha256": "945495926a794f96cb3a275193eed50ceaf33063382391c2b1f34522ca3f71b6"
+  },
+  {
+    "name": "metal_knight_helmet_01",
+    "path_id": 6714,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6714_metal_knight_helmet_01.png",
+    "size": [
+      75,
+      83
+    ],
+    "sha256": "2c9fc497e65df94f13857b40db7fb2f1713dda3663ece97bf3050941331d39cb"
+  },
+  {
+    "name": "snow_cap",
+    "path_id": 6718,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6718_snow_cap.png",
+    "size": [
+      136,
+      34
+    ],
+    "sha256": "e14202a5939689db382fa681eba7901d65e73dfc589018e0891d26e9d99a1b2c"
+  },
+  {
+    "name": "clock_goal",
+    "path_id": 6763,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6763_clock_goal.png",
+    "size": [
+      130,
+      130
+    ],
+    "sha256": "403fef892d6c886be3eab372ca6427f32f1ecf23cdec7f5653be9f5c2f8a729b"
+  },
+  {
+    "name": "snow_8",
+    "path_id": 6794,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6794_snow_8.png",
+    "size": [
+      64,
+      49
+    ],
+    "sha256": "e834dd25c798182c976dc4280c665e4035f51e117b794a73038cdc01874adf35"
+  },
+  {
+    "name": "gift_box_1",
+    "path_id": 6802,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6802_gift_box_1.png",
+    "size": [
+      172,
+      176
+    ],
+    "sha256": "97b22ab1004b033bfec188d57f3db0fe833613e13ae727521918c8b610a93eaa"
+  },
+  {
+    "name": "starfish_01_1.0014",
+    "path_id": 6814,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6814_starfish_01_1.0014.png",
+    "size": [
+      174,
+      166
+    ],
+    "sha256": "39b1bbe25848efcf7d4b52ace07d6acc65c6b5f11305038d4f54122aa30a1820"
+  },
+  {
+    "name": "starfish_01_1.0012",
+    "path_id": 6908,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6908_starfish_01_1.0012.png",
+    "size": [
+      139,
+      168
+    ],
+    "sha256": "8544ff97c71dba81e47a00ee33a495eafde75946a1d00b62510fe33c5e4f9b63"
+  },
+  {
+    "name": "particle_clock_body_01",
+    "path_id": 6922,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6922_particle_clock_body_01.png",
+    "size": [
+      26,
+      37
+    ],
+    "sha256": "dad033e695d66906d140cf1bb8d6b3692a177b0a02a1002fddd40cf70a6e2df2"
+  },
+  {
+    "name": "starfish_01_1.0001",
+    "path_id": 6927,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6927_starfish_01_1.0001.png",
+    "size": [
+      172,
+      163
+    ],
+    "sha256": "8e50b1600673bce21f376aba2aeabf4eaf766be4fcbc46f12441087d7cc3bc85"
+  },
+  {
+    "name": "starfish_01_1.0010",
+    "path_id": 6957,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6957_starfish_01_1.0010.png",
+    "size": [
+      117,
+      169
+    ],
+    "sha256": "96a0a3f8ef8af47a24ea9b4ab66f80b4680ef809dc0164abaee75714078830a0"
+  },
+  {
+    "name": "Puzzle_board_05",
+    "path_id": 6966,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6966_Puzzle_board_05.png",
+    "size": [
+      114,
+      114
+    ],
+    "sha256": "99f213d65a40949850193c6a760060db69c85e93e826b54d10d7804939cdd30c"
+  },
+  {
+    "name": "Barrel_wood_05",
+    "path_id": 6988,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6988_Barrel_wood_05.png",
+    "size": [
+      64,
+      39
+    ],
+    "sha256": "0541d754904d48e5a0aa3df13fbc4429e1080000ac01a1d834d329cc940c1c14"
+  },
+  {
+    "name": "Puzzle_board_red_03",
+    "path_id": 7018,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7018_Puzzle_board_red_03.png",
+    "size": [
+      44,
+      79
+    ],
+    "sha256": "c82529ccfb13026b8ff4c0944c3e12549e879c4d6aeee44b13a86942f4b7d989"
+  },
+  {
+    "name": "Flowers_pot_shadow_04",
+    "path_id": 7019,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7019_Flowers_pot_shadow_04.png",
+    "size": [
+      74,
+      56
+    ],
+    "sha256": "c393ddcfb04555550a0a87329130bee57113bc31743b6767c2b1a4541b89ae14"
+  },
+  {
+    "name": "knight_goal",
+    "path_id": 7020,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7020_knight_goal.png",
+    "size": [
+      147,
+      156
+    ],
+    "sha256": "f3168cd5af8ce544d053eb70c540625d8b8cf4bf60483af03be2bcc651de0fcf"
+  },
+  {
+    "name": "starfish_01_1.0006",
+    "path_id": 7028,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7028_starfish_01_1.0006.png",
+    "size": [
+      129,
+      169
+    ],
+    "sha256": "3fcad180456027098643f795a0b28ccca34a1375d044c86a3b3b13fab9a99c94"
+  },
+  {
+    "name": "Puzzle_board_red_02",
+    "path_id": 7065,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7065_Puzzle_board_red_02.png",
+    "size": [
+      72,
+      18
+    ],
+    "sha256": "1432f934a193f67c85ecf54c6ef47903dbdc54d4ba0828f743ed767fc08daee6"
+  },
+  {
+    "name": "flowers_vase_small_1_pp",
+    "path_id": 7100,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7100_flowers_vase_small_1_pp.png",
+    "size": [
+      24,
+      28
+    ],
+    "sha256": "5d626f7881d6632805465f32b75afe688c753c453140519fdb25d0f8fa4ce031"
+  },
+  {
+    "name": "particle_clock_beard_01",
+    "path_id": 7101,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7101_particle_clock_beard_01.png",
+    "size": [
+      106,
+      63
+    ],
+    "sha256": "9171f101e8c32a5a9646bdc1b3c8e6495223f519521cb04477d30d692928ed77"
+  },
+  {
+    "name": "Tablet_up_01",
+    "path_id": 7118,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7118_Tablet_up_01.png",
+    "size": [
+      75,
+      32
+    ],
+    "sha256": "4f24d765e5241cc3630dbca4360c7902563528a742a432e0b4e0088ad8ad0bfc"
+  },
+  {
+    "name": "Puzzle_board_02",
+    "path_id": 7120,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7120_Puzzle_board_02.png",
+    "size": [
+      98,
+      83
+    ],
+    "sha256": "af753894c7e23448d2ef4ba4f4d6eba6b619e88a4fa29f690f8eb387cd553f8a"
+  },
+  {
+    "name": "starfish",
+    "path_id": 7143,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7143_starfish.png",
+    "size": [
+      171,
+      161
+    ],
+    "sha256": "d764adfea70785e27874be71cf8a16b6c15f8cb9ca622e20a5e354fcb48f16b7"
+  },
+  {
+    "name": "Flowers_goal_icon",
+    "path_id": 7169,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7169_Flowers_goal_icon.png",
+    "size": [
+      149,
+      127
+    ],
+    "sha256": "193477f0d59d61f849ed251ba373c719a85e51b23ee61ba25d012cd69d15cd14"
+  },
+  {
+    "name": "Tablet_Down_Right_01",
+    "path_id": 7175,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7175_Tablet_Down_Right_01.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "3ac09a445561916a68c2858bba690a5187691a58ca073d7082a90039e51b4d10"
+  },
+  {
+    "name": "Barrel_wood_06",
+    "path_id": 7185,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7185_Barrel_wood_06.png",
+    "size": [
+      41,
+      39
+    ],
+    "sha256": "732cc7e0f9e0fb5955c337e2f2ac7d9b670cf43dd33f474894d1ba881f4013c0"
+  },
+  {
+    "name": "tablet_shell_01",
+    "path_id": 7186,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7186_tablet_shell_01.png",
+    "size": [
+      232,
+      96
+    ],
+    "sha256": "28dae3ac40e0156e07c39897ae13da3e4e06c974ca081678a4f374f5e6412a5a"
+  },
+  {
+    "name": "Puzzle_board_06",
+    "path_id": 7189,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7189_Puzzle_board_06.png",
+    "size": [
+      96,
+      100
+    ],
+    "sha256": "84b1a75b777537933c56e9f889c71b5f6dd07ff2c166856e7e53ee47696622c8"
+  },
+  {
+    "name": "tablet_crab_01",
+    "path_id": 7200,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7200_tablet_crab_01.png",
+    "size": [
+      346,
+      179
+    ],
+    "sha256": "0398f8f4db22b82667b89d8a6983bfc270a30e100bd669eef28d4237592fbed4"
+  },
+  {
+    "name": "Barrel_wood_02",
+    "path_id": 7233,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7233_Barrel_wood_02.png",
+    "size": [
+      60,
+      53
+    ],
+    "sha256": "9eccfc5d3576dad7898c592931ad7269844b20a223d56adc6294a27ba3a59f34"
+  },
+  {
+    "name": "particle_clock_container_01",
+    "path_id": 7236,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7236_particle_clock_container_01.png",
+    "size": [
+      209,
+      99
+    ],
+    "sha256": "1a883517ae9190dbb93d15c7ca19ab8fe9c020fa2fb7624a0b073a9a8a19cec2"
+  },
+  {
+    "name": "particle_clock_container_04",
+    "path_id": 7244,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7244_particle_clock_container_04.png",
+    "size": [
+      107,
+      174
+    ],
+    "sha256": "46d05be26a5f3a09ed5f9cc50b098f95ed58ea191999c952a90997fdf77711a9"
+  },
+  {
+    "name": "Barrel_wood_03",
+    "path_id": 7249,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7249_Barrel_wood_03.png",
+    "size": [
+      48,
+      37
+    ],
+    "sha256": "30c7af648a0792e45ed94dfb2592f4b2308bead6bfb61a3b4321790c58d24b89"
+  },
+  {
+    "name": "gift_box_2",
+    "path_id": 7254,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7254_gift_box_2.png",
+    "size": [
+      177,
+      180
+    ],
+    "sha256": "25b4a61139473b9c4835ac1dabdf9d679f38a1bd5e647e287cda7cd4ead2f3b8"
+  },
+  {
+    "name": "starfish_01_1.0015",
+    "path_id": 7284,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7284_starfish_01_1.0015.png",
+    "size": [
+      176,
+      166
+    ],
+    "sha256": "641e38beae7854fbfe91d302fe9951ff2052f5c9339e5b7dceccbff6767de483"
+  },
+  {
+    "name": "tablet_seahorse_back_02",
+    "path_id": 7296,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7296_tablet_seahorse_back_02.png",
+    "size": [
+      51,
+      62
+    ],
+    "sha256": "e2927967203bf42dfb7f55f35e5932dc6298503fd353257941ecca3ec912d95f"
+  },
+  {
+    "name": "Flower_vase_02",
+    "path_id": 7306,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7306_Flower_vase_02.png",
+    "size": [
+      64,
+      54
+    ],
+    "sha256": "a0e5b749ea218d8e9074ea8a09340b6573a98e9cb57cb3ee69a87671974cb758"
+  },
+  {
+    "name": "particle_clock_orb_01",
+    "path_id": 7336,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7336_particle_clock_orb_01.png",
+    "size": [
+      55,
+      47
+    ],
+    "sha256": "df9c7e7188348d1babebd8475551352264aba95ff7c0337db3434d0759427642"
+  },
+  {
+    "name": "snow_cap_shadow",
+    "path_id": 7346,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7346_snow_cap_shadow.png",
+    "size": [
+      133,
+      31
+    ],
+    "sha256": "fbd9adf116d8af43fa2c05d55541fdf910e5279aa3647040bc57059cbb2fd1fc"
+  },
+  {
+    "name": "starfish_01_1.0009",
+    "path_id": 7380,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7380_starfish_01_1.0009.png",
+    "size": [
+      68,
+      170
+    ],
+    "sha256": "777554aa74e91d57a8beeb7d1c3717f4f1e6b0381b83c6e836bbf092c062462a"
+  },
+  {
+    "name": "Tablet_Up_Right_01",
+    "path_id": 7417,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7417_Tablet_Up_Right_01.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "058d6acd6e9c7284e65f80f70512afe7dfda24e579bd67d04bbfc475bd3ecdd5"
+  },
+  {
+    "name": "Barrel_Stage_05_Back",
+    "path_id": 7458,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7458_Barrel_Stage_05_Back.png",
+    "size": [
+      136,
+      139
+    ],
+    "sha256": "6490a172f14a9ae497605c83ef859f1757f4ede2214215a52a08531a1e73adad"
+  },
+  {
+    "name": "tablet_fish_01",
+    "path_id": 7496,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7496_tablet_fish_01.png",
+    "size": [
+      175,
+      90
+    ],
+    "sha256": "52f15dd5ceb5ced879a8a577eb7c8d5c11db78c7b075d1f84b26d3054765f207"
+  },
+  {
+    "name": "Puzzle_board_red_05",
+    "path_id": 7516,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7516_Puzzle_board_red_05.png",
+    "size": [
+      71,
+      22
+    ],
+    "sha256": "7fc4f389c8499e6bc7353cf975b25eb899da6ee690de227518ece8370cd9c2a2"
+  },
+  {
+    "name": "Flowers_pot_shadow_02",
+    "path_id": 7518,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7518_Flowers_pot_shadow_02.png",
+    "size": [
+      75,
+      52
+    ],
+    "sha256": "34b99171efb37e3fb58cf7f041ced6e15cbd1901ff0af2f2d20bc98437450319"
+  },
+  {
+    "name": "Tablet_mid_01",
+    "path_id": 7522,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7522_Tablet_mid_01.png",
+    "size": [
+      33,
+      75
+    ],
+    "sha256": "49bed410fefbb1668bed1b1e726d8fd0fbcccae1b61aeb747965f981eea6288c"
+  },
+  {
+    "name": "snow_5",
+    "path_id": 7528,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7528_snow_5.png",
+    "size": [
+      62,
+      64
+    ],
+    "sha256": "9456249b391d1e3e730a08d79acc0d895625fb4ba881b2b25a1f2c0761b2ecc1"
+  },
+  {
+    "name": "flowers_vase_small_2_pp",
+    "path_id": 7571,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7571_flowers_vase_small_2_pp.png",
+    "size": [
+      20,
+      27
+    ],
+    "sha256": "616a2d73339e7f046aca2036d7ad3b1cc52752952c84a49fc1609ffc2f289a69"
+  },
+  {
+    "name": "starfish_goal_icon",
+    "path_id": 7588,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7588_starfish_goal_icon.png",
+    "size": [
+      160,
+      151
+    ],
+    "sha256": "38441715dfbfdefae310f039abedc13394927837e4f3fcbf2c36324e978fe605"
+  },
+  {
+    "name": "particle_clock_orb_03",
+    "path_id": 7596,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7596_particle_clock_orb_03.png",
+    "size": [
+      48,
+      53
+    ],
+    "sha256": "1333f3b9d8eccc0fb118ef94d81a5ec05afa037285a57fa686c1dbebc570526d"
+  },
+  {
+    "name": "Tablet_Texture_01",
+    "path_id": 7627,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7627_Tablet_Texture_01.png",
+    "size": [
+      225,
+      237
+    ],
+    "sha256": "ca9941a8daa203520ad2226cd64878476065da91e92fc3cf9d5488220dc909aa"
+  },
+  {
+    "name": "particle_clock_body_02",
+    "path_id": 7696,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7696_particle_clock_body_02.png",
+    "size": [
+      64,
+      68
+    ],
+    "sha256": "17b2c1249c8d46a4ad482660469213427ba32007277c654de154e68bffb78fb5"
+  },
+  {
+    "name": "barrel_goal",
+    "path_id": 7702,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7702_barrel_goal.png",
+    "size": [
+      195,
+      180
+    ],
+    "sha256": "29335c72c5b4ef91cc1ac5bcb5227301bce40ff78531f07fef3bc73ab2c08496"
+  },
+  {
+    "name": "tablet_column_1x5_01",
+    "path_id": 7729,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7729_tablet_column_1x5_01.png",
+    "size": [
+      101,
+      637
+    ],
+    "sha256": "6176283e4fce12f7c57e09077e01b891e7178fa315e06818b5a8042a84d50236"
+  },
+  {
+    "name": "snowman_image",
+    "path_id": 7752,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7752_snowman_image.png",
+    "size": [
+      235,
+      235
+    ],
+    "sha256": "fe24b11e8d98cb9e35b1450cd36e2987498da2334e73bc2dfeefbff8b6bd7547"
+  },
+  {
+    "name": "Puzzle_board_red_04",
+    "path_id": 7763,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7763_Puzzle_board_red_04.png",
+    "size": [
+      70,
+      54
+    ],
+    "sha256": "3cc0d8f1e9925888e3dc987716ffcdfb7e18901b9640259d8aebe69d3770fe7e"
+  },
+  {
+    "name": "Tablet_up_02",
+    "path_id": 7769,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7769_Tablet_up_02.png",
+    "size": [
+      75,
+      32
+    ],
+    "sha256": "5dd2482304a4ed66786ca290b09c9df880e145988d24cf18f8c6b3b019730691"
+  },
+  {
+    "name": "Barrel_Patch_02",
+    "path_id": 7782,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7782_Barrel_Patch_02.png",
+    "size": [
+      135,
+      142
+    ],
+    "sha256": "c7ac3b60994d7c26ee70f16b03107f8cf6fb6372c76e13c0d335c70504d539d1"
+  },
+  {
+    "name": "Barrel_Stage_05_Shadow",
+    "path_id": 7784,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7784_Barrel_Stage_05_Shadow.png",
+    "size": [
+      75,
+      85
+    ],
+    "sha256": "61a7f24a94edb598eb86af0fc513f5f28f3115159da556ce6e50a7f2828b0e49"
+  },
+  {
+    "name": "particle_clock_container_03",
+    "path_id": 7823,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7823_particle_clock_container_03.png",
+    "size": [
+      108,
+      166
+    ],
+    "sha256": "e2f93b41f95aae1e72497e999d64ef1b5335730ac503036bf1ee1ba420916de6"
+  },
+  {
+    "name": "Barrel_shadow_01",
+    "path_id": 7839,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7839_Barrel_shadow_01.png",
+    "size": [
+      117,
+      40
+    ],
+    "sha256": "0bdf508797a13b03526fe2f6f6bb09d38ab65ead6edd64ac6ba6653778435f27"
+  },
+  {
+    "name": "Flower_vase_01",
+    "path_id": 7846,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7846_Flower_vase_01.png",
+    "size": [
+      47,
+      61
+    ],
+    "sha256": "3861090ae34267bf5661dc52a39f549461856b93d38148d2216e5d0ef6a7d517"
+  },
+  {
+    "name": "Barrel_big",
+    "path_id": 7849,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7849_Barrel_big.png",
+    "size": [
+      403,
+      414
+    ],
+    "sha256": "3e06856f2ba14852e1ac14f78ac9e1fd670dd28ea91072758dccb2ba471af060"
+  },
+  {
+    "name": "Barrel_wood_04",
+    "path_id": 7851,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7851_Barrel_wood_04.png",
+    "size": [
+      42,
+      102
+    ],
+    "sha256": "30571bbb3f4574103fada3686ff7c4768b153462ec98aa03e4eebd734b217f48"
+  },
+  {
+    "name": "Flower_gold_01-1",
+    "path_id": 7859,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7859_Flower_gold_01-1.png",
+    "size": [
+      75,
+      50
+    ],
+    "sha256": "b68d26fffc0d13791841b36c1d4ef412c89b8b66179126fa6f4066b843779ac1"
+  },
+  {
+    "name": "Barrel_iron_02",
+    "path_id": 7874,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7874_Barrel_iron_02.png",
+    "size": [
+      40,
+      45
+    ],
+    "sha256": "fdec956ad253bcc18b695b95d617f19feed3df639123c25e5af6d63b045a2a39"
+  },
+  {
+    "name": "tablet_anchor_01",
+    "path_id": 7899,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7899_tablet_anchor_01.png",
+    "size": [
+      407,
+      295
+    ],
+    "sha256": "f858b69ffa72a43c0a5a065fc838a02dd25a2170b4144374817d10cab734d959"
+  },
+  {
+    "name": "metal_knight_helmet_02",
+    "path_id": 7912,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7912_metal_knight_helmet_02.png",
+    "size": [
+      77,
+      86
+    ],
+    "sha256": "e4d6e3719b2f01e2ce1228b57c8f22392eb164c2fe80b0d5e812dbda2952de6b"
+  },
+  {
+    "name": "tablet_star_01",
+    "path_id": 7943,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7943_tablet_star_01.png",
+    "size": [
+      214,
+      163
+    ],
+    "sha256": "c16c32b3b39bd9bbb89f5e189d1cfe5f31084e6ed66b5e51a48146836e13b916"
+  },
+  {
+    "name": "Gnome_big",
+    "path_id": 7949,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7949_Gnome_big.png",
+    "size": [
+      385,
+      394
+    ],
+    "sha256": "29aed7ff6f2d37d9ef9d5d8a877596083a0780f79ae28e0c42316bcff711e355"
+  },
+  {
+    "name": "Flowers_Big",
+    "path_id": 7973,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7973_Flowers_Big.png",
+    "size": [
+      512,
+      439
+    ],
+    "sha256": "d6c3168f90abca05baf1792182ab597c249358ff35090cba1d1d226945518ce9"
+  },
+  {
+    "name": "Tablet_Down_01",
+    "path_id": 7974,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7974_Tablet_Down_01.png",
+    "size": [
+      75,
+      31
+    ],
+    "sha256": "edb18e9d87a338d4bf77e1fec5b38a553a83f0632ec7075e15052208e11d0119"
+  },
+  {
+    "name": "Puzzle_big",
+    "path_id": 7986,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7986_Puzzle_big.png",
+    "size": [
+      300,
+      300
+    ],
+    "sha256": "2fa25a73b721269bb2fefcea5b277510a038f05ed6f8b9da1949f3467d5d72b8"
+  },
+  {
+    "name": "Barrel_bomb",
+    "path_id": 7990,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7990_Barrel_bomb.png",
+    "size": [
+      101,
+      115
+    ],
+    "sha256": "7aa08b8ff6b21d9cce6c6ab9be646ee53855cd7caafc8c720ad622117cf6968d"
+  },
+  {
+    "name": "metal_knight_feather",
+    "path_id": 8025,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8025_metal_knight_feather.png",
+    "size": [
+      55,
+      49
+    ],
+    "sha256": "ba1d92a2cc548c070cd08a2ce7d571c6a254f14cf0d34c23a020a34c7b1e4c44"
+  },
+  {
+    "name": "flowers_vase_lastState_5_pp",
+    "path_id": 8061,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8061_flowers_vase_lastState_5_pp.png",
+    "size": [
+      28,
+      44
+    ],
+    "sha256": "2734afd6d6943662a0f10fd166435ea604a995bdc6652ba5e82d6586cff4ed45"
+  },
+  {
+    "name": "gift_box_3",
+    "path_id": 8099,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8099_gift_box_3.png",
+    "size": [
+      178,
+      179
+    ],
+    "sha256": "2175d2d0e6f7affebd9187f7f1145abbbb23df9e858f07538c3043a00cd9b107"
+  },
+  {
+    "name": "tablet_column_1x6_01",
+    "path_id": 8112,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8112_tablet_column_1x6_01.png",
+    "size": [
+      101,
+      786
+    ],
+    "sha256": "2bd8a4229fda488aa4c2c6f8ef912b874462e210da3ea3ef7d61b116ca10c6ea"
+  },
+  {
+    "name": "tablet_seahorse_back_03",
+    "path_id": 8131,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8131_tablet_seahorse_back_03.png",
+    "size": [
+      59,
+      61
+    ],
+    "sha256": "e50724c08d4cea34f6b7725afa429b32de453b8cd3bfd96d630cb64d035e6860"
+  },
+  {
+    "name": "Parts-Lantern_cap_02",
+    "path_id": 8145,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8145_Parts-Lantern_cap_02.png",
+    "size": [
+      67,
+      30
+    ],
+    "sha256": "730be136d4927110459a5f7de05d43d6d725d36376fb3e477207085022b5df1c"
+  },
+  {
+    "name": "Parts-chalice_box_particle_06b",
+    "path_id": 8154,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8154_Parts-chalice_box_particle_06b.png",
+    "size": [
+      68,
+      77
+    ],
+    "sha256": "25203867c9f2ce059d2b079e82b827cc86ab2a553f8835cdbf1d699a1899be42"
+  },
+  {
+    "name": "mask-first_layer_down_side_a",
+    "path_id": 8179,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8179_mask-first_layer_down_side_a.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "fc30a934dfc2cac629d45e9dfee02bb10c5b94f1c3ba96de72c771f1ecc169c6"
+  },
+  {
+    "name": "mask-first_layer_right_side_a",
+    "path_id": 8196,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8196_mask-first_layer_right_side_a.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "03e7642e9b7d2cda10ea84adb2d9c126745b30b7d85b262767720691b6303498"
+  },
+  {
+    "name": "metal_crate",
+    "path_id": 8201,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8201_metal_crate.png",
+    "size": [
+      152,
+      152
+    ],
+    "sha256": "1b5173c10557413d29946cd984eba648062f8ca1ecb45c62f7ca89b4656242ec"
+  },
+  {
+    "name": "Particles-snowman_hat",
+    "path_id": 8206,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8206_Particles-snowman_hat.png",
+    "size": [
+      145,
+      78
+    ],
+    "sha256": "1229959781d4d5edb73a8a73d677e2c07f7d37f6da686012c6af0882d746a0b8"
+  },
+  {
+    "name": "Items-Column-Column_Horizontal",
+    "path_id": 8246,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8246_Items-Column-Column_Horizontal.png",
+    "size": [
+      152,
+      125
+    ],
+    "sha256": "c201cf2cff767689cf1abdd1790b1c1d71c2cc193a4c9b5f72d037620f03352a"
+  },
+  {
+    "name": "Items-BoxItem-shadow_patch2",
+    "path_id": 8249,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8249_Items-BoxItem-shadow_patch2.png",
+    "size": [
+      147,
+      148
+    ],
+    "sha256": "726feb53e3b647441e574c3eb40301e30f1a5b40f2a5285d7cd11861fc9322f4"
+  },
+  {
+    "name": "Parts-safe08_lighter",
+    "path_id": 8261,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8261_Parts-safe08_lighter.png",
+    "size": [
+      136,
+      130
+    ],
+    "sha256": "16e30e4d0e8a23177cca68ee12bc4da10366241e6ab8468e2d77cc1c175ed0e5"
+  },
+  {
+    "name": "metal_crate_patch_2_g",
+    "path_id": 8265,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8265_metal_crate_patch_2_g.png",
+    "size": [
+      149,
+      148
+    ],
+    "sha256": "107f016023231af45201f5ee7c1e466730548f00f9d8510cdd34e832198759b3"
+  },
+  {
+    "name": "Items-Column-Drill_Body_Horizontal",
+    "path_id": 8268,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8268_Items-Column-Drill_Body_Horizontal.png",
+    "size": [
+      120,
+      101
+    ],
+    "sha256": "e94d5d842fe56b8f8b3abfb683d0d269ab8556dd9673e4e190836467ece627ec"
+  },
+  {
+    "name": "Parts-Safe_Particle_02",
+    "path_id": 8270,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8270_Parts-Safe_Particle_02.png",
+    "size": [
+      79,
+      92
+    ],
+    "sha256": "0f15464a2d1093977840fa88a51a93285bdef6aa91e93f7850a51c602efb3f7e"
+  },
+  {
+    "name": "Particles-knight_arm",
+    "path_id": 8273,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8273_Particles-knight_arm.png",
+    "size": [
+      64,
+      57
+    ],
+    "sha256": "8343414c7daee29cfc249718178a5f789e800938695e82e519c94a5dc5c20363"
+  },
+  {
+    "name": "Items-Column-Column_Down",
+    "path_id": 8298,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8298_Items-Column-Column_Down.png",
+    "size": [
+      153,
+      130
+    ],
+    "sha256": "5b00dcdd28e3952c5009c6ac9b8a5f28b4b71cc96bd7885d9a20a731453cca40"
+  },
+  {
+    "name": "Parts-vase02",
+    "path_id": 8318,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8318_Parts-vase02.png",
+    "size": [
+      89,
+      63
+    ],
+    "sha256": "9c1df253c435da9488b18c1929d48f1b5432bf978704dbc02db373c48cc281fc"
+  },
+  {
+    "name": "Items-Column-Circle_2_Vertical",
+    "path_id": 8330,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8330_Items-Column-Circle_2_Vertical.png",
+    "size": [
+      83,
+      31
+    ],
+    "sha256": "34118b1ef4c51aff15c121f3a744a46d20e6b44a7bd35bfeead18802e4ece9f5"
+  },
+  {
+    "name": "Parts-safe04",
+    "path_id": 8347,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8347_Parts-safe04.png",
+    "size": [
+      147,
+      72
+    ],
+    "sha256": "2485acb1c926a2875c4ff085327c3d453741a45175072ffd96e83b44165a10db"
+  },
+  {
+    "name": "mask-first_layer_down_side_b",
+    "path_id": 8373,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8373_mask-first_layer_down_side_b.png",
+    "size": [
+      150,
+      75
+    ],
+    "sha256": "a00a924a37c95983b3cce110a74332764cb7ed87f14897a06bae663cc308fb97"
+  },
+  {
+    "name": "Parts-metal_crate2",
+    "path_id": 8404,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8404_Parts-metal_crate2.png",
+    "size": [
+      133,
+      132
+    ],
+    "sha256": "db59209cff5cc70be71aabfb0ce09481651fe7e86850f367facb80b6778c1704"
+  },
+  {
+    "name": "Parts-Safe_Particle_03",
+    "path_id": 8406,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8406_Parts-Safe_Particle_03.png",
+    "size": [
+      76,
+      87
+    ],
+    "sha256": "14a03dca96a06ab0b716a1497b9faa29df2992fa018b64c697da243543320645"
+  },
+  {
+    "name": "WallBase-inner_corner",
+    "path_id": 8408,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8408_WallBase-inner_corner.png",
+    "size": [
+      105,
+      105
+    ],
+    "sha256": "c8512b1f4dec6dbedd6804d1afc934f997596c312c30b9fe2502d5c7feaa52f6"
+  },
+  {
+    "name": "Parts-log_full",
+    "path_id": 8446,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8446_Parts-log_full.png",
+    "size": [
+      111,
+      70
+    ],
+    "sha256": "889bfe52203ff036bd8332b2c1cff53a73f944c38c9ac06eb23192d5f53abbad"
+  },
+  {
+    "name": "mask-first_layer_left_side_a",
+    "path_id": 8467,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8467_mask-first_layer_left_side_a.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "6191c35bf6f37e70b38806726b7ab623741de84f1c088e4624ef1597fa4d1559"
+  },
+  {
+    "name": "WallBase-fill",
+    "path_id": 8480,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8480_WallBase-fill.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "3c0c0d21c519456a0b961bf4fe4d6741ae4f26c2e41d51e1c950527a8c8a551a"
+  },
+  {
+    "name": "Items-Column-Column_Up",
+    "path_id": 8483,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8483_Items-Column-Column_Up.png",
+    "size": [
+      154,
+      126
+    ],
+    "sha256": "70f5f5fbb379da5d27a4d89a2f227efafb71b7ad38c6411968a4882ad6c95af1"
+  },
+  {
+    "name": "Parts-Safe_Particle_A02",
+    "path_id": 8499,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8499_Parts-Safe_Particle_A02.png",
+    "size": [
+      154,
+      83
+    ],
+    "sha256": "82060b319d496df45d40295413349085be5dd60581dca2142737c9f85221effd"
+  },
+  {
+    "name": "Parts-Safe_Particle_A01",
+    "path_id": 8519,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8519_Parts-Safe_Particle_A01.png",
+    "size": [
+      69,
+      76
+    ],
+    "sha256": "5683a6c77ce5af819317715528e6e4dbe88697f7129da7076bed4817f6c3dde8"
+  },
+  {
+    "name": "Items-ChaliceBox-mid_shadow",
+    "path_id": 8553,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8553_Items-ChaliceBox-mid_shadow.png",
+    "size": [
+      167,
+      87
+    ],
+    "sha256": "448d28ea623688508e84b7f965983ecd46d00d1b88204819592d066ed4617179"
+  },
+  {
+    "name": "Parts-log1",
+    "path_id": 8571,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8571_Parts-log1.png",
+    "size": [
+      93,
+      53
+    ],
+    "sha256": "e8279c15ac314ff78daf4e71dddd2731814248fa5b94be8eddb10efa6ad4c7c9"
+  },
+  {
+    "name": "Parts-Lantern_cap_01",
+    "path_id": 8573,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8573_Parts-Lantern_cap_01.png",
+    "size": [
+      44,
+      50
+    ],
+    "sha256": "07cc2b9268baab3a5d30a3ba7f207ad1017f31bf8c6c358318f3fda92fea8b7d"
+  },
+  {
+    "name": "Items-Vase-vase_shadow",
+    "path_id": 8582,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8582_Items-Vase-vase_shadow.png",
+    "size": [
+      110,
+      19
+    ],
+    "sha256": "320ed5047fe77bd4c3a09ed74b75e6f9a4c936066fe7b6820170663407c27353"
+  },
+  {
+    "name": "Parts-dragon_gem",
+    "path_id": 8584,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8584_Parts-dragon_gem.png",
+    "size": [
+      110,
+      138
+    ],
+    "sha256": "9feb49bbd0e9555d4d8ad30b31ebfde9b81760384f25d3d4b1bfe6a40e692305"
+  },
+  {
+    "name": "Parts-dragon_gem2",
+    "path_id": 8586,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8586_Parts-dragon_gem2.png",
+    "size": [
+      82,
+      90
+    ],
+    "sha256": "5829d8a33de8ae934117e684de9ebbcd3ef5ee92edacb4cf615e781c7a966327"
+  },
+  {
+    "name": "Parts-chalice_box_particle_02",
+    "path_id": 8587,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8587_Parts-chalice_box_particle_02.png",
+    "size": [
+      247,
+      114
+    ],
+    "sha256": "a24d87635d9326dc0af4c45ee7006270a9f0636292fae55779d9df80ab7a0b7d"
+  },
+  {
+    "name": "metal_crate_patch_2",
+    "path_id": 8596,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8596_metal_crate_patch_2.png",
+    "size": [
+      133,
+      132
+    ],
+    "sha256": "6e1175b39f18aaf38316604b7a5a222258fc506b394a32dfc05048819950e4a5"
+  },
+  {
+    "name": "Parts-chalice_box_particle_06",
+    "path_id": 8597,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8597_Parts-chalice_box_particle_06.png",
+    "size": [
+      127,
+      109
+    ],
+    "sha256": "ad54d95739e1b3622333884292372cd2737b7440b239939bd84830f615e7bd51"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_03_ground_shadow",
+    "path_id": 8612,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8612_Items-ChaliceBox-chalice_03_ground_shadow.png",
+    "size": [
+      122,
+      15
+    ],
+    "sha256": "18a4f44fe8b9fa16dae01135b929f92930993eb430c7a639adb5ed53af42424b"
+  },
+  {
+    "name": "Items-TurtleItem-turtle",
+    "path_id": 8622,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8622_Items-TurtleItem-turtle.png",
+    "size": [
+      150,
+      140
+    ],
+    "sha256": "980116132f2951be5b4ac763dd057d34e64a3950f6e051d46f1abb4ac74998a6"
+  },
+  {
+    "name": "Parts-Lantern_11",
+    "path_id": 8631,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8631_Parts-Lantern_11.png",
+    "size": [
+      27,
+      41
+    ],
+    "sha256": "ec4ad5d9bab089c893412f37803dd002f31cf45079ed8bc809b79d13bbec5431"
+  },
+  {
+    "name": "Items-Column-Drill_Body_Vertical",
+    "path_id": 8632,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8632_Items-Column-Drill_Body_Vertical.png",
+    "size": [
+      120,
+      101
+    ],
+    "sha256": "69978c7bb91d9c3592e1e532505c111e2a054efc12a208cca37c5f5d1e123bad"
+  },
+  {
+    "name": "Items-BoxItem-patch1",
+    "path_id": 8648,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8648_Items-BoxItem-patch1.png",
+    "size": [
+      131,
+      131
+    ],
+    "sha256": "eeb9a92c027bd654704f041e59987d296f208745917deb093528714c2538cebc"
+  },
+  {
+    "name": "Items-Column-Column_Crack_Vertical",
+    "path_id": 8652,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8652_Items-Column-Column_Crack_Vertical.png",
+    "size": [
+      136,
+      93
+    ],
+    "sha256": "0ac846248517a7ff51090bbe2d2504ceb14cbe6ab56215a7d0548527eec3d5f9"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_01_ground_shadow",
+    "path_id": 8666,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8666_Items-ChaliceBox-chalice_01_ground_shadow.png",
+    "size": [
+      118,
+      14
+    ],
+    "sha256": "ef8f26ee919348ca96e6922c74832187e36d1afd0aa0980aad6bfd753cb938bc"
+  },
+  {
+    "name": "Parts-Safe_Particle_A03",
+    "path_id": 8668,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8668_Parts-Safe_Particle_A03.png",
+    "size": [
+      69,
+      76
+    ],
+    "sha256": "65c6744c0f56065b5a4d01699d1c75798dba6e7cf1cb22a0b71172b2ac5c5f0e"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_02_ground_shadow",
+    "path_id": 8690,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8690_Items-ChaliceBox-chalice_02_ground_shadow.png",
+    "size": [
+      90,
+      14
+    ],
+    "sha256": "ea72ac405536f7f45fef50b9700659ae52f3ed02ca00661c14a15af24bfd67da"
+  },
+  {
+    "name": "metal_crate_patch_1_g",
+    "path_id": 8700,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8700_metal_crate_patch_1_g.png",
+    "size": [
+      149,
+      148
+    ],
+    "sha256": "9ea2371ae72ba7ecdabd6492be2ede06c289f624fc9c72feb4fc9e6a97baa8ef"
+  },
+  {
+    "name": "Parts-Lantern_14",
+    "path_id": 8713,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8713_Parts-Lantern_14.png",
+    "size": [
+      61,
+      33
+    ],
+    "sha256": "c22a8c3316da9390f82ba79d0e8c8a3b02a46f179cf9a5fdd816366062799a9c"
+  },
+  {
+    "name": "Items-MagicOrb-goal_icon",
+    "path_id": 8725,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8725_Items-MagicOrb-goal_icon.png",
+    "size": [
+      129,
+      141
+    ],
+    "sha256": "d94fb5413c21c410c292f3a31aab00cad181869e0e4cabd655b2c80fb6276463"
+  },
+  {
+    "name": "mask-first_layer_inside_corner_a",
+    "path_id": 8739,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8739_mask-first_layer_inside_corner_a.png",
+    "size": [
+      130,
+      130
+    ],
+    "sha256": "ddf1ea6925d5f5d0530a109437c727832590479007d430305298a1f142b0ddd8"
+  },
+  {
+    "name": "Parts-chalice_box_particle_07",
+    "path_id": 8743,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8743_Parts-chalice_box_particle_07.png",
+    "size": [
+      39,
+      65
+    ],
+    "sha256": "b8ca16014f7386b1509ed7000df5cdafd73bc9fd75567a47a28dc9fb7b58d879"
+  },
+  {
+    "name": "Items-ChaliceBox-side_shadow",
+    "path_id": 8748,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8748_Items-ChaliceBox-side_shadow.png",
+    "size": [
+      141,
+      169
+    ],
+    "sha256": "fb5fd4c1f4637aaf25fd2e34a00965a7b052a77c9faae7cc485aa13ef2e1e605"
+  },
+  {
+    "name": "Particles-snowman_hat_half",
+    "path_id": 8767,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8767_Particles-snowman_hat_half.png",
+    "size": [
+      56,
+      75
+    ],
+    "sha256": "1fb0560a4757e4178ead02f35b097c2fdc3681866b869e22afddd79719529c10"
+  },
+  {
+    "name": "Items-Lantern-Lantern_Shadow",
+    "path_id": 8769,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8769_Items-Lantern-Lantern_Shadow.png",
+    "size": [
+      111,
+      34
+    ],
+    "sha256": "f94362415809a404c0671d346112d5a719ba4d08ab63da135141cdf2778bb18d"
+  },
+  {
+    "name": "Items-Column-Platform_Back",
+    "path_id": 8771,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8771_Items-Column-Platform_Back.png",
+    "size": [
+      152,
+      110
+    ],
+    "sha256": "cc33885e6c5dfc2359d1dce794a58568dbed2c186a0be70c4bb773aec82f69cc"
+  },
+  {
+    "name": "Particles-knight_helm",
+    "path_id": 8777,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8777_Particles-knight_helm.png",
+    "size": [
+      84,
+      56
+    ],
+    "sha256": "3669d12282313acda412fc0358ebdeeb6df1cc787f5b6e797cb06889c0f4926f"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_01",
+    "path_id": 8786,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8786_Items-ChaliceBox-chalice_01.png",
+    "size": [
+      40,
+      92
+    ],
+    "sha256": "df0943f007b8812dd2b73b449bc60c1deb68acc9ce58d2fde593af312fbe07d9"
+  },
+  {
+    "name": "Parts-vase06",
+    "path_id": 8791,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8791_Parts-vase06.png",
+    "size": [
+      42,
+      39
+    ],
+    "sha256": "b461d02a51c96cdfe700fa28b050360fe4a2cf31d89656ce21d2f13d8b14eb9b"
+  },
+  {
+    "name": "Items-BoxItem-shadow",
+    "path_id": 8815,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8815_Items-BoxItem-shadow.png",
+    "size": [
+      165,
+      165
+    ],
+    "sha256": "d8f130bfb93086654d483f9e80538651f4da03d33776ddf991510990401d2410"
+  },
+  {
+    "name": "Particles-snowman_hand02",
+    "path_id": 8818,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8818_Particles-snowman_hand02.png",
+    "size": [
+      58,
+      53
+    ],
+    "sha256": "8e0316484178e6441a1c5d47d76cf677c3de3d64cc53708d9528e21e47823a0e"
+  },
+  {
+    "name": "Items-ChaliceBox-door_01",
+    "path_id": 8863,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8863_Items-ChaliceBox-door_01.png",
+    "size": [
+      151,
+      302
+    ],
+    "sha256": "52cdd6c611da46107abcf3d89dcf3e2f0ed1109e0b0caf75270aab7e9253c5ab"
+  },
+  {
+    "name": "Items-StatueItem-gnome",
+    "path_id": 8872,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8872_Items-StatueItem-gnome.png",
+    "size": [
+      142,
+      144
+    ],
+    "sha256": "29dc53b793e3413d25ca38c702f48c39171f166a3e65ef4d81443d5ca02baa78"
+  },
+  {
+    "name": "Particles-knight_hair",
+    "path_id": 8884,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8884_Particles-knight_hair.png",
+    "size": [
+      81,
+      88
+    ],
+    "sha256": "2f7088bd357c39da63fe4efa091ced2df8e2b27038d5a91f354ccb72af8167a3"
+  },
+  {
+    "name": "Parts-Lantern_06",
+    "path_id": 8885,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8885_Parts-Lantern_06.png",
+    "size": [
+      37,
+      24
+    ],
+    "sha256": "cef5e2b3b92b5148045808c2f8c3ea5586dc1cb0a7da43ee4cf1d0bb387dfc4f"
+  },
+  {
+    "name": "mask-first_layer_right_top_corner",
+    "path_id": 8907,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8907_mask-first_layer_right_top_corner.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "5cf19f157d5df834d94425efb2166934b7f932a61dcc9be589c14da24232ac02"
+  },
+  {
+    "name": "Parts-safe02",
+    "path_id": 8926,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8926_Parts-safe02.png",
+    "size": [
+      83,
+      92
+    ],
+    "sha256": "e4b456fa113999260e29de3e088f72e4c7b0b0240d473f022d313414abed348e"
+  },
+  {
+    "name": "Parts-vase10",
+    "path_id": 8930,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8930_Parts-vase10.png",
+    "size": [
+      45,
+      50
+    ],
+    "sha256": "bdb8da0bec0d80a071a76be42ee23f450121876787f8cd10dd1465ba3ac79305"
+  },
+  {
+    "name": "mask-first_layer_fill",
+    "path_id": 8966,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8966_mask-first_layer_fill.png",
+    "size": [
+      75,
+      75
+    ],
+    "sha256": "344aacd3da265186819d722a058cf6096fc46f6d7d04c6fceaf1f212318f66ea"
+  },
+  {
+    "name": "Items-ChaliceBox-chalice_01_shadow",
+    "path_id": 8981,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8981_Items-ChaliceBox-chalice_01_shadow.png",
+    "size": [
+      79,
+      92
+    ],
+    "sha256": "6bef113c86097d86b79968cb3fc7a03ec40f4dde1df96d08f99786f4e5dce0cd"
+  },
+  {
+    "name": "WallBase-side",
+    "path_id": 9032,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/9032_WallBase-side.png",
+    "size": [
+      75,
+      81
+    ],
+    "sha256": "66b537c70736b4c2fd523bc27a03b315caabbcee2662a45a7b5d0425e9e7b6fb"
+  },
+  {
+    "name": "Parts-vase08",
+    "path_id": 9047,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/9047_Parts-vase08.png",
+    "size": [
+      61,
+      80
+    ],
+    "sha256": "f7a9c8aee75dd02bec30822663e859c52498393811744a923877806e8591fff9"
+  }
+]

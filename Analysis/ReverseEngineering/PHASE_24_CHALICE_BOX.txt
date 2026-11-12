@@ -1,0 +1,17 @@
+PHASE 24 - CHALICE BOX
+Date: 2026-11-12
+
+APK mapping
+- TiledIds 41, 42, 51 and 52 are ChaliceBoxTL/TR/BL/BR, ItemType 12, CellType 1, no match color, and ChaliceBox goal type 14.
+- Native metadata exposes separate door, container and single-piece explosion effects; the level tiles therefore behave as four static corner pieces.
+
+Prototype implementation
+- MatchBoard now stores the four ChaliceBox corner tiles as static one-layer pieces.
+- Pieces are excluded from ordinary matches and swaps, block gravity, take adjacent damage, and clear individually.
+- CrownGame includes a chalice corner fallback visual.
+- Added ObstacleLevels/level_chalice.json and included it as obstacle level 10.
+
+Validation
+- Added parser, static blocking and adjacent damage tests for all four corner tile IDs.
+- Unity staging build passed: 22790 assertions, 4500 legal actions, 6759 cascade steps.
+- Native door/container animation timing remains represented by the fallback visual only.

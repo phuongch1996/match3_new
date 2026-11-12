@@ -1,0 +1,27 @@
+# Phase 31 — Obstacle Lab and exact APK obstacle art
+
+## Scope
+The remaining obstacle-port work is intentionally paused at the user's request. This phase packages a playable lab for all completed obstacle families and replaces the fallback obstacle drawings with sprites exported from the APK's Unity asset bundle.
+
+## Exact art extraction
+- Source: split_UnityDataAssetPack.apk / assets/bin/Data/datapack.unity3d
+- Unity asset bundle version: 2022.3.39f1
+- Exporter: UnityPy 1.21-compatible bundled parser, run with official CPython 3.12.8 embed runtime
+- Exported obstacle sprites: 285
+- Output: Unity/ObstacleArt/manifest.json and PNG files
+- Export errors: 0
+
+Selected renderer bindings include the APK sprites for Box, MetalCrate, Vase, FlowerPot, Log, Lantern, PuzzleBox, GiftBox stages, Flowers, ChaliceBox, DragonBox, Birdhouse, Gnome, Safe, Mask, Turtle, Snowman, SteamBomb, Knight, TurtleHouse, Clock, Wall, Column and MetalColumn.
+
+## Playable content
+- Added `level_obstacle_lab.json`, a 9x9 / 45-move board containing every completed obstacle family in one test board.
+- The home-screen `OBSTACLE LEVEL` button starts the lab first, then cycles through the individual obstacle levels.
+- Existing individual levels remain available for focused checks.
+
+## Validation
+- Unity build: succeeded (`Build/Windows/CrownGarden.exe`)
+- Rule harness: `22862 assertions, 4500 legal actions, 6759 cascade steps`
+- Build output: `Build/Windows/CrownGarden.exe`
+
+## Limits
+The exact multi-part animation rigs are exported as individual sprites; the current offline renderer uses the matching static primary sprite for each obstacle state. Remaining obstacle families are paused until playtest feedback.

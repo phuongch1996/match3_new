@@ -1,0 +1,22 @@
+PHASE 15 - OBSTACLE SELF-PLAY RECHECK
+Date: 2026-11-12
+
+Issue found
+- The previous obstacle validation only proved that files parsed and contained obstacles.
+- It did not require a legal opening swap, so a level could load successfully while having no move.
+
+Fix
+- Added a guaranteed opening pattern to all four obstacle definitions in a clear area:
+  raw row y=7: colors 1, 1, 2 at x=0,1,2
+  raw row y=8: color 1 at x=2
+- The opening move is the swap between the 2 at (x=2,y=7) and the 1 at (x=2,y=8); the visible row then contains three 1 tiles.
+- Restored the obstacle IDs that the earlier seed edit had overwritten in level_columns and level_all.
+
+Runtime self-play validation
+- BuildGame.VerifyObstacleLevels now calls MatchBoard.FindMove for every level.
+- It performs the returned swap, checks that MatchBoard.FindMatches returns cells, clears that match, and runs gravity.
+- Unity staging build passed: 22369 assertions, 4500 legal actions, 6393 cascade steps.
+- Levels checked: level_columns, level_walls, level_crates, level_all.
+
+Result
+- All four OBSTACLE levels now have a verified legal opening move and a resolving match in the runtime harness.

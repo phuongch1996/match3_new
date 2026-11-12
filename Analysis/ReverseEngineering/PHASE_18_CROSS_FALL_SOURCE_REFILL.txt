@@ -1,0 +1,16 @@
+PHASE 18 - CROSS-FALL SOURCE REFILL FIX
+Date: 2026-11-12
+
+Observed issue
+- After a cross-fall moved a jewel from an adjacent column, the source cell was cleared.
+- The previous port refilled only holes created during straight compression, so the newly cleared source cell could remain visibly empty even though it belonged to the top-connected board segment.
+
+Fix
+- Collapse now performs straight compression, cross-fall, then scans every top-connected segment for all remaining empty cells.
+- Those cells are refilled in native queue order after cross-fall, including source cells vacated by a diagonal move.
+- Segments below boxes, walls, columns or other blockers are still not fabricated through.
+
+Validation
+- Added a cross-fall test with a wall and an adjacent source column; the target lower region receives the item and the source column is refilled.
+- Unity staging build passed: 22742 assertions, 4500 legal actions, 6759 cascade steps.
+- The screenshot symptom is covered by the source-refill path; visual Play Mode capture was unavailable because the open Unity/MuMu windows timed out in UI capture.

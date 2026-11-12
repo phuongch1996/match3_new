@@ -1,0 +1,17 @@
+PHASE 23 - FLOWERS
+Date: 2026-11-12
+
+APK mapping
+- TiledId 163 is Flowers, ItemType 50, layer_count 4, goal Flowers.
+- Native asset metadata includes FlowersItemLayer, FlowersItemPatchLayer, FlowersItemPotTapParticles and FlowersItemExplodeParticles states.
+
+Prototype implementation
+- MatchBoard now stores Flowers as static four-layer obstacles.
+- Flowers are excluded from ordinary matches and swaps, block gravity, take one layer of damage from an adjacent match or special effect, and clear after the fourth hit.
+- CrownGame includes a flower patch fallback visual with a layer counter.
+- Added ObstacleLevels/level_flowers.json and included it as obstacle level 9.
+
+Validation
+- Added parser, static blocking, adjacent damage and final-layer goal-count tests.
+- Unity staging build passed: 22783 assertions, 4500 legal actions, 6759 cascade steps.
+- Exact native flower growth and particle timing remain represented by the fallback visual only.

@@ -1,0 +1,19 @@
+PHASE 26 - BIRDHOUSE AND GNOME
+Date: 2026-11-12
+
+APK mapping
+- TiledId 27 is Birdhouse, ItemType 13, one layer, Bird goal type 15.
+- TiledIds 37, 100 and 99 are Gnome states with one, two and three layers respectively, all using Gnome goal type 13.
+- Native Birdhouse metadata exposes near-match explosion, booster targeting and bird collection behavior; the prototype keeps the static obstacle and adjacent-hit foundation.
+
+Prototype implementation
+- MatchBoard now stores Birdhouses as static one-layer obstacles.
+- MatchBoard stores Gnomes with the native 1/2/3 layer mapping.
+- Birdhouses and Gnomes are excluded from ordinary matches and swaps, block gravity, take adjacent damage, and count goals on final layer removal.
+- CrownGame includes Birdhouse and Gnome fallback visuals.
+- Added ObstacleLevels/level_birdhouse.json and level_gnome.json; obstacle list now contains 13 levels.
+
+Validation
+- Added parser, static blocking, layer mapping and adjacent damage tests.
+- Unity staging build passed: 22810 assertions, 4500 legal actions, 6759 cascade steps.
+- Native bird flight collection animation remains represented by the fallback visual only.

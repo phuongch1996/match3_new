@@ -1,0 +1,18 @@
+PHASE 27 - SAFE AND MASK
+Date: 2026-11-12
+
+APK mapping
+- TiledId 24 is Safe, ItemType 30, layer_count 2, Safe goal type 30.
+- TiledId 138 is Mask, ItemType 41, layer_count 2, Mask goal type 43.
+- Native Safe and Mask models are non-swappable static items with near-match explosion hooks; Safe also exposes gem collection after completion.
+
+Prototype implementation
+- MatchBoard now stores Safes and Masks as static two-layer obstacles.
+- Both are excluded from ordinary matches and swaps, block gravity, take adjacent damage, and count goals on final layer removal.
+- CrownGame includes Safe and Mask fallback visuals.
+- Added ObstacleLevels/level_safe.json and level_mask.json; obstacle list now contains 15 levels.
+
+Validation
+- Added parser, static blocking, layer and adjacent damage tests.
+- Unity staging build passed: 22823 assertions, 4500 legal actions, 6759 cascade steps.
+- Native Safe gem collection and Mask sand spread animation remain represented by fallback visuals only.

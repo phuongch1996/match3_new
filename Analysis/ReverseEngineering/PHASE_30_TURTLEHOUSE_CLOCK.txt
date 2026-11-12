@@ -1,0 +1,18 @@
+PHASE 30 - TURTLE HOUSE AND CLOCK
+Date: 2026-11-12
+
+APK mapping
+- TiledIds 93, 94, 103 and 104 are TurtleHouseTL/TR/BL/BR, ItemType 29, with the native BL master at five layers and other pieces at one layer.
+- TiledIds 38, 39, 48 and 49 are ClockTL/TR/BL/BR, ItemType 33, with the native BL master at eight layers and other pieces at one layer.
+- Native metadata exposes fake-cell views and staged hit/destroy states for both families.
+
+Prototype implementation
+- MatchBoard now stores TurtleHouse and Clock corner pieces with their native master-layer mapping.
+- Both families are excluded from ordinary matches and swaps, block gravity, take adjacent damage, and count goals on final layer removal.
+- CrownGame includes TurtleHouse and Clock fallback visuals.
+- Added ObstacleLevels/level_turtlehouse.json and level_clock.json; obstacle list now contains 21 levels.
+
+Validation
+- Added parser, static blocking, layer mapping and adjacent damage tests.
+- Unity staging build passed: 22862 assertions, 4500 legal actions, 6759 cascade steps.
+- Native fake-cell coordination and staged animation timing remain represented by fallback visuals only.

@@ -1,0 +1,23 @@
+PHASE 17 - APK CROSS-FALL CHECK
+Date: 2026-11-12
+
+APK evidence
+- Native FallManager.ManualUpdate order is: ClearTargetItems -> CalculateStraightFalls -> CalculateCrossFalls -> CallFallUpdates -> AddTopBoardRemainingItemsToQueue.
+- CellPoint exposes eight neighbor offsets, including the two downward diagonals.
+- CalculateCrossFalls invokes FindCrossItem, which searches the left/right adjacent columns.
+- IsFallPossibleFromCellToCell rejects a blocked source and delegates to the item's CanFallCross check.
+- FindTargetItemFromCrossCell additionally rejects blocked/frozen targets and already-reserved destinations.
+
+Meaning
+- A jewel can fall diagonally into a lower empty region in the neighboring column after straight compression.
+- It is not an arbitrary horizontal slide across a row, and it cannot pass through a blocker or let two sources claim one destination.
+
+Prototype change
+- MatchBoard.Collapse now follows straight fall -> cross-fall -> top refill, matching the native update order.
+- Cross-fall checks the adjacent columns bottom-up, moves a fallable jewel one diagonal step into an empty lower cell, records its source in the movement map, and clears the source before the next reservation.
+- Refill remains limited to segments connected to the top; holes below boxes/walls/columns remain isolated.
+
+Validation
+- Added a test with a wall blocking one column and a two-item source in the adjacent column; the lower empty segment receives the diagonal source item.
+- Unity staging build passed: 22616 assertions, 4500 legal actions, 6640 cascade steps.
+- Static native evidence remains limited for item-specific CanFallCross virtual implementations and deeper multi-step arbitration; the port implements the verified one-step adjacent-column behavior with reservation.

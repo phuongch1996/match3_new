@@ -1,0 +1,17 @@
+PHASE 25 - DRAGON BOX
+Date: 2026-11-12
+
+APK mapping
+- TiledIds 91, 92, 101 and 102 are DragonBoxTL/TR/BL/BR, ItemType 21, Dragon goal type 25.
+- Native metadata exposes DragonBoxItemModel and DragonBoxFakeItemModel. The BL tile carries the four-layer master state while the other corner tiles are one-layer fake pieces.
+
+Prototype implementation
+- MatchBoard now stores the four DragonBox corner tiles as static pieces and preserves the native bottom-left four-layer state.
+- DragonBox pieces are excluded from ordinary matches and swaps, block gravity, and take adjacent damage.
+- CrownGame includes a dragon egg/box fallback visual with layer counter.
+- Added ObstacleLevels/level_dragon.json and included it as obstacle level 11.
+
+Validation
+- Added parser, static blocking and master-state damage tests for all four corner tile IDs.
+- Unity staging build passed: 22797 assertions, 4500 legal actions, 6759 cascade steps.
+- Native fake-cell coordination and dragon collection animation remain represented by the fallback visual only.

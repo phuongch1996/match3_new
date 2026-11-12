@@ -1,0 +1,24 @@
+# Phase 32 — Non-rectangular board masks
+
+## Scope
+The board loader previously initialized every width x height slot as active, which forced every level into a full rectangle. The adapter now preserves missing cells from level data.
+
+## Data support
+- `OriginalLevelDefinition.active` accepts an optional bool mask in native `x + width*y` ordering.
+- When the mask is omitted, tile id `0` is treated as a missing cell for compatibility with compact level layouts.
+- Inactive cells must use tile id `0`; they remain empty and cannot host obstacles.
+
+## Runtime behavior
+`Active` is applied before the initial fill. Match scans, swaps, special targets, gravity blockers, cross-falls, refills, column loading, wall grouping and obstacle placement all respect the mask. Rendering and pointer input already skip inactive cells.
+
+## Playable verification
+- Added `level_shape_lab.json`, a 9x9 board with four missing cells at the upper corners.
+- Added the shaped level to the obstacle-level cycle.
+- Build validation: `22877 assertions, 4500 legal actions, 6759 cascade steps`.
+- Build output succeeded.
+
+## Files
+- `Assets/Scripts/OriginalLevelDefinition.cs`
+- `Assets/Scripts/MatchBoard.cs`
+- `Assets/Editor/BuildGame.cs`
+- `Assets/Resources/ObstacleLevels/level_shape_lab.json`

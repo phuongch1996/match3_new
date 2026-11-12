@@ -1,0 +1,21 @@
+PHASE 11 - METALCRATE
+Date: 2026-11-12
+
+Native evidence
+- MetalCrateItemModel exposes CanExplodeWithNearMatch, IsFallable, IsSwappable and TryExplode.
+- TiledId mapping: MetalCrate1=86, MetalCrate2=87, MetalCrate3=88; native layer counts are 1, 2 and 3.
+- MetalCrate is a single-cell static obstacle and its goal type is MetalCrate.
+
+Prototype changes
+- Added a MetalCrates layer array and MetalCratesCleared counter.
+- OriginalLevelDefinition now accepts 86-88 and preserves the native layer count.
+- Metal crates are excluded from matches, cannot be swapped, block gravity and lose one layer per match/special hit.
+- Final damage removes the crate and increments the crate goal counter.
+- Added a visual metal crate fallback in CrownGame.
+
+Verification
+- Unity staging build passed: 22351 assertions, 4500 legal actions, 6393 cascade steps.
+- New checks cover MetalCrate2 parsing, static blocking, adjacent match damage and final-layer removal.
+
+Limits
+- Exact native crate texture and animation are not recovered; the prototype uses a procedural metal visual.

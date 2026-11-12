@@ -1,0 +1,18 @@
+PHASE 29 - STEAM BOMB AND KNIGHT
+Date: 2026-11-12
+
+APK mapping
+- TiledIds 67, 68, 77 and 78 are SteamBombTL/TR/BL/BR, ItemType 18, with the native BL master at eight layers and other pieces at one layer.
+- TiledIds 69, 70, 79 and 80 are KnightTL/TR/BL/BR, ItemType 19, with the native BL master at five layers and other pieces at one layer.
+- Native metadata exposes separate hit, destroy and attack animations for both families.
+
+Prototype implementation
+- MatchBoard now stores SteamBomb and Knight corner pieces with their native master-layer mapping.
+- Both families are excluded from ordinary matches and swaps, block gravity, take adjacent damage, and count goals on final layer removal.
+- CrownGame includes SteamBomb and Knight fallback visuals.
+- Added ObstacleLevels/level_steambomb.json and level_knight.json; obstacle list now contains 19 levels.
+
+Validation
+- Added parser, static blocking, layer mapping and adjacent damage tests.
+- Unity staging build passed: 22849 assertions, 4500 legal actions, 6759 cascade steps.
+- Native attack and destroy animation timing remains represented by fallback visuals only.

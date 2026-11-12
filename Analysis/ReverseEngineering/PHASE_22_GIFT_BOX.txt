@@ -1,0 +1,17 @@
+PHASE 22 - GIFT BOX
+Date: 2026-11-12
+
+APK mapping
+- TiledId 140 is GiftBox, ItemType 43, layer_count 4, goal GiftBox.
+- Native metadata lists GiftBoxState1Hit1 through GiftBoxState4Hit2 and GiftBoxTap events, confirming staged damage states.
+
+Prototype implementation
+- MatchBoard now stores GiftBoxes as static four-layer obstacles.
+- GiftBoxes are excluded from ordinary matches and swaps, block gravity, take one layer of damage from an adjacent match or special effect, and clear after the fourth hit.
+- CrownGame includes a ribbon gift-box fallback visual with a layer counter.
+- Added ObstacleLevels/level_gift.json and included it as obstacle level 8.
+
+Validation
+- Added parser, static blocking, adjacent damage and final-layer goal-count tests.
+- Unity staging build passed: 22775 assertions, 4500 legal actions, 6759 cascade steps.
+- Exact native gift-box state animations remain represented by the fallback visual only.

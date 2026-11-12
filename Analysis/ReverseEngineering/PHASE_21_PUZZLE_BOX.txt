@@ -1,0 +1,17 @@
+PHASE 21 - PUZZLE BOX
+Date: 2026-11-12
+
+APK mapping
+- TiledId 157 is PuzzleBox, ItemType 47, layer_count 2, goal PuzzleBox.
+- Native metadata lists PuzzlePackHit, PuzzlePackExplode, PuzzlePiecePlace and PuzzleCompleteParticle events for this obstacle family.
+
+Prototype implementation
+- MatchBoard now stores PuzzleBoxes as static two-layer obstacles.
+- PuzzleBoxes are excluded from ordinary matches and swaps, block gravity, take one layer of damage from an adjacent match or special effect, and clear after the second hit.
+- CrownGame includes a puzzle-box fallback visual with a cross-shaped puzzle piece and layer counter.
+- Added ObstacleLevels/level_puzzle.json and included it as obstacle level 7.
+
+Validation
+- Added parser, static blocking, adjacent damage and final-layer goal-count tests.
+- Unity staging build passed: 22767 assertions, 4500 legal actions, 6759 cascade steps.
+- Exact native puzzle-piece animation timing remains represented by the fallback visual only.

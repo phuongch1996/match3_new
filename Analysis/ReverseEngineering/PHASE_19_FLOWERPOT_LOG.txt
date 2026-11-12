@@ -1,0 +1,18 @@
+PHASE 19 - FLOWERPOT AND LOG
+Date: 2026-11-12
+
+APK mapping
+- TiledId 89 is FlowerPot, ItemType 26, layer_count 3, goal FlowerPot.
+- TiledId 90 is Log, ItemType 27, layer_count 3, goal Log.
+- Native animation metadata contains separate hit and break states for both families.
+
+Prototype implementation
+- MatchBoard now stores FlowerPots and Logs as static layered obstacles.
+- They are excluded from ordinary matches and swaps, block straight/cross gravity, receive one layer of damage from an adjacent match or special effect, and clear after the third hit.
+- CrownGame includes visual fallbacks with visible layer counters.
+- Added ObstacleLevels/level_layers.json and included it as obstacle level 5.
+
+Validation
+- Added parser, static blocking, adjacent damage, final-layer removal and goal-count tests for both families.
+- Unity staging build passed: 22751 assertions, 4500 legal actions, 6759 cascade steps.
+- Exact item-specific animation timing and special-target priorities remain separate from the rule implementation.

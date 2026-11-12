@@ -1,0 +1,19 @@
+PHASE 28 - TURTLE AND SNOWMAN
+Date: 2026-11-12
+
+APK mapping
+- TiledId 25 is Turtle, ItemType 16, one layer, Turtle goal type 18.
+- TiledIds 65, 66, 75 and 76 are SnowmanTL/TR/BL/BR, ItemType 17, with the native BL master at five layers and the remaining corner pieces at one layer.
+- Native Snowman metadata exposes four state animations and ice spread helpers; Turtle and Snowman models are static obstacle families.
+
+Prototype implementation
+- MatchBoard now stores Turtle as a static one-layer obstacle.
+- MatchBoard stores Snowman corner pieces with the native one/five-layer mapping.
+- Turtle and Snowman pieces are excluded from ordinary matches and swaps, block gravity, take adjacent damage, and count goals on final layer removal.
+- CrownGame includes Turtle and Snowman fallback visuals.
+- Added ObstacleLevels/level_turtle.json and level_snowman.json; obstacle list now contains 17 levels.
+
+Validation
+- Added parser, static blocking, layer mapping and adjacent damage tests.
+- Unity staging build passed: 22836 assertions, 4500 legal actions, 6759 cascade steps.
+- Native Snowman ice spread and state animation remain represented by fallback visuals only.

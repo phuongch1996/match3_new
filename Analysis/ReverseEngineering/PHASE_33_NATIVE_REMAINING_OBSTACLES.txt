@@ -1,0 +1,31 @@
+PHASE 33 — NATIVE REMAINING OBSTACLES
+
+Implemented the remaining native ItemType families observed in the decoded level set:
+Armory, Barrel, Cannon, Gem, JellyMaker, Lightbulb, Lily, Lyre, MagicCards,
+MagicGlobe, MagicOrb, Magnet, Starfish, Tablet, Target and Volcano.
+
+MatchBoard now stores these families in a dedicated native-obstacle layer, preserves
+the source TiledId per cell, blocks swapping/matching/gravity, accepts adjacent
+match and special-item damage, decrements the native layer count, and clears the
+variant when its final layer is removed. OriginalLevelDefinition accepts the full
+native tile mapping for these IDs.
+
+Rendering uses recovered APK art where an extracted sprite exists and a procedural
+family-specific fallback otherwise. A new playable level is included:
+level_native_remaining_lab.json. It covers all 16 observed families and is added to
+the obstacle-level rotation.
+
+Verification:
+- Unity BuildGame.Build: PASS
+- Rule assertions: 22,930
+- Legal actions: 4,500
+- Cascade steps: 6,759
+- Windows build: successful, 77,409,782 bytes
+- Native family checks: all 16 representative TiledIds load with source layers,
+  block swaps, and take one adjacent-match hit.
+
+Known follow-up:
+- Multi-cell families still need native group-level layer transitions and exact
+  per-variant APK art for every corner/stage sprite.
+- ArsenalMissile, DragonEgg, DragonSmallBoxHorizontal, DragonSmallBoxVertical and
+  FireDragonEgg remain enum-only in the current 2,300 decoded levels.

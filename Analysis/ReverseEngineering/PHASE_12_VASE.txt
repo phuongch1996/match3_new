@@ -1,0 +1,19 @@
+PHASE 12 - VASE
+Date: 2026-11-12
+
+Native evidence
+- VaseItemModel exposes CanExplodeWithNearMatch, IsFallable, IsSwappable and TryExplode.
+- TiledId 26 maps to ItemType Vase, layer count 1 and goal type Vase.
+
+Prototype changes
+- Added a Vases static layer array and VasesCleared counter.
+- OriginalLevelDefinition now accepts tile 26 and preserves it as a non-movable obstacle.
+- A vase blocks ordinary matches and gravity, takes one hit from a match or special effect, then disappears and counts toward the Vase goal.
+- Added a procedural vase visual fallback in CrownGame.
+
+Verification
+- Unity staging build passed: 22353 assertions, 4500 legal actions, 6393 cascade steps.
+- New checks cover Vase parsing, static blocking, adjacent match damage and goal counting.
+
+Limits
+- Exact native vase art and animation are not recovered; the prototype uses a procedural visual.

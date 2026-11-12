@@ -107,12 +107,236 @@ public static class BuildGame
         hit=board.Activate(new C(1,2)); hit.adjacentDamageSources.Add(new C(1,2)); board.Clear(hit,1);
         Check(board.MetalColumnsCleared==1 && board.MetalColumns.Cast<int>().All(v=>v==0),"near match destroys the complete metal column group");
     }
+    static void VerifyMetalCrates()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=87;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,81);
+        Check(board.MetalCrates[3,2]==2 && !board.IsMovable(new C(3,2)),"MetalCrate2 loads with its native layer count and blocks swapping");
+        board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+        var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+        Check(board.MetalCrates[3,2]==1 && board.MetalCratesCleared==0,"metal crate loses one layer from an adjacent match");
+        hit=board.Activate(new C(2,2)); hit.adjacentDamageSources.Add(new C(2,2)); board.Clear(hit,1);
+        Check(board.MetalCrates[3,2]==0 && board.MetalCratesCleared==1,"metal crate disappears after its final hit");
+    }
+    static void VerifyVases()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[4+7*2]=26;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,83);
+        Check(board.Vases[4,2]==1 && !board.IsMovable(new C(4,2)),"vase loads as a static non-swappable item");
+        board.Color[3,1]=board.Color[3,2]=board.Color[3,3]=0;
+        var hit=board.FindMatches(new C(3,2)); board.Clear(hit,1);
+        Check(board.Vases[4,2]==0 && board.VasesCleared==1,"adjacent match removes vase and counts its goal");
+    }
+    static void VerifyLayeredObstacles()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=89; tiles[1+7*2]=90;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,85);
+        Check(board.FlowerPots[3,2]==3 && board.Logs[1,2]==3,"FlowerPot and Log load with their native three layers");
+        Check(!board.IsMovable(new C(3,2)) && !board.IsMovable(new C(1,2)),"FlowerPot and Log are static non-swappable items");
+        board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+        var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+        Check(board.FlowerPots[3,2]==2 && board.Logs[1,2]==2,"adjacent match damages one layer of both obstacles");
+        hit=board.Activate(new C(2,2)); hit.adjacentDamageSources.Add(new C(2,2)); board.Clear(hit,1); board.Clear(hit,1); board.Clear(hit,1);
+        Check(board.FlowerPots[3,2]==0 && board.Logs[1,2]==0 && board.FlowerPotsCleared==1 && board.LogsCleared==1,"final layers remove both obstacles and count goals");
+    }
+    static void VerifyLanterns()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=36;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,87);
+        Check(board.Lanterns[3,2]==2 && !board.IsMovable(new C(3,2)),"Lantern loads as a static two-layer obstacle");
+        board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+        var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+        Check(board.Lanterns[3,2]==1 && board.LanternsCleared==0,"adjacent match damages one Lantern layer");
+        board.Clear(hit,1);
+        Check(board.Lanterns[3,2]==0 && board.LanternsCleared==1,"second hit removes Lantern and counts its goal");
+    }
+    static void VerifyPuzzleBoxes()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=157;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,88);
+        Check(board.PuzzleBoxes[3,2]==2 && !board.IsMovable(new C(3,2)),"PuzzleBox loads as a static two-layer obstacle");
+        board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+        var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+        Check(board.PuzzleBoxes[3,2]==1 && board.PuzzleBoxesCleared==0,"adjacent match damages one PuzzleBox layer");
+        board.Clear(hit,1);
+        Check(board.PuzzleBoxes[3,2]==0 && board.PuzzleBoxesCleared==1,"second hit removes PuzzleBox and counts its goal");
+    }
+    static void VerifyObstacleLevels()
+    {
+        string[] names={"level_obstacle_lab","level_shape_lab","level_columns","level_walls","level_crates","level_all","level_layers","level_lantern","level_puzzle","level_gift","level_flowers","level_chalice","level_dragon","level_birdhouse","level_gnome","level_safe","level_mask","level_turtle","level_snowman","level_steambomb","level_knight","level_turtlehouse","level_clock","level_native_remaining_lab"};
+        foreach(string name in names)
+        {
+            var definition=JsonUtility.FromJson<OriginalLevelDefinition>(File.ReadAllText("Assets/Resources/ObstacleLevels/"+name+".json"));
+            var board=B.FromOriginal(definition,9000+name.Length);
+            int columns=board.Columns.Cast<int>().Count(v=>v>0),metalColumns=board.MetalColumns.Cast<int>().Count(v=>v>0),crates=board.MetalCrates.Cast<int>().Count(v=>v>0),vases=board.Vases.Cast<int>().Count(v=>v>0),flowerPots=board.FlowerPots.Cast<int>().Count(v=>v>0),logs=board.Logs.Cast<int>().Count(v=>v>0),lanterns=board.Lanterns.Cast<int>().Count(v=>v>0),puzzleBoxes=board.PuzzleBoxes.Cast<int>().Count(v=>v>0),giftBoxes=board.GiftBoxes.Cast<int>().Count(v=>v>0),flowers=board.Flowers.Cast<int>().Count(v=>v>0),chaliceBoxes=board.ChaliceBoxes.Cast<int>().Count(v=>v>0),dragonBoxes=board.DragonBoxes.Cast<int>().Count(v=>v>0),birdhouses=board.Birdhouses.Cast<int>().Count(v=>v>0),gnomes=board.Gnomes.Cast<int>().Count(v=>v>0),safes=board.Safes.Cast<int>().Count(v=>v>0),masks=board.Masks.Cast<int>().Count(v=>v>0),turtles=board.Turtles.Cast<int>().Count(v=>v>0),snowmen=board.Snowmen.Cast<int>().Count(v=>v>0),steamBombs=board.SteamBombs.Cast<int>().Count(v=>v>0),knights=board.Knights.Cast<int>().Count(v=>v>0),turtleHouses=board.TurtleHouses.Cast<int>().Count(v=>v>0),clocks=board.Clocks.Cast<int>().Count(v=>v>0),walls=board.Walls.Cast<int>().Count(v=>v>0),nativeObstacles=board.RemainingNativeObstaclesTotal;
+            Check(board.Width==9 && board.Height==9 && board.RemainingBoxes==1,"obstacle level "+name+" loads its board and box goal");
+            if(definition.active!=null)
+            {
+                int holes=definition.active.Count(v=>!v);
+                Check(holes>0 && board.Active.Cast<bool>().Count(v=>!v)==holes,"obstacle level "+name+" preserves its missing-cell mask");
+                for(int rawY=0;rawY<definition.height;rawY++) for(int x=0;x<definition.width;x++)
+                    if(!definition.active[x+definition.width*rawY]) Check(board.Color[x,definition.height-1-rawY]==-1,"inactive map cell stays empty");
+            }
+            Check(columns+metalColumns+crates+vases+flowerPots+logs+lanterns+puzzleBoxes+giftBoxes+flowers+chaliceBoxes+dragonBoxes+birdhouses+gnomes+safes+masks+turtles+snowmen+steamBombs+knights+turtleHouses+clocks+walls+nativeObstacles>0,"obstacle level "+name+" contains static obstacles");
+            Check(board.FindMatches().cells.Count==0,"obstacle level "+name+" starts without an automatic match");
+            C a,c;
+            bool playable=board.FindMove(out a,out c);
+            Check(playable,"obstacle level "+name+" has a legal opening move");
+            if(playable && !a.Equals(c))
+            {
+                board.Swap(a,c);
+                var opening=board.FindMatches(c);
+                Check(opening.cells.Count>0,"obstacle level "+name+" opening move resolves a match");
+                board.Clear(opening,1);
+                board.Collapse();
+            }
+        }
+    }
+    static void VerifyGiftBoxes()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=140;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,89);
+        Check(board.GiftBoxes[3,2]==4 && !board.IsMovable(new C(3,2)),"GiftBox loads as a static four-layer obstacle");
+        board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+        var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+        Check(board.GiftBoxes[3,2]==3 && board.GiftBoxesCleared==0,"adjacent match damages one GiftBox layer");
+        board.Clear(hit,1); board.Clear(hit,1); board.Clear(hit,1);
+        Check(board.GiftBoxes[3,2]==0 && board.GiftBoxesCleared==1,"fourth hit removes GiftBox and counts its goal");
+    }
+    static void VerifyFlowers()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=163;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,90);
+        Check(board.Flowers[3,2]==4 && !board.IsMovable(new C(3,2)),"Flowers loads as a static four-layer obstacle");
+        board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+        var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+        Check(board.Flowers[3,2]==3 && board.FlowersCleared==0,"adjacent match damages one Flowers layer");
+        board.Clear(hit,1); board.Clear(hit,1); board.Clear(hit,1);
+        Check(board.Flowers[3,2]==0 && board.FlowersCleared==1,"fourth hit removes Flowers and counts its goal");
+    }
+    static void VerifyChaliceBoxes()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[2+7*1]=41; tiles[3+7*1]=42; tiles[2+7*2]=51; tiles[3+7*2]=52;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,91);
+        Check(board.RemainingChaliceBoxes==4 && !board.IsMovable(new C(2,3)),"ChaliceBox corner pieces load as static one-layer obstacles");
+        board.Color[1,1]=board.Color[1,2]=board.Color[1,3]=0;
+        var hit=new B.Match(); hit.adjacentDamageSources.Add(new C(1,2)); board.Clear(hit,1);
+        Check(board.RemainingChaliceBoxes==3 && board.ChaliceBoxesCleared==1,"adjacent match removes one ChaliceBox corner");
+    }
+    static void VerifyDragonBoxes()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[2+7*1]=91; tiles[3+7*1]=92; tiles[2+7*2]=101; tiles[3+7*2]=102;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,92);
+        Check(board.DragonBoxes[2,2]==4 && board.DragonBoxes[2,3]==1 && board.RemainingDragonBoxes==4 && !board.IsMovable(new C(2,2)),"DragonBox corner pieces load with the native bottom-left four-layer state");
+        var hit=new B.Match(); hit.adjacentDamageSources.Add(new C(1,2)); board.Clear(hit,1);
+        Check(board.DragonBoxes[2,2]==3 && board.DragonBoxesCleared==0,"adjacent hit damages the DragonBox master state");
+    }
+    static void VerifyBirdhouseAndGnomes()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[2+7*2]=27; tiles[4+7*2]=37; tiles[5+7*2]=100; tiles[6+7*2]=99;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,93);
+        Check(board.Birdhouses[2,2]==1 && board.Gnomes[4,2]==1 && board.Gnomes[5,2]==2 && board.Gnomes[6,2]==3,"Birdhouse and Gnome layers load from native tile IDs");
+        Check(!board.IsMovable(new C(2,2)) && !board.IsMovable(new C(5,2)),"Birdhouse and Gnome are static non-swappable obstacles");
+        var hit=new B.Match(); hit.adjacentDamageSources.Add(new C(1,2)); board.Clear(hit,1);
+        Check(board.Birdhouses[2,2]==0 && board.BirdhousesCleared==1,"adjacent hit clears a Birdhouse");
+    }
+    static void VerifySafesAndMasks()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[2+7*2]=24; tiles[4+7*2]=138;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,94);
+        Check(board.Safes[2,2]==2 && board.Masks[4,2]==2 && !board.IsMovable(new C(2,2)),"Safe and Mask load as static two-layer obstacles");
+        var hit=new B.Match(); hit.adjacentDamageSources.Add(new C(1,2)); board.Clear(hit,1);
+        Check(board.Safes[2,2]==1 && board.SafesCleared==0,"adjacent hit damages one Safe layer");
+        board.Clear(hit,1);
+        Check(board.Safes[2,2]==0 && board.SafesCleared==1,"second hit clears Safe");
+    }
+    static void VerifyTurtlesAndSnowmen()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[2+7*2]=25; tiles[4+7*2]=65; tiles[5+7*2]=66; tiles[4+7*3]=75; tiles[5+7*3]=76;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,95);
+        Check(board.Turtles[2,2]==1 && board.Snowmen[4,2]==1 && board.Snowmen[4,1]==5,"Turtle and Snowman layers load from native tile IDs");
+        Check(!board.IsMovable(new C(2,2)) && !board.IsMovable(new C(4,1)),"Turtle and Snowman pieces are static non-swappable obstacles");
+        var hit=new B.Match(); hit.adjacentDamageSources.Add(new C(1,2)); board.Clear(hit,1);
+        Check(board.Turtles[2,2]==0 && board.TurtlesCleared==1,"adjacent hit clears a Turtle");
+    }
+    static void VerifySteamBombsAndKnights()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[2+7*2]=67; tiles[3+7*2]=68; tiles[2+7*3]=77; tiles[3+7*3]=78; tiles[5+7*2]=69; tiles[6+7*2]=70; tiles[5+7*3]=79; tiles[6+7*3]=80;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,96);
+        Check(board.SteamBombs[2,1]==8 && board.SteamBombs[2,2]==1 && board.Knights[5,1]==5 && board.Knights[5,2]==1,"SteamBomb and Knight master layers load from native tile IDs");
+        Check(!board.IsMovable(new C(2,1)) && !board.IsMovable(new C(5,1)),"SteamBomb and Knight pieces are static non-swappable obstacles");
+        var hit=new B.Match(); hit.adjacentDamageSources.Add(new C(1,1)); board.Clear(hit,1);
+        Check(board.SteamBombs[2,1]==7 && board.SteamBombsCleared==0,"adjacent hit damages the SteamBomb master state");
+    }
+    static void VerifyTurtleHousesAndClocks()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[2+7*2]=93; tiles[3+7*2]=94; tiles[2+7*3]=103; tiles[3+7*3]=104; tiles[5+7*2]=38; tiles[6+7*2]=39; tiles[5+7*3]=48; tiles[6+7*3]=49;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,97);
+        Check(board.TurtleHouses[2,1]==5 && board.TurtleHouses[2,2]==1 && board.Clocks[5,1]==8 && board.Clocks[5,2]==1,"TurtleHouse and Clock master layers load from native tile IDs");
+        Check(!board.IsMovable(new C(2,1)) && !board.IsMovable(new C(5,1)),"TurtleHouse and Clock pieces are static non-swappable obstacles");
+        var hit=new B.Match(); hit.adjacentDamageSources.Add(new C(1,1)); board.Clear(hit,1);
+        Check(board.TurtleHouses[2,1]==4 && board.TurtleHousesCleared==0,"adjacent hit damages the TurtleHouse master state");
+    }
+    static void VerifyNativeObstacles()
+    {
+        var samples=new[]{
+            new{tile=158,kind=B.NativeObstacleKind.Armory,layer=1}, new{tile=150,kind=B.NativeObstacleKind.Barrel,layer=5},
+            new{tile=96,kind=B.NativeObstacleKind.Cannon,layer=3}, new{tile=59,kind=B.NativeObstacleKind.Gem,layer=1},
+            new{tile=161,kind=B.NativeObstacleKind.JellyMaker,layer=1}, new{tile=118,kind=B.NativeObstacleKind.Lightbulb,layer=5},
+            new{tile=98,kind=B.NativeObstacleKind.Lily,layer=2}, new{tile=29,kind=B.NativeObstacleKind.Lyre,layer=1},
+            new{tile=141,kind=B.NativeObstacleKind.MagicCards,layer=1}, new{tile=173,kind=B.NativeObstacleKind.MagicGlobe,layer=3},
+            new{tile=61,kind=B.NativeObstacleKind.MagicOrb,layer=1}, new{tile=95,kind=B.NativeObstacleKind.Magnet,layer=1},
+            new{tile=146,kind=B.NativeObstacleKind.Starfish,layer=1}, new{tile=147,kind=B.NativeObstacleKind.Tablet,layer=2},
+            new{tile=56,kind=B.NativeObstacleKind.Target,layer=1}, new{tile=110,kind=B.NativeObstacleKind.Volcano,layer=3}
+        };
+        foreach(var sample in samples)
+        {
+            var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=sample.tile;
+            var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+            var board=B.FromOriginal(definition,300+sample.tile);
+            Check(board.NativeObstacleKindAt(3,2)==(int)sample.kind && board.NativeObstacleAt(3,2)==sample.layer,"native obstacle loads "+sample.kind+" with its source layer count");
+            Check(!board.IsMovable(new C(3,2)),"native obstacle blocks swapping "+sample.kind);
+            board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+            var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+            Check(board.NativeObstacleAt(3,2)==sample.layer-1,"adjacent match damages "+sample.kind);
+        }
+    }
     public static void VerifyRules()
     {
         assertions=0;
         VerifySquares();
         VerifyPropellerCombos();
         VerifyColumns();
+        VerifyMetalCrates();
+        VerifyVases();
+        VerifyLayeredObstacles();
+        VerifyLanterns();
+        VerifyPuzzleBoxes();
+        VerifyGiftBoxes();
+        VerifyFlowers();
+        VerifyChaliceBoxes();
+        VerifyDragonBoxes();
+        VerifyBirdhouseAndGnomes();
+        VerifySafesAndMasks();
+        VerifyTurtlesAndSnowmen();
+        VerifySteamBombsAndKnights();
+        VerifyTurtleHousesAndClocks();
+        VerifyNativeObstacles();
+        VerifyObstacleLevels();
         VerifyOriginalBoard();
         var b=Fixture();
         Check(b.FindMatches().cells.Count==0,"stable fixture");
@@ -329,6 +553,7 @@ public static class BuildGame
         Check(board.Boxes[5,3]==1,"special blast does not cause near-match damage beyond its own area");
         board=new B(5,1,3,6);
         board.Boxes[1,3]=1; board.Color[1,3]=-1; board.Color[1,0]=-1; board.Color[1,1]=2; board.Color[1,2]=3; board.Color[1,4]=0; board.Color[1,5]=-1;
+        for(int y=0;y<6;y++) { board.Active[0,y]=false; board.Active[2,y]=false; }
         var from=board.Collapse();
         Check(board.Boxes[1,3]==1 && board.Color[1,3]==-1 && board.Color[1,5]==0 && from[1,5]==4,"boxes stay fixed and gravity preserves order in each open segment");
         Check(board.Color[1,4]==-1,"no refill is fabricated through a stationary box");
@@ -337,11 +562,21 @@ public static class BuildGame
         Check(board.Color[1,3]==2 && board.Color[1,4]==3 && board.Color[1,5]==0,"destroying box opens gravity path and preserves existing jewel order");
         board.Active[1,3]=false;
         Check(!board.CanSwap(new C(1,3),new C(1,2)),"inactive cell cannot be swapped");
+        // Native CalculateCrossFalls can move a fallable item diagonally from an
+        // adjacent column into a lower empty segment after straight compression.
+        board=new B(12,1,5,6);
+        for(int y=0;y<6;y++) for(int x=0;x<5;x++) { board.Color[x,y]=-1; board.Power[x,y]=0; }
+        board.SetWall(new C(0,3));
+        board.Color[1,2]=0; board.Color[1,3]=1;
+        var crossFrom=board.Collapse();
+        Check(board.Color[0,5]==0 && crossFrom[0,5]==4 && board.Color[1,4]>=0,"cross-fall moves a jewel from the adjacent column into a lower empty region and refills its source column");
         board=B.FromOriginal(definition,1);
         var expected=definition.predefined.Where(p=>p.x==0).SelectMany(p=>p.ids).Select(B.ColorFromTiledId).ToArray();
         var queueStart=board.PredefinedRemaining(0);
         // Clear all three initial jewels in one column without affecting boxes.
         for(int y=0;y<3;y++) board.Color[0,y]=-1;
+        // Keep this refill-order check isolated from the native cross-fall path.
+        for(int y=0;y<board.Height;y++) board.Color[1,y]=-1;
         board.Collapse();
         Check(board.PredefinedRemaining(0)==queueStart-3 && board.Color[0,2]==expected[0] && board.Color[0,1]==expected[1] && board.Color[0,0]==expected[2],"native stored-order refill queue enters lowest open slot first");
         var invalid=OriginalDefinition(); invalid.tiles[0]=9999;
