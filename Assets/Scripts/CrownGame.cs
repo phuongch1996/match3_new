@@ -777,9 +777,11 @@ namespace CrownGarden
             {
                 case MatchBoard.NativeObstacleKind.Armory: token="Armory_big"; break;
                 case MatchBoard.NativeObstacleKind.Barrel: token="Barrel"; break;
+                case MatchBoard.NativeObstacleKind.Cannon: token="atlas_CannonItemAtlas_008_body"; break;
                 case MatchBoard.NativeObstacleKind.Lily: token="lily_goal"; break;
                 case MatchBoard.NativeObstacleKind.Lyre: token="lyre"; break;
                 case MatchBoard.NativeObstacleKind.JellyMaker: token="JellyFountain_big"; break;
+                case MatchBoard.NativeObstacleKind.Lightbulb: token="atlas_LightBulbSpriteAtlas_005_Potion_tube_goal_icon_01"; break;
                 case MatchBoard.NativeObstacleKind.MagicCards: token="magic_cards_goal_icon"; break;
                 case MatchBoard.NativeObstacleKind.MagicGlobe: token="MagicGlobe_big"; break;
                 case MatchBoard.NativeObstacleKind.MagicOrb: token="MagicOrb_big"; break;
@@ -789,7 +791,9 @@ namespace CrownGarden
                 case MatchBoard.NativeObstacleKind.Target: token="target_goal"; break;
                 case MatchBoard.NativeObstacleKind.Gem: token="Parts-dragon_gem"; break;
                 case MatchBoard.NativeObstacleKind.DragonEgg: token="dragon_goal_icon"; break;
-                case MatchBoard.NativeObstacleKind.FireDragonEgg: token="Parts-egg_fire_1"; break;
+                case MatchBoard.NativeObstacleKind.FireDragonEgg: token="atlas_FireDragonEggSpritesAtlas_004_Dragon_Egg_001"; break;
+                case MatchBoard.NativeObstacleKind.Volcano: token="atlas_VolcanoSpritesAtlas_022_Body"; break;
+                case MatchBoard.NativeObstacleKind.ArsenalMissile: token="atlas_AttackArsenalSpriteAtlas_013_firework_01"; break;
             }
             if(token!=null && DrawRecoveredObstacle(rect,token,layers,false)) return;
             Color baseColor;

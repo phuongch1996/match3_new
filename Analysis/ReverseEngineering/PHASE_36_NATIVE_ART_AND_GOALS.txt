@@ -3,13 +3,17 @@ PHASE 36 — NATIVE ART AND GOAL COUNTS
 NGUỒN BẰNG CHỨNG
 - Unity bundle trong APK đã được quét bằng UnityPy trên các Sprite object.
 - Các tên sprite được giữ lại trong Unity/ObstacleArt/manifest.json cùng path_id, bundle và SHA-256.
+- Các SpriteAtlas native đã được mở trực tiếp; danh sách packed sprite, path_id, kích thước và SHA-256
+  nằm trong Unity/ObstacleArt/atlas-manifest.json.
 - Bảng native Levels/tile-converters.json xác nhận các ItemType native có GoalType riêng: Lyre, Target,
   Gem, MagicOrb, Magnet, Cannon, Lily, Volcano, Lightbulb, Armory, JellyMaker, Tablet, MagicGlobe,
   Barrel, MagicCards, Starfish, Dragon và FireDragonEgg.
 
 ĐÃ ĐƯA VÀO UNITY
 - Renderer dùng sprite APK cho Armory_big, lily_goal, lyre, JellyFountain_big, magic_cards_goal_icon, MagicGlobe_big,
-  magnet_goal_icon/magnet_down, target_goal, Parts-dragon_gem, dragon_goal_icon và Parts-egg_fire_1.
+  magnet_goal_icon/magnet_down, target_goal, Parts-dragon_gem, dragon_goal_icon và các frame atlas thật
+  cho Cannon/body, Lightbulb/Potion_tube_goal_icon_01, Volcano/Body, ArsenalMissile/firework_01 và
+  FireDragonEgg/Dragon_Egg_001.
 - JellyMaker đã nối với JellyFountain_big, là sprite lớn duy nhất được bundle export trực tiếp cho family này.
 - Các family chưa có Sprite tên rõ ràng trong bundle tiếp tục dùng fallback procedural; không gán nhầm
   sprite chỉ dựa trên màu.
@@ -19,5 +23,4 @@ NGUỒN BẰNG CHỨNG
 GIỚI HẠN
 - Mapping dragon_goal_icon cho DragonEgg và Parts-egg_fire_1 cho FireDragonEgg dựa trên tên Sprite
   và atlas native; cần xác nhận thêm bằng runtime để chốt đúng stage hiển thị.
-- Các biến thể Cannon/Lightbulb/Volcano/ArsenalMissile/DragonSmallBox chưa có Sprite board đầy đủ
-  trong bundle resources.assets; renderer tiếp tục dùng fallback cho các family này.
+- DragonSmallBox chưa có packed Sprite board riêng trong các atlas đã tìm thấy; family này vẫn dùng fallback.

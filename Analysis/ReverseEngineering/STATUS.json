@@ -81,7 +81,8 @@
     "PHASE_33_NATIVE_REMAINING_OBSTACLES.txt",
     "PHASE_34_NATIVE_OBSTACLE_GROUPS.txt",
     "PHASE_35_ENUM_ONLY_OBSTACLES.txt",
-    "PHASE_36_NATIVE_ART_AND_GOALS.txt"
+    "PHASE_36_NATIVE_ART_AND_GOALS.txt",
+    "Unity/ObstacleArt/atlas-manifest.json"
   ],
   "decodedNumericLevels": 2300,
   "decodedPlayableLevels": 9,
@@ -99,7 +100,7 @@
   "latestReport": "PHASE_36_NATIVE_ART_AND_GOALS.txt",
   "ruleAssertions": 22954,
   "dataAssertions": 14524,
-  "exactObstacleSpriteCount": 330,
+  "exactObstacleSpriteCount": 335,
   "obstacleLabLevel": true,
   "shapeMapSupport": true,
   "shapeMapHolesVerified": 4
