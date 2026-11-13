@@ -693,7 +693,7 @@ namespace CrownGarden
             }
             else if(pa>0 && pb>0 && pa!=5 && pb!=5)
             {
-                int radius=(pa==3 && pb==3)?3:1;
+                int radius=(pa==3 && pb==3)?2:1;
                 for(int y=0;y<Height;y++) for(int x=0;x<Width;x++)
                     if((pa==3 && pb==3)?(Math.Abs(x-b.x)<=radius && Math.Abs(y-b.y)<=radius):
                        (pa==3 || pb==3)?(Math.Abs(x-b.x)<=radius || Math.Abs(y-b.y)<=radius):(x==b.x || y==b.y)) m.cells.Add(new Cell(x,y));
@@ -1227,5 +1227,6 @@ namespace CrownGarden
         public int RemainingIce { get { int count=0; foreach(bool ice in Ice) if(ice) count++; return count; } }
     }
 }
+
 
 
