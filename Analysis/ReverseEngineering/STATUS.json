@@ -99,7 +99,7 @@
   "latestReport": "PHASE_36_NATIVE_ART_AND_GOALS.txt",
   "ruleAssertions": 22954,
   "dataAssertions": 14524,
-  "exactObstacleSpriteCount": 328,
+  "exactObstacleSpriteCount": 330,
   "obstacleLabLevel": true,
   "shapeMapSupport": true,
   "shapeMapHolesVerified": 4

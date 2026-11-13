@@ -9,7 +9,7 @@ NGUỒN BẰNG CHỨNG
 
 ĐÃ ĐƯA VÀO UNITY
 - Renderer dùng sprite APK cho Armory_big, lily_goal, lyre, JellyFountain_big, magic_cards_goal_icon, MagicGlobe_big,
-  magnet_goal_icon/magnet_down, target_goal, Parts-dragon_gem và Parts-dragon_egg_1.
+  magnet_goal_icon/magnet_down, target_goal, Parts-dragon_gem, dragon_goal_icon và Parts-egg_fire_1.
 - JellyMaker đã nối với JellyFountain_big, là sprite lớn duy nhất được bundle export trực tiếp cho family này.
 - Các family chưa có Sprite tên rõ ràng trong bundle tiếp tục dùng fallback procedural; không gán nhầm
   sprite chỉ dựa trên màu.
@@ -17,6 +17,7 @@ NGUỒN BẰNG CHỨNG
   BOX và ITEM còn lại. Đây là cách dùng GoalType native để tránh màn được tính thắng khi vật cản còn tồn tại.
 
 GIỚI HẠN
-- Mapping Parts-dragon_egg_1 cho DragonEgg là suy luận từ tên family và cần xác nhận thêm bằng runtime.
-- Các biến thể Cannon/JellyMaker/Lightbulb/Volcano/ArsenalMissile/FireDragonEgg chưa có sprite tên
-  tương ứng trong lần quét key hiện tại nên vẫn dùng fallback.
+- Mapping dragon_goal_icon cho DragonEgg và Parts-egg_fire_1 cho FireDragonEgg dựa trên tên Sprite
+  và atlas native; cần xác nhận thêm bằng runtime để chốt đúng stage hiển thị.
+- Các biến thể Cannon/Lightbulb/Volcano/ArsenalMissile/DragonSmallBox chưa có Sprite board đầy đủ
+  trong bundle resources.assets; renderer tiếp tục dùng fallback cho các family này.

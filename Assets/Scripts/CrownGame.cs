@@ -788,7 +788,8 @@ namespace CrownGarden
                 case MatchBoard.NativeObstacleKind.Tablet: token=layers>=2?"tablet_column_1x4_01":"Tablet_goal_icon_01"; break;
                 case MatchBoard.NativeObstacleKind.Target: token="target_goal"; break;
                 case MatchBoard.NativeObstacleKind.Gem: token="Parts-dragon_gem"; break;
-                case MatchBoard.NativeObstacleKind.DragonEgg: token="Parts-dragon_egg_1"; break;
+                case MatchBoard.NativeObstacleKind.DragonEgg: token="dragon_goal_icon"; break;
+                case MatchBoard.NativeObstacleKind.FireDragonEgg: token="Parts-egg_fire_1"; break;
             }
             if(token!=null && DrawRecoveredObstacle(rect,token,layers,false)) return;
             Color baseColor;

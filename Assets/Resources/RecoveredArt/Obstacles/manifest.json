@@ -588,6 +588,18 @@
     "sha256": "98417b755e1f350b54d861afe43ca06e17865f16b95021dec761055dbc5c4f6a"
   },
   {
+    "name": "Parts-egg_fire_4",
+    "path_id": 5259,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5259_Parts-egg_fire_4.png",
+    "size": [
+      84,
+      67
+    ],
+    "sha256": "1d1185d59d1008739538b9ca3ad5928a3ee8740747fc480009aceaf3442d881e"
+  },
+  {
     "name": "Parts-safe06",
     "path_id": 5261,
     "source_file": "resources.assets",
@@ -1116,6 +1128,18 @@
     "sha256": "499d1ed1c4ea1e57bcd2390626ce2bfd93eb822d25822cc242b768bd8abf2759"
   },
   {
+    "name": "Parts-egg_fire_3",
+    "path_id": 5608,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5608_Parts-egg_fire_3.png",
+    "size": [
+      58,
+      76
+    ],
+    "sha256": "9236deb55703ba230df809b52d54cf209588c5d01f2c2bc42ab41ef20365d107"
+  },
+  {
     "name": "target-bottom",
     "path_id": 5617,
     "source_file": "resources.assets",
@@ -1176,6 +1200,18 @@
     "sha256": "2eb46c2c9de1765f0033995abf3c160f108f5cbe85049c98b9f6a5c53bf56212"
   },
   {
+    "name": "Dragon_Egg_blur_004",
+    "path_id": 5666,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5666_Dragon_Egg_blur_004.png",
+    "size": [
+      137,
+      148
+    ],
+    "sha256": "31a5072344e3589307c93820666a24907976f799589288a13d96ca302b409bda"
+  },
+  {
     "name": "Puzzle_goal_icon",
     "path_id": 5669,
     "source_file": "resources.assets",
@@ -1212,6 +1248,30 @@
     "sha256": "2d8b5c8717e17dc12bbf334f19dcc1b2c537adc9ab45da52941a56579dac6321"
   },
   {
+    "name": "Dragon_Egg_004",
+    "path_id": 5751,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5751_Dragon_Egg_004.png",
+    "size": [
+      134,
+      148
+    ],
+    "sha256": "0d349213d7c48f1182073bb59f8da0ffbabd0c50a5531d76200efd88c385427b"
+  },
+  {
+    "name": "Dragon_Egg_Blur_029",
+    "path_id": 5752,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5752_Dragon_Egg_Blur_029.png",
+    "size": [
+      145,
+      161
+    ],
+    "sha256": "b91a589b8738ec7921b0baff72108ad20e2841c4d4f94515bfd7e3942a503326"
+  },
+  {
     "name": "gift_box_4",
     "path_id": 5759,
     "source_file": "resources.assets",
@@ -1234,6 +1294,18 @@
       155
     ],
     "sha256": "b44c727354606fced9e1746e37225ac7442e400716f4387779d52ceb87909814"
+  },
+  {
+    "name": "Dragon_Egg_blur_010",
+    "path_id": 5816,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5816_Dragon_Egg_blur_010.png",
+    "size": [
+      139,
+      148
+    ],
+    "sha256": "a090e152fe0240eb02ff094418494849530f8d9020f4e0b7a8454bedf1f2cb7d"
   },
   {
     "name": "Barrel_crown",
@@ -1270,6 +1342,18 @@
       169
     ],
     "sha256": "ed8edc4dac37e16ce78c76f801d06a5a808d6be7b6ec1eb464068f035716b450"
+  },
+  {
+    "name": "Dragon_Egg_027",
+    "path_id": 5881,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5881_Dragon_Egg_027.png",
+    "size": [
+      147,
+      161
+    ],
+    "sha256": "fb5389c126599c59a673ce5661eaf2bbbbf820d2459f07bbc033789bff3435b2"
   },
   {
     "name": "gift_box_5",
@@ -1318,6 +1402,18 @@
       68
     ],
     "sha256": "199274c983777b6cd5b6f4947c2ae6c4f7cf443d4f1d48d0d7da1c7f157aaa07"
+  },
+  {
+    "name": "Dragon_Egg_002",
+    "path_id": 5927,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/5927_Dragon_Egg_002.png",
+    "size": [
+      135,
+      148
+    ],
+    "sha256": "16b13807c4e1ef48d38a27cdb87511c9456be39d80f3d92cc282958bec5cbf7d"
   },
   {
     "name": "tablet_submarine_01",
@@ -1380,6 +1476,42 @@
     "sha256": "a8c641e4b92cb61854ee8acebab592a44ac1201213b593207432118916dc7af5"
   },
   {
+    "name": "Dragon_Egg_009",
+    "path_id": 6041,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6041_Dragon_Egg_009.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "4e3d32f0768c5753ca8543ccf158a4f1ed69091e5c5f268832063a5fd6242dbe"
+  },
+  {
+    "name": "Dragon_Egg_blur_005",
+    "path_id": 6049,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6049_Dragon_Egg_blur_005.png",
+    "size": [
+      145,
+      160
+    ],
+    "sha256": "9b6abf974521f2eb3ae2e5528a0e3617de1bc0487d7ae7383fb19c2483c2efe1"
+  },
+  {
+    "name": "1x1_white_arsenal_atlas",
+    "path_id": 6063,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6063_1x1_white_arsenal_atlas.png",
+    "size": [
+      1,
+      1
+    ],
+    "sha256": "d5a51b6aed15684ec8c123e30fe5703155359d6543b6d7b47cb5766ef44939de"
+  },
+  {
     "name": "tablet_seahorse_01",
     "path_id": 6068,
     "source_file": "resources.assets",
@@ -1402,6 +1534,18 @@
       148
     ],
     "sha256": "662bf9fc147c3028a17eea81d36abbae7a7e2ef8ad09b1f15a179e3b27afde7c"
+  },
+  {
+    "name": "Dragon_Egg_006",
+    "path_id": 6099,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6099_Dragon_Egg_006.png",
+    "size": [
+      135,
+      148
+    ],
+    "sha256": "7d07c76e0ed6e53f528b1630e311c7707aba9550472e535a39d457126fd49985"
   },
   {
     "name": "Tablet_goal_icon_01",
@@ -1452,6 +1596,18 @@
     "sha256": "05df4bea2cf3260c8404cbf718da3e3c4773e7b6fc2e3297eb14551229132e1a"
   },
   {
+    "name": "Dragon_Egg_Blur_017",
+    "path_id": 6163,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6163_Dragon_Egg_Blur_017.png",
+    "size": [
+      157,
+      167
+    ],
+    "sha256": "eac40de57abf748bcba20d0b16332f0e7dbb28cec0b23bde7079792174539cc7"
+  },
+  {
     "name": "color_drop_jelly02",
     "path_id": 6168,
     "source_file": "resources.assets",
@@ -1486,6 +1642,18 @@
       200
     ],
     "sha256": "78d2545083f2a1fb6b4500ab59de20d4fa570d10abd7ac62794d7edc6d2f60da"
+  },
+  {
+    "name": "Dragon_Egg_026",
+    "path_id": 6204,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6204_Dragon_Egg_026.png",
+    "size": [
+      134,
+      148
+    ],
+    "sha256": "3c15d90375d0e16b45017fe9e67b131daf72cac279b65941263536023de5c6ad"
   },
   {
     "name": "tablet_whale_01",
@@ -1536,6 +1704,18 @@
     "sha256": "72fccdc0129d818d4ceca0a014d4e2e1284d3a943a61b6ad1756ad8a7b9e5b00"
   },
   {
+    "name": "Dragon_Egg_030",
+    "path_id": 6216,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6216_Dragon_Egg_030.png",
+    "size": [
+      134,
+      149
+    ],
+    "sha256": "4a17d86c36bf8421a98b846db2068ef33329251574a725d146b1ed640872126c"
+  },
+  {
     "name": "Barrel_Stage_05_Front",
     "path_id": 6221,
     "source_file": "resources.assets",
@@ -1560,6 +1740,18 @@
     "sha256": "e48fbe0449ad8f78c5c7ef2722fe5f29d8c6de6acaa5163a2e49666a755c606e"
   },
   {
+    "name": "Dragon_Egg_028",
+    "path_id": 6251,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6251_Dragon_Egg_028.png",
+    "size": [
+      134,
+      149
+    ],
+    "sha256": "3cd4540cfd7771fe2a2b2f0f49482b8360413df3d82b096635a796b3fe433295"
+  },
+  {
     "name": "Lyre_Particle_01",
     "path_id": 6270,
     "source_file": "resources.assets",
@@ -1570,6 +1762,18 @@
       39
     ],
     "sha256": "7a65517effe54f220d0a145053bb97157448b539de3561b3213925cce180f87b"
+  },
+  {
+    "name": "Dragon_Egg_Blur_026",
+    "path_id": 6271,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6271_Dragon_Egg_Blur_026.png",
+    "size": [
+      139,
+      148
+    ],
+    "sha256": "512f084707319be93236915c3612c1bb1be00e2c33e2836a74a0aba42659581e"
   },
   {
     "name": "starfish_01_1.0005",
@@ -1606,6 +1810,18 @@
       164
     ],
     "sha256": "dcec28f8a5b22b6dff9b91218f97dde4b23c6af1d379b6f8b541b4c6a672bb8b"
+  },
+  {
+    "name": "Dragon_Egg_025",
+    "path_id": 6331,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6331_Dragon_Egg_025.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "3d2673a4eb0f942020b22a3a47518c25e2d7df3924f5bad521db9b8dcb221b42"
   },
   {
     "name": "Barrel_shadow",
@@ -1680,6 +1896,18 @@
     "sha256": "52409095f5f04f42af8a2d0f3ad7da938645e149ffddd2862d545b4a957fbeb7"
   },
   {
+    "name": "Dragon_Egg_blur_011",
+    "path_id": 6385,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6385_Dragon_Egg_blur_011.png",
+    "size": [
+      145,
+      161
+    ],
+    "sha256": "580520fc05750dbe31eeae674a3bf887b5ee56921a0fbf1edd1f8cc27b97aacc"
+  },
+  {
     "name": "starfish_01_1.0003",
     "path_id": 6393,
     "source_file": "resources.assets",
@@ -1728,6 +1956,18 @@
     "sha256": "41a319f7f6f2afc1aa432dc421bd86b8b472ec967f089028910291d98f0008ca"
   },
   {
+    "name": "Dragon_Egg_Blur_016",
+    "path_id": 6417,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6417_Dragon_Egg_Blur_016.png",
+    "size": [
+      139,
+      149
+    ],
+    "sha256": "84d32610f43a558deb166dd4f8a048fbfac9d9d4ac5cd9e78fa8f42ab16273f5"
+  },
+  {
     "name": "starfish_shadow",
     "path_id": 6440,
     "source_file": "resources.assets",
@@ -1774,6 +2014,30 @@
       149
     ],
     "sha256": "bf1d268f1be88ca24092d65c84f6b7f3df709d32366ceba9d7418c7e40705194"
+  },
+  {
+    "name": "dragon_goal_icon",
+    "path_id": 6465,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6465_dragon_goal_icon.png",
+    "size": [
+      168,
+      148
+    ],
+    "sha256": "cfb468b0c4e67c3ef46bd1f90144fa20c92ea5119c84b521563f18c4d9241940"
+  },
+  {
+    "name": "Dragon_Egg_blur_001",
+    "path_id": 6471,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6471_Dragon_Egg_blur_001.png",
+    "size": [
+      145,
+      161
+    ],
+    "sha256": "db203d8f37f492bb55dbe5ad80d7ee0cf2800a83055514240e258df9ad6bfbb9"
   },
   {
     "name": "tablet_seahorse_back_01",
@@ -1836,6 +2100,18 @@
     "sha256": "aa9641c070f26158f7971204b758aa93121b87ee06a92767f6f29ea118eb04a7"
   },
   {
+    "name": "Dragon_Egg_blur_012",
+    "path_id": 6586,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6586_Dragon_Egg_blur_012.png",
+    "size": [
+      137,
+      148
+    ],
+    "sha256": "23c8b6173a781c1a43fc1c899bc92dc687b2ca3f57f51fb03980a256898f9e7f"
+  },
+  {
     "name": "Lyre_Particle_05",
     "path_id": 6600,
     "source_file": "resources.assets",
@@ -1896,6 +2172,18 @@
     "sha256": "1bac0e0d4e036fa02580cd929fa478d459f5bb5f821de3682d16955dfcc298ab"
   },
   {
+    "name": "Dragon_Egg_022",
+    "path_id": 6655,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6655_Dragon_Egg_022.png",
+    "size": [
+      136,
+      148
+    ],
+    "sha256": "54caa071c229040d2ce699035fb6031bdf679b7a116d9e3ee830f4a4ba80f18a"
+  },
+  {
     "name": "Puzzle_board_03",
     "path_id": 6678,
     "source_file": "resources.assets",
@@ -1918,6 +2206,18 @@
       62
     ],
     "sha256": "945495926a794f96cb3a275193eed50ceaf33063382391c2b1f34522ca3f71b6"
+  },
+  {
+    "name": "Dragon_Egg_blur_014",
+    "path_id": 6713,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6713_Dragon_Egg_blur_014.png",
+    "size": [
+      138,
+      148
+    ],
+    "sha256": "59283f76be2e144f5290df318840ead7d9a285a9ff29475c6265ea5a30420231"
   },
   {
     "name": "metal_knight_helmet_01",
@@ -1944,6 +2244,18 @@
     "sha256": "e14202a5939689db382fa681eba7901d65e73dfc589018e0891d26e9d99a1b2c"
   },
   {
+    "name": "Dragon_Egg_blur_006",
+    "path_id": 6732,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6732_Dragon_Egg_blur_006.png",
+    "size": [
+      140,
+      148
+    ],
+    "sha256": "2e7b847f5ff5298805cfe1c11964fb9f616a2597dbd12fa1f013d02c1b15ebb0"
+  },
+  {
     "name": "lyre_ground_shadow",
     "path_id": 6740,
     "source_file": "resources.assets",
@@ -1966,6 +2278,18 @@
       130
     ],
     "sha256": "403fef892d6c886be3eab372ca6427f32f1ecf23cdec7f5653be9f5c2f8a729b"
+  },
+  {
+    "name": "Dragon_Egg_blur_008",
+    "path_id": 6773,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6773_Dragon_Egg_blur_008.png",
+    "size": [
+      141,
+      148
+    ],
+    "sha256": "b526eb8c5a67309aac0718118234860982d427aa61bcbb2a4284fd7529891a17"
   },
   {
     "name": "snow_8",
@@ -2016,6 +2340,30 @@
     "sha256": "04666a415b707c67436eafa0754b6620d81af9f7d3d042e2ecfb95b372b0d34a"
   },
   {
+    "name": "Dragon_Egg_018",
+    "path_id": 6886,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6886_Dragon_Egg_018.png",
+    "size": [
+      134,
+      148
+    ],
+    "sha256": "f361f7fa5f33d8e909452207a56d0710c8928eafadb2bd07d6f2b67f141b7802"
+  },
+  {
+    "name": "Dragon_Egg_Blur_028",
+    "path_id": 6901,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6901_Dragon_Egg_Blur_028.png",
+    "size": [
+      137,
+      149
+    ],
+    "sha256": "0cb9439795192e832cf7af38fc06f81a7edbe9c79916b676968acd65ea3cd178"
+  },
+  {
     "name": "starfish_01_1.0012",
     "path_id": 6908,
     "source_file": "resources.assets",
@@ -2064,6 +2412,18 @@
     "sha256": "8e50b1600673bce21f376aba2aeabf4eaf766be4fcbc46f12441087d7cc3bc85"
   },
   {
+    "name": "Dragon_Egg_Blur_023",
+    "path_id": 6944,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6944_Dragon_Egg_Blur_023.png",
+    "size": [
+      145,
+      160
+    ],
+    "sha256": "00f19f78be1ebc51ea0e2539800b4dea64800d86d19c349492b19fbfffbe8882"
+  },
+  {
     "name": "starfish_01_1.0010",
     "path_id": 6957,
     "source_file": "resources.assets",
@@ -2088,6 +2448,42 @@
     "sha256": "99f213d65a40949850193c6a760060db69c85e93e826b54d10d7804939cdd30c"
   },
   {
+    "name": "Dragon_Egg_021",
+    "path_id": 6967,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6967_Dragon_Egg_021.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "5c41c75864012c91b1ecfc5a48d8cff46faf40c1ccb20fc25981f3993f993539"
+  },
+  {
+    "name": "Dragon_Egg_Blur_024",
+    "path_id": 6968,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6968_Dragon_Egg_Blur_024.png",
+    "size": [
+      139,
+      147
+    ],
+    "sha256": "4c210a86af38d3ec32cf88dbf028b52a76dc2879cf3dcfa5681a3b70b84919e5"
+  },
+  {
+    "name": "Dragon_Egg_007",
+    "path_id": 6977,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6977_Dragon_Egg_007.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "cadeb65eee2f225c862054b05e639c74641674d2cf79b1c03e9b216d21873513"
+  },
+  {
     "name": "Barrel_wood_05",
     "path_id": 6988,
     "source_file": "resources.assets",
@@ -2098,6 +2494,30 @@
       39
     ],
     "sha256": "0541d754904d48e5a0aa3df13fbc4429e1080000ac01a1d834d329cc940c1c14"
+  },
+  {
+    "name": "Dragon_Egg_001",
+    "path_id": 7001,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7001_Dragon_Egg_001.png",
+    "size": [
+      147,
+      161
+    ],
+    "sha256": "c64e24acc9913e38e824d966a930c381ef83c73cdac04c3de1e209699326dbdf"
+  },
+  {
+    "name": "missile_shadow",
+    "path_id": 7005,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7005_missile_shadow.png",
+    "size": [
+      85,
+      148
+    ],
+    "sha256": "f5e7bbb47c5e5d87107f97ec9d47bc6776be209223c674b970f014a269724837"
   },
   {
     "name": "Puzzle_board_red_03",
@@ -2160,6 +2580,18 @@
     "sha256": "3fcad180456027098643f795a0b28ccca34a1375d044c86a3b3b13fab9a99c94"
   },
   {
+    "name": "Dragon_Egg_011",
+    "path_id": 7054,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7054_Dragon_Egg_011.png",
+    "size": [
+      147,
+      161
+    ],
+    "sha256": "df1deef8ddedccd44c63e736f133ff96a5778685bae3e3e4ecaef85586f19802"
+  },
+  {
     "name": "lyre_note_shadow",
     "path_id": 7061,
     "source_file": "resources.assets",
@@ -2208,6 +2640,18 @@
     "sha256": "9171f101e8c32a5a9646bdc1b3c8e6495223f519521cb04477d30d692928ed77"
   },
   {
+    "name": "Dragon_Egg_Blur_025",
+    "path_id": 7104,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7104_Dragon_Egg_Blur_025.png",
+    "size": [
+      145,
+      161
+    ],
+    "sha256": "87b441d99b675beeb479b5246357bac44e4437bcebb01f6c817cc1da25e1f7f9"
+  },
+  {
     "name": "Tablet_up_01",
     "path_id": 7118,
     "source_file": "resources.assets",
@@ -2230,6 +2674,18 @@
       83
     ],
     "sha256": "af753894c7e23448d2ef4ba4f4d6eba6b619e88a4fa29f690f8eb387cd553f8a"
+  },
+  {
+    "name": "Dragon_Egg_029",
+    "path_id": 7124,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7124_Dragon_Egg_029.png",
+    "size": [
+      147,
+      161
+    ],
+    "sha256": "9f9b011aea14a4c32fc75942bb7d5d29bf53c938ac19b8283023cee3a58d61bb"
   },
   {
     "name": "lyre",
@@ -2256,6 +2712,18 @@
     "sha256": "d764adfea70785e27874be71cf8a16b6c15f8cb9ca622e20a5e354fcb48f16b7"
   },
   {
+    "name": "Dragon_Egg_008",
+    "path_id": 7167,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7167_Dragon_Egg_008.png",
+    "size": [
+      136,
+      148
+    ],
+    "sha256": "9e662d5091e891936c0f9d61f8ad69de3efd6338f72915dcd146f92a1278f06c"
+  },
+  {
     "name": "Flowers_goal_icon",
     "path_id": 7169,
     "source_file": "resources.assets",
@@ -2278,6 +2746,18 @@
       75
     ],
     "sha256": "3ac09a445561916a68c2858bba690a5187691a58ca073d7082a90039e51b4d10"
+  },
+  {
+    "name": "Dragon_Egg_blur_007",
+    "path_id": 7184,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7184_Dragon_Egg_blur_007.png",
+    "size": [
+      145,
+      160
+    ],
+    "sha256": "af86e1f6777fcfe5b113975b60820d8c68e63299ec363d26a8a8e5656fa9ac19"
   },
   {
     "name": "Barrel_wood_06",
@@ -2400,6 +2880,18 @@
     "sha256": "641e38beae7854fbfe91d302fe9951ff2052f5c9339e5b7dceccbff6767de483"
   },
   {
+    "name": "Dragon_Egg_016",
+    "path_id": 7290,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7290_Dragon_Egg_016.png",
+    "size": [
+      134,
+      149
+    ],
+    "sha256": "b797f370e321f2470675d27ae79ff6c1967635593565577e2f3415bd179aabf9"
+  },
+  {
     "name": "tablet_seahorse_back_02",
     "path_id": 7296,
     "source_file": "resources.assets",
@@ -2410,6 +2902,18 @@
       62
     ],
     "sha256": "e2927967203bf42dfb7f55f35e5932dc6298503fd353257941ecca3ec912d95f"
+  },
+  {
+    "name": "Dragon_Egg_010",
+    "path_id": 7297,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7297_Dragon_Egg_010.png",
+    "size": [
+      136,
+      148
+    ],
+    "sha256": "4382cce827d48666ef8616f00034cced063873bb905154f55008735760fb6a09"
   },
   {
     "name": "Flower_vase_02",
@@ -2448,6 +2952,18 @@
     "sha256": "fbd9adf116d8af43fa2c05d55541fdf910e5279aa3647040bc57059cbb2fd1fc"
   },
   {
+    "name": "Dragon_Egg_020",
+    "path_id": 7361,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7361_Dragon_Egg_020.png",
+    "size": [
+      133,
+      148
+    ],
+    "sha256": "17a026e18b02a61594fc2c9e5e1d109f59c94b1779637a65e84f53218d426b6d"
+  },
+  {
     "name": "starfish_01_1.0009",
     "path_id": 7380,
     "source_file": "resources.assets",
@@ -2458,6 +2974,18 @@
       170
     ],
     "sha256": "777554aa74e91d57a8beeb7d1c3717f4f1e6b0381b83c6e836bbf092c062462a"
+  },
+  {
+    "name": "Dragon_Egg_blur_002",
+    "path_id": 7411,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7411_Dragon_Egg_blur_002.png",
+    "size": [
+      138,
+      148
+    ],
+    "sha256": "719a869165fa1a0e12a2db106c6dd5045bffe0471977a99d3686d4b549260245"
   },
   {
     "name": "lyre_note",
@@ -2484,6 +3012,18 @@
     "sha256": "058d6acd6e9c7284e65f80f70512afe7dfda24e579bd67d04bbfc475bd3ecdd5"
   },
   {
+    "name": "Dragon_Egg_017",
+    "path_id": 7450,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7450_Dragon_Egg_017.png",
+    "size": [
+      159,
+      166
+    ],
+    "sha256": "ab94065187042ce2291fad5c09fa19c1094e01235dea2dbc9694eb20b597c57b"
+  },
+  {
     "name": "Barrel_Stage_05_Back",
     "path_id": 7458,
     "source_file": "resources.assets",
@@ -2496,6 +3036,18 @@
     "sha256": "6490a172f14a9ae497605c83ef859f1757f4ede2214215a52a08531a1e73adad"
   },
   {
+    "name": "Dragon_Egg_Blur_022",
+    "path_id": 7462,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7462_Dragon_Egg_Blur_022.png",
+    "size": [
+      140,
+      148
+    ],
+    "sha256": "585aa73d36c1312433372d4ae35900539e101f86ebc2c84b51e6b78977dd8313"
+  },
+  {
     "name": "magic_cards_goal_icon",
     "path_id": 7466,
     "source_file": "resources.assets",
@@ -2506,6 +3058,18 @@
       159
     ],
     "sha256": "78b4a023af68f403258384ba99c1fa9a92aaf547cc65ed7f526f00068ef0739c"
+  },
+  {
+    "name": "Dragon_Egg_blur_009",
+    "path_id": 7495,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7495_Dragon_Egg_blur_009.png",
+    "size": [
+      145,
+      160
+    ],
+    "sha256": "3a8099d5ea835068f428947332aa5c9847d66321d8b0f3dae0617815f7b74e9b"
   },
   {
     "name": "tablet_fish_01",
@@ -2580,6 +3144,18 @@
     "sha256": "5bd7c3c48f2c96aed808bdc0f87ac461e101eac9c905a986021cc8a9f8aecf5f"
   },
   {
+    "name": "Dragon_Egg_Blur_020",
+    "path_id": 7551,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7551_Dragon_Egg_Blur_020.png",
+    "size": [
+      138,
+      148
+    ],
+    "sha256": "e079049aa7c7a81a865d491597c7852e9850bb8d1e81752324cc51df817141a5"
+  },
+  {
     "name": "magnet_right",
     "path_id": 7561,
     "source_file": "resources.assets",
@@ -2640,6 +3216,18 @@
     "sha256": "29fe58b60f77a7e4e1da98b0688940d9c1f7deb71e5679e2c092fb3b2b69d58b"
   },
   {
+    "name": "Dragon_Egg_blur_013",
+    "path_id": 7594,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7594_Dragon_Egg_blur_013.png",
+    "size": [
+      145,
+      161
+    ],
+    "sha256": "f63f3e321d12da53ce3e7bfd82706e77b867f6f1c42e24069ad5acba705b9927"
+  },
+  {
     "name": "particle_clock_orb_03",
     "path_id": 7596,
     "source_file": "resources.assets",
@@ -2688,6 +3276,42 @@
     "sha256": "ca9941a8daa203520ad2226cd64878476065da91e92fc3cf9d5488220dc909aa"
   },
   {
+    "name": "Dragon_Egg_013",
+    "path_id": 7636,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7636_Dragon_Egg_013.png",
+    "size": [
+      147,
+      161
+    ],
+    "sha256": "6e7b7c966b24f564ebc8c491a578b5350160095f6286ac00a87812828635caad"
+  },
+  {
+    "name": "Dragon_Egg_blur_015",
+    "path_id": 7643,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7643_Dragon_Egg_blur_015.png",
+    "size": [
+      145,
+      161
+    ],
+    "sha256": "3272b5fab2efda915f23ce8a331711dedb38ed780355f0d6c14b6dab25145599"
+  },
+  {
+    "name": "Dragon_Egg_003",
+    "path_id": 7664,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7664_Dragon_Egg_003.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "05bf06b2d803b276a86cbec932c965f36c63752eab8116a0b030b5f5f760e3a9"
+  },
+  {
     "name": "target_tex",
     "path_id": 7667,
     "source_file": "resources.assets",
@@ -2722,6 +3346,18 @@
       180
     ],
     "sha256": "29335c72c5b4ef91cc1ac5bcb5227301bce40ff78531f07fef3bc73ab2c08496"
+  },
+  {
+    "name": "Dragon_Egg_005",
+    "path_id": 7714,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7714_Dragon_Egg_005.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "26a3d01b5be8bf1d0a09b161a8480d76f9f8da503740ad53d88ab59092a6c71a"
   },
   {
     "name": "tablet_column_1x5_01",
@@ -2770,6 +3406,18 @@
       54
     ],
     "sha256": "3cc0d8f1e9925888e3dc987716ffcdfb7e18901b9640259d8aebe69d3770fe7e"
+  },
+  {
+    "name": "Dragon_Egg_blur_003",
+    "path_id": 7765,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7765_Dragon_Egg_blur_003.png",
+    "size": [
+      145,
+      160
+    ],
+    "sha256": "02973a54de42863b2838bf56525ae41cd69ea64d1ee88352ca6a8b8b27399651"
   },
   {
     "name": "Tablet_up_02",
@@ -2830,6 +3478,30 @@
       166
     ],
     "sha256": "e2f93b41f95aae1e72497e999d64ef1b5335730ac503036bf1ee1ba420916de6"
+  },
+  {
+    "name": "Dragon_Egg_024",
+    "path_id": 7826,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7826_Dragon_Egg_024.png",
+    "size": [
+      136,
+      147
+    ],
+    "sha256": "e1f42f75d92d29b7a399dc0c29dd9ed4043f1323a8f57b3745db306fbbb0ea8a"
+  },
+  {
+    "name": "Dragon_Egg_Blur_030",
+    "path_id": 7827,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7827_Dragon_Egg_Blur_030.png",
+    "size": [
+      139,
+      149
+    ],
+    "sha256": "71f1c64454371f97e340236041e15789425b70545526a1552d57bd9c6cce92c9"
   },
   {
     "name": "Barrel_shadow_01",
@@ -2928,6 +3600,30 @@
     "sha256": "e4d6e3719b2f01e2ce1228b57c8f22392eb164c2fe80b0d5e812dbda2952de6b"
   },
   {
+    "name": "Dragon_Egg_Blur_019",
+    "path_id": 7925,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7925_Dragon_Egg_Blur_019.png",
+    "size": [
+      145,
+      160
+    ],
+    "sha256": "bc42f272407a264ce100235e33471f31bfcdedf43d6dd12afcc6f39fcc217d90"
+  },
+  {
+    "name": "Dragon_Egg_Blur_018",
+    "path_id": 7935,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7935_Dragon_Egg_Blur_018.png",
+    "size": [
+      139,
+      148
+    ],
+    "sha256": "97a45ebe6e73095fd9136aaca148d4e2b24ff74ae029f4d959566c6f4ae9e6a0"
+  },
+  {
     "name": "tablet_star_01",
     "path_id": 7943,
     "source_file": "resources.assets",
@@ -2950,6 +3646,18 @@
       394
     ],
     "sha256": "29aed7ff6f2d37d9ef9d5d8a877596083a0780f79ae28e0c42316bcff711e355"
+  },
+  {
+    "name": "Dragon_Egg_012",
+    "path_id": 7961,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7961_Dragon_Egg_012.png",
+    "size": [
+      134,
+      148
+    ],
+    "sha256": "9cd16af5e055661f03f221d02aed77f1539f7c277f53fc77f66b0e69b44cc915"
   },
   {
     "name": "Flowers_Big",
@@ -3036,6 +3744,18 @@
     "sha256": "4b4f31819fec7bbac324fcc2e78708392029d474b11308c0c0111d5f62450584"
   },
   {
+    "name": "Dragon_Egg_Blur_027",
+    "path_id": 8044,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8044_Dragon_Egg_Blur_027.png",
+    "size": [
+      145,
+      161
+    ],
+    "sha256": "0f37313613e5c4a6561d58f252f3373aa52fac2ed35fa74b82ba127cf5671f34"
+  },
+  {
     "name": "flowers_vase_lastState_5_pp",
     "path_id": 8061,
     "source_file": "resources.assets",
@@ -3048,6 +3768,18 @@
     "sha256": "2734afd6d6943662a0f10fd166435ea604a995bdc6652ba5e82d6586cff4ed45"
   },
   {
+    "name": "Dragon_Egg_019",
+    "path_id": 8094,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8094_Dragon_Egg_019.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "cccd40bf26b47b41a4ebc9baeda349dbdeae9360103992d5a569394f8dc27c98"
+  },
+  {
     "name": "gift_box_3",
     "path_id": 8099,
     "source_file": "resources.assets",
@@ -3058,6 +3790,30 @@
       179
     ],
     "sha256": "2175d2d0e6f7affebd9187f7f1145abbbb23df9e858f07538c3043a00cd9b107"
+  },
+  {
+    "name": "Dragon_Egg_015",
+    "path_id": 8108,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8108_Dragon_Egg_015.png",
+    "size": [
+      147,
+      161
+    ],
+    "sha256": "5bc81ff6fcee32a6b56f5d0878b0e73cbc30151850b2cdddb4857e1c8aa9993c"
+  },
+  {
+    "name": "Dragon_Egg_Blur_021",
+    "path_id": 8109,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8109_Dragon_Egg_Blur_021.png",
+    "size": [
+      145,
+      160
+    ],
+    "sha256": "3d64219b67f21672cabf01a106fb211d75984ad6df14acf02151384e2fdce072"
   },
   {
     "name": "tablet_column_1x6_01",
@@ -3082,6 +3838,30 @@
       167
     ],
     "sha256": "c3deb5c2e93692eebbe5c9128049a2bd6c81270a54e301a9e0283aadbb317c2a"
+  },
+  {
+    "name": "Dragon_Egg_014",
+    "path_id": 8117,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8117_Dragon_Egg_014.png",
+    "size": [
+      134,
+      149
+    ],
+    "sha256": "9b1226dfa73bf00c1499ee9554e9ae5143d53a40f47b42c8157d9f5404b0967c"
+  },
+  {
+    "name": "Dragon_Egg_023",
+    "path_id": 8118,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8118_Dragon_Egg_023.png",
+    "size": [
+      147,
+      160
+    ],
+    "sha256": "6799ff5df65f3b97c8498889eb50c7d003b8193e63f5e8778795caa63645a1b7"
   },
   {
     "name": "pfx_jelly_item_drop",
@@ -3564,6 +4344,18 @@
     "sha256": "a24d87635d9326dc0af4c45ee7006270a9f0636292fae55779d9df80ab7a0b7d"
   },
   {
+    "name": "Parts-egg_fire_2",
+    "path_id": 8589,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8589_Parts-egg_fire_2.png",
+    "size": [
+      68,
+      79
+    ],
+    "sha256": "484c8766de5bd4a49cab8850d719a11f3d1be79d5d8885d551006100537a134c"
+  },
+  {
     "name": "metal_crate_patch_2",
     "path_id": 8596,
     "source_file": "resources.assets",
@@ -3790,6 +4582,18 @@
       34
     ],
     "sha256": "f94362415809a404c0671d346112d5a719ba4d08ab63da135141cdf2778bb18d"
+  },
+  {
+    "name": "Parts-egg_fire_1",
+    "path_id": 8770,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8770_Parts-egg_fire_1.png",
+    "size": [
+      78,
+      73
+    ],
+    "sha256": "6bc52518fbd7691ca63e1721b35c09176f9b7a510ccd26ff1ae1f64e835eec58"
   },
   {
     "name": "Items-Column-Platform_Back",
