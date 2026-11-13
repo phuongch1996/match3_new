@@ -1452,6 +1452,18 @@
     "sha256": "05df4bea2cf3260c8404cbf718da3e3c4773e7b6fc2e3297eb14551229132e1a"
   },
   {
+    "name": "color_drop_jelly02",
+    "path_id": 6168,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6168_color_drop_jelly02.png",
+    "size": [
+      41,
+      43
+    ],
+    "sha256": "7fde3827bd5315a80e18d51724e78b7c8689102fb6ce1bf07f563823a4dfced0"
+  },
+  {
     "name": "Flower_vase_03",
     "path_id": 6176,
     "source_file": "resources.assets",
@@ -1618,6 +1630,18 @@
       28
     ],
     "sha256": "e7980c410e76f854a8e95d2a00b24dab4df6aeb73ab84d1f39a5928f91725fe3"
+  },
+  {
+    "name": "Effects-color_drop_jelly02",
+    "path_id": 6351,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/6351_Effects-color_drop_jelly02.png",
+    "size": [
+      39,
+      41
+    ],
+    "sha256": "e07c31f6ace8477651bd570db027a983847cde34f09af5e5b263e7ed9c8fb3f6"
   },
   {
     "name": "Lyre_Particle_03",
@@ -2544,6 +2568,18 @@
     "sha256": "9456249b391d1e3e730a08d79acc0d895625fb4ba881b2b25a1f2c0761b2ecc1"
   },
   {
+    "name": "color_drop_jelly01",
+    "path_id": 7545,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7545_color_drop_jelly01.png",
+    "size": [
+      43,
+      66
+    ],
+    "sha256": "5bd7c3c48f2c96aed808bdc0f87ac461e101eac9c905a986021cc8a9f8aecf5f"
+  },
+  {
     "name": "magnet_right",
     "path_id": 7561,
     "source_file": "resources.assets",
@@ -2626,6 +2662,18 @@
       152
     ],
     "sha256": "800c50bb70e5ac0c768e702fb6a2317dce7742bf62dc46e924852069eaf83fa3"
+  },
+  {
+    "name": "JellyFountain_big",
+    "path_id": 7625,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/7625_JellyFountain_big.png",
+    "size": [
+      468,
+      475
+    ],
+    "sha256": "213c4f94dccf4b9feb1dc5202bf1010b32ca11972c3b6aea992dd956898b6abe"
   },
   {
     "name": "Tablet_Texture_01",
@@ -3036,6 +3084,18 @@
     "sha256": "c3deb5c2e93692eebbe5c9128049a2bd6c81270a54e301a9e0283aadbb317c2a"
   },
   {
+    "name": "pfx_jelly_item_drop",
+    "path_id": 8128,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8128_pfx_jelly_item_drop.png",
+    "size": [
+      41,
+      56
+    ],
+    "sha256": "3968642e3ddbf2f70965b8fdd113c00cf819d7ac436563b9e74bc787c7e330e1"
+  },
+  {
     "name": "tablet_seahorse_back_03",
     "path_id": 8131,
     "source_file": "resources.assets",
@@ -3430,6 +3490,30 @@
       50
     ],
     "sha256": "07cc2b9268baab3a5d30a3ba7f207ad1017f31bf8c6c358318f3fda92fea8b7d"
+  },
+  {
+    "name": "Effects-color_drop_jelly",
+    "path_id": 8574,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8574_Effects-color_drop_jelly.png",
+    "size": [
+      39,
+      41
+    ],
+    "sha256": "8a12a08d66a5b3a553c6f72817186232e411f8bbd26c490c50d523e608a56f56"
+  },
+  {
+    "name": "Parts-pfx_jelly_item_drop",
+    "path_id": 8580,
+    "source_file": "resources.assets",
+    "source_bundle": "",
+    "export": "Unity/ObstacleArt/8580_Parts-pfx_jelly_item_drop.png",
+    "size": [
+      41,
+      56
+    ],
+    "sha256": "97d3abfd1acd054ef90662d52c4fd8029103c119cad3aa92b7f551b663ac4f2e"
   },
   {
     "name": "Items-Vase-vase_shadow",

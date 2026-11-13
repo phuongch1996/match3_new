@@ -8,8 +8,9 @@ NGUỒN BẰNG CHỨNG
   Barrel, MagicCards, Starfish, Dragon và FireDragonEgg.
 
 ĐÃ ĐƯA VÀO UNITY
-- Renderer dùng sprite APK cho Armory_big, lily_goal, lyre, magic_cards_goal_icon, MagicGlobe_big,
+- Renderer dùng sprite APK cho Armory_big, lily_goal, lyre, JellyFountain_big, magic_cards_goal_icon, MagicGlobe_big,
   magnet_goal_icon/magnet_down, target_goal, Parts-dragon_gem và Parts-dragon_egg_1.
+- JellyMaker đã nối với JellyFountain_big, là sprite lớn duy nhất được bundle export trực tiếp cho family này.
 - Các family chưa có Sprite tên rõ ràng trong bundle tiếp tục dùng fallback procedural; không gán nhầm
   sprite chỉ dựa trên màu.
 - Màn obstacle nay yêu cầu hoàn thành box goal và dọn toàn bộ ô native obstacle. HUD hiển thị tách

@@ -779,6 +779,7 @@ namespace CrownGarden
                 case MatchBoard.NativeObstacleKind.Barrel: token="Barrel"; break;
                 case MatchBoard.NativeObstacleKind.Lily: token="lily_goal"; break;
                 case MatchBoard.NativeObstacleKind.Lyre: token="lyre"; break;
+                case MatchBoard.NativeObstacleKind.JellyMaker: token="JellyFountain_big"; break;
                 case MatchBoard.NativeObstacleKind.MagicCards: token="magic_cards_goal_icon"; break;
                 case MatchBoard.NativeObstacleKind.MagicGlobe: token="MagicGlobe_big"; break;
                 case MatchBoard.NativeObstacleKind.MagicOrb: token="MagicOrb_big"; break;
