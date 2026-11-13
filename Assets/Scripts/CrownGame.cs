@@ -30,7 +30,7 @@ namespace CrownGarden
         int targetBoxes;
         bool originalMode,obstacleMode;
         int obstacleLevelIndex=-1;
-        static readonly string[] obstacleLevels={"level_obstacle_lab","level_shape_lab","level_columns","level_walls","level_crates","level_all","level_layers","level_lantern","level_puzzle","level_gift","level_flowers","level_chalice","level_dragon","level_birdhouse","level_gnome","level_safe","level_mask","level_turtle","level_snowman","level_steambomb","level_knight","level_turtlehouse","level_clock","level_native_remaining_lab"};
+        static readonly string[] obstacleLevels={"level_obstacle_lab","level_shape_lab","level_columns","level_walls","level_crates","level_all","level_layers","level_lantern","level_puzzle","level_gift","level_flowers","level_chalice","level_dragon","level_birdhouse","level_gnome","level_safe","level_mask","level_turtle","level_snowman","level_steambomb","level_knight","level_turtlehouse","level_clock","level_native_remaining_lab","level_enum_future_lab"};
         bool verificationRun;
         OriginalLevelDefinition originalDefinition;
         int seed=3021;
@@ -783,6 +783,11 @@ namespace CrownGarden
                 case MatchBoard.NativeObstacleKind.Starfish: baseColor=new Color(1f,.48f,.25f); break;
                 case MatchBoard.NativeObstacleKind.Tablet: baseColor=new Color(.27f,.57f,.76f); break;
                 case MatchBoard.NativeObstacleKind.Target: baseColor=new Color(.95f,.38f,.28f); break;
+                case MatchBoard.NativeObstacleKind.ArsenalMissile: baseColor=new Color(.52f,.60f,.72f); break;
+                case MatchBoard.NativeObstacleKind.DragonEgg: baseColor=new Color(.96f,.55f,.28f); break;
+                case MatchBoard.NativeObstacleKind.DragonSmallBoxHorizontal: baseColor=new Color(.48f,.30f,.18f); break;
+                case MatchBoard.NativeObstacleKind.DragonSmallBoxVertical: baseColor=new Color(.56f,.36f,.20f); break;
+                case MatchBoard.NativeObstacleKind.FireDragonEgg: baseColor=new Color(1f,.24f,.12f); break;
                 default: baseColor=new Color(.75f,.22f,.16f); break;
             }
             Box(new Rect(rect.x+4,rect.y+5,rect.width-8,rect.height-10),baseColor);

@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-12T16:25:00",
-  "phase": "native-remaining-obstacles",
+  "updated": "2026-11-13T15:40:00",
+  "phase": "enum-only-obstacle-families",
   "package": "C:/Users/Admin/Downloads/com.dreamgames.royalkingdom_20584-20584_2arch_1feat_4d80b75aad360e3124b1abd39e0fd839_apkmirror.com.apkm",
   "packageSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66",
   "inventoryRows": 1220,
@@ -24,7 +24,7 @@
   "rawRoot": "C:\\Users\\Admin\\Documents\\ChatGPT\\Phuong\\RoyalMatchOffline\\Analysis\\ReverseEngineering\\Raw",
   "accountQuotaPercent": null,
   "quotaNote": "Not observable through available tools",
-  "next": "Continue native behavior and art fidelity for multi-cell obstacle variants",
+  "next": "Continue exact per-variant obstacle art and native special behavior",
   "evidenceFiles": [
     "metadata-evidence.json",
     "metadata-native-evidence.json",
@@ -78,7 +78,9 @@
     "PHASE_31_OBSTACLE_LAB_APK_ART.txt",
     "Unity/ObstacleArt/manifest.json",
     "PHASE_32_NON_RECTANGULAR_MAPS.txt",
-    "PHASE_33_NATIVE_REMAINING_OBSTACLES.txt"
+    "PHASE_33_NATIVE_REMAINING_OBSTACLES.txt",
+    "PHASE_34_NATIVE_OBSTACLE_GROUPS.txt",
+    "PHASE_35_ENUM_ONLY_OBSTACLES.txt"
   ],
   "decodedNumericLevels": 2300,
   "decodedPlayableLevels": 9,
@@ -93,8 +95,8 @@
   ],
   "originalLevel1Fidelity": "Source 9x9 layout / 30 moves / 54 boxes / predefined queues verified; native fall order, 8-neighbor directions and seeded RNG algorithm recovered statically, but exact session seed, cross-fall reservations and full mechanics incomplete",
   "prototypeBoxSprite": true,
-  "latestReport": "PHASE_33_NATIVE_REMAINING_OBSTACLES.txt",
-  "ruleAssertions": 22930,
+  "latestReport": "PHASE_35_ENUM_ONLY_OBSTACLES.txt",
+  "ruleAssertions": 22954,
   "dataAssertions": 14524,
   "exactObstacleSpriteCount": 285,
   "obstacleLabLevel": true,

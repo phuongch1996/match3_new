@@ -168,7 +168,7 @@ public static class BuildGame
     }
     static void VerifyObstacleLevels()
     {
-        string[] names={"level_obstacle_lab","level_shape_lab","level_columns","level_walls","level_crates","level_all","level_layers","level_lantern","level_puzzle","level_gift","level_flowers","level_chalice","level_dragon","level_birdhouse","level_gnome","level_safe","level_mask","level_turtle","level_snowman","level_steambomb","level_knight","level_turtlehouse","level_clock","level_native_remaining_lab"};
+        string[] names={"level_obstacle_lab","level_shape_lab","level_columns","level_walls","level_crates","level_all","level_layers","level_lantern","level_puzzle","level_gift","level_flowers","level_chalice","level_dragon","level_birdhouse","level_gnome","level_safe","level_mask","level_turtle","level_snowman","level_steambomb","level_knight","level_turtlehouse","level_clock","level_native_remaining_lab","level_enum_future_lab"};
         foreach(string name in names)
         {
             var definition=JsonUtility.FromJson<OriginalLevelDefinition>(File.ReadAllText("Assets/Resources/ObstacleLevels/"+name+".json"));
@@ -301,7 +301,10 @@ public static class BuildGame
             new{tile=141,kind=B.NativeObstacleKind.MagicCards,layer=1}, new{tile=173,kind=B.NativeObstacleKind.MagicGlobe,layer=3},
             new{tile=61,kind=B.NativeObstacleKind.MagicOrb,layer=1}, new{tile=95,kind=B.NativeObstacleKind.Magnet,layer=1},
             new{tile=146,kind=B.NativeObstacleKind.Starfish,layer=1}, new{tile=147,kind=B.NativeObstacleKind.Tablet,layer=2},
-            new{tile=56,kind=B.NativeObstacleKind.Target,layer=1}, new{tile=110,kind=B.NativeObstacleKind.Volcano,layer=3}
+            new{tile=56,kind=B.NativeObstacleKind.Target,layer=1}, new{tile=110,kind=B.NativeObstacleKind.Volcano,layer=3},
+            new{tile=10005,kind=B.NativeObstacleKind.ArsenalMissile,layer=1}, new{tile=10004,kind=B.NativeObstacleKind.DragonEgg,layer=2},
+            new{tile=10002,kind=B.NativeObstacleKind.DragonSmallBoxHorizontal,layer=1}, new{tile=10000,kind=B.NativeObstacleKind.DragonSmallBoxVertical,layer=2},
+            new{tile=10008,kind=B.NativeObstacleKind.FireDragonEgg,layer=2}
         };
         foreach(var sample in samples)
         {
@@ -314,6 +317,19 @@ public static class BuildGame
             var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
             Check(board.NativeObstacleAt(3,2)==sample.layer-1,"adjacent match damages "+sample.kind);
         }
+    }
+    static void VerifyNativeObstacleGroups()
+    {
+        var tiles=Enumerable.Repeat(1,7*5).ToArray(); tiles[0]=21; tiles[3+7*2]=171; tiles[4+7*2]=161;
+        var definition=new OriginalLevelDefinition { width=7,height=5,moves=10,boxGoal=1,boardCount=1,tiles=tiles,colors=new[]{1,2,3,4},predefined=new OriginalRefill[0] };
+        var board=B.FromOriginal(definition,700);
+        Check(board.NativeObstacleGroup[3,2]>0 && board.NativeObstacleGroup[3,2]==board.NativeObstacleGroup[4,2],"adjacent multi-cell native tiles share one obstacle group");
+        Check(board.NativeObstacleAt(3,2)==7 && board.NativeObstacleAt(4,2)==7,"group uses the native master layer across every footprint cell");
+        board.Color[2,1]=board.Color[2,2]=board.Color[2,3]=0;
+        var hit=board.FindMatches(new C(2,2)); board.Clear(hit,1);
+        Check(board.NativeObstacleAt(3,2)==6 && board.NativeObstacleAt(4,2)==6,"one adjacent match damages a native group once");
+        for(int i=0;i<6;i++) board.Clear(hit,1);
+        Check(board.NativeObstacleAt(3,2)==0 && board.NativeObstacleAt(4,2)==0 && board.NativeObstacleGroup[3,2]==0 && board.NativeObstacleGroup[4,2]==0,"final group layer clears the complete native footprint");
     }
     public static void VerifyRules()
     {
@@ -336,6 +352,7 @@ public static class BuildGame
         VerifySteamBombsAndKnights();
         VerifyTurtleHousesAndClocks();
         VerifyNativeObstacles();
+        VerifyNativeObstacleGroups();
         VerifyObstacleLevels();
         VerifyOriginalBoard();
         var b=Fixture();
@@ -604,3 +621,4 @@ public static class BuildGame
         File.WriteAllText("Verification/original-board.txt","PASS: original 9x9 layout / 30 moves / 54 boxes preserved; "+actions+" legal actions, "+steps+" cascade steps, "+board.BoxesCleared+" boxes cleared. Native-directed box hits, fixed blockers, variable dimensions, stored refill order, unsupported tile rejection passed.\nUnverified fidelity: diagonal falling, original RNG and complete obstacle set.\n");
     }
 }
+

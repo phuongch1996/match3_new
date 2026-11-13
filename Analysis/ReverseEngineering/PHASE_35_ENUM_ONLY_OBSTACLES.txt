@@ -1,0 +1,26 @@
+PHASE 35 — ENUM-ONLY OBSTACLE FAMILIES
+
+Added native loader support for five ItemType families present in the native enum
+and tile converter table but absent from the 2,300 decoded levels:
+ArsenalMissile, DragonEgg, DragonSmallBoxHorizontal, DragonSmallBoxVertical and
+FireDragonEgg.
+
+Their native TiledIds and source layer counts are accepted by OriginalLevelDefinition,
+stored as static native obstacles, blocked from swap/match/gravity, and damaged by
+adjacent match or special-item effects using the shared obstacle group model.
+A procedural renderer fallback is included for these metadata-only families.
+
+Added level_enum_future_lab.json to exercise all five families and included it in
+the obstacle level rotation.
+
+Verification:
+- Unity BuildGame.Build: PASS
+- Rule assertions: 22,954
+- Legal actions: 4,500
+- Cascade steps: 6,759
+- Windows build: successful, 77,413,022 bytes
+- Representative loader/layer checks cover all five enum-only families.
+
+Limitation:
+Their exact gameplay transitions and final APK art remain unverified because no
+source level containing these families was present in the decoded level set.

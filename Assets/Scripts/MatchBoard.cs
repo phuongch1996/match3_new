@@ -52,11 +52,15 @@ namespace CrownGarden
         public enum NativeObstacleKind
         {
             Armory, Barrel, Cannon, Gem, JellyMaker, Lightbulb, Lily, Lyre,
-            MagicCards, MagicGlobe, MagicOrb, Magnet, Starfish, Tablet, Target, Volcano
+            MagicCards, MagicGlobe, MagicOrb, Magnet, Starfish, Tablet, Target, Volcano,
+            ArsenalMissile, DragonEgg, DragonSmallBoxHorizontal, DragonSmallBoxVertical, FireDragonEgg
         }
-        public const int NativeObstacleCount = 16;
+        public const int NativeObstacleCount = 21;
         public readonly int[,,] NativeObstacles;
         public readonly int[,] NativeObstacleVariant;
+        public readonly int[,] NativeObstacleGroup;
+        readonly Dictionary<int,int> nativeGroupLayers = new Dictionary<int,int>();
+        int nextNativeGroup=1;
         public readonly int[] Collected = new int[Colors];
         public int IceCleared, BoxesCleared, MetalCratesCleared, VasesCleared, FlowerPotsCleared, LogsCleared, LanternsCleared, PuzzleBoxesCleared, GiftBoxesCleared, FlowersCleared, ChaliceBoxesCleared, DragonBoxesCleared, BirdhousesCleared, GnomesCleared, SafesCleared, MasksCleared, TurtlesCleared, SnowmenCleared, SteamBombsCleared, KnightsCleared, TurtleHousesCleared, ClocksCleared, WallsCleared, ColumnsCleared, MetalColumnsCleared, Score;
         readonly Random random;
@@ -100,6 +104,7 @@ namespace CrownGarden
             public readonly HashSet<Cell> hitClocks = new HashSet<Cell>();
             public readonly HashSet<Cell> hitWalls = new HashSet<Cell>();
             public readonly HashSet<Cell> hitNativeObstacles = new HashSet<Cell>();
+            public readonly HashSet<int> hitNativeGroups = new HashSet<int>();
             public readonly HashSet<int> hitColumnGroups = new HashSet<int>();
             public readonly HashSet<int> hitMetalColumnGroups = new HashSet<int>();
             public readonly HashSet<Cell> damagedBoxes = new HashSet<Cell>();
@@ -118,7 +123,7 @@ namespace CrownGarden
             Active=new bool[width,height]; Boxes=new int[width,height]; MetalCrates=new int[width,height]; Vases=new int[width,height]; FlowerPots=new int[width,height]; Logs=new int[width,height]; Lanterns=new int[width,height]; PuzzleBoxes=new int[width,height]; GiftBoxes=new int[width,height]; Flowers=new int[width,height]; ChaliceBoxes=new int[width,height]; DragonBoxes=new int[width,height]; Birdhouses=new int[width,height]; Gnomes=new int[width,height]; Safes=new int[width,height]; Masks=new int[width,height]; Turtles=new int[width,height]; Snowmen=new int[width,height]; SteamBombs=new int[width,height]; Knights=new int[width,height]; TurtleHouses=new int[width,height]; Clocks=new int[width,height]; Walls=new int[width,height]; WallGroup=new int[width,height];
             Columns=new int[width,height]; ColumnGroup=new int[width,height]; ColumnDirection=new int[width,height];
             MetalColumns=new int[width,height]; MetalColumnGroup=new int[width,height]; MetalColumnDirection=new int[width,height];
-            NativeObstacles=new int[NativeObstacleCount,width,height]; NativeObstacleVariant=new int[width,height];
+            NativeObstacles=new int[NativeObstacleCount,width,height]; NativeObstacleVariant=new int[width,height]; NativeObstacleGroup=new int[width,height];
             predefined=new Queue<int>[width];
             for(int y=0;y<height;y++) for(int x=0;x<width;x++) Active[x,y]=activeMask==null || activeMask[x,y];
             for(int x=0;x<width;x++) predefined[x]=new Queue<int>();
@@ -134,7 +139,7 @@ namespace CrownGarden
         public bool IsInside(int x,int y) { return x>=0 && y>=0 && x<Width && y<Height; }
         public bool IsCell(int x,int y) { return IsInside(x,y) && Active[x,y]; }
         // Replaced color is retained for effects/combinations, but a special is not a match tile.
-        public int NativeObstacleAt(int x,int y) { if(!IsInside(x,y)) return 0; for(int kind=0;kind<NativeObstacleCount;kind++) if(NativeObstacles[kind,x,y]>0) return NativeObstacles[kind,x,y]; return 0; }
+        public int NativeObstacleAt(int x,int y) { if(!IsInside(x,y)) return 0; for(int kind=0;kind<NativeObstacleCount;kind++) if(NativeObstacles[kind,x,y]>0) { int group=NativeObstacleGroup[x,y],layers; return group>0 && nativeGroupLayers.TryGetValue(group,out layers)?layers:NativeObstacles[kind,x,y]; } return 0; }
         public int NativeObstacleKindAt(int x,int y) { if(!IsInside(x,y)) return -1; for(int kind=0;kind<NativeObstacleCount;kind++) if(NativeObstacles[kind,x,y]>0) return kind; return -1; }
         int MatchColor(int x,int y) { return IsCell(x,y) && Boxes[x,y]==0 && MetalCrates[x,y]==0 && Vases[x,y]==0 && FlowerPots[x,y]==0 && Logs[x,y]==0 && Lanterns[x,y]==0 && PuzzleBoxes[x,y]==0 && GiftBoxes[x,y]==0 && Flowers[x,y]==0 && ChaliceBoxes[x,y]==0 && DragonBoxes[x,y]==0 && Birdhouses[x,y]==0 && Gnomes[x,y]==0 && Safes[x,y]==0 && Masks[x,y]==0 && Turtles[x,y]==0 && Snowmen[x,y]==0 && SteamBombs[x,y]==0 && Knights[x,y]==0 && TurtleHouses[x,y]==0 && Clocks[x,y]==0 && Walls[x,y]==0 && Columns[x,y]==0 && MetalColumns[x,y]==0 && NativeObstacleAt(x,y)==0 && Power[x,y]==0?Color[x,y]:-1; }
         public bool IsMovable(Cell c) { return IsCell(c.x,c.y) && Boxes[c.x,c.y]==0 && MetalCrates[c.x,c.y]==0 && Vases[c.x,c.y]==0 && FlowerPots[c.x,c.y]==0 && Logs[c.x,c.y]==0 && Lanterns[c.x,c.y]==0 && PuzzleBoxes[c.x,c.y]==0 && GiftBoxes[c.x,c.y]==0 && Flowers[c.x,c.y]==0 && ChaliceBoxes[c.x,c.y]==0 && DragonBoxes[c.x,c.y]==0 && Birdhouses[c.x,c.y]==0 && Gnomes[c.x,c.y]==0 && Safes[c.x,c.y]==0 && Masks[c.x,c.y]==0 && Turtles[c.x,c.y]==0 && Snowmen[c.x,c.y]==0 && SteamBombs[c.x,c.y]==0 && Knights[c.x,c.y]==0 && TurtleHouses[c.x,c.y]==0 && Clocks[c.x,c.y]==0 && Walls[c.x,c.y]==0 && Columns[c.x,c.y]==0 && MetalColumns[c.x,c.y]==0 && NativeObstacleAt(c.x,c.y)==0 && Color[c.x,c.y]>=0; }
@@ -248,7 +253,36 @@ namespace CrownGarden
             if(!IsCell(c.x,c.y) || layers<1) throw new ArgumentOutOfRangeException("Native obstacle must be on an active cell with at least one layer.");
             for(int i=0;i<NativeObstacleCount;i++) NativeObstacles[i,c.x,c.y]=0;
             NativeObstacles[(int)kind,c.x,c.y]=layers; NativeObstacleVariant[c.x,c.y]=variant;
+            int group=nextNativeGroup++; NativeObstacleGroup[c.x,c.y]=group; nativeGroupLayers[group]=layers;
             Color[c.x,c.y]=-1; Power[c.x,c.y]=0;
+        }
+        void AssignNativeObstacleGroups()
+        {
+            nativeGroupLayers.Clear(); nextNativeGroup=1;
+            for(int y=0;y<Height;y++) for(int x=0;x<Width;x++) NativeObstacleGroup[x,y]=0;
+            var visited=new bool[Width,Height];
+            for(int y=0;y<Height;y++) for(int x=0;x<Width;x++)
+            {
+                int kind=NativeObstacleKindAt(x,y); if(kind<0 || visited[x,y]) continue;
+                var cells=new List<Cell>(); var queue=new Queue<Cell>(); queue.Enqueue(new Cell(x,y)); visited[x,y]=true;
+                while(queue.Count>0)
+                {
+                    var c=queue.Dequeue(); cells.Add(c);
+                    foreach(var d in new[]{new Cell(1,0),new Cell(-1,0),new Cell(0,1),new Cell(0,-1)})
+                    {
+                        int nx=c.x+d.x,ny=c.y+d.y;
+                        if(nx<0 || ny<0 || nx>=Width || ny>=Height || visited[nx,ny] || NativeObstacleKindAt(nx,ny)!=kind) continue;
+                        visited[nx,ny]=true; queue.Enqueue(new Cell(nx,ny));
+                    }
+                }
+                int group=nextNativeGroup++,layers=1;
+                foreach(var c in cells)
+                {
+                    int local=NativeObstacles[kind,c.x,c.y]; if(local>layers) layers=local;
+                    NativeObstacleGroup[c.x,c.y]=group;
+                }
+                nativeGroupLayers[group]=layers;
+            }
         }
         static int NativeLayerCount(int tile)
         {
@@ -266,6 +300,7 @@ namespace CrownGarden
                 case 71: case 73: case 81: case 82: case 83: case 84: case 85:return 5;
                 case 95: case 146:return 1; case 147: case 148: case 149:return 2;
                 case 56: case 57: case 58:return 1; case 110:return 3;
+                case 10000:return 2; case 10001: case 10002: case 10003:return 1; case 10004:return 2; case 10005:return 1; case 10008:return 2;
                 case 158: case 159: case 160: case 168: case 169: case 170: case 179: case 180:return 1;
                 case 178:return 20; default:return 0;
             }
@@ -284,7 +319,11 @@ namespace CrownGarden
                 case 61: case 62: case 63: case 64: case 71: case 72: case 73: case 74: case 81: case 82: case 83: case 84: case 85: kind=NativeObstacleKind.MagicOrb; return true;
                 case 95: kind=NativeObstacleKind.Magnet; return true; case 146: kind=NativeObstacleKind.Starfish; return true;
                 case 147: case 148: case 149: kind=NativeObstacleKind.Tablet; return true; case 56: case 57: case 58: kind=NativeObstacleKind.Target; return true;
-                case 110: kind=NativeObstacleKind.Volcano; return true; default: kind=default(NativeObstacleKind); return false;
+                case 110: kind=NativeObstacleKind.Volcano; return true;
+                case 10005: kind=NativeObstacleKind.ArsenalMissile; return true; case 10004: kind=NativeObstacleKind.DragonEgg; return true;
+                case 10002: case 10003: kind=NativeObstacleKind.DragonSmallBoxHorizontal; return true;
+                case 10000: case 10001: kind=NativeObstacleKind.DragonSmallBoxVertical; return true; case 10008: kind=NativeObstacleKind.FireDragonEgg; return true;
+                default: kind=default(NativeObstacleKind); return false;
             }
         }
         static bool IsNativeTile(int tile) { NativeObstacleKind kind; return TryNativeObstacle(tile,out kind); }
@@ -362,7 +401,7 @@ namespace CrownGarden
             {
                 int tile=definition.tiles[x+board.Width*y],viewY=board.Height-1-y;
                 board.Power[x,viewY]=0; board.Ice[x,viewY]=false; board.Walls[x,viewY]=0; board.WallGroup[x,viewY]=0; board.MetalCrates[x,viewY]=0; board.Vases[x,viewY]=0; board.FlowerPots[x,viewY]=0; board.Logs[x,viewY]=0; board.Lanterns[x,viewY]=0; board.PuzzleBoxes[x,viewY]=0; board.GiftBoxes[x,viewY]=0; board.Flowers[x,viewY]=0; board.ChaliceBoxes[x,viewY]=0; board.DragonBoxes[x,viewY]=0; board.Birdhouses[x,viewY]=0; board.Gnomes[x,viewY]=0; board.Safes[x,viewY]=0; board.Masks[x,viewY]=0; board.Turtles[x,viewY]=0; board.Snowmen[x,viewY]=0; board.SteamBombs[x,viewY]=0; board.Knights[x,viewY]=0; board.TurtleHouses[x,viewY]=0; board.Clocks[x,viewY]=0;
-                board.NativeObstacleVariant[x,viewY]=0; for(int nativeKind=0;nativeKind<NativeObstacleCount;nativeKind++) board.NativeObstacles[nativeKind,x,viewY]=0;
+                board.NativeObstacleVariant[x,viewY]=0; board.NativeObstacleGroup[x,viewY]=0; for(int nativeKind=0;nativeKind<NativeObstacleCount;nativeKind++) board.NativeObstacles[nativeKind,x,viewY]=0;
                 board.Columns[x,viewY]=0; board.ColumnGroup[x,viewY]=0; board.ColumnDirection[x,viewY]=0;
                 board.MetalColumns[x,viewY]=0; board.MetalColumnGroup[x,viewY]=0; board.MetalColumnDirection[x,viewY]=0;
                 if(!board.Active[x,viewY]) { board.Color[x,viewY]=-1; continue; }
@@ -399,6 +438,7 @@ namespace CrownGarden
                 else board.Color[x,viewY]=ColorFromTiledId(tile);
             }
             board.LoadColumnsFromOriginal(definition.tiles);
+            board.AssignNativeObstacleGroups();
             // Native AddPredefined traverses entries/Ids in stored order and queues by X.
             foreach(var refill in definition.predefined ?? new OriginalRefill[0])
                 foreach(int tile in refill.ids) board.predefined[refill.x].Enqueue(ColorFromTiledId(tile));
@@ -922,9 +962,24 @@ namespace CrownGarden
                 int kind=NativeObstacleKindAt(c.x,c.y);
                 if(IsCell(c.x,c.y) && kind>=0 && NativeObstacles[kind,c.x,c.y]>0)
                 {
-                    NativeObstacles[kind,c.x,c.y]--; Score+=100;
-                    if(NativeObstacles[kind,c.x,c.y]==0) NativeObstacleVariant[c.x,c.y]=0;
+                    int group=NativeObstacleGroup[c.x,c.y];
+                    if(group>0) m.hitNativeGroups.Add(group);
+                    else { NativeObstacles[kind,c.x,c.y]--; Score+=100; if(NativeObstacles[kind,c.x,c.y]==0) NativeObstacleVariant[c.x,c.y]=0; }
                 }
+            }
+            foreach(int group in m.hitNativeGroups)
+            {
+                int layers; if(!nativeGroupLayers.TryGetValue(group,out layers) || layers<=0) continue;
+                nativeGroupLayers[group]=--layers; Score+=100;
+                if(layers>0) continue;
+                for(int y=0;y<Height;y++) for(int x=0;x<Width;x++)
+                    if(NativeObstacleGroup[x,y]==group)
+                    {
+                        int kind=NativeObstacleKindAt(x,y);
+                        if(kind>=0) NativeObstacles[kind,x,y]=0;
+                        NativeObstacleVariant[x,y]=0; NativeObstacleGroup[x,y]=0;
+                    }
+                nativeGroupLayers.Remove(group);
             }
             foreach(var c in m.hitWalls)
                 if(IsCell(c.x,c.y) && Walls[c.x,c.y]>0)

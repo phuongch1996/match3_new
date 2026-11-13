@@ -1,0 +1,26 @@
+PHASE 34 — NATIVE OBSTACLE GROUPS
+
+Multi-cell native obstacle families now preserve a shared group state. Contiguous
+cells with the same native ItemType are grouped after the original level is loaded.
+The group uses the highest native source layer count as its shared master layer.
+A match, rocket, bomb, rainbow or spinner hit on any footprint cell decrements the
+group once; all footprint cells remain static until the final group layer is gone,
+then the complete footprint is cleared together.
+
+This covers Armory, JellyMaker, Lightbulb, MagicCards, MagicOrb, Tablet and any
+other contiguous same-family native footprint without changing single-cell families.
+The source TiledId remains stored per cell for variant art selection.
+
+Verification:
+- Unity BuildGame.Build: PASS
+- Rule assertions: 22,934
+- Legal actions: 4,500
+- Cascade steps: 6,759
+- Multi-cell group test: shared layer, one-hit decrement, complete final clear.
+- Windows build: successful, 77,411,318 bytes.
+
+Remaining follow-up:
+- Exact APK art selection for every corner/stage variant.
+- Native enum-only families not observed in the 2,300 decoded levels:
+  ArsenalMissile, DragonEgg, DragonSmallBoxHorizontal, DragonSmallBoxVertical,
+  FireDragonEgg.
