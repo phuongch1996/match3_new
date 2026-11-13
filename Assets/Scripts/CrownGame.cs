@@ -29,6 +29,9 @@ namespace CrownGarden
         int level,unlocked,stars,built,moves,combo,targetRed,targetBlue;
         int targetBoxes;
         bool originalMode,obstacleMode;
+        bool recoveredLevelMode;
+        int[] recoveredGoalTargets;
+        bool recoveredRequiresObstacleClear;
         int obstacleLevelIndex=-1;
         static readonly string[] obstacleLevels={"level_obstacle_lab","level_shape_lab","level_columns","level_walls","level_crates","level_all","level_layers","level_lantern","level_puzzle","level_gift","level_flowers","level_chalice","level_dragon","level_birdhouse","level_gnome","level_safe","level_mask","level_turtle","level_snowman","level_steambomb","level_knight","level_turtlehouse","level_clock","level_native_remaining_lab","level_enum_future_lab"};
         bool verificationRun;
@@ -129,11 +132,31 @@ namespace CrownGarden
         }
         void StartLevel()
         {
-            originalMode=false; obstacleMode=false; targetBoxes=0;
-            level=unlocked; board=new MatchBoard(seed++ + level*193,level);
+            originalMode=false; recoveredLevelMode=false; obstacleMode=false; targetBoxes=0;
+            level=Mathf.Clamp(unlocked,1,2300);
+            var recovered=Resources.Load<TextAsset>("RecoveredLevels/level_"+level.ToString("D4"));
+            if(recovered!=null) { StartRecoveredLevel(level,recovered); return; }
+            board=new MatchBoard(seed++ + level*193,level);
             moves=level==1?26:30; targetRed=level==1?22:24+Mathf.Min(level,10); targetBlue=level==1?22:24+Mathf.Min(level,10);
             won=lost=busy=hammer=false; hammers=3; home=false; selected=null; combo=0; idleAt=Time.time;
             sparks.Clear(); Notify(level==1?"Match 4 in a square to create a propeller!":"Break the ice and collect red & blue jewels.",4);
+        }
+        void StartRecoveredLevel(int index,TextAsset source=null)
+        {
+            try
+            {
+                if(source==null) source=Resources.Load<TextAsset>("RecoveredLevels/level_"+index.ToString("D4"));
+                if(source==null) throw new InvalidOperationException("Recovered level file is missing: "+index);
+                originalDefinition=JsonUtility.FromJson<OriginalLevelDefinition>(source.text);
+                board=MatchBoard.FromOriginal(originalDefinition,3021+index*193);
+                originalMode=true; recoveredLevelMode=true; obstacleMode=false; obstacleLevelIndex=-1; level=index;
+                targetBoxes=originalDefinition.boxGoal; recoveredGoalTargets=originalDefinition.goalTargets ?? new int[5];
+                recoveredRequiresObstacleClear=originalDefinition.requireObstacleClear;
+                moves=originalDefinition.moves; targetRed=targetBlue=0;
+                won=lost=busy=hammer=false; hammers=3; home=false; selected=null; dragStart=null; combo=0; idleAt=Time.time; sparks.Clear();
+                Notify("Recovered level "+index+"  /  "+originalDefinition.embeddedName,4);
+            }
+            catch(Exception error) { home=true; Debug.LogException(error); Notify("Recovered level could not load. See the game log.",5); }
         }
         void StartOriginal()
         {
@@ -143,7 +166,7 @@ namespace CrownGarden
                 if(source==null) throw new InvalidOperationException("Recovered level file is missing.");
                 originalDefinition=JsonUtility.FromJson<OriginalLevelDefinition>(source.text);
                 var restored=MatchBoard.FromOriginal(originalDefinition,10201);
-                board=restored; originalMode=true; obstacleMode=false; level=1; targetBoxes=originalDefinition.boxGoal;
+                board=restored; originalMode=true; recoveredLevelMode=false; obstacleMode=false; level=1; targetBoxes=originalDefinition.boxGoal;
                 moves=originalDefinition.moves; targetRed=targetBlue=0;
                 won=lost=busy=hammer=false; hammers=3; home=false; selected=null; dragStart=null;
                 combo=0; idleAt=Time.time; sparks.Clear();
@@ -160,20 +183,25 @@ namespace CrownGarden
                 if(source==null) throw new InvalidOperationException("Obstacle level file is missing: "+obstacleLevels[index]);
                 originalDefinition=JsonUtility.FromJson<OriginalLevelDefinition>(source.text);
                 board=MatchBoard.FromOriginal(originalDefinition,22000+index*97);
-                originalMode=true; obstacleMode=true; obstacleLevelIndex=index; level=100+index; targetBoxes=originalDefinition.boxGoal;
+                originalMode=true; recoveredLevelMode=false; obstacleMode=true; obstacleLevelIndex=index; level=100+index; targetBoxes=originalDefinition.boxGoal;
                 moves=originalDefinition.moves; targetRed=targetBlue=0;
                 won=lost=busy=hammer=false; hammers=3; home=false; selected=null; dragStart=null; combo=0; idleAt=Time.time; sparks.Clear();
                 Notify("Obstacle level "+(index+1)+": break the box and test every static obstacle.",4);
             }
             catch(Exception error) { home=true; Debug.LogException(error); Notify("Obstacle level could not load. See the game log.",5); }
         }
-        void RetryCurrent() { if(obstacleMode) StartObstacle(obstacleLevelIndex); else if(originalMode) StartOriginal(); else StartLevel(); }
+        void RetryCurrent() { if(obstacleMode) StartObstacle(obstacleLevelIndex); else if(recoveredLevelMode) StartRecoveredLevel(level); else if(originalMode) StartOriginal(); else StartLevel(); }
         bool GoalsDone
         {
             get
             {
                 if(!originalMode) return board.Collected[0]>=targetRed && board.Collected[1]>=targetBlue && board.RemainingIce==0;
                 bool boxesDone=targetBoxes<=0 || board.BoxesCleared>=targetBoxes;
+                if(recoveredLevelMode)
+                {
+                    for(int i=0;i<5;i++) if(recoveredGoalTargets!=null && i<recoveredGoalTargets.Length && board.Collected[i]<recoveredGoalTargets[i]) return false;
+                    return boxesDone && (!recoveredRequiresObstacleClear || board.RemainingObstacleCellsTotal==0);
+                }
                 return boxesDone && (!obstacleMode || board.RemainingNativeObstaclesTotal==0);
             }
         }
@@ -248,7 +276,7 @@ namespace CrownGarden
             if(GoalsDone)
             {
                 won=true; int award=1+(moves>=5?1:0)+(moves>=12?1:0);
-                if(!verificationRun && !originalMode) { stars+=award; unlocked++; Save(); }
+                if(!verificationRun && (!originalMode || recoveredLevelMode)) { stars+=award; unlocked=Mathf.Min(2300,unlocked+1); Save(); }
                 else if(!verificationRun && originalMode && PlayerPrefs.GetInt("cg.original1Complete",0)==0) { stars+=award; PlayerPrefs.SetInt("cg.original1Complete",1); Save(); }
                 Sound(7);
                 for(int i=0;i<20;i++) Burst(new C(UnityEngine.Random.Range(0,board.Width),UnityEngine.Random.Range(0,board.Height)),gold);
@@ -362,7 +390,7 @@ namespace CrownGarden
             Box(new Rect(779,239,341,492),navy);
             Text(new Rect(805,265,285,26),"YOUR NEXT ADVENTURE",15,gold,TextAnchor.MiddleCenter,true);
             Text(new Rect(805,309,285,64),"Level "+unlocked,43,Color.white,TextAnchor.MiddleCenter,true);
-            Text(new Rect(811,382,275,57),unlocked==1?"Collect red and blue jewels\nto earn your first stars.":"Collect jewels and clear the ice.\nA new challenge awaits.",18,pale,TextAnchor.MiddleCenter);
+            Text(new Rect(811,382,275,57),unlocked==1?"Recovered level 1\nfrom the APK is ready.":"Recovered level "+Mathf.Min(unlocked,2300)+" of 2300\nis ready to play.",18,pale,TextAnchor.MiddleCenter);
             if(Button(new Rect(812,469,275,65),"PLAY",new Color(.25f,.69f,.37f),27)) StartLevel();
             if(Button(new Rect(812,540,275,43),"ORIGINAL LEVEL 1",new Color(.29f,.37f,.59f),17)) StartOriginal();
             Text(new Rect(805,585,285,28),"STARS  "+stars+"  •  TEST LEVELS",16,gold,TextAnchor.MiddleCenter,true);
@@ -374,7 +402,7 @@ namespace CrownGarden
             { stars--; built++; Save(); Sound(6); Notify("A little more magic in your kingdom."); }
             Text(new Rect(83,757,800,32),"LOCAL SAVE     •     NO ACCOUNT     •     NO INTERNET REQUIRED",13,new Color(.61f,.74f,.84f));
             if(Button(new Rect(978,65,140,43),muted?"SOUND OFF":"SOUND ON",new Color(.13f,.24f,.39f),14)) { muted=!muted; Save(); }
-            Text(new Rect(80,805,1040,25),"Offline reconstruction • Recovered item art and audio • Original level 1 available.",12,new Color(.53f,.67f,.77f));
+            Text(new Rect(80,805,1040,25),"Offline reconstruction • 2,300 recovered levels • Original level data and art.",12,new Color(.53f,.67f,.77f));
         }
         void Cloud(float x,float y,float s)
         { Color c=new Color(.70f,.85f,.90f,.17f); Disc(x,y,32*s,c); Disc(x+28*s,y-14*s,40*s,c); Disc(x+62*s,y,29*s,c); }
@@ -407,7 +435,8 @@ namespace CrownGarden
             if(Event.current.type==EventType.Repaint) levelPainted=true;
             if(Button(new Rect(90,62,118,43),"<  GARDEN",new Color(.12f,.23f,.38f),14,!busy)) { home=true; won=lost=false; }
             Text(new Rect(237,49,550,40),"CROWN GARDEN",28,Color.white,TextAnchor.MiddleLeft,true);
-            Text(new Rect(239,91,550,25),originalMode?"ORIGINAL LEVEL 1   /   "+board.Width+" x "+board.Height:"LEVEL "+level+"   /   THE JEWEL COURT",14,gold,TextAnchor.MiddleLeft,true);
+            string levelTitle=obstacleMode?"OBSTACLE LEVEL "+(obstacleLevelIndex+1):recoveredLevelMode?"RECOVERED LEVEL "+level:originalMode?"ORIGINAL LEVEL 1":"LEVEL "+level;
+            Text(new Rect(239,91,550,25),levelTitle+"   /   "+board.Width+" x "+board.Height,14,gold,TextAnchor.MiddleLeft,true);
             if(Button(new Rect(929,64,145,43),muted?"SOUND OFF":"SOUND ON",new Color(.12f,.23f,.38f),14)) { muted=!muted; Save(); }
             Box(new Rect(91,151,292,610),navy);
             Text(new Rect(115,176,244,26),"MOVES LEFT",14,pale,TextAnchor.MiddleCenter,true);
@@ -888,9 +917,9 @@ namespace CrownGarden
             Text(new Rect(395,224,410,60),won?"Splendid!":"One more try?",43,Color.white,TextAnchor.MiddleCenter,true);
             int earned=1+(moves>=5?1:0)+(moves>=12?1:0);
             for(int i=0;i<3;i++) { GUI.color=won && i<earned?gold:new Color(.30f,.37f,.47f); GUI.DrawTexture(new Rect(460+i*99,303,82,82),star); } GUI.color=Color.white;
-            Text(new Rect(400,404,400,60),won?(originalMode?"Original level 1 complete!":"Level complete. Your garden awaits!"):"Collect every target before\nyou run out of moves.",20,pale,TextAnchor.MiddleCenter);
+            Text(new Rect(400,404,400,60),won?(recoveredLevelMode?"Level "+level+" complete!":originalMode?"Original level 1 complete!":"Level complete. Your garden awaits!"):"Collect every target before\nyou run out of moves.",20,pale,TextAnchor.MiddleCenter);
             Text(new Rect(400,470,400,32),"SCORE  "+board.Score.ToString("N0"),22,gold,TextAnchor.MiddleCenter,true);
-            if(Button(new Rect(420,529,360,59),won?"CONTINUE":"TRY AGAIN",new Color(.25f,.69f,.37f),23)) { if(won && originalMode) { home=true; won=lost=false; } else RetryCurrent(); }
+            if(Button(new Rect(420,529,360,59),won?"CONTINUE":"TRY AGAIN",new Color(.25f,.69f,.37f),23)) { if(won && (originalMode || recoveredLevelMode)) { home=true; won=lost=false; } else RetryCurrent(); }
             if(Button(new Rect(455,602,290,31),"BACK TO GARDEN",new Color(.17f,.28f,.45f),14)) { home=true; won=lost=false; }
         }
         void Box(Rect r,Color c) { GUI.DrawTexture(r,Texture2D.whiteTexture,ScaleMode.StretchToFill,true,0,c,0,Mathf.Min(12,Mathf.Min(r.width,r.height)*.2f)); }

@@ -371,12 +371,14 @@ namespace CrownGarden
         }
         public static MatchBoard FromOriginal(OriginalLevelDefinition definition,int seed)
         {
-            if(definition==null || definition.width<3 || definition.width>32 || definition.height<3 || definition.height>32 || definition.tiles==null || definition.tiles.Length!=definition.width*definition.height || definition.boardCount!=1 || definition.moves<=0 || definition.boxGoal<=0)
+            if(definition==null || definition.width<3 || definition.width>32 || definition.height<3 || definition.height>32 || definition.tiles==null || definition.tiles.Length!=definition.width*definition.height || definition.boardCount!=1 || definition.moves<=0 || definition.boxGoal<0)
                 throw new ArgumentException("Original level must have one board and a complete tile grid.");
             if(definition.colors==null || definition.colors.Length<3 || definition.colors.Distinct().Count()!=definition.colors.Length)
                 throw new ArgumentException("Original color palette is missing or invalid.");
             if(definition.active!=null && definition.active.Length!=definition.width*definition.height)
                 throw new ArgumentException("Active mask must contain width*height entries.");
+            if(definition.powers!=null && definition.powers.Length!=definition.width*definition.height)
+                throw new ArgumentException("Power mask must contain width*height entries.");
             for(int rawY=0;rawY<definition.height;rawY++) for(int x=0;x<definition.width;x++)
             {
                 int index=x+definition.width*rawY, tile=definition.tiles[index];
@@ -436,6 +438,8 @@ namespace CrownGarden
                 else if(IsNativeTile(tile)) { NativeObstacleKind nativeKind; TryNativeObstacle(tile,out nativeKind); board.SetNativeObstacle(new Cell(x,viewY),nativeKind,NativeLayerCount(tile),tile); }
                 else if(IsColumnTile(tile) || IsMetalColumnTile(tile)) board.Color[x,viewY]=-1;
                 else board.Color[x,viewY]=ColorFromTiledId(tile);
+                if(definition.powers!=null && board.Active[x,viewY] && board.Color[x,viewY]>=0 && board.NativeObstacleAt(x,viewY)==0)
+                    board.Power[x,viewY]=Math.Max(0,Math.Min(5,definition.powers[index]));
             }
             board.LoadColumnsFromOriginal(definition.tiles);
             board.AssignNativeObstacleGroups();
@@ -1153,6 +1157,39 @@ namespace CrownGarden
         public int RemainingClocks { get { int count=0; foreach(int layers in Clocks) if(layers>0) count++; return count; } }
         public int RemainingNativeObstacles(NativeObstacleKind kind) { int count=0; int k=(int)kind; for(int y=0;y<Height;y++) for(int x=0;x<Width;x++) if(NativeObstacles[k,x,y]>0) count++; return count; }
         public int RemainingNativeObstaclesTotal { get { int count=0; for(int kind=0;kind<NativeObstacleCount;kind++) for(int y=0;y<Height;y++) for(int x=0;x<Width;x++) if(NativeObstacles[kind,x,y]>0) count++; return count; } }
+        public int RemainingObstacleCellsTotal
+        {
+            get
+            {
+                int count=0;
+                foreach(int layers in Boxes) if(layers>0) count++;
+                foreach(int layers in MetalCrates) if(layers>0) count++;
+                foreach(int layers in Vases) if(layers>0) count++;
+                foreach(int layers in FlowerPots) if(layers>0) count++;
+                foreach(int layers in Logs) if(layers>0) count++;
+                foreach(int layers in Lanterns) if(layers>0) count++;
+                foreach(int layers in PuzzleBoxes) if(layers>0) count++;
+                foreach(int layers in GiftBoxes) if(layers>0) count++;
+                foreach(int layers in Flowers) if(layers>0) count++;
+                foreach(int layers in ChaliceBoxes) if(layers>0) count++;
+                foreach(int layers in DragonBoxes) if(layers>0) count++;
+                foreach(int layers in Birdhouses) if(layers>0) count++;
+                foreach(int layers in Gnomes) if(layers>0) count++;
+                foreach(int layers in Safes) if(layers>0) count++;
+                foreach(int layers in Masks) if(layers>0) count++;
+                foreach(int layers in Turtles) if(layers>0) count++;
+                foreach(int layers in Snowmen) if(layers>0) count++;
+                foreach(int layers in SteamBombs) if(layers>0) count++;
+                foreach(int layers in Knights) if(layers>0) count++;
+                foreach(int layers in TurtleHouses) if(layers>0) count++;
+                foreach(int layers in Clocks) if(layers>0) count++;
+                foreach(int layers in Walls) if(layers>0) count++;
+                foreach(int layers in Columns) if(layers>0) count++;
+                foreach(int layers in MetalColumns) if(layers>0) count++;
+                for(int kind=0;kind<NativeObstacleCount;kind++) for(int y=0;y<Height;y++) for(int x=0;x<Width;x++) if(NativeObstacles[kind,x,y]>0) count++;
+                return count;
+            }
+        }
         public int RemainingIce { get { int count=0; foreach(bool ice in Ice) if(ice) count++; return count; } }
     }
 }

@@ -29,3 +29,8 @@ DRAGONSMALLBOX ATLAS FRAMES
 - The native bundle contains a separate Spine texture `dragon_box` (Texture2D path_id 791, 780x1437), with source atlas text `Unity/TextAssets/85/1909_dragon_box.atlas`.
 - The `yatay` and `dikey` frames were cropped from the atlas and added as Unity obstacle art: `dragon_box_yatay_2`, `dragon_box_yatay1_2`, `dragon_box_dikey_2`, and `dragon_box_dikey1_2`.
 - Native enum-only variants are mapped by ID: 10002/10003 use horizontal frames and 10000/10001 use vertical frames. The frame-stage pairing follows the atlas frame names and the recovered tile converter; the final animation stage still depends on runtime confirmation.
+
+2300 LEVEL RUNTIME ADAPTER
+- All 2,300 numeric level envelopes in `Levels/1.json` through `Levels/2300.json` now have compact Unity TextAsset adapters under `Assets/Resources/RecoveredLevels/level_0001.json` through `level_2300.json`.
+- The adapters preserve dimensions, inactive cells, native obstacle tile IDs, color goals, moves, refill queues and initial special-item powers. Native Set/Fill placeholder IDs are resolved to deterministic match colors because they do not carry a fixed color in the exported level grid.
+- `CrownGame` loads the recovered adapter for the current level during normal PLAY progression and caps progression at level 2300. This makes every recovered level loadable in the offline runtime; exact native RNG, diagonal fall and all goal-specific effects remain separate fidelity work.
