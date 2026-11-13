@@ -6,7 +6,7 @@ Bản thử nghiệm Unity được viết mới dựa trên hướng tái tạo
 
 Mở `Build/Windows/CrownGarden.exe`, chọn **PLAY**.
 
-Chọn **PLAY** tại vườn để chơi tuần tự 2.300 màn đã dựng từ dữ liệu APKM. **ORIGINAL LEVEL 1** vẫn mở bản chuyển đổi kiểm chứng riêng của màn 1. Hộp đứng yên, không đổi chỗ; ghép sát cạnh hoặc đánh trúng bằng vật phẩm đặc biệt để phá hộp. Các tile Set/Fill và special của những màn còn lại được đưa qua adapter runtime để giữ bố cục và có thể chơi offline.
+Chọn **PLAY** tại vườn để chơi tuần tự 2.300 màn đã dựng từ dữ liệu APKM. Nhập số vào ô **LEVEL #** rồi bấm **OPEN** để mở trực tiếp một màn bất kỳ. **ORIGINAL LEVEL 1** vẫn mở bản chuyển đổi kiểm chứng riêng của màn 1. Hộp đứng yên, không đổi chỗ; ghép sát cạnh hoặc đánh trúng bằng vật phẩm đặc biệt để phá hộp. Các tile Set/Fill và special của những màn còn lại được đưa qua adapter runtime để giữ bố cục và có thể chơi offline.
 
 - Kéo một ô sang ô bên cạnh, hoặc bấm lần lượt hai ô cạnh nhau.
 - Ghép 3 ô cùng màu để thu thập. Nước đổi không tạo bộ sẽ được trả lại và không mất lượt.

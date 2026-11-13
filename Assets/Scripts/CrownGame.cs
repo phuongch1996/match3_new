@@ -27,6 +27,7 @@ namespace CrownGarden
         AudioSource audioSource;
         AudioClip[] notes;
         int level,unlocked,stars,built,moves,combo,targetRed,targetBlue;
+        string levelEntry="1";
         int targetBoxes;
         bool originalMode,obstacleMode;
         bool recoveredLevelMode;
@@ -91,7 +92,7 @@ namespace CrownGarden
                 for(int i=0;i<length;i++) { float t=i/22050f; data[i]=(.17f*Mathf.Sin(2*Mathf.PI*frequency*t)+.05f*Mathf.Sin(4*Mathf.PI*frequency*t))*Mathf.Exp(-t*17)*Mathf.Min(t*150,1); }
                 notes[n]=AudioClip.Create("chime"+n,length,1,22050,false); notes[n].SetData(data,0);
             }
-            unlocked=Mathf.Max(1,PlayerPrefs.GetInt("cg.level",1)); level=unlocked;
+            unlocked=Mathf.Clamp(PlayerPrefs.GetInt("cg.level",1),1,2300); level=unlocked; levelEntry=unlocked.ToString();
             stars=PlayerPrefs.GetInt("cg.stars",0); built=PlayerPrefs.GetInt("cg.built",0);
             muted=PlayerPrefs.GetInt("cg.muted",0)==1;
             var args=Environment.GetCommandLineArgs();
@@ -157,6 +158,13 @@ namespace CrownGarden
                 Notify("Recovered level "+index+"  /  "+originalDefinition.embeddedName,4);
             }
             catch(Exception error) { home=true; Debug.LogException(error); Notify("Recovered level could not load. See the game log.",5); }
+        }
+        void OpenEnteredLevel()
+        {
+            int requested;
+            if(!int.TryParse(levelEntry,out requested)) { Notify("Enter a level number from 1 to 2300.",3); return; }
+            requested=Mathf.Clamp(requested,1,2300); levelEntry=requested.ToString(); unlocked=requested; Save();
+            StartRecoveredLevel(requested);
         }
         void StartOriginal()
         {
@@ -276,7 +284,7 @@ namespace CrownGarden
             if(GoalsDone)
             {
                 won=true; int award=1+(moves>=5?1:0)+(moves>=12?1:0);
-                if(!verificationRun && (!originalMode || recoveredLevelMode)) { stars+=award; unlocked=Mathf.Min(2300,unlocked+1); Save(); }
+                if(!verificationRun && (!originalMode || recoveredLevelMode)) { stars+=award; unlocked=Mathf.Min(2300,unlocked+1); levelEntry=unlocked.ToString(); Save(); }
                 else if(!verificationRun && originalMode && PlayerPrefs.GetInt("cg.original1Complete",0)==0) { stars+=award; PlayerPrefs.SetInt("cg.original1Complete",1); Save(); }
                 Sound(7);
                 for(int i=0;i<20;i++) Burst(new C(UnityEngine.Random.Range(0,board.Width),UnityEngine.Random.Range(0,board.Height)),gold);
@@ -391,6 +399,10 @@ namespace CrownGarden
             Text(new Rect(805,265,285,26),"YOUR NEXT ADVENTURE",15,gold,TextAnchor.MiddleCenter,true);
             Text(new Rect(805,309,285,64),"Level "+unlocked,43,Color.white,TextAnchor.MiddleCenter,true);
             Text(new Rect(811,382,275,57),unlocked==1?"Recovered level 1\nfrom the APK is ready.":"Recovered level "+Mathf.Min(unlocked,2300)+" of 2300\nis ready to play.",18,pale,TextAnchor.MiddleCenter);
+            Text(new Rect(805,435,90,28),"LEVEL #",14,gold,TextAnchor.MiddleLeft,true);
+            GUIStyle levelFieldStyle=new GUIStyle(GUI.skin.textField); levelFieldStyle.fontSize=18; levelFieldStyle.alignment=TextAnchor.MiddleCenter;
+            levelEntry=GUI.TextField(new Rect(894,433,80,35),levelEntry,5,levelFieldStyle);
+            if(Button(new Rect(982,433,103,35),"OPEN",new Color(.22f,.48f,.58f),15)) OpenEnteredLevel();
             if(Button(new Rect(812,469,275,65),"PLAY",new Color(.25f,.69f,.37f),27)) StartLevel();
             if(Button(new Rect(812,540,275,43),"ORIGINAL LEVEL 1",new Color(.29f,.37f,.59f),17)) StartOriginal();
             Text(new Rect(805,585,285,28),"STARS  "+stars+"  •  TEST LEVELS",16,gold,TextAnchor.MiddleCenter,true);
