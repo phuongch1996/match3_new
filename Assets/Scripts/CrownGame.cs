@@ -508,6 +508,7 @@ namespace CrownGarden
                     Solid(new Rect(r.x+5,r.y+r.height-8,r.width-10,3),new Color(.70f,.76f,.84f,.85f));
                     Solid(new Rect(r.x+5,r.y+5,3,r.height-10),new Color(.70f,.76f,.84f,.85f));
                 }
+                if(board.Sand[x,y]>0) Box(new Rect(r.x+6,r.y+6,r.width-12,r.height-12),new Color(.78f,.62f,.28f,.28f));
                 if(board.CellPuzzles[x,y]>0) Box(new Rect(r.x+8,r.y+8,r.width-16,r.height-16),new Color(.25f,.55f,.90f,.25f));
                 if(board.Borders[x,y]>0)
                 {
@@ -1048,4 +1049,7 @@ namespace CrownGarden
         }
     }
 }
+
+
+
 
