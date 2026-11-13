@@ -10,6 +10,7 @@ namespace CrownGarden
         // Recovered levels keep the native color-goal counts and the power
         // carried by any special item in the initial grid.
         public int[] goalTargets;
+        public int obstacleGoal;
         public bool requireObstacleClear;
         // Native ordering: index=x+width*y, with y=0 at the bottom.
         public int[] tiles,colors;

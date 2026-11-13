@@ -466,7 +466,10 @@ namespace CrownGarden
                 }
                 else
                 {
-                    Text(new Rect(183,370,165,27),Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,24,Color.white,TextAnchor.MiddleLeft,true);
+                    if(recoveredLevelMode && targetBoxes<=0)
+                        Text(new Rect(183,370,165,27),"GOAL  "+originalDefinition.obstacleGoal,20,Color.white,TextAnchor.MiddleLeft,true);
+                    else
+                        Text(new Rect(183,370,165,27),Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,24,Color.white,TextAnchor.MiddleLeft,true);
                     if(recoveredLevelMode)
                         Text(new Rect(183,398,165,27),"OBSTACLE  "+board.RemainingObstacleCellsTotal,16,board.RemainingObstacleCellsTotal==0?colors[2]:pale,TextAnchor.MiddleLeft,true);
                     Text(new Rect(116,452,242,54),recoveredLevelMode?"Match beside obstacles\nto clear them.":"Match beside boxes\nto break them.",17,pale,TextAnchor.MiddleCenter);
