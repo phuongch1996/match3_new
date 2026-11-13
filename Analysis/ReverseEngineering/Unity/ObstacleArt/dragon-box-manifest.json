@@ -1,0 +1,82 @@
+[
+  {
+    "sourceTexture": "Unity/ObstacleArt/791_dragon_box.png",
+    "sourceAtlas": "Unity/TextAssets/85/1909_dragon_box.atlas",
+    "frame": "dragon_box_yatay_2",
+    "orientation": "horizontal",
+    "variant": 10003,
+    "bounds": [
+      2,
+      835,
+      292,
+      144
+    ],
+    "export": "Unity/ObstacleArt/dragon_box_yatay_2.png",
+    "sha256": "86b08ddb26722202fd2496dc0c6bcc520201dc754d118808bd3b9f204f212aa5",
+    "pixelSize": [
+      292,
+      144
+    ],
+    "fileBytes": 35715
+  },
+  {
+    "sourceTexture": "Unity/ObstacleArt/791_dragon_box.png",
+    "sourceAtlas": "Unity/TextAssets/85/1909_dragon_box.atlas",
+    "frame": "dragon_box_yatay1_2",
+    "orientation": "horizontal",
+    "variant": 10002,
+    "bounds": [
+      302,
+      967,
+      292,
+      144
+    ],
+    "export": "Unity/ObstacleArt/dragon_box_yatay1_2.png",
+    "sha256": "3d08f648636cfddb927acbcac680ecd3918c84f671e8db7021018245210bc874",
+    "pixelSize": [
+      292,
+      144
+    ],
+    "fileBytes": 36794
+  },
+  {
+    "sourceTexture": "Unity/ObstacleArt/791_dragon_box.png",
+    "sourceAtlas": "Unity/TextAssets/85/1909_dragon_box.atlas",
+    "frame": "dragon_box_dikey_2",
+    "orientation": "vertical",
+    "variant": 10000,
+    "bounds": [
+      2,
+      689,
+      144,
+      290
+    ],
+    "export": "Unity/ObstacleArt/dragon_box_dikey_2.png",
+    "sha256": "f94e29b4e245d700f12d9aaa721f59a859df7d033923c7c03a866dd7af9207d7",
+    "pixelSize": [
+      144,
+      290
+    ],
+    "fileBytes": 36638
+  },
+  {
+    "sourceTexture": "Unity/ObstacleArt/791_dragon_box.png",
+    "sourceAtlas": "Unity/TextAssets/85/1909_dragon_box.atlas",
+    "frame": "dragon_box_dikey1_2",
+    "orientation": "vertical",
+    "variant": 10001,
+    "bounds": [
+      296,
+      821,
+      144,
+      290
+    ],
+    "export": "Unity/ObstacleArt/dragon_box_dikey1_2.png",
+    "sha256": "228c42110743879774f7060998a5146e5d0e19c443c7db519f74195d34bbc118",
+    "pixelSize": [
+      144,
+      290
+    ],
+    "fileBytes": 36782
+  }
+]

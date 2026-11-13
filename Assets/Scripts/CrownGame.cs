@@ -791,6 +791,10 @@ namespace CrownGarden
                 case MatchBoard.NativeObstacleKind.Target: token="target_goal"; break;
                 case MatchBoard.NativeObstacleKind.Gem: token="Parts-dragon_gem"; break;
                 case MatchBoard.NativeObstacleKind.DragonEgg: token="dragon_goal_icon"; break;
+                case MatchBoard.NativeObstacleKind.DragonSmallBoxHorizontal:
+                    token=variant==10002?"dragon_box_yatay1_2":"dragon_box_yatay_2"; break;
+                case MatchBoard.NativeObstacleKind.DragonSmallBoxVertical:
+                    token=variant==10000?"dragon_box_dikey_2":"dragon_box_dikey1_2"; break;
                 case MatchBoard.NativeObstacleKind.FireDragonEgg: token="atlas_FireDragonEggSpritesAtlas_004_Dragon_Egg_001"; break;
                 case MatchBoard.NativeObstacleKind.Volcano: token="atlas_VolcanoSpritesAtlas_022_Body"; break;
                 case MatchBoard.NativeObstacleKind.ArsenalMissile: token="atlas_AttackArsenalSpriteAtlas_013_firework_01"; break;
