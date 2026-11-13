@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-13T15:40:00",
-  "phase": "enum-only-obstacle-families",
+  "updated": "2026-11-13T16:20:00",
+  "phase": "native-art-and-goal-counts",
   "package": "C:/Users/Admin/Downloads/com.dreamgames.royalkingdom_20584-20584_2arch_1feat_4d80b75aad360e3124b1abd39e0fd839_apkmirror.com.apkm",
   "packageSha256": "65e2e795fd9a96740052443c778bd184944959cfa9d955cad431f81980c55f66",
   "inventoryRows": 1220,
@@ -80,7 +80,8 @@
     "PHASE_32_NON_RECTANGULAR_MAPS.txt",
     "PHASE_33_NATIVE_REMAINING_OBSTACLES.txt",
     "PHASE_34_NATIVE_OBSTACLE_GROUPS.txt",
-    "PHASE_35_ENUM_ONLY_OBSTACLES.txt"
+    "PHASE_35_ENUM_ONLY_OBSTACLES.txt",
+    "PHASE_36_NATIVE_ART_AND_GOALS.txt"
   ],
   "decodedNumericLevels": 2300,
   "decodedPlayableLevels": 9,
@@ -95,10 +96,10 @@
   ],
   "originalLevel1Fidelity": "Source 9x9 layout / 30 moves / 54 boxes / predefined queues verified; native fall order, 8-neighbor directions and seeded RNG algorithm recovered statically, but exact session seed, cross-fall reservations and full mechanics incomplete",
   "prototypeBoxSprite": true,
-  "latestReport": "PHASE_35_ENUM_ONLY_OBSTACLES.txt",
+  "latestReport": "PHASE_36_NATIVE_ART_AND_GOALS.txt",
   "ruleAssertions": 22954,
   "dataAssertions": 14524,
-  "exactObstacleSpriteCount": 285,
+  "exactObstacleSpriteCount": 327,
   "obstacleLabLevel": true,
   "shapeMapSupport": true,
   "shapeMapHolesVerified": 4

@@ -168,7 +168,15 @@ namespace CrownGarden
             catch(Exception error) { home=true; Debug.LogException(error); Notify("Obstacle level could not load. See the game log.",5); }
         }
         void RetryCurrent() { if(obstacleMode) StartObstacle(obstacleLevelIndex); else if(originalMode) StartOriginal(); else StartLevel(); }
-        bool GoalsDone { get { return originalMode?targetBoxes>0 && board.BoxesCleared>=targetBoxes:board.Collected[0]>=targetRed && board.Collected[1]>=targetBlue && board.RemainingIce==0; } }
+        bool GoalsDone
+        {
+            get
+            {
+                if(!originalMode) return board.Collected[0]>=targetRed && board.Collected[1]>=targetBlue && board.RemainingIce==0;
+                bool boxesDone=targetBoxes<=0 || board.BoxesCleared>=targetBoxes;
+                return boxesDone && (!obstacleMode || board.RemainingNativeObstaclesTotal==0);
+            }
+        }
         void Sound(int n) { if(!muted) audioSource.PlayOneShot(notes[Mathf.Clamp(n,0,7)]); }
         void PlayRecovered(string name,int fallback)
         {
@@ -409,8 +417,17 @@ namespace CrownGarden
             {
                 Box(new Rect(113,363,248,72),new Color(.10f,.18f,.34f));
                 DrawBox(new Rect(118,370,60,60),1);
-                Text(new Rect(183,370,165,54),Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,24,Color.white,TextAnchor.MiddleLeft,true);
-                Text(new Rect(116,452,242,54),"Match beside boxes\nto break them.",17,pale,TextAnchor.MiddleCenter);
+                if(obstacleMode)
+                {
+                    Text(new Rect(183,370,165,27),"BOX  "+Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,18,Color.white,TextAnchor.MiddleLeft,true);
+                    Text(new Rect(183,398,165,27),"ITEM  "+board.RemainingNativeObstaclesTotal,18,Color.white,TextAnchor.MiddleLeft,true);
+                    Text(new Rect(116,452,242,54),"Match beside obstacles\nto clear their layers.",17,pale,TextAnchor.MiddleCenter);
+                }
+                else
+                {
+                    Text(new Rect(183,370,165,54),Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,24,Color.white,TextAnchor.MiddleLeft,true);
+                    Text(new Rect(116,452,242,54),"Match beside boxes\nto break them.",17,pale,TextAnchor.MiddleCenter);
+                }
                 Text(new Rect(116,510,242,45),"Recovered level layout",13,gold,TextAnchor.MiddleCenter);
             }
             else { GoalRow(0,363,targetRed,board.Collected[0]); GoalRow(1,433,targetBlue,board.Collected[1]); }
@@ -758,11 +775,19 @@ namespace CrownGarden
             string token=null;
             switch(obstacle)
             {
+                case MatchBoard.NativeObstacleKind.Armory: token="Armory_big"; break;
                 case MatchBoard.NativeObstacleKind.Barrel: token="Barrel"; break;
+                case MatchBoard.NativeObstacleKind.Lily: token="lily_goal"; break;
+                case MatchBoard.NativeObstacleKind.Lyre: token="lyre"; break;
+                case MatchBoard.NativeObstacleKind.MagicCards: token="magic_cards_goal_icon"; break;
+                case MatchBoard.NativeObstacleKind.MagicGlobe: token="MagicGlobe_big"; break;
                 case MatchBoard.NativeObstacleKind.MagicOrb: token="MagicOrb_big"; break;
+                case MatchBoard.NativeObstacleKind.Magnet: token=variant==95?"magnet_down":"magnet_goal_icon"; break;
                 case MatchBoard.NativeObstacleKind.Starfish: token="starfish"; break;
                 case MatchBoard.NativeObstacleKind.Tablet: token=layers>=2?"tablet_column_1x4_01":"Tablet_goal_icon_01"; break;
+                case MatchBoard.NativeObstacleKind.Target: token="target_goal"; break;
                 case MatchBoard.NativeObstacleKind.Gem: token="Parts-dragon_gem"; break;
+                case MatchBoard.NativeObstacleKind.DragonEgg: token="Parts-dragon_egg_1"; break;
             }
             if(token!=null && DrawRecoveredObstacle(rect,token,layers,false)) return;
             Color baseColor;

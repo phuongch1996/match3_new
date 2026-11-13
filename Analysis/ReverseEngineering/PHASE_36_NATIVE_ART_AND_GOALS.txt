@@ -1,0 +1,21 @@
+PHASE 36 — NATIVE ART AND GOAL COUNTS
+
+NGUỒN BẰNG CHỨNG
+- Unity bundle trong APK đã được quét bằng UnityPy trên các Sprite object.
+- Các tên sprite được giữ lại trong Unity/ObstacleArt/manifest.json cùng path_id, bundle và SHA-256.
+- Bảng native Levels/tile-converters.json xác nhận các ItemType native có GoalType riêng: Lyre, Target,
+  Gem, MagicOrb, Magnet, Cannon, Lily, Volcano, Lightbulb, Armory, JellyMaker, Tablet, MagicGlobe,
+  Barrel, MagicCards, Starfish, Dragon và FireDragonEgg.
+
+ĐÃ ĐƯA VÀO UNITY
+- Renderer dùng sprite APK cho Armory_big, lily_goal, lyre, magic_cards_goal_icon, MagicGlobe_big,
+  magnet_goal_icon/magnet_down, target_goal, Parts-dragon_gem và Parts-dragon_egg_1.
+- Các family chưa có Sprite tên rõ ràng trong bundle tiếp tục dùng fallback procedural; không gán nhầm
+  sprite chỉ dựa trên màu.
+- Màn obstacle nay yêu cầu hoàn thành box goal và dọn toàn bộ ô native obstacle. HUD hiển thị tách
+  BOX và ITEM còn lại. Đây là cách dùng GoalType native để tránh màn được tính thắng khi vật cản còn tồn tại.
+
+GIỚI HẠN
+- Mapping Parts-dragon_egg_1 cho DragonEgg là suy luận từ tên family và cần xác nhận thêm bằng runtime.
+- Các biến thể Cannon/JellyMaker/Lightbulb/Volcano/ArsenalMissile/FireDragonEgg chưa có sprite tên
+  tương ứng trong lần quét key hiện tại nên vẫn dùng fallback.
