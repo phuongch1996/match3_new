@@ -401,7 +401,7 @@ namespace CrownGarden
             board.fillColors=definition.colors.Select(ColorFromTiledId).ToArray();
             for(int y=0;y<board.Height;y++) for(int x=0;x<board.Width;x++)
             {
-                int tile=definition.tiles[x+board.Width*y],viewY=board.Height-1-y;
+                int index=x+board.Width*y, tile=definition.tiles[index],viewY=board.Height-1-y;
                 board.Power[x,viewY]=0; board.Ice[x,viewY]=false; board.Walls[x,viewY]=0; board.WallGroup[x,viewY]=0; board.MetalCrates[x,viewY]=0; board.Vases[x,viewY]=0; board.FlowerPots[x,viewY]=0; board.Logs[x,viewY]=0; board.Lanterns[x,viewY]=0; board.PuzzleBoxes[x,viewY]=0; board.GiftBoxes[x,viewY]=0; board.Flowers[x,viewY]=0; board.ChaliceBoxes[x,viewY]=0; board.DragonBoxes[x,viewY]=0; board.Birdhouses[x,viewY]=0; board.Gnomes[x,viewY]=0; board.Safes[x,viewY]=0; board.Masks[x,viewY]=0; board.Turtles[x,viewY]=0; board.Snowmen[x,viewY]=0; board.SteamBombs[x,viewY]=0; board.Knights[x,viewY]=0; board.TurtleHouses[x,viewY]=0; board.Clocks[x,viewY]=0;
                 board.NativeObstacleVariant[x,viewY]=0; board.NativeObstacleGroup[x,viewY]=0; for(int nativeKind=0;nativeKind<NativeObstacleCount;nativeKind++) board.NativeObstacles[nativeKind,x,viewY]=0;
                 board.Columns[x,viewY]=0; board.ColumnGroup[x,viewY]=0; board.ColumnDirection[x,viewY]=0;
