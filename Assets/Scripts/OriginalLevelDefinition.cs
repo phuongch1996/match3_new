@@ -14,6 +14,10 @@ namespace CrownGarden
         // Native ordering: index=x+width*y, with y=0 at the bottom.
         public int[] tiles,colors;
         public int[] powers;
+        // Cell overlays from the native Grid.Cells table. These can coexist
+        // with an item on the same cell (for example box + ice in level 6).
+        public bool[] ice,jelly;
+        public int[] ivy,curtain,chain,border,puzzle;
         // Optional native board mask in the same x+width*y ordering. A false
         // entry is a missing board cell: it cannot match, move, fall through,
         // receive a refill, or host an obstacle. When omitted, tile id 0 is

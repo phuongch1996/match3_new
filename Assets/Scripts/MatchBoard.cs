@@ -12,6 +12,8 @@ namespace CrownGarden
         public readonly int[,] Color;
         public readonly int[,] Power; // 1: row, 2: column, 3: bomb, 4: rainbow, 5: propeller
         public readonly bool[,] Ice;
+        public readonly bool[,] Jelly;
+        public readonly int[,] Ivy, Curtains, Chains, Borders, CellPuzzles;
         public readonly bool[,] Active;
         public readonly int[,] Boxes;
         public readonly int[,] MetalCrates;
@@ -62,7 +64,7 @@ namespace CrownGarden
         readonly Dictionary<int,int> nativeGroupLayers = new Dictionary<int,int>();
         int nextNativeGroup=1;
         public readonly int[] Collected = new int[Colors];
-        public int IceCleared, BoxesCleared, MetalCratesCleared, VasesCleared, FlowerPotsCleared, LogsCleared, LanternsCleared, PuzzleBoxesCleared, GiftBoxesCleared, FlowersCleared, ChaliceBoxesCleared, DragonBoxesCleared, BirdhousesCleared, GnomesCleared, SafesCleared, MasksCleared, TurtlesCleared, SnowmenCleared, SteamBombsCleared, KnightsCleared, TurtleHousesCleared, ClocksCleared, WallsCleared, ColumnsCleared, MetalColumnsCleared, Score;
+        public int IceCleared, JellyCleared, IvyCleared, CurtainsCleared, ChainsCleared, BordersCleared, CellPuzzlesCleared, BoxesCleared, MetalCratesCleared, VasesCleared, FlowerPotsCleared, LogsCleared, LanternsCleared, PuzzleBoxesCleared, GiftBoxesCleared, FlowersCleared, ChaliceBoxesCleared, DragonBoxesCleared, BirdhousesCleared, GnomesCleared, SafesCleared, MasksCleared, TurtlesCleared, SnowmenCleared, SteamBombsCleared, KnightsCleared, TurtleHousesCleared, ClocksCleared, WallsCleared, ColumnsCleared, MetalColumnsCleared, Score;
         readonly Random random;
         int[] fillColors = {0,1,2,3,4};
         Queue<int>[] predefined;
@@ -119,7 +121,7 @@ namespace CrownGarden
         {
             if(width<3 || height<3 || width>32 || height>32) throw new ArgumentOutOfRangeException("Board dimensions must be between 3 and 32.");
             Width=width; Height=height;
-            Color=new int[width,height]; Power=new int[width,height]; Ice=new bool[width,height];
+            Color=new int[width,height]; Power=new int[width,height]; Ice=new bool[width,height]; Jelly=new bool[width,height]; Ivy=new int[width,height]; Curtains=new int[width,height]; Chains=new int[width,height]; Borders=new int[width,height]; CellPuzzles=new int[width,height];
             Active=new bool[width,height]; Boxes=new int[width,height]; MetalCrates=new int[width,height]; Vases=new int[width,height]; FlowerPots=new int[width,height]; Logs=new int[width,height]; Lanterns=new int[width,height]; PuzzleBoxes=new int[width,height]; GiftBoxes=new int[width,height]; Flowers=new int[width,height]; ChaliceBoxes=new int[width,height]; DragonBoxes=new int[width,height]; Birdhouses=new int[width,height]; Gnomes=new int[width,height]; Safes=new int[width,height]; Masks=new int[width,height]; Turtles=new int[width,height]; Snowmen=new int[width,height]; SteamBombs=new int[width,height]; Knights=new int[width,height]; TurtleHouses=new int[width,height]; Clocks=new int[width,height]; Walls=new int[width,height]; WallGroup=new int[width,height];
             Columns=new int[width,height]; ColumnGroup=new int[width,height]; ColumnDirection=new int[width,height];
             MetalColumns=new int[width,height]; MetalColumnGroup=new int[width,height]; MetalColumnDirection=new int[width,height];
@@ -379,6 +381,8 @@ namespace CrownGarden
                 throw new ArgumentException("Active mask must contain width*height entries.");
             if(definition.powers!=null && definition.powers.Length!=definition.width*definition.height)
                 throw new ArgumentException("Power mask must contain width*height entries.");
+            if(definition.ice!=null && definition.ice.Length!=definition.width*definition.height || definition.jelly!=null && definition.jelly.Length!=definition.width*definition.height || definition.ivy!=null && definition.ivy.Length!=definition.width*definition.height || definition.curtain!=null && definition.curtain.Length!=definition.width*definition.height || definition.chain!=null && definition.chain.Length!=definition.width*definition.height || definition.border!=null && definition.border.Length!=definition.width*definition.height || definition.puzzle!=null && definition.puzzle.Length!=definition.width*definition.height)
+                throw new ArgumentException("Cell overlay arrays must contain width*height entries.");
             for(int rawY=0;rawY<definition.height;rawY++) for(int x=0;x<definition.width;x++)
             {
                 int index=x+definition.width*rawY, tile=definition.tiles[index];
@@ -402,7 +406,7 @@ namespace CrownGarden
             for(int y=0;y<board.Height;y++) for(int x=0;x<board.Width;x++)
             {
                 int index=x+board.Width*y, tile=definition.tiles[index],viewY=board.Height-1-y;
-                board.Power[x,viewY]=0; board.Ice[x,viewY]=false; board.Walls[x,viewY]=0; board.WallGroup[x,viewY]=0; board.MetalCrates[x,viewY]=0; board.Vases[x,viewY]=0; board.FlowerPots[x,viewY]=0; board.Logs[x,viewY]=0; board.Lanterns[x,viewY]=0; board.PuzzleBoxes[x,viewY]=0; board.GiftBoxes[x,viewY]=0; board.Flowers[x,viewY]=0; board.ChaliceBoxes[x,viewY]=0; board.DragonBoxes[x,viewY]=0; board.Birdhouses[x,viewY]=0; board.Gnomes[x,viewY]=0; board.Safes[x,viewY]=0; board.Masks[x,viewY]=0; board.Turtles[x,viewY]=0; board.Snowmen[x,viewY]=0; board.SteamBombs[x,viewY]=0; board.Knights[x,viewY]=0; board.TurtleHouses[x,viewY]=0; board.Clocks[x,viewY]=0;
+                board.Power[x,viewY]=0; board.Ice[x,viewY]=definition.ice!=null && definition.ice[index]; board.Jelly[x,viewY]=definition.jelly!=null && definition.jelly[index]; board.Ivy[x,viewY]=definition.ivy==null?0:definition.ivy[index]; board.Curtains[x,viewY]=definition.curtain==null?0:definition.curtain[index]; board.Chains[x,viewY]=definition.chain==null?0:definition.chain[index]; board.Borders[x,viewY]=definition.border==null?0:definition.border[index]; board.CellPuzzles[x,viewY]=definition.puzzle==null?0:definition.puzzle[index]; board.Walls[x,viewY]=0; board.WallGroup[x,viewY]=0; board.MetalCrates[x,viewY]=0; board.Vases[x,viewY]=0; board.FlowerPots[x,viewY]=0; board.Logs[x,viewY]=0; board.Lanterns[x,viewY]=0; board.PuzzleBoxes[x,viewY]=0; board.GiftBoxes[x,viewY]=0; board.Flowers[x,viewY]=0; board.ChaliceBoxes[x,viewY]=0; board.DragonBoxes[x,viewY]=0; board.Birdhouses[x,viewY]=0; board.Gnomes[x,viewY]=0; board.Safes[x,viewY]=0; board.Masks[x,viewY]=0; board.Turtles[x,viewY]=0; board.Snowmen[x,viewY]=0; board.SteamBombs[x,viewY]=0; board.Knights[x,viewY]=0; board.TurtleHouses[x,viewY]=0; board.Clocks[x,viewY]=0;
                 board.NativeObstacleVariant[x,viewY]=0; board.NativeObstacleGroup[x,viewY]=0; for(int nativeKind=0;nativeKind<NativeObstacleCount;nativeKind++) board.NativeObstacles[nativeKind,x,viewY]=0;
                 board.Columns[x,viewY]=0; board.ColumnGroup[x,viewY]=0; board.ColumnDirection[x,viewY]=0;
                 board.MetalColumns[x,viewY]=0; board.MetalColumnGroup[x,viewY]=0; board.MetalColumnDirection[x,viewY]=0;
@@ -836,6 +840,7 @@ namespace CrownGarden
         public void Clear(Match m,int combo)
         {
             PrepareBoxHits(m);
+            ClearCellOverlays(m);
             foreach(var c in m.hitBoxes)
                 if(m.damagedBoxes.Add(c) && Boxes[c.x,c.y]>0)
                 {
@@ -1041,6 +1046,19 @@ namespace CrownGarden
                 else { Color[c.x,c.y]=-1; Power[c.x,c.y]=0; }
             }
         }
+        void ClearCellOverlays(Match m)
+        {
+            foreach(var c in m.cells)
+            {
+                if(!IsCell(c.x,c.y)) continue;
+                if(Ice[c.x,c.y]) { Ice[c.x,c.y]=false; IceCleared++; Score+=100; }
+                if(Jelly[c.x,c.y]) { Jelly[c.x,c.y]=false; JellyCleared++; Score+=100; }
+                if(Ivy[c.x,c.y]>0) { Ivy[c.x,c.y]--; if(Ivy[c.x,c.y]==0) IvyCleared++; Score+=100; }
+                if(Curtains[c.x,c.y]>0) { Curtains[c.x,c.y]--; if(Curtains[c.x,c.y]==0) CurtainsCleared++; Score+=100; }
+                if(Chains[c.x,c.y]>0) { Chains[c.x,c.y]--; if(Chains[c.x,c.y]==0) ChainsCleared++; Score+=100; }
+                if(CellPuzzles[c.x,c.y]>0) { CellPuzzles[c.x,c.y]--; if(CellPuzzles[c.x,c.y]==0) CellPuzzlesCleared++; Score+=100; }
+            }
+        }
         bool IsGravityBlocker(int x,int y)
         {
             return !IsCell(x,y) || Boxes[x,y]>0 || MetalCrates[x,y]>0 || Vases[x,y]>0 || FlowerPots[x,y]>0 || Logs[x,y]>0 || Lanterns[x,y]>0 || PuzzleBoxes[x,y]>0 || GiftBoxes[x,y]>0 || Flowers[x,y]>0 || ChaliceBoxes[x,y]>0 || DragonBoxes[x,y]>0 || Birdhouses[x,y]>0 || Gnomes[x,y]>0 || Safes[x,y]>0 || Masks[x,y]>0 || Turtles[x,y]>0 || Snowmen[x,y]>0 || SteamBombs[x,y]>0 || Knights[x,y]>0 || TurtleHouses[x,y]>0 || Clocks[x,y]>0 || Walls[x,y]>0 || Columns[x,y]>0 || MetalColumns[x,y]>0 || NativeObstacleAt(x,y)>0;
@@ -1187,6 +1205,21 @@ namespace CrownGarden
                 foreach(int layers in Columns) if(layers>0) count++;
                 foreach(int layers in MetalColumns) if(layers>0) count++;
                 for(int kind=0;kind<NativeObstacleCount;kind++) for(int y=0;y<Height;y++) for(int x=0;x<Width;x++) if(NativeObstacles[kind,x,y]>0) count++;
+                count+=RemainingCellOverlaysTotal;
+                return count;
+            }
+        }
+        public int RemainingCellOverlaysTotal
+        {
+            get
+            {
+                int count=0;
+                foreach(bool value in Ice) if(value) count++;
+                foreach(bool value in Jelly) if(value) count++;
+                foreach(int value in Ivy) if(value>0) count++;
+                foreach(int value in Curtains) if(value>0) count++;
+                foreach(int value in Chains) if(value>0) count++;
+                foreach(int value in CellPuzzles) if(value>0) count++;
                 return count;
             }
         }

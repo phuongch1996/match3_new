@@ -466,8 +466,10 @@ namespace CrownGarden
                 }
                 else
                 {
-                    Text(new Rect(183,370,165,54),Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,24,Color.white,TextAnchor.MiddleLeft,true);
-                    Text(new Rect(116,452,242,54),"Match beside boxes\nto break them.",17,pale,TextAnchor.MiddleCenter);
+                    Text(new Rect(183,370,165,27),Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,24,Color.white,TextAnchor.MiddleLeft,true);
+                    if(recoveredLevelMode)
+                        Text(new Rect(183,398,165,27),"OBSTACLE  "+board.RemainingObstacleCellsTotal,16,board.RemainingObstacleCellsTotal==0?colors[2]:pale,TextAnchor.MiddleLeft,true);
+                    Text(new Rect(116,452,242,54),recoveredLevelMode?"Match beside obstacles\nto clear them.":"Match beside boxes\nto break them.",17,pale,TextAnchor.MiddleCenter);
                 }
                 Text(new Rect(116,510,242,45),"Recovered level layout",13,gold,TextAnchor.MiddleCenter);
             }
@@ -492,6 +494,25 @@ namespace CrownGarden
                 {
                     Box(new Rect(r.x+1,r.y+1,r.width-2,r.height-2),new Color(.36f,.80f,1,.48f));
                     Solid(new Rect(r.x+10,r.y+8,30,2),new Color(.8f,1,1,.7f));
+                }
+                if(board.Jelly[x,y]) Box(new Rect(r.x+4,r.y+4,r.width-8,r.height-8),new Color(.95f,.35f,.75f,.22f));
+                if(board.Ivy[x,y]>0)
+                {
+                    Solid(new Rect(r.x+3,r.y+3,4,r.height-6),new Color(.25f,.78f,.30f,.72f));
+                    Solid(new Rect(r.x+3,r.y+r.height-7,r.width-6,4),new Color(.25f,.78f,.30f,.72f));
+                }
+                if(board.Curtains[x,y]>0) Box(new Rect(r.x+6,r.y+6,r.width-12,r.height-12),new Color(.62f,.28f,.82f,.25f));
+                if(board.Chains[x,y]>0)
+                {
+                    Solid(new Rect(r.x+5,r.y+5,r.width-10,3),new Color(.70f,.76f,.84f,.85f));
+                    Solid(new Rect(r.x+5,r.y+r.height-8,r.width-10,3),new Color(.70f,.76f,.84f,.85f));
+                    Solid(new Rect(r.x+5,r.y+5,3,r.height-10),new Color(.70f,.76f,.84f,.85f));
+                }
+                if(board.CellPuzzles[x,y]>0) Box(new Rect(r.x+8,r.y+8,r.width-16,r.height-16),new Color(.25f,.55f,.90f,.25f));
+                if(board.Borders[x,y]>0)
+                {
+                    Solid(new Rect(r.x+1,r.y+1,r.width-2,2),new Color(.95f,.75f,.25f,.75f));
+                    Solid(new Rect(r.x+1,r.y+r.height-3,r.width-2,2),new Color(.95f,.75f,.25f,.75f));
                 }
                 C c=new C(x,y);
                 if((selected.HasValue && selected.Value.Equals(c)) || (Time.time<hintUntil && (hintA.Equals(c) || hintB.Equals(c))))
@@ -1027,3 +1048,4 @@ namespace CrownGarden
         }
     }
 }
+

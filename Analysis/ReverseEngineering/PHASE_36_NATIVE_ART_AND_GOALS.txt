@@ -34,3 +34,10 @@ DRAGONSMALLBOX ATLAS FRAMES
 - All 2,300 numeric level envelopes in `Levels/1.json` through `Levels/2300.json` now have compact Unity TextAsset adapters under `Assets/Resources/RecoveredLevels/level_0001.json` through `level_2300.json`.
 - The adapters preserve dimensions, inactive cells, native obstacle tile IDs, color goals, moves, refill queues and initial special-item powers. Native Set/Fill placeholder IDs are resolved to deterministic match colors because they do not carry a fixed color in the exported level grid.
 - `CrownGame` loads the recovered adapter for the current level during normal PLAY progression and caps progression at level 2300. This makes every recovered level loadable in the offline runtime; exact native RNG, diagonal fall and all goal-specific effects remain separate fidelity work.
+
+CELL OVERLAY PRESERVATION
+- Recovered adapters now preserve the native Grid.Cells overlays independently from Grid.Items: Ice, HasJelly, Ivy, Curtain, Chain, Border and Puzzle.
+- This permits combinations in one level and on the same cell. Level 6 now retains 9 Box3 cells plus 32 Ice cells, matching its native goals.
+- CrownGame renders these overlays behind item art; MatchBoard clears their layers when a match or power reaches the cell and includes uncleared gameplay overlays in recovered-level completion.
+- A scan of all 2,300 adapters found 10,471 Ice, 861 Jelly, 6,440 Ivy, 5,642 Curtain, 1,960 Chain, 3,463 Border and 1,278 Puzzle cells. All overlay arrays are width*height sized.
+- TiledId 29 (Lyre) is also retained as a native static obstacle instead of being converted to a random match color. TiledId 40/50 remain pre-placed special items through the existing Dynamite/ElectroBall mapping.
