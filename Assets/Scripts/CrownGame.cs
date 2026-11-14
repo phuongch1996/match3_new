@@ -457,7 +457,15 @@ namespace CrownGarden
             if(originalMode)
             {
                 Box(new Rect(113,363,248,72),new Color(.10f,.18f,.34f));
-                DrawBox(new Rect(118,370,60,60),1);
+                if(recoveredLevelMode && targetBoxes<=0)
+                {
+                    Box(new Rect(118,370,60,60),new Color(.12f,.28f,.16f));
+                    Solid(new Rect(127,379,7,42),new Color(.28f,.85f,.34f));
+                    Solid(new Rect(127,412,42,7),new Color(.28f,.85f,.34f));
+                    Solid(new Rect(145,379,7,42),new Color(.42f,.95f,.42f));
+                    Solid(new Rect(145,395,25,7),new Color(.42f,.95f,.42f));
+                }
+                else DrawBox(new Rect(118,370,60,60),1);
                 if(obstacleMode)
                 {
                     Text(new Rect(183,370,165,27),"BOX  "+Mathf.Min(board.BoxesCleared,targetBoxes)+" / "+targetBoxes,18,Color.white,TextAnchor.MiddleLeft,true);
@@ -558,6 +566,14 @@ namespace CrownGarden
                 else if(board.Columns[x,y]>0) DrawColumn(rect,board.ColumnDirection[x,y],board.Columns[x,y],false);
                 else if(board.MetalColumns[x,y]>0) DrawColumn(rect,board.MetalColumnDirection[x,y],board.MetalColumns[x,y],true);
                 else DrawGem(rect,board.Color[x,y],board.Power[x,y]);
+            }
+            for(int y=0;y<board.Height;y++) for(int x=0;x<board.Width;x++)
+            {
+                if(!board.Active[x,y] || board.Ivy[x,y]<=0) continue;
+                Rect r=new Rect(BX+x*S+3,BY+y*S+3,S-6,S-6);
+                Solid(new Rect(r.x,r.y,6,r.height),new Color(.18f,.72f,.24f,.78f));
+                Solid(new Rect(r.x,r.y+r.height-7,r.width,7),new Color(.24f,.82f,.28f,.82f));
+                if(board.Ivy[x,y]>1) Text(new Rect(r.x+8,r.y+7,r.width-12,r.height-12),board.Ivy[x,y].ToString(),13,Color.white,TextAnchor.MiddleRight,true);
             }
             if(Time.time>=toastUntil) Text(new Rect(BX,114,584,31),busy?"A LITTLE MAGIC IN MOTION...":hammer?"CHOOSE A JEWEL TO BREAK":"SWAP JEWELS  •  MATCH 3 OR MORE",13,pale,TextAnchor.MiddleCenter,true);
             if(Button(new Rect(446,779,170,46),"HINT  [H]",new Color(.21f,.33f,.52f),15,!busy && !won && !lost)) Hint();
